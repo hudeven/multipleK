@@ -1,0 +1,4 @@
+data/cancer/*
+data/case0814_paper/*
+src/*.o
+src/ndTree
