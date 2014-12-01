@@ -1,7 +1,6 @@
-data/cancer/kmer/*
-data/cancer/query/*
-data/cancer/read/*
-data/cancer/result/*
-data/case0814_paper/*
+data/cancer/kmer/*.*
+data/cancer/query/*.*
+data/cancer/read/*.*
+data/cancer/result/*.*
 src/*.o
 src/ndTree
