@@ -3,5 +3,6 @@ data/cancer/query/*
 data/cancer/read/*
 data/cancer/result/*
 data/case0814_paper/*
+data/test.fa
 src/*.o
 src/ndTree

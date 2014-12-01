@@ -3,7 +3,8 @@ import sys
 from optparse import OptionParser
 
 #Modify it to your working dir
-WORKING_DIR = "/home/stevenliu/workspace/bondtree/"
+WORKING_DIR = "/Users/stevenliu/workspace/new_ndtree/multipleK/"
+#WORKING_DIR = "/home/stevenliu/workspace/bondtree/"
 
 parser = OptionParser()
 parser.add_option('-n','--count', dest = "count", help = "number of random cancer dna")
