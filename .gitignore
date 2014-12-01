@@ -1,4 +1,7 @@
-data/cancer/*
+data/cancer/kmer
+data/cancer/query
+data/cancer/read
+data/cancer/result
 data/case0814_paper/*
 src/*.o
 src/ndTree
