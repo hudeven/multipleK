@@ -1,3 +1,4 @@
+data/cancer/ref/*.*
 data/cancer/kmer/*.*
 data/cancer/query/*.*
 data/cancer/read/*.*
