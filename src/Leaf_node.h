@@ -384,25 +384,23 @@ const char* readid_filename = (globalRecordFilename+".readid").c_str();
 const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
 
 record_file.open(record_filename,fstream::in | fstream::out);
-readid_file.open(readid_filename,fstream::in | fstream::out | fstream::app);
-typeid_file.open(typeid_filename,fstream::in | fstream::out | fstream::app);
-
+readid_file.open(readid_filename,fstream::app);
+typeid_file.open(typeid_filename,fstream::app);
 if(record_file.fail())
 {
-    cout<<"can't open file .record"<<endl;
+    cout<<"can't open file "<<record_filename<<endl;
     exit(1);
 }
 if(readid_file.fail())
 {
-    cout<<"can't open file .readid"<<endl;
+    cout<<"can't open file "<< readid_filename << endl;
     exit(1);
 }
 if(typeid_file.fail())
 {
-    cout<<"can't open file .typeid"<<endl;
+    cout<<"can't open file "<< typeid_filename <<endl;
     exit(1);
 }
-
 static int record_count=-1;
 
 record_count++;

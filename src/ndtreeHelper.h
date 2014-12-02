@@ -8,6 +8,8 @@
 #include "logClass.h"
 #include <limits.h>
 #include "config.h"
+#include <iostream>
+using namespace std;
 
 class Item
 {
@@ -277,10 +279,8 @@ fstream typeid_file;
 fstream readid_file;
 const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
 const char* readid_filename = (globalRecordFilename+".readid").c_str();
-cout << typeid_filename << endl;
-cout << readid_filename << endl;
-typeid_file.open(typeid_filename);
-readid_file.open(readid_filename);
+typeid_file.open(typeid_filename, ios::out);
+readid_file.open(readid_filename, ios::out);
 if(typeid_file.fail())
 {
     cout<<"can't open file "<< typeid_filename <<endl;
