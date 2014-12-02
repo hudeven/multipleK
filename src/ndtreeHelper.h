@@ -279,8 +279,8 @@ fstream typeid_file;
 fstream readid_file;
 const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
 const char* readid_filename = (globalRecordFilename+".readid").c_str();
-typeid_file.open(typeid_filename, ios::out);
-readid_file.open(readid_filename, ios::out);
+typeid_file.open(typeid_filename, ios::binary | ios::out);
+readid_file.open(readid_filename, ios::binary | ios::out);
 if(typeid_file.fail())
 {
     cout<<"can't open file "<< typeid_filename <<endl;
@@ -478,7 +478,7 @@ void output_records(Leaf_entry* query_results, int query_results_size)
     fstream typeid_file, query_result_file;
     const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
     const char* query_result_filename = (globalBQFilename+ ".result").c_str();
-    typeid_file.open(typeid_filename, fstream::in | fstream::out);
+    typeid_file.open(typeid_filename, ios_base::binary | ios_base::in);
     query_result_file.open(query_result_filename, fstream::in | fstream::out| fstream::app);
 
     if(typeid_file.fail())
@@ -549,7 +549,7 @@ for(int i=0; i<item_size; i++)
     fstream typeid_file, query_result_file;
     const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
     const char* query_result_filename = (globalBQFilename+ ".result").c_str();
-    typeid_file.open(typeid_filename, fstream::in | fstream::out);
+    typeid_file.open(typeid_filename, ios_base::binary | ios_base::in);
     query_result_file.open(query_result_filename, fstream::in | fstream::out| fstream::app);
 
     if(typeid_file.fail()) {
@@ -638,7 +638,6 @@ if(type_num > 255) {
 }
 
 
-
 //output the cancer types in the query result to file
 void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
 {
@@ -725,17 +724,11 @@ if(type_num > 255) {
         query_result_file << endl;
 
    }
-/*
-    query_result_file << output[0]<<" ";
-    for(int i=1; i<=output[0]; i++)
-	query_result_file << output[i]<<" ";
- 
-    query_result_file << endl;
-*/
-    typeid_file.close();
+   typeid_file.close();
     query_result_file.close();
 
 }
+
 
 void clear_result()
 {

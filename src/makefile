@@ -11,7 +11,7 @@ utility.o: utility.cpp utility.h
 run:
 	./ndTree --dimension 5 --index ../data/index_real --data ../data/cancer/kmer/all.kmer --boxquery ../data/cancer/query/boxquery --mode rebuild --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record --querydim 6
 mac:
-	lldb -- ndTree --dimension 5 --index ../data/index --data ../data/cancer/kmer/all.kmer --boxquery ../data/cancer/query/boxquery --mode rebuild   --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record  --querydim 6
+	lldb -- ndTree --dimension 16 --index ../data/index --data ../data/cancer/kmer/all.kmer --boxquery ../data/cancer/query/boxquery --mode rebuild   --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record  --querydim 18
 gdb:
 	gdb --args ndTree --dimension 5 --index ../data/index --data ../data/cancer/kmer/all.kmer --boxquery ../data/cancer/query/boxquery --mode rebuild   --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record  --querydim 6
 query:

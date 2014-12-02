@@ -97,7 +97,7 @@ const char* readid_filename = (globalRecordFilename+".readid").c_str();
 const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
 
 //readid_file.open(readid_filename,fstream::in | fstream::out);
-typeid_file_in.open(typeid_filename,fstream::in );
+typeid_file_in.open(typeid_filename,ios_base::binary | ios_base::in );
 /*
 if(readid_file.fail())
 {
@@ -153,7 +153,7 @@ for(int i=1; i<type_num+1; i++)
 }
 */
 
-typeid_file_out.open(typeid_filename, fstream::out);
+typeid_file_out.open(typeid_filename, ios_base::binary | ios_base::out);
 if(typeid_file_out.fail())
 {
     cout<<"can't open file .typeid"<<endl;
@@ -188,7 +188,6 @@ record_type[record_id][type_num] = typeid_global;
 record_type[record_id][0] = type_num;
 
 }
-
 
 Error_code Leaf_node::retrieve(Leaf_entry& query_data)
 {
@@ -252,7 +251,7 @@ void output_record(int record_id)
     fstream typeid_file, query_result_file;
     const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
     const char* query_result_filename = (globalBQFilename+ ".result").c_str();
-    typeid_file.open(typeid_filename, fstream::in | fstream::out);
+    typeid_file.open(typeid_filename, ios_base::binary | ios_base::in);
     query_result_file.open(query_result_filename, fstream::in | fstream::out| fstream::app);
 
     if(typeid_file.fail())
@@ -383,9 +382,9 @@ const char* record_filename = (globalRecordFilename).c_str();
 const char* readid_filename = (globalRecordFilename+".readid").c_str();
 const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
 
-record_file.open(record_filename,fstream::in | fstream::out);
+record_file.open(record_filename,ios_base::app);
 //readid_file.open(readid_filename,fstream::out);
-typeid_file.open(typeid_filename,fstream::out);
+typeid_file.open(typeid_filename, ios_base::binary | ios_base::out);
 if(record_file.fail())
 {
     cout<<"can't open file "<<record_filename<<endl;

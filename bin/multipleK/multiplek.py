@@ -64,7 +64,7 @@ for i in range(0, repeat):
 	
 	print "******run bond-tree ******\n"
 	os.chdir(WORKING_DIR + "src/")
-	cmd = './ndTree  --index ../data/index_real --dimension '+ klength  +' --data '+ '../data/cancer/kmer/all.kmer'+ ' --boxquery ../data/cancer/query/boxquery --skip 0 --newtree 1 --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record --querydim '+multiplek;
+	cmd = './ndTree  --index ../data/index --dimension '+ klength  +' --data '+ '../data/cancer/kmer/all.kmer'+ ' --boxquery ../data/cancer/query/boxquery --mode rebuild  --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record --querydim '+multiplek;
 	os.system(cmd)
 
 	print "***** analyse accuracy ******\n"
