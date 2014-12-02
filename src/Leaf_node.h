@@ -384,18 +384,20 @@ const char* readid_filename = (globalRecordFilename+".readid").c_str();
 const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
 
 record_file.open(record_filename,fstream::in | fstream::out);
-readid_file.open(readid_filename,fstream::app);
-typeid_file.open(typeid_filename,fstream::app);
+//readid_file.open(readid_filename,fstream::out);
+typeid_file.open(typeid_filename,fstream::out);
 if(record_file.fail())
 {
     cout<<"can't open file "<<record_filename<<endl;
     exit(1);
 }
+/*
 if(readid_file.fail())
 {
     cout<<"can't open file "<< readid_filename << endl;
     exit(1);
 }
+*/
 if(typeid_file.fail())
 {
     cout<<"can't open file "<< typeid_filename <<endl;
@@ -410,6 +412,7 @@ int type_array[256]={0};
 type_array[0] = 1;
 type_array[1] = typeid_global;
 //write (read id, type id) to record file
+typeid_file.seekp(record_count * sizeof(type_array), ios::beg);
 typeid_file.write((const char*)type_array, sizeof(type_array));
 //typeid_file << "1 " << typeid_global << endl;
 

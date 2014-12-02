@@ -534,10 +534,117 @@ for(int k=0; k<query_results_size; k++)
 
 
 //output the cancer types in the query result to file
+void output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
+{
+
+const int item_size = 256;
+int item_count = 0;
+Item item[item_size];
+for(int i=0; i<item_size; i++)
+{
+	item[i].id = -1;
+	item[i].count = 0;
+}
+
+    fstream typeid_file, query_result_file;
+    const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
+    const char* query_result_filename = (globalBQFilename+ ".result").c_str();
+    typeid_file.open(typeid_filename, fstream::in | fstream::out);
+    query_result_file.open(query_result_filename, fstream::in | fstream::out| fstream::app);
+
+    if(typeid_file.fail()) {
+	cout << "can't open file " << typeid_filename << endl;
+    }
+    if(query_result_file.fail())
+    {
+	cout<<"can't open file "<<query_result_filename<<endl;
+    }
+
+    int type_array[256]={0};
+    int output[256]={0};
+    output[0]=0;
+    int type_num;
+    int record_id;
+
+for(int m = 0; m <= maxShift; m++) {
+for(int k=0; k<query_results_size[m]; k++){
+    record_id = query_results[m][k].record;
+    typeid_file.seekg(record_id * sizeof(type_array), ios::beg);
+    typeid_file.read((char*)type_array, sizeof(type_array));
+    type_num = type_array[0];
+    int i;
+if(type_num > 255) {
+	cout << "type_num > 255 :"<<type_num<<endl;
+//	cout << query_K <<endl;
+	type_num = 255;
+}
+    for(i=1; i<=type_num; i++){
+	if(m==0) {
+	    if(item_count > item_size - 1) {
+		cout << "item overflow!" <<endl;
+		continue;
+	    }
+	    item[item_count].id = type_array[i];
+    	    item[item_count++].count = 0;
+	}else {
+	    for(int d = 0; d < item_count; d++) {
+		if(item[d].id == type_array[i]){
+		   item[d].count++;
+		   break;
+		}
+	    }
+	}
+
+    }
+}
+}
+
+    int valid_read_count = 0;
+
+    for(int i = 0; i < item_count; i++) {
+	if(item[i].count == maxShift){
+	    valid_read_count++;
+	}
+    }
+    if(valid_read_count > 0){
+	//query_result_file << valid_read_count<< " ";
+        for(int i = 0; i < item_count; i++) {
+	    if(item[i].count == maxShift){
+	        query_result_file << item[i].id << " ";
+	    }
+        }
+        query_result_file << endl;
+ 
+        int ct = 0;
+        while(true){
+ 	    if(queryK[ct] == '\0')
+		break;
+
+        query_result_file << queryK[ct++] << " ";
+        }
+        query_result_file << endl;
+
+   }
+/*
+    query_result_file << output[0]<<" ";
+    for(int i=1; i<=output[0]; i++)
+	query_result_file << output[i]<<" ";
+ 
+    query_result_file << endl;
+*/
+    typeid_file.close();
+    query_result_file.close();
+
+}
+
+
+
+//output the cancer types in the query result to file
 void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
 {
 
 const int item_size = 256;
+int item_count = 0;
 Item item[item_size];
 for(int i=0; i<item_size; i++)
 {
@@ -571,26 +678,21 @@ if(type_num > 255) {
 	type_num = 255;
 }
     for(i=1; i<=type_num; i++){
-	int p;
-	for(p=1; p<=output[0]; p++){
-	    if(record_type[record_id][i]==output[p])
-		break;
-	}
-	if(p>output[0]){
-	    output[0]++;
-	    output[output[0]]=record_type[record_id][i];
-  	}
- 
 	if(m==0) {
-	    item[i-1].id = record_type[record_id][i];
-    	    item[i-1].count = 0;
+	    if(item_count > item_size -1) {
+		continue;
+	    }
+	    item[item_count].id = record_type[record_id][i];
+    	    item[item_count++].count = 0;
+//	    cout << "m==0 : " << record_type[record_id][i] << endl;
 	}else {
-	    for(int d = 0; d < item_size; d++) {
+	    for(int d = 0; d < item_count; d++) {
 		if(item[d].id == record_type[record_id][i]){
 		   item[d].count++;
 		   break;
 		}
 	    }
+//	    cout << "m==1 : " << record_type[record_id][i] << endl;
 	}
 
     }
@@ -599,14 +701,14 @@ if(type_num > 255) {
 
     int valid_read_count = 0;
 
-    for(int i = 0; i <= item_size; i++) {
+    for(int i = 0; i < item_count; i++) {
 	if(item[i].count == maxShift){
 	    valid_read_count++;
 	}
     }
     if(valid_read_count > 0){
 	//query_result_file << valid_read_count<< " ";
-        for(int i = 0; i <= item_size; i++) {
+        for(int i = 0; i < item_count; i++) {
 	    if(item[i].count == maxShift){
 	        query_result_file << item[i].id << " ";
 	    }
@@ -713,6 +815,7 @@ clear_result();
         debug_boxQ_leaf_hit_for_all.push_back(debug_boxQ_leaf_hit_peak);
 
  	output_records_array(query_results, query_results_size, queryK, maxShift);
+ 	//output_records(query_results, query_results_size, queryK, maxShift);
 
     }
 
