@@ -3,8 +3,8 @@ import sys
 from optparse import OptionParser
 
 #Modify it to your working dir
-WORKING_DIR = "/Users/stevenliu/workspace/new_ndtree/multipleK/"
-#WORKING_DIR = "/home/stevenliu/workspace/bondtree/"
+#WORKING_DIR = "/Users/stevenliu/workspace/new_ndtree/multipleK/"
+WORKING_DIR = "/home/stevenliu/workspace/multipleK/"
 
 parser = OptionParser()
 parser.add_option('-n','--count', dest = "count", help = "number of random cancer dna")
@@ -64,6 +64,7 @@ for i in range(0, repeat):
 	
 	print "******run bond-tree ******\n"
 	os.chdir(WORKING_DIR + "src/")
+	os.system("make");
 	cmd = './ndTree  --index ../data/index --dimension '+ klength  +' --data '+ '../data/cancer/kmer/all.kmer'+ ' --boxquery ../data/cancer/query/boxquery --mode rebuild  --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record --querydim '+multiplek;
 	os.system(cmd)
 

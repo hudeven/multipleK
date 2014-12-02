@@ -378,9 +378,11 @@ Error_code Leaf_node::insert_new_data(Leaf_entry &new_data, double leaf_min_util
 
 //Find the last line of record file, record is the line number
 fstream record_file, readid_file, typeid_file;
-const char* record_filename = (globalRecordFilename).c_str();
-const char* readid_filename = (globalRecordFilename+".readid").c_str();
-const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
+string recordFilename = globalRecordFilename;
+const char* record_filename = (recordFilename).c_str();
+const char* readid_filename = (recordFilename.append(".readid")).c_str();
+recordFilename = globalRecordFilename;
+const char* typeid_filename = (recordFilename.append(".typeid")).c_str();
 
 record_file.open(record_filename,ios_base::app);
 //readid_file.open(readid_filename,fstream::out);
