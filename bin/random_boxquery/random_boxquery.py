@@ -50,7 +50,7 @@ for i in range(0, end - klength):
 		
         query_letter_file.write(str(i)+"\t"+kmer+'\n'+query_letter)
         query_file.write(query)
-        print str(i)+"\t"+aln_ref[i]+"\t"+aln_ref[i]+"\t"+kmer+"\n"
+        #print str(i)+"\t"+aln_ref[i]+"\t"+aln_ref[i]+"\t"+kmer+"\n"
 	
 query_file.close()
 query_letter_file.close();

@@ -1,10 +1,14 @@
 import os
 import sys
+import timeit
 from optparse import OptionParser
 
 #Modify it to your working dir
 #WORKING_DIR = "/Users/stevenliu/workspace/new_ndtree/multipleK/"
 WORKING_DIR = "/home/stevenliu/workspace/multipleK/"
+
+start = timeit.default_timer()
+
 
 parser = OptionParser()
 parser.add_option('-n','--count', dest = "count", help = "number of random cancer dna")
@@ -72,3 +76,9 @@ for i in range(0, repeat):
 	os.chdir(WORKING_DIR)
 	cmd = 'python bin/align_kmer_read/align_kmer_read.py --output data/cancer/query/analyse.txt --readsfile data/cancer/read/0_reads.fa --resultsfile data/cancer/query/boxquery.result'
 	os.system(cmd)
+
+
+stop = timeit.default_timer()
+print "***** running time *****\n"
+print stop - start 
+

@@ -94,9 +94,9 @@ int main(int argc, char *argv[])
 		ndtree.batchRandomBoxQuery(query_dim);
 	}
 	if(query_dim > DIM) {
-		cout << "big k search small k";
+		cout << "big k search small k" << endl;
 	} else if(query_dim < DIM) {
-		cout << "small k search big k";
+		cout << "small k search big k" << endl;
 	}
 	
     

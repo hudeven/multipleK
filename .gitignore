@@ -3,5 +3,10 @@ data/cancer/kmer/*.*
 data/cancer/query/*.*
 data/cancer/read/*.*
 data/cancer/result/*.*
+data/record.typeid
+data/record.readid
+data/test.fa
+data/index
+bin/multipleK/output
 src/*.o
 src/ndTree
