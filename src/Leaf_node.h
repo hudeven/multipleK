@@ -93,8 +93,10 @@ void update_record(int record_id)
 fstream typeid_file_in;
 fstream typeid_file_out;
 //fstream readid_file;
-const char* readid_filename = (globalRecordFilename+".readid").c_str();
-const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
+string tmp = globalRecordFilename;
+const char* readid_filename = (tmp.append(".readid")).c_str();
+tmp = globalRecordFilename;
+const char* typeid_filename = (tmp.append(".typeid")).c_str();
 
 //readid_file.open(readid_filename,fstream::in | fstream::out);
 typeid_file_in.open(typeid_filename,ios_base::binary | ios_base::in );
@@ -249,8 +251,10 @@ void output_record(int record_id)
 {
     record_id--;
     fstream typeid_file, query_result_file;
-    const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
-    const char* query_result_filename = (globalBQFilename+ ".result").c_str();
+    string tmp = globalRecordFilename;
+    const char* typeid_filename = (tmp.append(".typeid")).c_str();
+    tmp = globalBQFilename;
+    const char* query_result_filename = (tmp.append(".result")).c_str();
     typeid_file.open(typeid_filename, ios_base::binary | ios_base::in);
     query_result_file.open(query_result_filename, fstream::in | fstream::out| fstream::app);
 
