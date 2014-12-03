@@ -31,7 +31,7 @@ for i in range(0, repeat):
 	os.system(cmd)
  
 	print "******generate random box query******\n"
-	cmd = 'python bin/random_boxquery/random_boxquery.py --klength '+multiplek +' --output data/cancer/query/boxquery --reference data/test.fa'
+	cmd = 'python bin/random_boxquery/random_boxquery.py --num 1000  --klength '+multiplek +' --output data/cancer/query/boxquery --reference data/test.fa'
 	os.system(cmd)
 	
 	print "******run bond-tree ******\n"

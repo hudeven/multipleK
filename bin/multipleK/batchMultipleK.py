@@ -2,7 +2,7 @@ import os
 import sys
 
 start_klength = 4
-delta = 1
+delta = 4
 end_klength = 10
 
 for i in range(start_klength, end_klength):

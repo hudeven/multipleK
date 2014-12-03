@@ -1,1 +1,1 @@
-const int DIM = 6;
+const int DIM = 9;
