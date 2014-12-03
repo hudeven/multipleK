@@ -8,5 +8,6 @@ data/record.readid
 data/test.fa
 data/index
 bin/multipleK/output
+bin/multipleK/result/*_*
 src/*.o
 src/ndTree

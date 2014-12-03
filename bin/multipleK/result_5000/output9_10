@@ -1,0 +1,67 @@
+g++ -g -c main.cpp
+g++ -o ndTree main.o utility.o logClass.o 
+index file name is: ../data/index
+dimension is: 9
+data file name is ../data/cancer/kmer/all.kmer.
+box query file name is ../data/cancer/query/boxquery.
+rebuild mode
+aux file name is ../data/cancer/kmer/all.kmer.desc.
+record file name is ../data/record.
+query dimension is 10.
+data file../data/cancer/kmer/all.kmer
+create new index tree
+Duplicate data points encountered:193392
+DistinctDataPoints data points indexed:125017
+Total data points read:9223372036854775807
+
+Dsc dim: 9
+Cnt dim: 0
+Dir node size: 314
+Leaf node size: 204
+
+Dir node minimum utilization: 0.3
+Leaf node minimum utilization: 0.3
+
+Number of disk blocks: 982
+Number of vectors indexed: 125017
+Height: 3
+
+nodeSplitType 0
+DISK_BLOCK_SIZE 4096
+BestChild heuristics used for covered_area: 202408
+BestChild heuristics used for notcovered_overlap_enlarge: 0
+BestChild heuristics used for notcovered_area_enlarge:    0
+BestChild heuristics used for notcovered_area:    0
+
+Number of dir nodes: 4 (root is excluded)
+Number of leaf nodes: 977
+AVG number of entries in dir nodes: 244.25
+AVG number of entries in leaf nodes: 127.96
+
+Dir node utilization: 0.777866
+Leaf node utilization: 0.627255
+Utilization: 0.628198
+
+Box query file ../data/cancer/query/boxquery
+boxSize= RANDOM, AvG boxquery I/O: 14168.9
+ AvG matched data point found=3017.67
+ AvG leaf node accessed: 6998.38
+total boxquery I/O=1.41689e+06
+total matched data points=301767
+total matched records = 2.10334e+06
+ AvG leaf node hit peak: 3237.63
+big k search small k
+data/cancer/query/boxquery.result
+0.999062344485
+******generate reads from references
+******generate kmers from reads******
+
+******generate random box query******
+
+******run bond-tree ******
+
+***** analyse accuracy ******
+
+***** running time *****
+
+2209.09825897

@@ -3,6 +3,11 @@
 
 #include <stack>
 
+
+// Other program can modify dim.h and then compile whole program 
+//to change and apply kmer length
+#include "dim.h"
+
 // This file defines all the configuration parameters for the ND Tree program
 
 enum ENVIRONMENT {UNIX, WINDOWS};
@@ -14,7 +19,7 @@ typedef int ND_tree_record_count;
 typedef int ND_tree_record;
 const int MAX_LINE_IN_SOURCE_FILE = 1000000;
 
-const int DIM = 5;
+//const int DIM = 5;
 const int CNTDIM = 0; 
 
 //rest 2 are used as part of sourceData file name: sourceData32+10
