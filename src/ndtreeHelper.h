@@ -490,7 +490,7 @@ void output_records(Leaf_entry* query_results, int query_results_size)
 	cout<<"can't open file "<<query_result_filename<<endl;
     }
 
-    int type_array[256]={0};
+    int type_array[TYPE_ARRAY_SIZE]={0};
     int output[256]={0};
     output[0]=0;
     int type_num;
@@ -560,7 +560,7 @@ for(int i=0; i<item_size; i++)
 	cout<<"can't open file "<<query_result_filename<<endl;
     }
 
-    int type_array[256]={0};
+    int type_array[TYPE_ARRAY_SIZE]={0};
     int output[256]={0};
     output[0]=0;
     int type_num;
@@ -573,10 +573,10 @@ for(int k=0; k<query_results_size[m]; k++){
     typeid_file.read((char*)type_array, sizeof(type_array));
     type_num = type_array[0];
     int i;
-if(type_num > 255) {
-	cout << "type_num > 255 :"<<type_num<<endl;
+if(type_num > TYPE_ARRAY_SIZE - 1) {
+	cout << "type_num > " << TYPE_ARRAY_SIZE - 1 << " :"<<type_num<<endl;
 //	cout << query_K <<endl;
-	type_num = 255;
+	type_num = TYPE_ARRAY_SIZE - 1;
 }
     for(i=1; i<=type_num; i++){
 	if(m==0) {
@@ -660,7 +660,7 @@ for(int i=0; i<item_size; i++)
 	cout<<"can't open file "<<query_result_filename<<endl;
     }
 
-    int type_array[256]={0};
+    int type_array[TYPE_ARRAY_SIZE]={0};
     int output[256]={0};
     output[0]=0;
     int type_num;
@@ -671,10 +671,10 @@ for(int k=0; k<query_results_size[m]; k++){
     record_id = query_results[m][k].record;
     type_num = record_type[record_id][0];
     int i;
-if(type_num > 255) {
-	cout << "type_num > 255 :"<<type_num<<endl;
+if(type_num > TYPE_ARRAY_SIZE -1) {
+	cout << "type_num > "<< TYPE_ARRAY_SIZE -1 <<" :"<<type_num<<endl;
 //	cout << query_K <<endl;
-	type_num = 255;
+	type_num = TYPE_ARRAY_SIZE - 1;
 }
     for(i=1; i<=type_num; i++){
 	if(m==0) {

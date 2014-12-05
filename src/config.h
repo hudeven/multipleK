@@ -111,6 +111,7 @@ int debug_boxQ_leaf_hit_peak;
 int debug_height;
 
 const int MAX_K=255; //buffer size for multiple K related array
+const int TYPE_ARRAY_SIZE = 8192;
 
 logClass logO;
 #endif

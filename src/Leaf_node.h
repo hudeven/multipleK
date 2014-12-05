@@ -112,7 +112,7 @@ if(typeid_file_in.fail())
     cout<<"can't open file .typeid"<<endl;
     exit(1);
 }
-int type_array[256]={0};
+int type_array[TYPE_ARRAY_SIZE]={0};
 int type_num;
 typeid_file_in.seekg(record_id * sizeof(type_array), ios::beg);
 typeid_file_in.read((char*)type_array, sizeof(type_array));
@@ -267,7 +267,7 @@ void output_record(int record_id)
 	cout<<"can't open file "<<query_result_filename<<endl;
     }
 
-    int type_array[256]={0};
+    int type_array[TYPE_ARRAY_SIZE]={0};
     int type_num;
     typeid_file.seekg(record_id * sizeof(type_array));
     typeid_file.read((char*)type_array, sizeof(type_array));
@@ -413,7 +413,7 @@ static int record_count=-1;
 record_count++;
 record_file << record_count <<endl;
 
-int type_array[256]={0};
+int type_array[TYPE_ARRAY_SIZE]={0};
 type_array[0] = 1;
 type_array[1] = typeid_global;
 //write (read id, type id) to record file
