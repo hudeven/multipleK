@@ -1,0 +1,488 @@
+g++ -g -c main.cpp
+g++ -o ndTree main.o utility.o logClass.o 
+index file name is: ../data/index
+dimension is: 8
+data file name is ../data/cancer/kmer/all.kmer.
+box query file name is ../data/cancer/query/boxquery.
+rebuild mode
+aux file name is ../data/cancer/kmer/all.kmer.desc.
+record file name is ../data/record.
+query dimension is 9.
+data file../data/cancer/kmer/all.kmer
+create new index tree
+Duplicate data points encountered:4478488
+DistinctDataPoints data points indexed:65300
+Total data points read:9223372036854775807
+
+Dsc dim: 8
+Cnt dim: 0
+Dir node size: 341
+Leaf node size: 255
+
+Dir node minimum utilization: 0.3
+Leaf node minimum utilization: 0.3
+
+Number of disk blocks: 428
+Number of vectors indexed: 65300
+Height: 3
+
+nodeSplitType 0
+DISK_BLOCK_SIZE 4096
+BestChild heuristics used for covered_area: 65543
+BestChild heuristics used for notcovered_overlap_enlarge: 0
+BestChild heuristics used for notcovered_area_enlarge:    0
+BestChild heuristics used for notcovered_area:    0
+
+Number of dir nodes: 2 (root is excluded)
+Number of leaf nodes: 425
+AVG number of entries in dir nodes: 212.5
+AVG number of entries in leaf nodes: 153.647
+
+Dir node utilization: 0.623167
+Leaf node utilization: 0.602537
+Utilization: 0.602666
+
+Box query file ../data/cancer/query/boxquery
+type_num > 8191 :39895
+type_num > 8191 :40667
+type_num > 8191 :39340
+type_num > 8191 :17661
+type_num > 8191 :34656
+type_num > 8191 :31711
+type_num > 8191 :50266
+type_num > 8191 :33645
+type_num > 8191 :28400
+type_num > 8191 :27034
+type_num > 8191 :28573
+type_num > 8191 :30653
+type_num > 8191 :42241
+type_num > 8191 :38365
+type_num > 8191 :46719
+type_num > 8191 :43868
+type_num > 8191 :34755
+type_num > 8191 :49915
+type_num > 8191 :34831
+type_num > 8191 :32342
+type_num > 8191 :34349
+type_num > 8191 :47200
+type_num > 8191 :47793
+type_num > 8191 :41882
+type_num > 8191 :23536
+type_num > 8191 :44984
+type_num > 8191 :26719
+type_num > 8191 :27061
+type_num > 8191 :48475
+type_num > 8191 :45180
+type_num > 8191 :28305
+type_num > 8191 :32867
+type_num > 8191 :36520
+type_num > 8191 :39626
+type_num > 8191 :48910
+type_num > 8191 :42555
+type_num > 8191 :43022
+type_num > 8191 :27267
+type_num > 8191 :44608
+type_num > 8191 :37451
+type_num > 8191 :49066
+type_num > 8191 :25540
+type_num > 8191 :49245
+type_num > 8191 :34186
+type_num > 8191 :41101
+type_num > 8191 :39850
+type_num > 8191 :44466
+type_num > 8191 :47385
+type_num > 8191 :39218
+type_num > 8191 :40432
+type_num > 8191 :34243
+type_num > 8191 :19802
+type_num > 8191 :50135
+type_num > 8191 :46466
+type_num > 8191 :46657
+type_num > 8191 :44996
+type_num > 8191 :41682
+type_num > 8191 :43768
+type_num > 8191 :29400
+type_num > 8191 :39271
+type_num > 8191 :32030
+type_num > 8191 :49889
+type_num > 8191 :45048
+type_num > 8191 :28657
+type_num > 8191 :18686
+type_num > 8191 :48496
+type_num > 8191 :38714
+type_num > 8191 :22896
+type_num > 8191 :35905
+type_num > 8191 :35331
+type_num > 8191 :34825
+type_num > 8191 :47888
+type_num > 8191 :39492
+type_num > 8191 :33728
+type_num > 8191 :42831
+type_num > 8191 :36419
+type_num > 8191 :37908
+type_num > 8191 :44316
+type_num > 8191 :48149
+type_num > 8191 :43011
+type_num > 8191 :32735
+type_num > 8191 :35974
+type_num > 8191 :40924
+type_num > 8191 :34392
+type_num > 8191 :34152
+type_num > 8191 :26891
+type_num > 8191 :39894
+type_num > 8191 :33916
+type_num > 8191 :40618
+type_num > 8191 :48960
+type_num > 8191 :48087
+type_num > 8191 :43752
+type_num > 8191 :45660
+type_num > 8191 :21844
+type_num > 8191 :31328
+type_num > 8191 :26971
+type_num > 8191 :34392
+type_num > 8191 :41470
+type_num > 8191 :49804
+type_num > 8191 :40114
+type_num > 8191 :38564
+type_num > 8191 :37483
+type_num > 8191 :25483
+type_num > 8191 :36083
+type_num > 8191 :29062
+type_num > 8191 :18022
+type_num > 8191 :45862
+type_num > 8191 :30190
+type_num > 8191 :42786
+type_num > 8191 :49375
+type_num > 8191 :49914
+type_num > 8191 :40810
+type_num > 8191 :30303
+type_num > 8191 :39107
+type_num > 8191 :43553
+type_num > 8191 :49489
+type_num > 8191 :48875
+type_num > 8191 :44875
+type_num > 8191 :38173
+type_num > 8191 :34245
+type_num > 8191 :34693
+type_num > 8191 :34938
+type_num > 8191 :35770
+type_num > 8191 :22472
+type_num > 8191 :25512
+type_num > 8191 :44612
+type_num > 8191 :30770
+type_num > 8191 :40172
+type_num > 8191 :49704
+type_num > 8191 :38834
+type_num > 8191 :42295
+type_num > 8191 :31163
+type_num > 8191 :24158
+type_num > 8191 :35243
+type_num > 8191 :21708
+type_num > 8191 :18022
+type_num > 8191 :35682
+type_num > 8191 :21854
+type_num > 8191 :48945
+type_num > 8191 :19744
+type_num > 8191 :15452
+type_num > 8191 :49042
+type_num > 8191 :37872
+type_num > 8191 :39703
+type_num > 8191 :48410
+type_num > 8191 :49258
+type_num > 8191 :43972
+type_num > 8191 :17400
+type_num > 8191 :40216
+type_num > 8191 :47705
+type_num > 8191 :40711
+type_num > 8191 :24524
+type_num > 8191 :42434
+type_num > 8191 :30653
+type_num > 8191 :48407
+type_num > 8191 :30910
+type_num > 8191 :49486
+type_num > 8191 :48915
+type_num > 8191 :42386
+type_num > 8191 :37939
+type_num > 8191 :40571
+type_num > 8191 :38532
+type_num > 8191 :44191
+type_num > 8191 :46325
+type_num > 8191 :45891
+type_num > 8191 :33609
+type_num > 8191 :36762
+type_num > 8191 :22064
+type_num > 8191 :21298
+type_num > 8191 :29062
+type_num > 8191 :42179
+type_num > 8191 :30926
+type_num > 8191 :38373
+type_num > 8191 :18022
+type_num > 8191 :35682
+type_num > 8191 :34417
+type_num > 8191 :38836
+type_num > 8191 :40164
+type_num > 8191 :41550
+type_num > 8191 :30653
+type_num > 8191 :40255
+type_num > 8191 :37179
+type_num > 8191 :47141
+type_num > 8191 :32135
+type_num > 8191 :33389
+type_num > 8191 :34233
+type_num > 8191 :49658
+type_num > 8191 :38976
+type_num > 8191 :27034
+type_num > 8191 :23736
+type_num > 8191 :47154
+type_num > 8191 :44076
+type_num > 8191 :42331
+type_num > 8191 :28702
+type_num > 8191 :31581
+type_num > 8191 :36736
+type_num > 8191 :41480
+type_num > 8191 :33865
+type_num > 8191 :36472
+type_num > 8191 :21441
+type_num > 8191 :25401
+type_num > 8191 :44922
+type_num > 8191 :31055
+type_num > 8191 :45611
+type_num > 8191 :33642
+type_num > 8191 :36127
+type_num > 8191 :47712
+type_num > 8191 :44718
+type_num > 8191 :49411
+type_num > 8191 :47814
+type_num > 8191 :25408
+type_num > 8191 :30362
+type_num > 8191 :38296
+type_num > 8191 :43162
+type_num > 8191 :34064
+type_num > 8191 :45929
+type_num > 8191 :43781
+type_num > 8191 :36894
+type_num > 8191 :45611
+type_num > 8191 :40167
+type_num > 8191 :50367
+type_num > 8191 :32246
+type_num > 8191 :45786
+type_num > 8191 :29218
+type_num > 8191 :45307
+type_num > 8191 :28302
+type_num > 8191 :33893
+type_num > 8191 :30891
+type_num > 8191 :45459
+type_num > 8191 :39346
+type_num > 8191 :46186
+type_num > 8191 :40253
+type_num > 8191 :46593
+type_num > 8191 :33468
+type_num > 8191 :29049
+type_num > 8191 :43862
+type_num > 8191 :38585
+type_num > 8191 :40264
+type_num > 8191 :39370
+type_num > 8191 :43505
+type_num > 8191 :23740
+type_num > 8191 :45207
+type_num > 8191 :37968
+type_num > 8191 :39158
+type_num > 8191 :50106
+type_num > 8191 :42690
+type_num > 8191 :32494
+type_num > 8191 :44137
+type_num > 8191 :43410
+type_num > 8191 :40151
+type_num > 8191 :28646
+type_num > 8191 :37861
+type_num > 8191 :30246
+type_num > 8191 :50347
+type_num > 8191 :40989
+type_num > 8191 :43208
+type_num > 8191 :50080
+type_num > 8191 :46698
+type_num > 8191 :46896
+type_num > 8191 :37873
+type_num > 8191 :47329
+type_num > 8191 :18826
+type_num > 8191 :46874
+type_num > 8191 :49555
+type_num > 8191 :48189
+type_num > 8191 :48983
+type_num > 8191 :45411
+type_num > 8191 :37231
+type_num > 8191 :17443
+type_num > 8191 :29918
+type_num > 8191 :47202
+type_num > 8191 :37181
+type_num > 8191 :44631
+type_num > 8191 :33328
+type_num > 8191 :39026
+type_num > 8191 :32301
+type_num > 8191 :41335
+type_num > 8191 :32867
+type_num > 8191 :46684
+type_num > 8191 :45769
+type_num > 8191 :41565
+type_num > 8191 :44598
+type_num > 8191 :42382
+type_num > 8191 :44155
+type_num > 8191 :33350
+type_num > 8191 :29091
+type_num > 8191 :49936
+type_num > 8191 :31803
+type_num > 8191 :37653
+type_num > 8191 :33477
+type_num > 8191 :41762
+type_num > 8191 :38936
+type_num > 8191 :34560
+type_num > 8191 :49380
+type_num > 8191 :37345
+type_num > 8191 :27987
+type_num > 8191 :45548
+type_num > 8191 :49466
+type_num > 8191 :32143
+type_num > 8191 :44720
+type_num > 8191 :35161
+type_num > 8191 :28919
+type_num > 8191 :28874
+type_num > 8191 :48069
+type_num > 8191 :39705
+type_num > 8191 :28979
+type_num > 8191 :41319
+type_num > 8191 :24764
+type_num > 8191 :37702
+type_num > 8191 :44658
+type_num > 8191 :39533
+type_num > 8191 :20232
+type_num > 8191 :44922
+type_num > 8191 :50019
+type_num > 8191 :31620
+type_num > 8191 :36793
+type_num > 8191 :23866
+type_num > 8191 :30011
+type_num > 8191 :46405
+type_num > 8191 :43873
+type_num > 8191 :30455
+type_num > 8191 :49573
+type_num > 8191 :25059
+type_num > 8191 :48502
+type_num > 8191 :48338
+type_num > 8191 :30340
+type_num > 8191 :45618
+type_num > 8191 :31380
+type_num > 8191 :37955
+type_num > 8191 :44796
+type_num > 8191 :44989
+type_num > 8191 :37059
+type_num > 8191 :43100
+type_num > 8191 :33794
+type_num > 8191 :46684
+type_num > 8191 :44807
+type_num > 8191 :34139
+type_num > 8191 :29226
+type_num > 8191 :32109
+type_num > 8191 :48695
+type_num > 8191 :35246
+type_num > 8191 :17443
+type_num > 8191 :30656
+type_num > 8191 :36258
+type_num > 8191 :40073
+type_num > 8191 :44473
+type_num > 8191 :33425
+type_num > 8191 :43388
+type_num > 8191 :43172
+type_num > 8191 :40818
+type_num > 8191 :50333
+type_num > 8191 :42997
+type_num > 8191 :47373
+type_num > 8191 :35604
+type_num > 8191 :35791
+type_num > 8191 :46996
+type_num > 8191 :10979
+type_num > 8191 :32829
+type_num > 8191 :47849
+type_num > 8191 :33918
+type_num > 8191 :35177
+type_num > 8191 :27906
+type_num > 8191 :31247
+type_num > 8191 :43583
+type_num > 8191 :50367
+type_num > 8191 :40774
+type_num > 8191 :46155
+type_num > 8191 :46983
+type_num > 8191 :37829
+type_num > 8191 :46618
+type_num > 8191 :26418
+type_num > 8191 :31224
+type_num > 8191 :28881
+type_num > 8191 :20648
+type_num > 8191 :37738
+type_num > 8191 :39485
+type_num > 8191 :27441
+type_num > 8191 :18444
+type_num > 8191 :19311
+type_num > 8191 :41482
+type_num > 8191 :42340
+type_num > 8191 :40406
+type_num > 8191 :31121
+type_num > 8191 :49796
+type_num > 8191 :39886
+type_num > 8191 :37832
+type_num > 8191 :47167
+type_num > 8191 :46996
+type_num > 8191 :39485
+type_num > 8191 :39636
+type_num > 8191 :48620
+type_num > 8191 :25122
+type_num > 8191 :42694
+type_num > 8191 :37268
+type_num > 8191 :31519
+type_num > 8191 :42147
+type_num > 8191 :27743
+type_num > 8191 :34366
+type_num > 8191 :48798
+type_num > 8191 :29213
+type_num > 8191 :46842
+type_num > 8191 :42257
+type_num > 8191 :36692
+type_num > 8191 :38331
+type_num > 8191 :37797
+type_num > 8191 :47811
+type_num > 8191 :42782
+type_num > 8191 :47546
+type_num > 8191 :37188
+type_num > 8191 :44692
+type_num > 8191 :44505
+type_num > 8191 :40836
+type_num > 8191 :29226
+type_num > 8191 :26116
+type_num > 8191 :43501
+type_num > 8191 :18598
+type_num > 8191 :40989
+type_num > 8191 :46073
+type_num > 8191 :30455
+type_num > 8191 :49446
+type_num > 8191 :26620
+boxSize= RANDOM, AvG boxquery I/O: 389.67
+ AvG matched data point found=9.99
+ AvG leaf node accessed: 20
+total boxquery I/O=38967
+total matched data points=999
+total matched records = 221671
+ AvG leaf node hit peak: 10
+big k search small k
+data/cancer/query/boxquery.result
+0.801400267061
+******generate reads from references
+******generate kmers from reads******
+
+******generate random box query******
+
+******run bond-tree ******
+
+***** analyse accuracy ******
+
+***** running time *****
+
+12186.3819141

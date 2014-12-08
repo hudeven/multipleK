@@ -1,0 +1,4 @@
+*.kmer
+*.kmer.id
+*.kmer.desc
+*.kmer.name
