@@ -90,8 +90,7 @@ void moveToLine(fstream file, int lineNum)
 
 void update_record(int record_id)
 {
-fstream typeid_file_in;
-fstream typeid_file_out;
+fstream typeid_file;
 //fstream readid_file;
 string tmp = globalRecordFilename;
 const char* readid_filename = (tmp.append(".readid")).c_str();
@@ -99,7 +98,7 @@ tmp = globalRecordFilename;
 const char* typeid_filename = (tmp.append(".typeid")).c_str();
 
 //readid_file.open(readid_filename,fstream::in | fstream::out);
-typeid_file_in.open(typeid_filename,ios_base::binary | ios_base::in );
+typeid_file.open(typeid_filename,ios_base::binary | ios_base::in | ios_base::out);
 /*
 if(readid_file.fail())
 {
@@ -107,16 +106,15 @@ if(readid_file.fail())
     exit(1);
 }
 */
-if(typeid_file_in.fail())
+if(typeid_file.fail())
 {
     cout<<"can't open file .typeid"<<endl;
     exit(1);
 }
 int type_array[TYPE_ARRAY_SIZE]={0};
 int type_num;
-typeid_file_in.seekg(record_id * sizeof(type_array), ios::beg);
-typeid_file_in.read((char*)type_array, sizeof(type_array));
-typeid_file_in.close();
+typeid_file.seekg(record_id * sizeof(type_array), ios::beg);
+typeid_file.read((char*)type_array, sizeof(type_array));
 
 type_num = type_array[0];
 int i;
@@ -155,19 +153,12 @@ for(int i=1; i<type_num+1; i++)
 }
 */
 
-typeid_file_out.open(typeid_filename, ios_base::binary | ios_base::out);
-if(typeid_file_out.fail())
-{
-    cout<<"can't open file .typeid"<<endl;
-    exit(1);
-}
+typeid_file.seekp(record_id * sizeof(type_array), ios::beg);
 
-typeid_file_out.seekp(record_id * sizeof(type_array), ios::beg);
-
-typeid_file_out.write((char*)type_array, sizeof(type_array));
+typeid_file.write((char*)type_array, sizeof(type_array));
 
 //readid_file.close();
-typeid_file_out.close();
+typeid_file.close();
 
 }
 
@@ -255,7 +246,7 @@ void output_record(int record_id)
     const char* typeid_filename = (tmp.append(".typeid")).c_str();
     tmp = globalBQFilename;
     const char* query_result_filename = (tmp.append(".result")).c_str();
-    typeid_file.open(typeid_filename, ios_base::binary | ios_base::in);
+    typeid_file.open(typeid_filename, ios_base::binary | ios_base::in | ios_base::out);
     query_result_file.open(query_result_filename, fstream::in | fstream::out| fstream::app);
 
     if(typeid_file.fail())
@@ -390,7 +381,7 @@ const char* typeid_filename = (recordFilename.append(".typeid")).c_str();
 
 record_file.open(record_filename,ios_base::app);
 //readid_file.open(readid_filename,fstream::out);
-typeid_file.open(typeid_filename, ios_base::binary | ios_base::out);
+typeid_file.open(typeid_filename, ios_base::binary | ios_base::out | ios_base::in);
 if(record_file.fail())
 {
     cout<<"can't open file "<<record_filename<<endl;
@@ -423,7 +414,7 @@ typeid_file.write((const char*)type_array, sizeof(type_array));
 
 new_data.record = record_count;
 record_file.close();
-readid_file.close();
+//readid_file.close();
 typeid_file.close();
 
 //array record_type[][] for test

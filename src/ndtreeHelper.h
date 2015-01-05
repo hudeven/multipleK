@@ -279,8 +279,8 @@ fstream typeid_file;
 fstream readid_file;
 const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
 const char* readid_filename = (globalRecordFilename+".readid").c_str();
-typeid_file.open(typeid_filename, ios::binary | ios::out);
-readid_file.open(readid_filename, ios::binary | ios::out);
+typeid_file.open(typeid_filename, ios::binary | ios::out | ios::trunc);
+readid_file.open(readid_filename, ios::binary | ios::out | ios::trunc);
 if(typeid_file.fail())
 {
     cout<<"can't open file "<< typeid_filename <<endl;
@@ -807,8 +807,8 @@ clear_result();
         total_results_size += query_results_size[0];
         debug_boxQ_leaf_hit_for_all.push_back(debug_boxQ_leaf_hit_peak);
 
- 	output_records_array(query_results, query_results_size, queryK, maxShift);
- 	//output_records(query_results, query_results_size, queryK, maxShift);
+ 	//output_records_array(query_results, query_results_size, queryK, maxShift);
+ 	output_records(query_results, query_results_size, queryK, maxShift);
 
     }
 

@@ -1,1 +1,1 @@
-python multiplek.py --repeat 1 --klength 6 --multiplek 7 > output
+python multiplek.py --repeat 1 --klength 5 --multiplek 6 > output
