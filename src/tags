@@ -11,11 +11,9 @@ BOX_SIZE_START_AT	config.h	/^const int BOX_SIZE_START_AT = 1;$/;"	v
 BOX_SIZE_STEP	config.h	/^const int BOX_SIZE_STEP = 1;$/;"	v
 BOX_SIZE_STOP_BEFORE	config.h	/^const int BOX_SIZE_STOP_BEFORE = A[0];$/;"	v
 BYTES_PER_DIM_IN_DMBR	config.h	/^const int BYTES_PER_DIM_IN_DMBR = ((ALPHA%8)==0)?(ALPHA\/8):(ALPHA\/8+1);$/;"	v
-CC	makefile	/^CC=g++$/;"	m
-CFLAGS	makefile	/^CFLAGS=-g -c$/;"	m
 CNTDIM	config.h	/^const int CNTDIM = 0; $/;"	v
 CONFIG_H	config.h	2;"	d
-DIM	config.h	/^const int DIM = 10;$/;"	v
+DIM	dim.h	/^const int DIM = 5;/;"	v
 DIR_ENTRY_H	Dir_entry.h	2;"	d
 DIR_NODE_H	Dir_node.h	2;"	d
 DIR_NODE_OVERHEAD	Dir_node.h	/^const int DIR_NODE_OVERHEAD = 4; \/\/ int count$/;"	v
@@ -35,6 +33,7 @@ ENVIRONMENT	config.h	/^enum ENVIRONMENT {UNIX, WINDOWS};$/;"	g
 Error_code	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	g
 GotoLine	Leaf_node.h	/^std::fstream& GotoLine(std::fstream& file, unsigned int num){$/;"	f
 INT_INF	utility.h	/^const int INT_INF = numeric_limits<int> :: max( );$/;"	v
+Item	ndtreeHelper.h	/^class Item$/;"	c
 Knapsack_recursive_forNDTree	utility.cpp	/^vector<int> Knapsack_recursive_forNDTree($/;"	f
 LEAF_ENTRY_H	Leaf_entry.h	4;"	d
 LEAF_NODE_H	Leaf_node.h	2;"	d
@@ -85,7 +84,7 @@ aux_tree_node	Dir_node.h	/^   struct aux_tree_node{$/;"	s	class:Dir_node
 available_block_numbers	ND_tree.h	/^   stack<unsigned int> available_block_numbers; \/\/ The block numbers (<= max_block_number) of the nodes being deleted and become available again$/;"	m	class:ND_tree
 batchBoxQuery	ndtreeHelper.h	/^void batchBoxQuery()$/;"	f	class:ndtreeHelper
 batchBuild_with_duplicate	ndtreeHelper.h	/^void batchBuild_with_duplicate(long  size)$/;"	f	class:ndtreeHelper
-batchBuild_with_duplicate_record	ndtreeHelper.h	/^void batchBuild_with_duplicate_record(long  size)$/;"	f	class:ndtreeHelper
+batchBuild_with_duplicate_record	ndtreeHelper.h	/^void batchBuild_with_duplicate_record(bool newtree, long  size)$/;"	f	class:ndtreeHelper
 batchGrow_with_duplicate	ndtreeHelper.h	/^void batchGrow_with_duplicate(long skipSize, long sizeGrowTo)$/;"	f	class:ndtreeHelper
 batchRandomBoxQuery	ndtreeHelper.h	/^void batchRandomBoxQuery(int K)$/;"	f	class:ndtreeHelper
 batchRangeQuery	ndtreeHelper.h	/^void batchRangeQuery(    )$/;"	f	class:ndtreeHelper
@@ -112,6 +111,7 @@ cnt	Dir_node.h	/^      int cnt; \/\/ number of children$/;"	m	struct:Dir_node::a
 cntkey	Leaf_entry.h	/^    float cntkey[CNTDIM]; \/\/ Continuous dimensions. A string of CNTDIM floating point values. $/;"	m	struct:Leaf_entry
 count	Dir_node.h	/^   int count; \/\/ curent number of entries in the node$/;"	m	class:Dir_node
 count	Leaf_node.h	/^    int count; \/\/ curent number of entries in the node$/;"	m	class:Leaf_node
+count	ndtreeHelper.h	/^	int count;$/;"	m	class:Item
 create_DMBR	Leaf_node.h	/^void Leaf_node::create_DMBR(Leaf_entry* leaf_entries, int num_of_leaf_entries, unsigned char* new_DMBR)$/;"	f	class:Leaf_node
 create_DMBR	Leaf_node.h	/^void Leaf_node::create_DMBR(Leaf_entry* leaf_entries, int* indices_of_leaf_entries_used, int num_of_leaf_entries_used, unsigned char* new_DMBR){$/;"	f	class:Leaf_node
 create_empty_tree	ND_tree.h	/^void ND_tree::create_empty_tree($/;"	f	class:ND_tree
@@ -130,6 +130,7 @@ entriesVec	Dir_node.h	/^	vector<Dir_entry> entriesVec;$/;"	m	class:Dir_node
 entry_set	Dir_node.h	/^      int *entry_set; \/\/ entries (indices) whose component set corresponds to the set_entry$/;"	m	struct:Dir_node::set_entry
 entry_set	Leaf_node.h	/^        int entry_set[LEAF_NODE_SIZE + 1]; \/\/ entries (indices) whose letter corresponds to the letter_entry$/;"	m	struct:Leaf_node::letter_entry
 exact_query_use_link	ND_tree.h	/^Error_code ND_tree::exact_query_use_link(Leaf_entry &query_data, int &number_of_io){$/;"	f	class:ND_tree
+f	test.py	/^f = open("dim.h", 'w')$/;"	v
 fail	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	e	enum:Error_code
 find_best_child	Dir_node.h	/^void Dir_node::find_best_child(const Leaf_entry &new_data, int* alphabet_sizes, unsigned int& child_block_no, int& child_index){$/;"	f	class:Dir_node
 find_covering_entries	Dir_node.h	/^void Dir_node::find_covering_entries(const Leaf_entry &query_data, vector<int> &covered_block_numbers){$/;"	f	class:Dir_node
@@ -152,6 +153,7 @@ get_node_entry	Leaf_node.h	/^void Leaf_node::get_node_entry(int index, Leaf_entr
 get_single_DMBR	Leaf_node.h	/^void Leaf_node::get_single_DMBR(unsigned char* cur_DMBR,int index)$/;"	f	class:Leaf_node
 get_tree_size	ND_tree.h	/^unsigned int ND_tree::get_tree_size(){$/;"	f	class:ND_tree
 height	ND_tree.h	/^   int height; \/\/ The height of the tree$/;"	m	class:ND_tree
+id	ndtreeHelper.h	/^	int id;$/;"	m	class:Item
 index	Dir_node.h	/^      int index; \/\/ If set, index of a set_entry.  If roots, index in the aux_tree$/;"	m	struct:Dir_node::mixed_list_entry
 insert_new_data	Leaf_node.h	/^Error_code Leaf_node::insert_new_data(Leaf_entry &new_data, double leaf_min_util, int* alphabet_sizes, unsigned char* cur_DMBR, Leaf_node*& new_leaf_node, unsigned char* new_DMBR)$/;"	f	class:Leaf_node
 insert_new_entry	Dir_node.h	/^Error_code Dir_node::insert_new_entry(unsigned int new_entry_block_no, unsigned char* new_entry_DMBR, double dir_min_util, int *alphabet_sizes, unsigned char* cur_DMBR, Dir_node*& new_dir_node, unsigned char* new_DMBR){$/;"	f	class:Dir_node
@@ -190,7 +192,7 @@ lpad	utility.cpp	/^string lpad(string s, unsigned int str_len, string pad_s){$/;
 main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
 makeBoxQueryData	ndtreeHelper.h	/^Dir_entry makeBoxQueryData(ifstream & query_file)$/;"	f	class:ndtreeHelper
 makeBoxQueryData_for_linearScan	ndtreeHelper.h	/^vector< vector<int> >  makeBoxQueryData_for_linearScan(ifstream & query_file)$/;"	f	class:ndtreeHelper
-makeRandomBoxQueryData	ndtreeHelper.h	/^Dir_entry* makeRandomBoxQueryData(ifstream & query_file, int K)$/;"	f	class:ndtreeHelper
+makeRandomBoxQueryData	ndtreeHelper.h	/^Dir_entry* makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[])$/;"	f	class:ndtreeHelper
 max_block_number	ND_tree.h	/^   unsigned int max_block_number; \/\/ The maximal block number now used in the tree, always increasing, start from 0$/;"	m	class:ND_tree
 mixed_list_entry	Dir_node.h	/^   struct mixed_list_entry{$/;"	s	class:Dir_node
 moveToLine	Leaf_node.h	/^void moveToLine(fstream file, int lineNum)$/;"	f
@@ -207,8 +209,9 @@ num_of_sets	Dir_node.h	/^	  int num_of_sets;$/;"	m	struct:Dir_node::aux_tree_nod
 operator =	Dir_node.h	/^	  aux_tree_node& operator=(const aux_tree_node& orig) {$/;"	f	struct:Dir_node::aux_tree_node
 operator =	Dir_node.h	/^	  set_entry& operator=(const set_entry& orig) {$/;"	f	struct:Dir_node::set_entry
 output_record	Leaf_node.h	/^void output_record(int record_id)$/;"	f
+output_records	ndtreeHelper.h	/^void output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)$/;"	f	class:ndtreeHelper
 output_records	ndtreeHelper.h	/^void output_records(Leaf_entry* query_results, int query_results_size)$/;"	f	class:ndtreeHelper
-output_records_array	ndtreeHelper.h	/^void output_records_array(Leaf_entry* query_results, int query_results_size)$/;"	f	class:ndtreeHelper
+output_records_array	ndtreeHelper.h	/^void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)$/;"	f	class:ndtreeHelper
 overflow	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	e	enum:Error_code
 parent	Dir_node.h	/^      int parent; \/\/ index of parent$/;"	m	struct:Dir_node::aux_tree_node
 print_OneEntry_OnOneDscDim	Dir_node.h	/^void Dir_node::print_OneEntry_OnOneDscDim( Dir_entry*  oneEntry,int entryIndex, int dimNum,int* alphabet_sizes )$/;"	f	class:Dir_node
@@ -270,8 +273,8 @@ string2binary	utility.cpp	/^void string2binary(const string &origString, unsigne
 string_to_int	logClass.cpp	/^int logClass::string_to_int(string s){$/;"	f	class:logClass
 string_to_int	utility.cpp	/^int string_to_int(string s){$/;"	f
 success	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	e	enum:Error_code
-tmp_DMBR_bit_lut	ndtreeHelper.h	/^int tmp_DMBR_bit_lut[MAX_K][MAX_ALPHABET_SIZE]; \/\/changed to support mutiple K$/;"	m	class:ndtreeHelper
-tmp_DMBR_byte_lut	ndtreeHelper.h	/^int tmp_DMBR_byte_lut[MAX_K][MAX_ALPHABET_SIZE]; \/\/changed to support multiple K $/;"	m	class:ndtreeHelper
+tmp_DMBR_bit_lut	ndtreeHelper.h	/^int tmp_DMBR_bit_lut[DIM][MAX_ALPHABET_SIZE]; \/\/ Given a dim and a letter, store the coresponding bit in DMBR$/;"	m	class:ndtreeHelper
+tmp_DMBR_byte_lut	ndtreeHelper.h	/^int tmp_DMBR_byte_lut[DIM][MAX_ALPHABET_SIZE]; \/\/ Given a dim and a letter, store the coresponding byte in DMBR$/;"	m	class:ndtreeHelper
 tree_size	ND_tree.h	/^   unsigned int tree_size; \/\/ Total number of entries inserted into the tree$/;"	m	class:ND_tree
 underflow	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	e	enum:Error_code
 update_record	Leaf_node.h	/^void update_record(int record_id)$/;"	f

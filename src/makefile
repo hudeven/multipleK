@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-g -c
+CFLAGS=-g -c 
 ndTree: main.o logClass.o utility.o 
 	$(CC) -o ndTree main.o utility.o logClass.o 
 main.o: main.cpp logClass.h ndtreeHelper.h ndtreeHelper.h config.h Dir_entry.h Dir_node.h Leaf_entry.h Leaf_node.h logClass.h ND_tree.h Node.h utility.h dim.h
@@ -13,7 +13,9 @@ run:
 mac:
 	lldb -- ndTree --dimension 16 --index ../data/index --data ../data/cancer/kmer/all.kmer --boxquery ../data/cancer/query/boxquery --mode rebuild   --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record  --querydim 18
 gdb:
-	gdb --args ndTree --dimension 5 --index ../data/index --data ../data/cancer/kmer/all.kmer --boxquery ../data/cancer/query/boxquery --mode rebuild   --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record  --querydim 6
+	gdb --args ndTree --dimension 6 --index ../data/index.bin --data ../data/cancer/kmer/all.kmer --boxquery ../data/cancer/query/boxquery --mode rebuild   --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record  --querydim 7
+simplegdb:
+	gdb --args ndTree --dimension 6 --mode rebuild  --querydim 7 --boxquery ../data/cancer/query/boxquery 
 query:
 	gdb --args ndTree --dimension 5 --index ../data/index --boxquery ../data/cancer/query/boxquery --record ../data/record  --querydim 6
 clean:

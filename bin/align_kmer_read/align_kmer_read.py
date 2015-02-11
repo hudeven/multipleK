@@ -74,9 +74,13 @@ while i<end:
         else:
 	    outputStr += "Found "+kmerStr+" in \n"+readStr+"\n";
 	    fcount += 1;
-        
-print 1.0*fcount / (fcount+nfcount);
-outputStr += str(1.0*fcount / (fcount+nfcount));
-output_file.write(outputStr);
-output_file.close();
-result_file.close();
+
+total_count = fcount + nfcount;
+if total_count == 0:
+    print "total count is 0"
+else:
+    print 1.0*fcount / (fcount+nfcount);
+    outputStr += str(1.0*fcount / (fcount+nfcount));
+    output_file.write(outputStr);
+    output_file.close();
+    result_file.close();

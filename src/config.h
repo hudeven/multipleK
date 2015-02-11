@@ -98,12 +98,12 @@ int typeid_global;
 
 int record_type[999999][128]={0};
 
-string globalRQFilename = "rangequeryAll.txt";
-string globalDataFilename = "../data/data_random";
-string globalIndexFilename = "../data/index";
-string globalAuxFilename = "../data/aux";
+string globalRQFilename = "../data/rangequeryAll.txt";
+string globalDataFilename = "../data/data.txt";
+string globalIndexFilename = "../data/index.bin";
+string globalAuxFilename = "../data/aux.txt";
 string globalRecordFilename = "../data/record";
-string globalBQFilename = "../data/box_query_random";
+string globalBQFilename = "../data/boxquery";
 
 int debug_boxQ_leaf_accessed;
 int debug_boxQ_leaf_hit;

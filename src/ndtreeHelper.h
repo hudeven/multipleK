@@ -479,7 +479,7 @@ void output_records(Leaf_entry* query_results, int query_results_size)
     const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
     const char* query_result_filename = (globalBQFilename+ ".result").c_str();
     typeid_file.open(typeid_filename, ios_base::binary | ios_base::in);
-    query_result_file.open(query_result_filename, fstream::in | fstream::out| fstream::app);
+    query_result_file.open(query_result_filename, ios_base::app);
 
     if(typeid_file.fail())
     {
@@ -536,6 +536,9 @@ for(int k=0; k<query_results_size; k++)
 //output the cancer types in the query result to file
 void output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
 {
+  string typeid_filename = (globalRecordFilename+".typeid").c_str();
+  string query_result_filename = (globalBQFilename +".result").c_str();
+
 
 const int item_size = 256;
 int item_count = 0;
@@ -547,17 +550,16 @@ for(int i=0; i<item_size; i++)
 }
 
     fstream typeid_file, query_result_file;
-    const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
-    const char* query_result_filename = (globalBQFilename+ ".result").c_str();
-    typeid_file.open(typeid_filename, ios_base::binary | ios_base::in);
-    query_result_file.open(query_result_filename, fstream::in | fstream::out| fstream::app);
+  
+    typeid_file.open(typeid_filename.c_str(), ios_base::binary | ios_base::in);
+    query_result_file.open(query_result_filename.c_str(), fstream::in | fstream::out| fstream::app);
 
     if(typeid_file.fail()) {
-	cout << "can't open file " << typeid_filename << endl;
+	cout << "can't open file typeid " << typeid_filename << endl;
     }
     if(query_result_file.fail())
     {
-	cout<<"can't open file "<<query_result_filename<<endl;
+	cout<<"can't open file query result"<<query_result_filename<<endl;
     }
 
     int type_array[TYPE_ARRAY_SIZE]={0};
