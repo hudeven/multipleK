@@ -6,7 +6,7 @@
 
 const int MAX_ALPHABET_SIZE = 255; // Define the maximum length of the ND-tree file name
 const int MAX_DMBR_DIM_SIZE = (MAX_ALPHABET_SIZE - 1) / BITS_PER_BYTE + 1; // in bytes, max bitmap size for one dimension of DMBR
-//extern logClass logO;
+extern logClass logO;
 
 //extern const int DIR_NODE_OVERHEAD;
 

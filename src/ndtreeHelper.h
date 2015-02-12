@@ -1,5 +1,10 @@
-#ifndef NDTREE_HELPER_CPP
-#define NDTREE_HELPER_CPP
+#ifndef NDTREE_HELPER_H
+#define NDTREE_HELPER_H
+
+// for fasta parser and zlib
+#include <zlib.h>
+#include "kseq.h"
+KSEQ_INIT(gzFile, gzread)
 
 #include "Dir_entry.h"
 #include "ND_tree.h"
@@ -45,13 +50,46 @@ int debug_height;
 
 int duplicateDataPoints; //used in batchBuild(...), batchGrow(...)
 
-ndtreeHelper() {
+ndtreeHelper();
+void LocalDMBRInfoCalculation();
+Dir_entry* makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[]);
+Dir_entry makeBoxQueryData(ifstream & query_file);
+void batchGrow_with_duplicate(long skipSize, long sizeGrowTo);
+//this one only reads data file up to the give number of data points 
+void batchBuild_with_duplicate(long  size);
+void clear_record();
+//Insert kmers with a link to the record(readid,annotation)
+void batchBuild_with_duplicate_record(bool newtree, long  size);
+void batchRangeQuery();
+//output the cancer types in the query result to file
+void output_records(Leaf_entry* query_results, int query_results_size);
+//output the cancer types in the query result to file
+void output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
+//output the cancer types in the query result to file
+void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
+
+void clear_result();
+void batchRandomBoxQuery(int K);
+void batchBoxQuery();
+vector< vector<int> >  makeBoxQueryData_for_linearScan(ifstream & query_file);
+//result of this LinearScanBoxQuery should be 
+void LinearScanBoxQuery(int dataNUM);
+
+void display_help();
+
+};
+
+
+
+
+
+ndtreeHelper::ndtreeHelper() {
 	debug_boxQ_leaf_accessed=0;
  	debug_boxQ_leaf_hit=0;
  	debug_boxQ_leaf_hit_peak=0;
 }
 
-void LocalDMBRInfoCalculation()
+void ndtreeHelper::LocalDMBRInfoCalculation()
 {
     int tmp_byte = 0;
     int i, j;
@@ -76,7 +114,7 @@ void LocalDMBRInfoCalculation()
 
 }
 
-Dir_entry* makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[])
+Dir_entry* ndtreeHelper::makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[])
 {
     int queryK_length = 0;
     Dir_entry* dirEntry = new Dir_entry[MAX_K];
@@ -124,7 +162,7 @@ Dir_entry* makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[])
     return dirEntry;
 }
 
-Dir_entry makeBoxQueryData(ifstream & query_file)
+Dir_entry ndtreeHelper::makeBoxQueryData(ifstream & query_file)
 {
     Dir_entry dirEntry;
 
@@ -154,7 +192,7 @@ Dir_entry makeBoxQueryData(ifstream & query_file)
     return dirEntry;
 }
 
-void batchGrow_with_duplicate(long skipSize, long sizeGrowTo)
+void ndtreeHelper::batchGrow_with_duplicate(long skipSize, long sizeGrowTo)
 {
     ND_tree ndt;
     Leaf_entry new_data/*, query_data, db_data*/;
@@ -215,7 +253,7 @@ logO.log2File("----------");logO.log2File(i);logO.log2File("\n");
 }
 
 //this one only reads data file up to the give number of data points 
-void batchBuild_with_duplicate(long  size)
+void ndtreeHelper::batchBuild_with_duplicate(long  size)
 {
     duplicateDataPoints=0;
     ND_tree ndt;
@@ -273,7 +311,7 @@ void batchBuild_with_duplicate(long  size)
 }
 
 
-void clear_record()
+void ndtreeHelper::clear_record()
 {
 fstream typeid_file;
 fstream readid_file;
@@ -297,8 +335,37 @@ typeid_file.close();
 readid_file.close();
 
 }
+
+
+int letter2num(char letter){
+    int num = 0;
+    switch(letter){
+	case 'A':
+	    num = 0;
+	    break;
+	case 'T':
+	    num = 1;
+	    break;
+	case 'G':
+	    num = 2;
+	    break;
+	case 'C':
+	    num = 3;
+	    break;
+        case 'N':
+	    num = 4;
+	    break;
+	default:
+	    num = 5;
+    }
+
+    return num;
+}
+
+
+
 //Insert kmers with a link to the record(readid,annotation)
-void batchBuild_with_duplicate_record(bool newtree, long  size)
+void ndtreeHelper::batchBuild_with_duplicate_record(bool newtree, long  size)
 {
     clear_record();
 
@@ -312,16 +379,26 @@ void batchBuild_with_duplicate_record(bool newtree, long  size)
     }
     ndt.read_existing_tree(globalIndexFilename);
     long num_of_points=size;
+
+    gzFile kmer_file;
+    kseq_t *seq;
+    int tmp;
+
     ifstream data_file;
     ifstream aux_file;
+
+    kmer_file = gzopen(globalDataFilename.c_str(), "r");
+    seq = kseq_init(kmer_file);
+
     data_file.open(globalDataFilename.c_str());
     aux_file.open(globalAuxFilename.c_str());
+/*
     if (data_file.fail())
     {
         cout<<"cant open file "<<globalDataFilename<<endl;
         exit(1);
     }
-
+*/
     if(aux_file.fail())
     {
 	cout<<"cant open file "<<globalAuxFilename<<endl;
@@ -335,7 +412,8 @@ void batchBuild_with_duplicate_record(bool newtree, long  size)
     int distinctDataPoints = 0;
     char n;
     char n_aux;
-    for(long  i = 0; i < num_of_points && !data_file.eof(); i++)
+  //  for(long  i = 0; i < num_of_points && !data_file.eof(); i++)
+    while((tmp = kseq_read(seq)) >= 0)
     {
 #ifdef LOG_VECTOR_INDEX
         logO.log2File("----------");logO.log2File(i);logO.log2File("\n");
@@ -343,6 +421,13 @@ void batchBuild_with_duplicate_record(bool newtree, long  size)
 #ifdef LOG_SPLITTING_VECTOR_INDEX
         vector_index = i;
 #endif
+
+	if(((int)seq->seq.l) != DIM)
+		printf("input kmer length %d didn't match dim %d in dim.h!\n", (int)seq->seq.l, DIM);
+	else
+		printf("input kmer length %d\n", (int)seq->seq.l);
+
+/*	
         istringstream instr(line);
 	istringstream instr_aux(line_aux);
         for(int j = 0; j < DIM; j++)
@@ -350,11 +435,18 @@ void batchBuild_with_duplicate_record(bool newtree, long  size)
             instr >> n;
             new_data.key[j] = n - '0';
         }
+*/
+	for (int j = 0; j < seq->seq.l; j++) 
+	    new_data.key[j] = letter2num(seq->seq.s[j]);
+
+	readid_global = atoi(seq->name.s);
+
+
 
 	//as the readid part hasn't been implemented
 	//I exchange this 2 lines to treat readid as typeid	
-	instr_aux >> typeid_global;
-	instr_aux >> readid_global;
+	//instr_aux >> typeid_global;
+	//instr_aux >> readid_global;
 	        
 
 	new_data.record_count = 1; 
@@ -375,10 +467,14 @@ void batchBuild_with_duplicate_record(bool newtree, long  size)
     cout<<"DistinctDataPoints data points indexed:"<<distinctDataPoints<<endl;
     cout<<"Total data points read:"<<size <<endl;
     ndt.print_information( );
+
+    // close kmer file and destroyt seq
+    kseq_destroy(seq);
+    gzclose(kmer_file);
 }
 
 
-void batchRangeQuery(    )
+void ndtreeHelper::batchRangeQuery()
 {
 
     Error_code result;
@@ -473,7 +569,7 @@ void batchRangeQuery(    )
 }
 
 //output the cancer types in the query result to file
-void output_records(Leaf_entry* query_results, int query_results_size)
+void ndtreeHelper::output_records(Leaf_entry* query_results, int query_results_size)
 {
     fstream typeid_file, query_result_file;
     const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
@@ -534,7 +630,7 @@ for(int k=0; k<query_results_size; k++)
 
 
 //output the cancer types in the query result to file
-void output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
+void ndtreeHelper::output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
 {
   string typeid_filename = (globalRecordFilename+".typeid").c_str();
   string query_result_filename = (globalBQFilename +".result").c_str();
@@ -641,7 +737,7 @@ if(type_num > TYPE_ARRAY_SIZE - 1) {
 
 
 //output the cancer types in the query result to file
-void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
+void ndtreeHelper::output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
 {
 
 const int item_size = 256;
@@ -732,7 +828,7 @@ if(type_num > TYPE_ARRAY_SIZE -1) {
 }
 
 
-void clear_result()
+void ndtreeHelper::clear_result()
 {
 fstream  query_result_file;
 const char* query_result_filename = (globalBQFilename+".result").c_str();
@@ -746,7 +842,7 @@ query_result_file.clear();
 query_result_file.close();
 }
 
-void batchRandomBoxQuery(int K)
+void ndtreeHelper::batchRandomBoxQuery(int K)
 {
 clear_result();
     string input=globalIndexFilename;
@@ -840,7 +936,7 @@ clear_result();
 
 
 
-void batchBoxQuery()
+void ndtreeHelper::batchBoxQuery()
 {
     string input=globalIndexFilename;
     ND_tree ndt;
@@ -914,7 +1010,7 @@ void batchBoxQuery()
 }
 
 
-vector< vector<int> >  makeBoxQueryData_for_linearScan(ifstream & query_file)
+vector< vector<int> >  ndtreeHelper::makeBoxQueryData_for_linearScan(ifstream & query_file)
 {
 
     //int maxDimAndContDim = 16;//01/09/2007
@@ -964,7 +1060,7 @@ vector< vector<int> >  makeBoxQueryData_for_linearScan(ifstream & query_file)
 
 
 //result of this LinearScanBoxQuery should be 
-void LinearScanBoxQuery(int dataNUM)
+void ndtreeHelper::LinearScanBoxQuery(int dataNUM)
 {
 //    Leaf_entry query_results [QUERY_RESULTS_BUFFER_SIZE];
 
@@ -1105,7 +1201,7 @@ void LinearScanBoxQuery(int dataNUM)
 
 
 
-void display_help()
+void ndtreeHelper::display_help()
 {
     cout<<"This implementation of BoND Tree was modified by Alok"<<endl;
     cout<<"It only works with discrete dimensions and performs random sized box queries."<<endl;
@@ -1128,11 +1224,5 @@ void display_help()
     cout<<"8) "<<" : Flag indicating that a new index file should be created"<<endl;
     cout<<"\tANY EXISTING INDEX FILE WILL BE DELETED"<<endl;
 }
-
-};
-
-
-
-
 
 #endif

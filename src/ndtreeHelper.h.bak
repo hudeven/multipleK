@@ -1,0 +1,81 @@
+#ifndef NDTREE_HELPER_H
+#define NDTREE_HELPER_H
+
+// for fasta parser and zlib
+#include <zlib.h>
+#include "kseq.h"
+KSEQ_INIT(gzFile, gzread)
+
+#include "Dir_entry.h"
+#include "ND_tree.h"
+#include "Leaf_node.h"
+#include <vector>
+#include "logClass.h"
+#include <limits.h>
+#include "config.h"
+#include <iostream>
+using namespace std;
+
+class Item
+{
+public:
+	int id;
+	int count;
+};
+
+
+class ndtreeHelper {
+public:
+ofstream OutStream;
+
+// GLOBAL VARIABLES - Added by Alok to make interface of this
+// tree consistent with the rest of the trees.
+//#define MAX_COPIES_OF_DATA_FILE 50
+
+//double dir_min_util = 0.0000000000003;
+const double dir_min_util = ((nodeSplitType==ORIGINAL)||(enforce_minUtil_for_exhaustSplit==1))?0.3:0.0000000000003;
+const double leaf_min_util = 0.3;
+
+int tmp_DMBR_byte_lut[DIM][MAX_ALPHABET_SIZE]; // Given a dim and a letter, store the coresponding byte in DMBR
+//int tmp_DMBR_byte_lut[MAX_K][MAX_ALPHABET_SIZE]; //changed to support multiple K 
+int tmp_DMBR_bit_lut[DIM][MAX_ALPHABET_SIZE]; // Given a dim and a letter, store the coresponding bit in DMBR
+//int tmp_DMBR_bit_lut[MAX_K][MAX_ALPHABET_SIZE]; //changed to support mutiple K
+
+//debug_boxQ_leaf_accessed=0;
+//int debug_boxQ_leaf_hit=0;
+//int debug_boxQ_leaf_hit_peak=0;
+vector<int> debug_boxQ_leaf_hit_for_all;
+
+int debug_height;
+
+int duplicateDataPoints; //used in batchBuild(...), batchGrow(...)
+
+ndtreeHelper();
+void LocalDMBRInfoCalculation();
+Dir_entry* makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[]);
+Dir_entry makeBoxQueryData(ifstream & query_file);
+void batchGrow_with_duplicate(long skipSize, long sizeGrowTo);
+//this one only reads data file up to the give number of data points 
+void batchBuild_with_duplicate(long  size);
+void clear_record();
+//Insert kmers with a link to the record(readid,annotation)
+void batchBuild_with_duplicate_record(bool newtree, long  size);
+void batchRangeQuery();
+//output the cancer types in the query result to file
+void output_records(Leaf_entry* query_results, int query_results_size);
+//output the cancer types in the query result to file
+void output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
+//output the cancer types in the query result to file
+void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
+
+void clear_result();
+void batchRandomBoxQuery(int K);
+void batchBoxQuery();
+vector< vector<int> >  makeBoxQueryData_for_linearScan(ifstream & query_file);
+//result of this LinearScanBoxQuery should be 
+void LinearScanBoxQuery(int dataNUM);
+
+void display_help();
+
+};
+#endif

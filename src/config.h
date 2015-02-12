@@ -99,7 +99,7 @@ int typeid_global;
 int record_type[999999][128]={0};
 
 string globalRQFilename = "../data/rangequeryAll.txt";
-string globalDataFilename = "../data/data.txt";
+string globalDataFilename = "../data/data.fa";
 string globalIndexFilename = "../data/index.bin";
 string globalAuxFilename = "../data/aux.txt";
 string globalRecordFilename = "../data/record";

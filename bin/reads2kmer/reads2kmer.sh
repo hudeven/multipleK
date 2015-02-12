@@ -1,3 +1,3 @@
 #!/bin/sh
-python fasta_kmer.py --output ../../data/kmer_list --klength 16 --readsfile ../../data/reads_random.fa
+python fasta_fastkmer.py --output ../../data/kmer_list --klength 6 --readsfile ../../data/cancer/read/0_reads.fa
 

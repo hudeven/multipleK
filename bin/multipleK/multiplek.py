@@ -27,7 +27,8 @@ for i in range(0, repeat):
 	os.system(cmd)
 
 	print "******generate kmers from reads******\n"
-	cmd = "python bin/reads2kmer/fasta_kmer.py --output data/cancer/kmer/all.kmer --klength "+ klength  +" --readsfile data/cancer/read/" + str(i) + "_reads.fa"
+	# fasta_fastkmer.py is for kmer list of fasta format
+	cmd = "python bin/reads2kmer/fasta_fastkmer.py --output data/cancer/kmer/all.kmer --klength "+ klength  +" --readsfile data/cancer/read/" + str(i) + "_reads.fa"
 	os.system(cmd)
  
 	print "******generate random box query******\n"
