@@ -73,8 +73,11 @@ int main(int argc, char *argv[])
 		    } else if(!strcmp(optarg, "append")) {
 			cout << "append mode" << endl;
 			newTree = false;
+		    } else if(!strcmp(optarg, "default")) {
+			cout << "deault mode" << endl;
+			newTree = false;
 		    } else {
-			cout << "default mode" << endl;
+			cout << "unkown mode" << endl;
 			newTree = false;
 		    }
 		    break;
@@ -92,11 +95,6 @@ int main(int argc, char *argv[])
 	if( isBoxQuery ) {
 		cout<<"Box query file "<<globalBQFilename<<endl;
 		ndtree.batchRandomBoxQuery(query_dim);
-	}
-	if(query_dim > DIM) {
-		cout << "big k search small k" << endl;
-	} else if(query_dim < DIM) {
-		cout << "small k search big k" << endl;
 	}
 	
     

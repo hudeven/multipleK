@@ -54,6 +54,7 @@ ndtreeHelper();
 
 
 int letter2num(char letter);
+char num2letter(int num);
 
 
 
@@ -72,6 +73,7 @@ void batchRangeQuery();
 void output_records(Leaf_entry* query_results, int query_results_size);
 //output the cancer types in the query result to file
 void output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
+void output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[],  char queryK[]);
 //output the cancer types in the query result to file
 void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
 
@@ -122,6 +124,30 @@ int ndtreeHelper::letter2num(char letter){
     return num;
 }
 
+char ndtreeHelper::num2letter(int num){
+    char letter;
+    switch(num){
+	case 0:
+	    letter = 'A';
+	    break;
+ 	case 1:
+	    letter = 'T';
+	    break;
+	case 2:
+	    letter = 'G';
+	    break;
+	case 3:
+	    letter = 'C';
+	    break;
+	case 4:
+	    letter = 'N';
+	    break;
+	default:
+	    letter = '?';
+    }
+    return letter;
+
+}
 
 void ndtreeHelper::LocalDMBRInfoCalculation()
 {
@@ -463,11 +489,12 @@ void ndtreeHelper::batchBuild_with_duplicate_record(bool newtree, long  size)
         vector_index = i;
 #endif
 
+/*
 	if(((int)seq->seq.l) != DIM)
 		printf("input kmer length %d didn't match dim %d in dim.h!\n", (int)seq->seq.l, DIM);
 	else
 		printf("input kmer length %d\n", (int)seq->seq.l);
-
+*/
 /*	
         istringstream instr(line);
 	istringstream instr_aux(line_aux);
@@ -480,7 +507,7 @@ void ndtreeHelper::batchBuild_with_duplicate_record(bool newtree, long  size)
 	for (int j = 0; j < seq->seq.l; j++) 
 	    new_data.key[j] = letter2num(seq->seq.s[j]);
 
-	readid_global = atoi(seq->name.s);
+	typeid_global = atoi(seq->name.s);
 
 
 
@@ -778,6 +805,60 @@ if(type_num > TYPE_ARRAY_SIZE - 1) {
 
 
 //output the cancer types in the query result to file
+void ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[], char queryK[])
+{
+  string typeid_filename = (globalRecordFilename+".typeid").c_str();
+  string query_result_filename = (globalBQFilename +".result").c_str();
+
+    fstream typeid_file, query_result_file;
+  
+    typeid_file.open(typeid_filename.c_str(), ios_base::binary | ios_base::in);
+    query_result_file.open(query_result_filename.c_str(), fstream::in | fstream::out| fstream::app);
+
+    if(typeid_file.fail()) {
+	cout << "can't open file typeid " << typeid_filename << endl;
+    }
+    if(query_result_file.fail())
+    {
+	cout<<"can't open file query result"<<query_result_filename<<endl;
+    }
+
+    int type_array[TYPE_ARRAY_SIZE]={0};
+    int output[256]={0};
+    output[0]=0;
+    int type_num;
+    int record_id;
+
+for(int k=0; k<query_results_size; k++){
+    string kmer="";
+    for(int p = 0; p < DIM; p++){
+	kmer += num2letter(query_results[k].key[p]);
+    }
+    query_result_file << ">" << query_id  <<" Query:" << queryK << "  result:"<< kmer << endl;
+
+    record_id = query_results[k].record;
+    typeid_file.seekg(record_id * sizeof(type_array), ios::beg);
+    typeid_file.read((char*)type_array, sizeof(type_array));
+    type_num = type_array[0];
+    int i;
+    if(type_num > TYPE_ARRAY_SIZE - 1) {
+	cout << "type_num > " << TYPE_ARRAY_SIZE - 1 << " :"<<type_num<<endl;
+//	cout << query_K <<endl;
+	type_num = TYPE_ARRAY_SIZE - 1;
+    }
+    for(i=1; i<=type_num; i++){
+	query_result_file << type_array[i] << " ";
+    }
+    query_result_file << endl;
+}
+
+    typeid_file.close();
+    query_result_file.close();
+ 
+}
+
+
+//output the cancer types in the query result to file
 void ndtreeHelper::output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
 {
 
@@ -939,10 +1020,9 @@ clear_result();
         debug_boxQ_leaf_hit_for_all.push_back(debug_boxQ_leaf_hit_peak);
 
  	//output_records_array(query_results, query_results_size, queryK, maxShift);
- 	output_records(query_results, query_results_size, queryK, maxShift);
+ 	output_records_fasta(query_results[0], query_results_size[0],seq->name.s, seq->seq.s);
 
     }
-
 
 //    query_file.close();
 

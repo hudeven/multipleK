@@ -15,7 +15,7 @@ mac:
 gdb:
 	gdb --args ndTree --dimension 6 --index ../data/index.bin --data ../data/data.fa --boxquery ../data/boxquery.txt --mode rebuild   --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record  --querydim 6
 simplegdb:
-	gdb --args ndTree --dimension 6 --mode rebuild  --querydim 7 --boxquery ../data/cancer/query/boxquery 
+	gdb --args ndTree --mode rebuild  --boxquery ../data/boxquery.txt
 query:
 	gdb --args ndTree --dimension 5 --index ../data/index --boxquery ../data/cancer/query/boxquery --record ../data/record  --querydim 6
 clean:

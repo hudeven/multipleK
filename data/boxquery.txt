@@ -1,2 +1,200 @@
->gi|110640213|ref|NC_008253.1| Escherichia coli 536, complete genome
-GCG(TA)AA
+>0 dim=6
+AGTGGC
+>1 dim=6
+GTCTCT
+>2 dim=6
+TGAAGT
+>3 dim=6
+ATATGT
+>4 dim=6
+GCTGCA
+>5 dim=6
+AACCAT
+>6 dim=6
+CACAGA
+>7 dim=6
+GCATTA
+>8 dim=6
+CGGGTT
+>9 dim=6
+ACCATT
+>10 dim=6
+GTACAT
+>11 dim=6
+GGGCTG
+>12 dim=6
+TAGCGA
+>13 dim=6
+CACCAT
+>14 dim=6
+CCCGCC
+>15 dim=6
+AGCGGT
+>16 dim=6
+AGCTTC
+>17 dim=6
+TTTTAT
+>18 dim=6
+ATATCA
+>19 dim=6
+GCCGAA
+>20 dim=6
+AGTTCG
+>21 dim=6
+GTCAGG
+>22 dim=6
+CTTTAC
+>23 dim=6
+TCAGCG
+>24 dim=6
+GTAACA
+>25 dim=6
+TTCGGC
+>26 dim=6
+TTCTGA
+>27 dim=6
+AACCAT
+>28 dim=6
+CACCAT
+>29 dim=6
+AATTAA
+>30 dim=6
+CAGTGG
+>31 dim=6
+ACATCC
+>32 dim=6
+GTAACG
+>33 dim=6
+CGTTTG
+>34 dim=6
+CACCTG
+>35 dim=6
+GTAACA
+>36 dim=6
+AGGCAT
+>37 dim=6
+GCCCGC
+>38 dim=6
+CGATAT
+>39 dim=6
+TGCGGG
+>40 dim=6
+CTTAGG
+>41 dim=6
+AGGAAA
+>42 dim=6
+TACTTT
+>43 dim=6
+ACTTAG
+>44 dim=6
+GGGTTG
+>45 dim=6
+GCCAAA
+>46 dim=6
+CCACCA
+>47 dim=6
+ACACAG
+>48 dim=6
+AGTACA
+>49 dim=6
+AAATAT
+>50 dim=6
+AAGAGT
+>51 dim=6
+AAGTTC
+>52 dim=6
+GCACAG
+>53 dim=6
+ATTAGC
+>54 dim=6
+CTTTTC
+>55 dim=6
+CTGTGT
+>56 dim=6
+AGCCCG
+>57 dim=6
+CAGGAT
+>58 dim=6
+CAAAGG
+>59 dim=6
+AATTAA
+>60 dim=6
+AGGTCA
+>61 dim=6
+AAAAAG
+>62 dim=6
+GTACAT
+>63 dim=6
+TTAGGT
+>64 dim=6
+GACGCG
+>65 dim=6
+TTAGCA
+>66 dim=6
+AGGTAA
+>67 dim=6
+TTTTCG
+>68 dim=6
+AGCGAT
+>69 dim=6
+GATTGA
+>70 dim=6
+TGAAGT
+>71 dim=6
+CAAAGG
+>72 dim=6
+CAACAT
+>73 dim=6
+CTGCCC
+>74 dim=6
+TGCAGA
+>75 dim=6
+TAAAAA
+>76 dim=6
+AAAAAA
+>77 dim=6
+CCCAAT
+>78 dim=6
+TTAAAA
+>79 dim=6
+GTGGAT
+>80 dim=6
+GTTGAA
+>81 dim=6
+AGGTAA
+>82 dim=6
+GATAGC
+>83 dim=6
+AAACGC
+>84 dim=6
+TGATAT
+>85 dim=6
+CACAGA
+>86 dim=6
+TTCTGA
+>87 dim=6
+ATAGGC
+>88 dim=6
+CGCATT
+>89 dim=6
+ACCGTT
+>90 dim=6
+ATGAAA
+>91 dim=6
+TAAGTG
+>92 dim=6
+GGTAAC
+>93 dim=6
+TGAAGT
+>94 dim=6
+GTAACG
+>95 dim=6
+GCGATG
+>96 dim=6
+CCACCG
+>97 dim=6
+ATCACC
+>98 dim=6
+GACCAA
+>99 dim=6
+ATTACA

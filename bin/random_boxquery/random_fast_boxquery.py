@@ -54,8 +54,9 @@ for i in range(0, num):
 		query += ")"
 	    else:
 	        query += ref[p] 
-		
-	query_seq = SeqIO.SeqRecord(Seq(query,generic_dna), id = record.id, name=record.name, description = record.description)
+	# id is very important for multiple K but name and desc is optional 
+	# and only for user to check query info
+	query_seq = SeqIO.SeqRecord(Seq(query,generic_dna), id = str(i), description="dim="+str(klength))
 	query_list.append(query_seq)
 
 SeqIO.write(query_list, query_file, "fasta");

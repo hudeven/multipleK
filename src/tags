@@ -240,6 +240,7 @@ output_record	Leaf_node.h	/^void output_record(int record_id)$/;"	f
 output_records	ndtreeHelper.h	/^void ndtreeHelper::output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)$/;"	f	class:ndtreeHelper
 output_records	ndtreeHelper.h	/^void ndtreeHelper::output_records(Leaf_entry* query_results, int query_results_size)$/;"	f	class:ndtreeHelper
 output_records_array	ndtreeHelper.h	/^void ndtreeHelper::output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)$/;"	f	class:ndtreeHelper
+output_records_fasta	ndtreeHelper.h	/^void ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char queryK[])$/;"	f	class:ndtreeHelper
 overflow	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	e	enum:Error_code
 parent	Dir_node.h	/^      int parent; \/\/ index of parent$/;"	m	struct:Dir_node::aux_tree_node
 print_OneEntry_OnOneDscDim	Dir_node.h	/^void Dir_node::print_OneEntry_OnOneDscDim( Dir_entry*  oneEntry,int entryIndex, int dimNum,int* alphabet_sizes )$/;"	f	class:Dir_node
