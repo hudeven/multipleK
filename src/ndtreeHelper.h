@@ -51,8 +51,15 @@ int debug_height;
 int duplicateDataPoints; //used in batchBuild(...), batchGrow(...)
 
 ndtreeHelper();
+
+
+int letter2num(char letter);
+
+
+
 void LocalDMBRInfoCalculation();
-Dir_entry* makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[]);
+//Dir_entry* makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[]);
+Dir_entry* makeRandomBoxQueryData(char *seq, int K, char queryK[]);
 Dir_entry makeBoxQueryData(ifstream & query_file);
 void batchGrow_with_duplicate(long skipSize, long sizeGrowTo);
 //this one only reads data file up to the give number of data points 
@@ -77,6 +84,7 @@ void LinearScanBoxQuery(int dataNUM);
 
 void display_help();
 
+
 };
 
 
@@ -88,6 +96,32 @@ ndtreeHelper::ndtreeHelper() {
  	debug_boxQ_leaf_hit=0;
  	debug_boxQ_leaf_hit_peak=0;
 }
+
+int ndtreeHelper::letter2num(char letter){
+    int num = 0;
+    switch(letter){
+	case 'A':
+	    num = 0;
+	    break;
+	case 'T':
+	    num = 1;
+	    break;
+	case 'G':
+	    num = 2;
+	    break;
+	case 'C':
+	    num = 3;
+	    break;
+        case 'N':
+	    num = 4;
+	    break;
+	default:
+	    num = 5;
+    }
+
+    return num;
+}
+
 
 void ndtreeHelper::LocalDMBRInfoCalculation()
 {
@@ -114,7 +148,7 @@ void ndtreeHelper::LocalDMBRInfoCalculation()
 
 }
 
-Dir_entry* ndtreeHelper::makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[])
+Dir_entry* ndtreeHelper::makeRandomBoxQueryData(char *seqStr, int K, char queryK[])
 {
     int queryK_length = 0;
     Dir_entry* dirEntry = new Dir_entry[MAX_K];
@@ -125,6 +159,7 @@ Dir_entry* ndtreeHelper::makeRandomBoxQueryData(ifstream & query_file, int K, ch
     string line[MAX_K]; // length is equal to K
 
     int byte_no,bit_no;
+/*
     for(int i=0;i<K;i++)
     {
         getline(query_file, line[i]);
@@ -146,11 +181,42 @@ Dir_entry* ndtreeHelper::makeRandomBoxQueryData(ifstream & query_file, int K, ch
 	    {
 		instr>>v;
 		byte_no = tmp_DMBR_byte_lut[j][v];
-		bit_no = tmp_DMBR_bit_lut[j][v];/** todo: here DMBR_bit_lut[j] should support enough letters **/
+		bit_no = tmp_DMBR_bit_lut[j][v];
 		dirEntry[i].DMBR[byte_no] |= MASKS[bit_no];
 	    }
       }
-   }
+*/
+
+int cur = 0;
+int j = 0;
+int v = 0;
+    
+    while (j < DIM) {
+	if(seqStr[cur] == '('){
+	    while(seqStr[++cur] != ')'){
+		v = letter2num(seqStr[cur]);
+		byte_no = tmp_DMBR_byte_lut[j][v];
+                bit_no = tmp_DMBR_bit_lut[j][v];
+                dirEntry[0].DMBR[byte_no] |= MASKS[bit_no];
+ 	    }
+	} else {
+	    v = letter2num(seqStr[cur]); 
+	    byte_no = tmp_DMBR_byte_lut[j][v];
+            bit_no = tmp_DMBR_bit_lut[j][v];
+            dirEntry[0].DMBR[byte_no] |= MASKS[bit_no];
+	}
+	cur++;
+	j++;
+
+    }
+
+
+
+
+  // }
+
+
+
 //Why to consume the rest lines. What are the float values? 
 /* 	
     for(int i=0;i<MAX_DIM_AND_CONTDIM-DIM;i++)
@@ -336,31 +402,6 @@ readid_file.close();
 
 }
 
-
-int letter2num(char letter){
-    int num = 0;
-    switch(letter){
-	case 'A':
-	    num = 0;
-	    break;
-	case 'T':
-	    num = 1;
-	    break;
-	case 'G':
-	    num = 2;
-	    break;
-	case 'C':
-	    num = 3;
-	    break;
-        case 'N':
-	    num = 4;
-	    break;
-	default:
-	    num = 5;
-    }
-
-    return num;
-}
 
 
 
@@ -849,21 +890,19 @@ clear_result();
     ND_tree ndt;
     ndt.read_existing_tree(input);
     LocalDMBRInfoCalculation();
-// box query loop in the original function
-// begins here
+    
     Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE];
     int query_results_size[MAX_K];
     Dir_entry *boxQueryData;
 
-    string query_fn=globalBQFilename;
     int num_of_points=TOTAL_BOX_QUERY_NUM;
-    ifstream query_file;
-    query_file.open(query_fn.c_str());
-    if (query_file.fail())
-    {
-        cout<<"cant open file "<<query_fn<<endl;
-        exit(1);
-    }
+
+    gzFile query_file;
+    kseq_t *seq;
+    int tmp;
+    query_file = gzopen(globalBQFilename.c_str(), "r");
+    seq = kseq_init(query_file);
+
 
     debug_boxQ_leaf_hit_for_all.clear();
     debug_boxQ_leaf_accessed=0;
@@ -873,22 +912,16 @@ clear_result();
     int total_results_size=0;
     int total_record_num = 0;
    
-    while(query_file.peek() != EOF){
+    while((tmp = kseq_read(seq)) >= 0)
+    {
         debug_boxQ_leaf_hit_peak=0;
 	char queryK[MAX_K] = {'\0'};
-        boxQueryData = makeRandomBoxQueryData(query_file, K, queryK);
+
+        boxQueryData = makeRandomBoxQueryData(seq->seq.s, K, queryK);
 	int maxShift = K - DIM;
 	for(int i=0; i <= maxShift; i++) {
 	        ndt.box_query(boxQueryData[i], query_results[i], query_results_size[i], number_of_io);
 	}
-
-
-//TODO:  calculate the intersection of query_results and store the readid set to query_results[0]
-
-
-
-
-
 
 
 	//calculate total record in the result
@@ -911,7 +944,12 @@ clear_result();
     }
 
 
-    query_file.close();
+//    query_file.close();
+
+kseq_destroy(seq);
+gzclose(query_file);
+
+
     cout<<"boxSize= RANDOM, AvG boxquery I/O: " << static_cast<double>(total_number_of_io) / num_of_points << endl;
   cout<<" AvG matched data point found="<< static_cast<double>(total_results_size)/num_of_points<< endl; 
     cout << " AvG leaf node accessed: " << static_cast<double>(debug_boxQ_leaf_accessed) / num_of_points << endl;

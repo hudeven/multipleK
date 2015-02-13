@@ -14,7 +14,7 @@ BOX_SIZE_STOP_BEFORE	config.h	/^const int BOX_SIZE_STOP_BEFORE = A[0];$/;"	v
 BYTES_PER_DIM_IN_DMBR	config.h	/^const int BYTES_PER_DIM_IN_DMBR = ((ALPHA%8)==0)?(ALPHA\/8):(ALPHA\/8+1);$/;"	v
 CNTDIM	config.h	/^const int CNTDIM = 0; $/;"	v
 CONFIG_H	config.h	2;"	d
-DIM	dim.h	/^const int DIM = 5;$/;"	v
+DIM	dim.h	/^const int DIM = 6;/;"	v
 DIR_ENTRY_H	Dir_entry.h	2;"	d
 DIR_NODE_H	Dir_node.h	2;"	d
 DIR_NODE_OVERHEAD	Dir_node.h	/^const int DIR_NODE_OVERHEAD = 4; \/\/ int count$/;"	v
@@ -36,7 +36,6 @@ GotoLine	Leaf_node.h	/^std::fstream& GotoLine(std::fstream& file, unsigned int n
 INT_INF	utility.h	/^const int INT_INF = numeric_limits<int> :: max( );$/;"	v
 Item	ndtreeHelper.h	/^class Item$/;"	c
 KSEQ_INIT	kseq.h	217;"	d
-KSEQ_INIT	kseq_test.c	/^KSEQ_INIT(gzFile, gzread)$/;"	f
 KSTREAM_INIT	kseq.h	139;"	d
 KSTRING_T	kseq.h	81;"	d
 KS_SEP_MAX	kseq.h	39;"	d
@@ -193,6 +192,7 @@ kstring_t	kseq.h	/^} kstring_t;$/;"	t	typeref:struct:__kstring_t
 l	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t
 leaf_min_util	ND_tree.h	/^   double leaf_min_util;$/;"	m	class:ND_tree
 leaf_min_util	ndtreeHelper.h	/^const double leaf_min_util = 0.3;$/;"	m	class:ndtreeHelper
+letter2num	ndtreeHelper.h	/^int ndtreeHelper::letter2num(char letter){$/;"	f	class:ndtreeHelper
 letter_entry	Leaf_node.h	/^    struct letter_entry{$/;"	s	class:Leaf_node
 letters	Dir_node.h	/^      unsigned char letters[MAX_DMBR_DIM_SIZE]; \/\/ bitmap representation$/;"	m	struct:Dir_node::aux_tree_node
 level	Dir_node.h	/^      int level; \/\/ level in the tree.  Leaf is level 1$/;"	m	struct:Dir_node::aux_tree_node
@@ -220,7 +220,7 @@ m	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t
 main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
 makeBoxQueryData	ndtreeHelper.h	/^Dir_entry ndtreeHelper::makeBoxQueryData(ifstream & query_file)$/;"	f	class:ndtreeHelper
 makeBoxQueryData_for_linearScan	ndtreeHelper.h	/^vector< vector<int> >  ndtreeHelper::makeBoxQueryData_for_linearScan(ifstream & query_file)$/;"	f	class:ndtreeHelper
-makeRandomBoxQueryData	ndtreeHelper.h	/^Dir_entry* ndtreeHelper::makeRandomBoxQueryData(ifstream & query_file, int K, char queryK[])$/;"	f	class:ndtreeHelper
+makeRandomBoxQueryData	ndtreeHelper.h	/^Dir_entry* ndtreeHelper::makeRandomBoxQueryData(char *seqStr, int K, char queryK[])$/;"	f	class:ndtreeHelper
 max_block_number	ND_tree.h	/^   unsigned int max_block_number; \/\/ The maximal block number now used in the tree, always increasing, start from 0$/;"	m	class:ND_tree
 mixed_list_entry	Dir_node.h	/^   struct mixed_list_entry{$/;"	s	class:Dir_node
 moveToLine	Leaf_node.h	/^void moveToLine(fstream file, int lineNum)$/;"	f

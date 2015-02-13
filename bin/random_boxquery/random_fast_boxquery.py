@@ -32,10 +32,8 @@ klength = int(options.klength)
 num = int(options.num)
 ref_filename = options.reference
 query_filename = options.output
-boxsize = options.boxsize
-query_letter_filename = options.output+".letter"
-
-query_letter_file = open(query_letter_filename, 'w')
+boxsize = int(options.boxsize)
+alphabet = ['A', 'T', 'G', 'C']
 query_file = open(query_filename, 'w')
 record = SeqIO.read(open(ref_filename),"fasta")
 ref = str(record.seq[:])
@@ -47,17 +45,21 @@ for i in range(0, num):
 	query = '';
 	r = random.randrange(0, end)
 	kmer = ref[r : r+klength]   
+	box = random.randrange(r, r+klength)
 	for p in range(r, r+klength):
-	    query_letter += '1' + ' ' + ref[p]+'\n' 
-	    query += ref[p] 
+	    if boxsize >= 2 and  p == box:
+		query += "("
+		for t in range(0, boxsize):
+		    query += alphabet[t]
+		query += ")"
+	    else:
+	        query += ref[p] 
 		
-        query_letter_file.write(str(i)+"\t"+kmer+'\n'+query_letter)
 	query_seq = SeqIO.SeqRecord(Seq(query,generic_dna), id = record.id, name=record.name, description = record.description)
 	query_list.append(query_seq)
 
 SeqIO.write(query_list, query_file, "fasta");
 query_file.close()
-query_letter_file.close();
 
 
 #print aln_ref+'\n'+aln_sample
