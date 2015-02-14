@@ -5,7 +5,8 @@ from optparse import OptionParser
 
 #Modify it to your working dir
 #WORKING_DIR = "/Users/stevenliu/workspace/new_ndtree/multipleK/"
-WORKING_DIR = "/home/stevenliu/workspace/multipleK/"
+#WORKING_DIR = "/home/stevenliu/workspace/multipleK/"
+WORKING_DIR = "/media/psf/Home/MultipleK/bin/multipleK/"
 
 start = timeit.default_timer()
 
