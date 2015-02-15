@@ -13,15 +13,16 @@ outputFilename = options.outputFile
 
 result_file = open(outputFilename, "w")
 
-old = -1
+old_id = -1
 set_num =  0;
 hist = {}
 for record in SeqIO.parse(inputFilename, "fasta"):
-    if record.id != old and old != -1:
-	query = ">" + old + "\n";
-	query += ','.join(key for key in hist if hist[key]==set_num)
-	print query
-	result_file.write(query+"\n");
+    if record.id != old_id and old_id != -1:
+	query = ">" + str(old_id) + "\n";
+	its = ','.join(key for key in hist if hist[key]==set_num)
+	if its != "":
+	    query += its
+	    result_file.write(query+"\n");
 	hist.clear()
 	set_num = 0;
 	
@@ -35,12 +36,13 @@ for record in SeqIO.parse(inputFilename, "fasta"):
     	else:
 	    hist[key] = 1
 
-    old = record.id
+    old_id = record.id
 
 # write for the last record
-query = ">" + old + "\n";
-query += ','.join(key for key in hist if hist[key]==set_num)
-print query
-result_file.write(query+"\n");
+query = ">"+str(old_id) + "\n";
+its = ','.join(key for key in hist if hist[key]==set_num)
+if its != "":
+    query += its
+    result_file.write(query+"\n");
 result_file.close()
 	    

@@ -14,10 +14,10 @@ mac:
 	lldb -- ndTree --dimension 16 --index ../data/index --data ../data/cancer/kmer/all.kmer --boxquery ../data/cancer/query/boxquery --mode rebuild   --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record  --querydim 18
 gdb:
 	gdb --args ndTree --dimension 6 --index ../data/index.bin --data ../data/data.fa --boxquery ../data/boxquery.txt --mode rebuild  --record ../data/record  --querydim 6
-simplegdb:
-	gdb --args ndTree --mode rebuild  --boxquery ../data/boxquery.txt
+rebuild:
+	./ndTree --mode rebuild --data ../data/multipleK/kmer.fa
 query:
-	gdb --args ndTree --dimension 5 --index ../data/index --boxquery ../data/cancer/query/boxquery --record ../data/record  --querydim 6
+	gdb --args ndTree --boxquery  /home/stevenliu/workspace/multipleK/data/multipleK/boxquery.sub
 clean:
 	rm -f *.o
 

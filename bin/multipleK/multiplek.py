@@ -5,8 +5,8 @@ from optparse import OptionParser
 
 #Modify it to your working dir
 #WORKING_DIR = "/Users/stevenliu/workspace/new_ndtree/multipleK/"
-#WORKING_DIR = "/home/stevenliu/workspace/multipleK/"
-WORKING_DIR = "/media/psf/Home/MultipleK/bin/multipleK/"
+WORKING_DIR = "/home/stevenliu/workspace/multipleK/"
+#WORKING_DIR = "/media/psf/Home/MultipleK/bin/multipleK/"
 
 start = timeit.default_timer()
 
@@ -24,16 +24,16 @@ os.chdir(WORKING_DIR)
 
 for i in range(0, repeat):
 	print "******generate reads from references"
-	cmd = "python bin/ref2reads/ref2reads.py --output data/cancer/read/" + str(i) + "_reads.fa --readlength 100 --reference data/test.fa --coverage 1 --error 0"
+	cmd = "python bin/ref2reads/ref2reads.py --output data/multipleK/" + str(i) + "_reads.fa --readlength 100 --reference data/test.fa --coverage 1 --error 0"
 	os.system(cmd)
 
 	print "******generate kmers from reads******\n"
 	# fasta_fastkmer.py is for kmer list of fasta format
-	cmd = "python bin/reads2kmer/fasta_fastkmer.py --output data/cancer/kmer/all.kmer --klength "+ klength  +" --readsfile data/cancer/read/" + str(i) + "_reads.fa"
+	cmd = "python bin/reads2kmer/fasta_fastkmer.py --output data/multipleK/kmer.fa --klength "+ klength  +" --readsfile data/multipleK/" + str(i) + "_reads.fa"
 	os.system(cmd)
  
 	print "******generate random box query******\n"
-	cmd = 'python bin/random_boxquery/random_boxquery.py --num 1000  --klength '+multiplek +' --output data/cancer/query/boxquery --reference data/test.fa'
+	cmd = 'python bin/random_boxquery/random_fast_boxquery.py --num 10  --klength '+multiplek +' --output data/multipleK/boxquery --reference data/test.fa --boxsize 1'
 	os.system(cmd)
 	
 	print "******run bond-tree ******\n"
@@ -44,8 +44,12 @@ for i in range(0, repeat):
 	dim_file.write("const int DIM = " + klength + ";")
 	dim_file.close()
 	os.system("make");
-	cmd = './ndTree  --index ../data/index --dimension '+ klength  +' --data '+ '../data/cancer/kmer/all.kmer'+ ' --boxquery ../data/cancer/query/boxquery --mode rebuild  --aux ../data/cancer/kmer/all.kmer.desc --record ../data/record --querydim '+multiplek;
+	cmd = './ndTree --dimension '+ klength  +' --data '+ '../data/multipleK/kmer.fa'+ ' --boxquery ../data/multipleK/boxquery --mode rebuild --record ../data/record --querydim '+multiplek;
 	os.system(cmd)
+
+	print "***** intersect result ******\n"
+	os.chdir(WORKING_DIR)
+	cmd = "python bin/intersect_result/fast_intersect_result.py --input data/multipleK/boxquery.result --output data/multipleK/result.fa"
 
 	print "***** analyse accuracy ******\n"
 	os.chdir(WORKING_DIR)

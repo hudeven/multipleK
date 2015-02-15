@@ -834,7 +834,7 @@ for(int k=0; k<query_results_size; k++){
     for(int p = 0; p < DIM; p++){
 	kmer += num2letter(query_results[k].key[p]);
     }
-    query_result_file << ">" << query_id  <<" Query:" << queryK << "  result:"<< kmer << endl;
+    string tuple = ">" + string(query_id) + " "+string(queryK)+" "+kmer+"\n";
 
     record_id = query_results[k].record;
     typeid_file.seekg(record_id * sizeof(type_array), ios::beg);
@@ -843,13 +843,14 @@ for(int k=0; k<query_results_size; k++){
     int i;
     if(type_num > TYPE_ARRAY_SIZE - 1) {
 	cout << "type_num > " << TYPE_ARRAY_SIZE - 1 << " :"<<type_num<<endl;
-//	cout << query_K <<endl;
 	type_num = TYPE_ARRAY_SIZE - 1;
     }
-    for(i=1; i<=type_num; i++){
-	query_result_file << type_array[i] << " ";
+    for(i=1; i<type_num; i++){
+	tuple += to_string(type_array[i]) + ",";
     }
-    query_result_file << endl;
+    tuple += to_string(type_array[type_num]);
+//    cout<<tuple<<endl;
+    query_result_file << tuple << endl;
 }
 
     typeid_file.close();
@@ -953,11 +954,12 @@ if(type_num > TYPE_ARRAY_SIZE -1) {
 void ndtreeHelper::clear_result()
 {
 fstream  query_result_file;
-const char* query_result_filename = (globalBQFilename+".result").c_str();
-query_result_file.open(query_result_filename, ios::out | ios::trunc);
+string tmp = globalBQFilename;
+const char* query_result_filename = (tmp.append(".result")).c_str();
+query_result_file.open(query_result_filename, ios::out);
 if(query_result_file.fail())
 {
-    cout<<"can't open file "<<query_result_filename<<endl;
+    cout<<"can't open result file "<<query_result_filename<<endl;
     exit(1);
 }
 query_result_file.clear();
