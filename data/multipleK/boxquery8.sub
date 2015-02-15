@@ -1,6000 +1,6000 @@
 >0 dim=6
-GTCTCG
->0 dim=6
-TCTCGA
->0 dim=6
-CTCGAC
->1 dim=6
-CGTGTT
->1 dim=6
-GTGTTT
->1 dim=6
-TGTTTT
->2 dim=6
-TTGCCC
->2 dim=6
-TGCCCA
->2 dim=6
-GCCCAA
->3 dim=6
-TCCGCT
->3 dim=6
-CCGCTG
->3 dim=6
-CGCTGC
->4 dim=6
-GCGTTT
->4 dim=6
-CGTTTC
->4 dim=6
-GTTTCC
->5 dim=6
-ACTTCC
->5 dim=6
-CTTCCA
->5 dim=6
-TTCCAG
->6 dim=6
-ACCTCG
->6 dim=6
-CCTCGT
->6 dim=6
-CTCGTC
->7 dim=6
-TCGGCG
->7 dim=6
-CGGCGG
->7 dim=6
-GGCGGT
->8 dim=6
-TGGAGC
->8 dim=6
-GGAGCA
->8 dim=6
-GAGCAA
->9 dim=6
-AGCTTT
->9 dim=6
-GCTTTT
->9 dim=6
-CTTTTC
->10 dim=6
-GGCAGC
->10 dim=6
-GCAGCA
->10 dim=6
-CAGCAT
->11 dim=6
-AATACC
->11 dim=6
-ATACCG
->11 dim=6
-TACCGA
->12 dim=6
-GCGCTA
->12 dim=6
-CGCTAA
->12 dim=6
-GCTAAA
->13 dim=6
-GTTTTG
->13 dim=6
-TTTTGC
->13 dim=6
-TTTGCG
->14 dim=6
-GCGGCG
->14 dim=6
-CGGCGG
->14 dim=6
-GGCGGA
->15 dim=6
-GTGCTG
->15 dim=6
-TGCTGA
->15 dim=6
-GCTGAT
->16 dim=6
-CCACGG
->16 dim=6
-CACGGG
->16 dim=6
-ACGGGA
->17 dim=6
-GCTTTG
->17 dim=6
-CTTTGC
->17 dim=6
-TTTGCC
->18 dim=6
-TCTACC
->18 dim=6
-CTACCG
->18 dim=6
-TACCGT
->19 dim=6
-AAAAAG
->19 dim=6
-AAAAGC
->19 dim=6
-AAAGCC
->20 dim=6
-CTTTTC
->20 dim=6
-TTTTCA
->20 dim=6
-TTTCAT
->21 dim=6
-AGTGTC
->21 dim=6
-GTGTCT
->21 dim=6
-TGTCTG
->22 dim=6
-CACCAT
->22 dim=6
-ACCATT
->22 dim=6
-CCATTA
->23 dim=6
-GTTGTT
->23 dim=6
-TTGTTA
->23 dim=6
-TGTTAC
->24 dim=6
-ATGCGA
->24 dim=6
-TGCGAC
->24 dim=6
-GCGACC
->25 dim=6
-GTCGAT
->25 dim=6
-TCGATC
->25 dim=6
-CGATCG
->26 dim=6
-TCTGAC
->26 dim=6
-CTGACT
->26 dim=6
-TGACTG
->27 dim=6
-TTTAAC
->27 dim=6
-TTAACC
->27 dim=6
-TAACCA
->28 dim=6
-CGCTGT
->28 dim=6
-GCTGTT
->28 dim=6
-CTGTTC
->29 dim=6
-GAAAAT
->29 dim=6
-AAAATG
->29 dim=6
-AAATGT
->30 dim=6
-ACTGCT
->30 dim=6
-CTGCTC
->30 dim=6
-TGCTCA
->31 dim=6
-CCGTCA
->31 dim=6
-CGTCAG
->31 dim=6
-GTCAGA
->32 dim=6
-TATGCC
->32 dim=6
-ATGCCG
->32 dim=6
-TGCCGA
->33 dim=6
-CAGGGA
->33 dim=6
-AGGGAT
->33 dim=6
-GGGATC
->34 dim=6
-TGCTCA
->34 dim=6
-GCTCAC
->34 dim=6
-CTCACC
->35 dim=6
-CTGACC
->35 dim=6
-TGACCA
->35 dim=6
-GACCAC
->36 dim=6
-TCTCCG
->36 dim=6
-CTCCGA
->36 dim=6
-TCCGAG
->37 dim=6
-GAATAA
->37 dim=6
-AATAAC
->37 dim=6
-ATAACA
->38 dim=6
-CAGGCT
->38 dim=6
-AGGCTG
->38 dim=6
-GGCTGT
->39 dim=6
-GCCGCG
->39 dim=6
-CCGCGC
->39 dim=6
-CGCGCG
->40 dim=6
-AAGCCG
->40 dim=6
-AGCCGC
->40 dim=6
-GCCGCA
->41 dim=6
-AGACAG
->41 dim=6
-GACAGA
->41 dim=6
-ACAGAT
->42 dim=6
-ACTGGC
->42 dim=6
-CTGGCG
->42 dim=6
-TGGCGC
->43 dim=6
-GCTGGC
->43 dim=6
-CTGGCG
->43 dim=6
-TGGCGG
->44 dim=6
-GCTGAA
->44 dim=6
-CTGAAT
->44 dim=6
-TGAATC
->45 dim=6
-ATGGAA
->45 dim=6
-TGGAAG
->45 dim=6
-GGAAGT
->46 dim=6
-TGTGTG
->46 dim=6
-GTGTGC
->46 dim=6
-TGTGCG
->47 dim=6
-GGTAAT
->47 dim=6
-GTAATG
->47 dim=6
-TAATGA
->48 dim=6
-CTCGGG
->48 dim=6
-TCGGGC
->48 dim=6
-CGGGCG
->49 dim=6
-GAAGGG
->49 dim=6
-AAGGGC
->49 dim=6
-AGGGCG
->50 dim=6
-GTCCTC
->50 dim=6
-TCCTCT
->50 dim=6
-CCTCTC
->51 dim=6
-GACGAT
->51 dim=6
-ACGATC
->51 dim=6
-CGATCT
->52 dim=6
-TTGAAG
->52 dim=6
-TGAAGT
->52 dim=6
-GAAGTT
->53 dim=6
-GGTAGC
->53 dim=6
-GTAGCG
->53 dim=6
-TAGCGA
->54 dim=6
-TGGTAG
->54 dim=6
-GGTAGC
->54 dim=6
-GTAGCG
->55 dim=6
-TACTCA
->55 dim=6
-ACTCAT
->55 dim=6
-CTCATC
->56 dim=6
-ATCTGA
->56 dim=6
-TCTGAA
->56 dim=6
-CTGAAT
->57 dim=6
-CACAGA
->57 dim=6
-ACAGAA
->57 dim=6
-CAGAAA
->58 dim=6
-GGGATT
->58 dim=6
-GGATTT
->58 dim=6
-GATTTC
->59 dim=6
-GACTTC
->59 dim=6
-ACTTCC
->59 dim=6
-CTTCCT
->60 dim=6
-GCTTAA
->60 dim=6
-CTTAAT
->60 dim=6
-TTAATG
->61 dim=6
-CCTGGC
->61 dim=6
-CTGGCC
->61 dim=6
-TGGCCT
->62 dim=6
-GGCGAA
->62 dim=6
-GCGAAT
->62 dim=6
-CGAATC
->63 dim=6
-GATTAC
->63 dim=6
-ATTACG
->63 dim=6
-TTACGC
->64 dim=6
-TGATGA
->64 dim=6
-GATGAG
->64 dim=6
-ATGAGT
->65 dim=6
-TCGTTT
->65 dim=6
-CGTTTG
->65 dim=6
-GTTTGC
->66 dim=6
-ATATCT
->66 dim=6
-TATCTT
->66 dim=6
-ATCTTC
->67 dim=6
-CCTTAG
->67 dim=6
-CTTAGT
->67 dim=6
-TTAGTA
->68 dim=6
-GGAGCC
->68 dim=6
-GAGCCG
->68 dim=6
-AGCCGT
->69 dim=6
-ACCCGC
->69 dim=6
-CCCGCG
->69 dim=6
-CCGCGA
->70 dim=6
-ATATTC
->70 dim=6
-TATTCT
->70 dim=6
-ATTCTG
->71 dim=6
-TTCGCT
->71 dim=6
-TCGCTT
->71 dim=6
-CGCTTT
->72 dim=6
-TCAAGG
->72 dim=6
-CAAGGG
->72 dim=6
-AAGGGC
->73 dim=6
-TTCAGT
->73 dim=6
-TCAGTC
->73 dim=6
-CAGTCT
->74 dim=6
-TGGTAT
->74 dim=6
-GGTATG
->74 dim=6
-GTATGC
->75 dim=6
-GTACAT
->75 dim=6
-TACATC
->75 dim=6
-ACATCA
->76 dim=6
-ACGGGA
->76 dim=6
-CGGGAC
->76 dim=6
-GGGACG
->77 dim=6
-GATGTT
->77 dim=6
-ATGTTG
->77 dim=6
-TGTTGA
->78 dim=6
-CTTACG
->78 dim=6
-TTACGT
->78 dim=6
-TACGTG
->79 dim=6
-ATTTGC
->79 dim=6
-TTTGCC
->79 dim=6
-TTGCCG
->80 dim=6
-TGCCGT
->80 dim=6
-GCCGTG
->80 dim=6
-CCGTGA
->81 dim=6
-GAACTG
->81 dim=6
-AACTGA
->81 dim=6
-ACTGAA
->82 dim=6
-GCGTCG
->82 dim=6
-CGTCGG
->82 dim=6
-GTCGGT
->83 dim=6
-AAAAAG
->83 dim=6
-AAAAGG
->83 dim=6
-AAAGGC
->84 dim=6
-ATTCCA
->84 dim=6
-TTCCAG
->84 dim=6
-TCCAGT
->85 dim=6
-GTGGCA
->85 dim=6
-TGGCAA
->85 dim=6
-GGCAAA
->86 dim=6
-CGCATT
->86 dim=6
-GCATTC
->86 dim=6
-CATTCC
->87 dim=6
-TGGGCG
->87 dim=6
-GGGCGA
->87 dim=6
-GGCGAG
->88 dim=6
-GAGGCG
->88 dim=6
-AGGCGG
->88 dim=6
-GGCGGC
->89 dim=6
-GATTGC
->89 dim=6
-ATTGCC
->89 dim=6
-TTGCCG
->90 dim=6
-GTTTGA
->90 dim=6
-TTTGAT
->90 dim=6
-TTGATG
->91 dim=6
-GGGCAA
->91 dim=6
-GGCAAT
->91 dim=6
-GCAATG
->92 dim=6
-ATGGTT
->92 dim=6
-TGGTTG
->92 dim=6
-GGTTGG
->93 dim=6
-ATTTCC
->93 dim=6
-TTTCCA
->93 dim=6
-TTCCAA
->94 dim=6
-TGGAAA
->94 dim=6
-GGAAAA
->94 dim=6
-GAAAAG
->95 dim=6
-CAGGTG
->95 dim=6
-AGGTGC
->95 dim=6
-GGTGCC
->96 dim=6
-CACCAA
->96 dim=6
-ACCAAC
->96 dim=6
-CCAACC
->97 dim=6
-ACTGCT
->97 dim=6
-CTGCTG
->97 dim=6
-TGCTGG
->98 dim=6
-TTTCAC
->98 dim=6
-TTCACT
->98 dim=6
-TCACTG
->99 dim=6
-GACTGT
->99 dim=6
-ACTGTA
->99 dim=6
-CTGTAC
->100 dim=6
-CAATAT
->100 dim=6
-AATATG
->100 dim=6
-ATATGA
->101 dim=6
-GCCGTC
->101 dim=6
-CCGTCA
->101 dim=6
-CGTCAG
->102 dim=6
-GATGAA
->102 dim=6
-ATGAAG
->102 dim=6
-TGAAGA
->103 dim=6
-TGTTCA
->103 dim=6
-GTTCAA
->103 dim=6
-TTCAAA
->104 dim=6
-CTGCCC
->104 dim=6
-TGCCCC
->104 dim=6
-GCCCCC
->105 dim=6
-CTTAGG
->105 dim=6
-TTAGGC
->105 dim=6
-TAGGCT
->106 dim=6
-GGTACT
->106 dim=6
-GTACTG
->106 dim=6
-TACTGC
->107 dim=6
-ATGGAT
->107 dim=6
-TGGATG
->107 dim=6
-GGATGT
->108 dim=6
-CGTGGT
->108 dim=6
-GTGGTG
->108 dim=6
-TGGTGC
->109 dim=6
-TGGCAA
->109 dim=6
-GGCAAT
->109 dim=6
-GCAATA
->110 dim=6
-TAAGCT
->110 dim=6
-AAGCTA
->110 dim=6
-AGCTAT
->111 dim=6
-AAGAAC
->111 dim=6
-AGAACT
->111 dim=6
-GAACTG
->112 dim=6
-CACCCC
->112 dim=6
-ACCCCC
->112 dim=6
-CCCCCG
->113 dim=6
-AAATAA
->113 dim=6
-AATAAA
->113 dim=6
-ATAAAA
->114 dim=6
-CAGCGA
->114 dim=6
-AGCGAT
->114 dim=6
-GCGATG
->115 dim=6
-GCCGAG
->115 dim=6
-CCGAGG
->115 dim=6
-CGAGGG
->116 dim=6
-ACGCAT
->116 dim=6
-CGCATT
->116 dim=6
-GCATTA
->117 dim=6
-AAAGTC
->117 dim=6
-AAGTCT
->117 dim=6
-AGTCTC
->118 dim=6
-GCGCTA
->118 dim=6
-CGCTAT
->118 dim=6
-GCTATG
->119 dim=6
-TTGCCG
->119 dim=6
-TGCCGC
->119 dim=6
-GCCGCG
->120 dim=6
-TTACTA
->120 dim=6
-TACTAC
->120 dim=6
-ACTACC
->121 dim=6
-TTGCTC
->121 dim=6
-TGCTCA
->121 dim=6
-GCTCAG
->122 dim=6
-ATACCG
->122 dim=6
-TACCGA
->122 dim=6
-ACCGAA
->123 dim=6
-CGTGGT
->123 dim=6
-GTGGTC
->123 dim=6
-TGGTCA
->124 dim=6
-TGCCGA
->124 dim=6
-GCCGAT
->124 dim=6
-CCGATA
->125 dim=6
-TGCGCT
->125 dim=6
-GCGCTG
->125 dim=6
-CGCTGC
->126 dim=6
-GATAGC
->126 dim=6
-ATAGCA
->126 dim=6
-TAGCAT
->127 dim=6
-CCTTCT
->127 dim=6
-CTTCTA
->127 dim=6
-TTCTAT
->128 dim=6
-AACGCT
->128 dim=6
-ACGCTG
->128 dim=6
-CGCTGC
->129 dim=6
-CCTCGT
->129 dim=6
-CTCGTC
->129 dim=6
-TCGTCG
->130 dim=6
-CTAACT
->130 dim=6
-TAACTC
->130 dim=6
-AACTCG
->131 dim=6
-CCGCAG
->131 dim=6
-CGCAGA
->131 dim=6
-GCAGAG
->132 dim=6
-TTGAAG
->132 dim=6
-TGAAGT
->132 dim=6
-GAAGTC
->133 dim=6
-TCGTCG
->133 dim=6
-CGTCGA
->133 dim=6
-GTCGAC
->134 dim=6
-AGGAAT
->134 dim=6
-GGAATT
->134 dim=6
-GAATTT
->135 dim=6
-GTCGTG
->135 dim=6
-TCGTGG
->135 dim=6
-CGTGGT
->136 dim=6
-GGCTCC
->136 dim=6
-GCTCCA
->136 dim=6
-CTCCAG
->137 dim=6
-GATTGC
->137 dim=6
-ATTGCC
->137 dim=6
-TTGCCG
->138 dim=6
-GGCTGA
->138 dim=6
-GCTGAC
->138 dim=6
-CTGACG
->139 dim=6
-AGGCTC
->139 dim=6
-GGCTCC
->139 dim=6
-GCTCCA
->140 dim=6
-TTCTCC
->140 dim=6
-TCTCCG
->140 dim=6
-CTCCGG
->141 dim=6
-ACCACC
->141 dim=6
-CCACCA
->141 dim=6
-CACCAT
->142 dim=6
-TTATCG
->142 dim=6
-TATCGA
->142 dim=6
-ATCGAT
->143 dim=6
-CTGGCG
->143 dim=6
-TGGCGC
->143 dim=6
-GGCGCA
->144 dim=6
-AAAAAA
->144 dim=6
-AAAAAG
->144 dim=6
-AAAAGA
->145 dim=6
-AAGCAA
->145 dim=6
-AGCAAA
->145 dim=6
-GCAAAT
->146 dim=6
-CTGGCG
->146 dim=6
-TGGCGG
->146 dim=6
-GGCGGA
->147 dim=6
-CCGACT
->147 dim=6
-CGACTA
->147 dim=6
-GACTAC
->148 dim=6
-GGAAAC
->148 dim=6
-GAAACA
->148 dim=6
-AAACAC
->149 dim=6
-GTTACC
->149 dim=6
-TTACCT
->149 dim=6
-TACCTG
->150 dim=6
-GAAGTG
->150 dim=6
-AAGTGT
->150 dim=6
-AGTGTT
->151 dim=6
-CTGTCG
->151 dim=6
-TGTCGT
->151 dim=6
-GTCGTG
->152 dim=6
-AGTGTC
->152 dim=6
-GTGTCT
->152 dim=6
-TGTCTG
->153 dim=6
-ACCAAT
->153 dim=6
-CCAATA
->153 dim=6
-CAATAT
->154 dim=6
-ATTAGC
->154 dim=6
-TTAGCG
->154 dim=6
-TAGCGG
->155 dim=6
-ACATGG
->155 dim=6
-CATGGC
->155 dim=6
-ATGGCA
->156 dim=6
-TCAGGA
->156 dim=6
-CAGGAA
->156 dim=6
-AGGAAG
->157 dim=6
-CTCGGA
->157 dim=6
-TCGGAG
->157 dim=6
-CGGAGA
->158 dim=6
-CCCATC
->158 dim=6
-CCATCG
->158 dim=6
-CATCGC
->159 dim=6
-CTGGCC
->159 dim=6
-TGGCCT
->159 dim=6
-GGCCTT
->160 dim=6
-TTACGA
->160 dim=6
-TACGAC
->160 dim=6
-ACGACA
->161 dim=6
-CCCTGG
->161 dim=6
-CCTGGC
->161 dim=6
-CTGGCC
->162 dim=6
-GAACGG
->162 dim=6
-AACGGG
->162 dim=6
-ACGGGC
->163 dim=6
-ACAGTA
->163 dim=6
-CAGTAT
->163 dim=6
-AGTATC
->164 dim=6
-ACAGGT
->164 dim=6
-CAGGTA
->164 dim=6
-AGGTAA
->165 dim=6
-GGCCAT
->165 dim=6
-GCCATT
->165 dim=6
-CCATTA
->166 dim=6
-CCAAAG
->166 dim=6
-CAAAGA
->166 dim=6
-AAAGAG
->167 dim=6
-CAGCCA
->167 dim=6
-AGCCAG
->167 dim=6
-GCCAGG
->168 dim=6
-ACTCGA
->168 dim=6
-CTCGAA
->168 dim=6
-TCGAAG
->169 dim=6
-TCGGTG
->169 dim=6
-CGGTGG
->169 dim=6
-GGTGGC
->170 dim=6
-CCGGGG
->170 dim=6
-CGGGGA
->170 dim=6
-GGGGAT
->171 dim=6
-GCGGGC
->171 dim=6
-CGGGCA
->171 dim=6
-GGGCAA
->172 dim=6
-GCGATC
->172 dim=6
-CGATCC
->172 dim=6
-GATCCG
->173 dim=6
-CAGAGT
->173 dim=6
-AGAGTA
->173 dim=6
-GAGTAC
->174 dim=6
-CAGGTG
->174 dim=6
-AGGTGC
->174 dim=6
-GGTGCC
->175 dim=6
-TGAAGT
->175 dim=6
-GAAGTC
->175 dim=6
-AAGTCG
->176 dim=6
-AAGTCT
->176 dim=6
-AGTCTC
->176 dim=6
-GTCTCG
->177 dim=6
-ACTTCC
->177 dim=6
-CTTCCA
->177 dim=6
-TTCCAG
->178 dim=6
-TCTGAA
->178 dim=6
-CTGAAC
->178 dim=6
-TGAACT
->179 dim=6
-GTGCTG
->179 dim=6
-TGCTGG
->179 dim=6
-GCTGGC
->180 dim=6
-GTGGCT
->180 dim=6
-TGGCTG
->180 dim=6
-GGCTGT
->181 dim=6
-GTTGGC
->181 dim=6
-TTGGCG
->181 dim=6
-TGGCGG
->182 dim=6
-GAGTGT
->182 dim=6
-AGTGTC
->182 dim=6
-GTGTCT
->183 dim=6
-AAAGTT
->183 dim=6
-AAGTTC
->183 dim=6
-AGTTCT
->184 dim=6
-CGGCAT
->184 dim=6
-GGCATT
->184 dim=6
-GCATTC
->185 dim=6
-TGCGCA
->185 dim=6
-GCGCAC
->185 dim=6
-CGCACC
->186 dim=6
-GGTGAT
->186 dim=6
-GTGATG
->186 dim=6
-TGATGG
->187 dim=6
-ATTTCC
->187 dim=6
-TTTCCA
->187 dim=6
-TTCCAA
->188 dim=6
-GTCGAA
->188 dim=6
-TCGAAA
->188 dim=6
-CGAAAA
->189 dim=6
-TCTGGA
->189 dim=6
-CTGGAA
->189 dim=6
-TGGAAA
->190 dim=6
-TGATTG
->190 dim=6
-GATTGG
->190 dim=6
-ATTGGC
->191 dim=6
-TTCCGG
->191 dim=6
-TCCGGC
->191 dim=6
-CCGGCC
->192 dim=6
-TGGGCG
->192 dim=6
-GGGCGA
->192 dim=6
-GGCGAG
->193 dim=6
-GGAAGT
->193 dim=6
-GAAGTT
->193 dim=6
-AAGTTA
->194 dim=6
-TCAGGT
->194 dim=6
-CAGGTG
->194 dim=6
-AGGTGC
->195 dim=6
-AGCTTC
->195 dim=6
-GCTTCT
->195 dim=6
-CTTCTG
->196 dim=6
-CACAAC
->196 dim=6
-ACAACG
->196 dim=6
-CAACGT
->197 dim=6
-TGTTGA
->197 dim=6
-GTTGAA
->197 dim=6
-TTGAAG
->198 dim=6
-CCACCC
->198 dim=6
-CACCCG
->198 dim=6
-ACCCGC
->199 dim=6
-TGTTAG
->199 dim=6
-GTTAGA
->199 dim=6
-TTAGAA
->200 dim=6
-CAGTGC
->200 dim=6
-AGTGCG
->200 dim=6
-GTGCGG
->201 dim=6
-GGGAAA
->201 dim=6
-GGAAAA
->201 dim=6
-GAAAAT
->202 dim=6
-CTGCGC
->202 dim=6
-TGCGCG
->202 dim=6
-GCGCGA
->203 dim=6
-TCCGGC
->203 dim=6
-CCGGCC
->203 dim=6
-CGGCCC
->204 dim=6
-GGTGGT
->204 dim=6
-GTGGTA
->204 dim=6
-TGGTAT
->205 dim=6
-ATTCTC
->205 dim=6
-TTCTCG
->205 dim=6
-TCTCGC
->206 dim=6
-CTCGGG
->206 dim=6
-TCGGGC
->206 dim=6
-CGGGCG
->207 dim=6
-ACATTG
->207 dim=6
-CATTGT
->207 dim=6
-ATTGTC
->208 dim=6
-ACCCTC
->208 dim=6
-CCCTCT
->208 dim=6
-CCTCTC
->209 dim=6
-AGGCAC
->209 dim=6
-GGCACT
->209 dim=6
-GCACTG
->210 dim=6
-CTGTCG
->210 dim=6
-TGTCGT
->210 dim=6
-GTCGTG
->211 dim=6
-GGCGTG
->211 dim=6
-GCGTGT
->211 dim=6
-CGTGTT
->212 dim=6
-CTGGCG
->212 dim=6
-TGGCGC
->212 dim=6
-GGCGCG
->213 dim=6
-TTCCGC
->213 dim=6
-TCCGCT
->213 dim=6
-CCGCTG
->214 dim=6
-AATATA
->214 dim=6
-ATATAG
->214 dim=6
-TATAGG
->215 dim=6
-TTGTTG
->215 dim=6
-TGTTGA
->215 dim=6
-GTTGAC
->216 dim=6
-CGTGAA
->216 dim=6
-GTGAAG
->216 dim=6
-TGAAGA
->217 dim=6
-CATCTG
->217 dim=6
-ATCTGG
->217 dim=6
-TCTGGT
->218 dim=6
-CGTAAG
->218 dim=6
-GTAAGC
->218 dim=6
-TAAGCT
->219 dim=6
-GCCATT
->219 dim=6
-CCATTA
->219 dim=6
-CATTAT
->220 dim=6
-GGCGGC
->220 dim=6
-GCGGCG
->220 dim=6
-CGGCGC
->221 dim=6
-CTGGCA
->221 dim=6
-TGGCAG
->221 dim=6
-GGCAGG
->222 dim=6
-TGCATG
->222 dim=6
-GCATGA
->222 dim=6
-CATGAT
->223 dim=6
-GCAAGC
->223 dim=6
-CAAGCA
->223 dim=6
-AAGCAA
->224 dim=6
-GCCAAT
->224 dim=6
-CCAATA
->224 dim=6
-CAATAT
->225 dim=6
-AAACTT
->225 dim=6
-AACTTT
->225 dim=6
-ACTTTC
->226 dim=6
-ACATTC
->226 dim=6
-CATTCA
->226 dim=6
-ATTCAG
->227 dim=6
-GCCTTG
->227 dim=6
-CCTTGC
->227 dim=6
-CTTGCA
->228 dim=6
-AACCAT
->228 dim=6
-ACCATT
->228 dim=6
-CCATTA
->229 dim=6
-GTGGGT
->229 dim=6
-TGGGTG
->229 dim=6
-GGGTGC
->230 dim=6
-TCATCA
->230 dim=6
-CATCAG
->230 dim=6
-ATCAGA
->231 dim=6
-GAATAT
->231 dim=6
-AATATC
->231 dim=6
-ATATCA
->232 dim=6
-CCAATA
->232 dim=6
-CAATAT
->232 dim=6
-AATATC
->233 dim=6
-CAGTGG
->233 dim=6
-AGTGGC
->233 dim=6
-GTGGCG
->234 dim=6
-CTTTTT
->234 dim=6
-TTTTTT
->234 dim=6
-TTTTTT
->235 dim=6
-GCTTCC
->235 dim=6
-CTTCCA
->235 dim=6
-TTCCAG
->236 dim=6
-GGGCAT
->236 dim=6
-GGCATT
->236 dim=6
-GCATTT
->237 dim=6
-CCATCA
->237 dim=6
-CATCAG
->237 dim=6
-ATCAGT
->238 dim=6
-GACTCT
->238 dim=6
-ACTCTG
->238 dim=6
-CTCTGG
->239 dim=6
-CTCATT
->239 dim=6
-TCATTG
->239 dim=6
-CATTGG
->240 dim=6
-GCGGAT
->240 dim=6
-CGGATA
->240 dim=6
-GGATAT
->241 dim=6
-ATCAGT
->241 dim=6
-TCAGTG
->241 dim=6
-CAGTGC
->242 dim=6
-CGGTGT
->242 dim=6
-GGTGTT
->242 dim=6
-GTGTTT
->243 dim=6
-GCGGCG
->243 dim=6
-CGGCGC
->243 dim=6
-GGCGCG
->244 dim=6
-TGTTGA
->244 dim=6
-GTTGAA
->244 dim=6
-TTGAAG
->245 dim=6
-TATGCC
->245 dim=6
-ATGCCC
->245 dim=6
-TGCCCC
->246 dim=6
-CCTGTT
->246 dim=6
-CTGTTT
->246 dim=6
-TGTTTA
->247 dim=6
-TCTTAT
->247 dim=6
-CTTATA
->247 dim=6
-TTATAT
->248 dim=6
-TGATGA
->248 dim=6
-GATGAA
->248 dim=6
-ATGAAG
->249 dim=6
-AAAGGG
->249 dim=6
-AAGGGA
->249 dim=6
-AGGGAT
->250 dim=6
-GCAACG
->250 dim=6
-CAACGG
->250 dim=6
-AACGGT
->251 dim=6
-CAGCCG
->251 dim=6
-AGCCGT
->251 dim=6
-GCCGTG
->252 dim=6
-TCTCGC
->252 dim=6
-CTCGCT
->252 dim=6
-TCGCTC
->253 dim=6
-TCGGTG
->253 dim=6
-CGGTGG
->253 dim=6
-GGTGGT
->254 dim=6
-GCATTC
->254 dim=6
-CATTCT
->254 dim=6
-ATTCTT
->255 dim=6
-CGACGA
->255 dim=6
-GACGAT
->255 dim=6
-ACGATC
->256 dim=6
-CGGCGC
->256 dim=6
-GGCGCT
->256 dim=6
-GCGCTG
->257 dim=6
-AATGAA
->257 dim=6
-ATGAAC
->257 dim=6
-TGAACA
->258 dim=6
-TCACAG
->258 dim=6
-CACAGC
->258 dim=6
-ACAGCT
->259 dim=6
-CAGCTG
->259 dim=6
-AGCTGC
->259 dim=6
-GCTGCC
->260 dim=6
-CCATTA
->260 dim=6
-CATTAC
->260 dim=6
-ATTACC
->261 dim=6
-GTATTT
->261 dim=6
-TATTTC
->261 dim=6
-ATTTCC
->262 dim=6
-GACAGT
->262 dim=6
-ACAGTG
->262 dim=6
-CAGTGC
->263 dim=6
-AAGAAA
->263 dim=6
-AGAAAA
->263 dim=6
-GAAAAC
->264 dim=6
-GAAAAT
->264 dim=6
-AAAATG
->264 dim=6
-AAATGT
->265 dim=6
-GTGCTG
->265 dim=6
-TGCTGC
->265 dim=6
-GCTGCC
->266 dim=6
-ACACAA
->266 dim=6
-CACAAC
->266 dim=6
-ACAACA
->267 dim=6
-GTCGGT
->267 dim=6
-TCGGTG
->267 dim=6
-CGGTGG
->268 dim=6
-ATGAAA
->268 dim=6
-TGAAAA
->268 dim=6
-GAAAAA
->269 dim=6
-ATCAGA
->269 dim=6
-TCAGAT
->269 dim=6
-CAGATG
->270 dim=6
-GGCAAT
->270 dim=6
-GCAATG
->270 dim=6
-CAATGC
->271 dim=6
-TGCCGT
->271 dim=6
-GCCGTG
->271 dim=6
-CCGTGG
->272 dim=6
-TGTTTA
->272 dim=6
-GTTTAC
->272 dim=6
-TTTACG
->273 dim=6
-CTGATT
->273 dim=6
-TGATTT
->273 dim=6
-GATTTG
->274 dim=6
-TGAAGC
->274 dim=6
-GAAGCG
->274 dim=6
-AAGCGT
->275 dim=6
-TGATGT
->275 dim=6
-GATGTG
->275 dim=6
-ATGTGC
->276 dim=6
-CGGTCA
->276 dim=6
-GGTCAT
->276 dim=6
-GTCATT
->277 dim=6
-CAGGCT
->277 dim=6
-AGGCTG
->277 dim=6
-GGCTGT
->278 dim=6
-GAACTT
->278 dim=6
-AACTTC
->278 dim=6
-ACTTCT
->279 dim=6
-CAGGGG
->279 dim=6
-AGGGGC
->279 dim=6
-GGGGCA
->280 dim=6
-CAGTGG
->280 dim=6
-AGTGGT
->280 dim=6
-GTGGTC
->281 dim=6
-CGCTCA
->281 dim=6
-GCTCAA
->281 dim=6
-CTCAAT
->282 dim=6
-GAACTG
->282 dim=6
-AACTGA
->282 dim=6
-ACTGAA
->283 dim=6
-ACGTGG
->283 dim=6
-CGTGGG
->283 dim=6
-GTGGGA
->284 dim=6
-CGCAAG
->284 dim=6
-GCAAGC
->284 dim=6
-CAAGCC
->285 dim=6
-GCCGGT
->285 dim=6
-CCGGTA
->285 dim=6
-CGGTAA
->286 dim=6
-CTGAAT
->286 dim=6
-TGAATC
->286 dim=6
-GAATCC
->287 dim=6
-AGATCC
->287 dim=6
-GATCCC
->287 dim=6
-ATCCCT
->288 dim=6
-GTTAAA
->288 dim=6
-TTAAAG
->288 dim=6
-TAAAGT
->289 dim=6
-GCCACG
->289 dim=6
-CCACGG
->289 dim=6
-CACGGG
->290 dim=6
-ATATTG
->290 dim=6
-TATTGA
->290 dim=6
-ATTGAA
->291 dim=6
-TGTGCT
->291 dim=6
-GTGCTG
->291 dim=6
-TGCTGC
->292 dim=6
-GAAGCG
->292 dim=6
-AAGCGC
->292 dim=6
-AGCGCG
->293 dim=6
-GGTGAT
->293 dim=6
-GTGATG
->293 dim=6
-TGATGA
->294 dim=6
-CATCTG
->294 dim=6
-ATCTGG
->294 dim=6
-TCTGGT
->295 dim=6
-CGCCCG
->295 dim=6
-GCCCGT
->295 dim=6
-CCCGTA
->296 dim=6
-TTACTC
->296 dim=6
-TACTCA
->296 dim=6
-ACTCAT
->297 dim=6
-TTGAAC
->297 dim=6
-TGAACC
->297 dim=6
-GAACCT
->298 dim=6
-TCCGGG
->298 dim=6
-CCGGGG
->298 dim=6
-CGGGGA
->299 dim=6
-CCTGGC
->299 dim=6
-CTGGCC
->299 dim=6
-TGGCCT
->300 dim=6
-TCTGCC
->300 dim=6
-CTGCCC
->300 dim=6
-TGCCCC
->301 dim=6
-GCACCA
->301 dim=6
-CACCAC
->301 dim=6
-ACCACC
->302 dim=6
-AGTTTC
->302 dim=6
-GTTTCT
->302 dim=6
-TTTCTG
->303 dim=6
-CAGCAT
->303 dim=6
-AGCATT
->303 dim=6
-GCATTC
->304 dim=6
-GGGCAA
->304 dim=6
-GGCAAT
->304 dim=6
-GCAATG
->305 dim=6
-AACCGG
->305 dim=6
-ACCGGA
->305 dim=6
-CCGGAC
->306 dim=6
-CGTTAT
->306 dim=6
-GTTATC
->306 dim=6
-TTATCG
->307 dim=6
-ATGGCG
->307 dim=6
-TGGCGA
->307 dim=6
-GGCGAA
->308 dim=6
-AAAAAA
->308 dim=6
-AAAAAC
->308 dim=6
-AAAACG
->309 dim=6
-TGGGGC
->309 dim=6
-GGGGCT
->309 dim=6
-GGGCTG
->310 dim=6
-GCGCTG
->310 dim=6
-CGCTGC
->310 dim=6
-GCTGCT
->311 dim=6
-CCATGC
->311 dim=6
-CATGCG
->311 dim=6
-ATGCGA
->312 dim=6
-CCCAAA
->312 dim=6
-CCAAAT
->312 dim=6
-CAAATA
->313 dim=6
-AAATAT
->313 dim=6
-AATATC
->313 dim=6
-ATATCG
->314 dim=6
-CGGTGG
->314 dim=6
-GGTGGC
->314 dim=6
-GTGGCG
->315 dim=6
-AAGCAC
->315 dim=6
-AGCACC
->315 dim=6
-GCACCA
->316 dim=6
-GAATAC
->316 dim=6
-AATACA
->316 dim=6
-ATACAG
->317 dim=6
-GCGTAC
->317 dim=6
-CGTACA
->317 dim=6
-GTACAG
->318 dim=6
-GTGATG
->318 dim=6
-TGATGA
->318 dim=6
-GATGAA
->319 dim=6
-GTTGGC
->319 dim=6
-TTGGCA
->319 dim=6
-TGGCAT
->320 dim=6
-GAAAAA
->320 dim=6
-AAAAAT
->320 dim=6
-AAAATG
->321 dim=6
-GTTACC
->321 dim=6
-TTACCG
->321 dim=6
-TACCGT
->322 dim=6
-GGTATG
->322 dim=6
-GTATGC
->322 dim=6
-TATGCA
->323 dim=6
-CAACTG
->323 dim=6
-AACTGA
->323 dim=6
-ACTGAA
->324 dim=6
-GCGTGT
->324 dim=6
-CGTGTG
->324 dim=6
-GTGTGG
->325 dim=6
-TAGGCT
->325 dim=6
-AGGCTC
->325 dim=6
-GGCTCC
->326 dim=6
-GGACGG
->326 dim=6
-GACGGA
->326 dim=6
-ACGGAT
->327 dim=6
-TGGTAT
->327 dim=6
-GGTATG
->327 dim=6
-GTATGC
->328 dim=6
-TGCACC
->328 dim=6
-GCACCG
->328 dim=6
-CACCGT
->329 dim=6
-ATGAAA
->329 dim=6
-TGAAAG
->329 dim=6
-GAAAGG
->330 dim=6
-ATGGTT
->330 dim=6
-TGGTTG
->330 dim=6
-GGTTGG
->331 dim=6
-AGGTGA
->331 dim=6
-GGTGAT
->331 dim=6
-GTGATG
->332 dim=6
-CTTCAC
->332 dim=6
-TTCACC
->332 dim=6
-TCACCC
->333 dim=6
-CCTGTT
->333 dim=6
-CTGTTG
->333 dim=6
-TGTTGA
->334 dim=6
-CAGATA
->334 dim=6
-AGATAA
->334 dim=6
-GATAAA
->335 dim=6
-CCGATA
->335 dim=6
-CGATAA
->335 dim=6
-GATAAG
->336 dim=6
-ATGAGC
->336 dim=6
-TGAGCG
->336 dim=6
-GAGCGT
->337 dim=6
-GCATTT
->337 dim=6
-CATTTC
->337 dim=6
-ATTTCC
->338 dim=6
-GTTAGA
->338 dim=6
-TTAGAC
->338 dim=6
-TAGACG
->339 dim=6
-CACCAT
->339 dim=6
-ACCATT
->339 dim=6
-CCATTA
->340 dim=6
-TAACAT
->340 dim=6
-AACATG
->340 dim=6
-ACATGG
->341 dim=6
-GGGAGC
->341 dim=6
-GGAGCG
->341 dim=6
-GAGCGT
->342 dim=6
-GCTGGT
->342 dim=6
-CTGGTT
->342 dim=6
-TGGTTT
->343 dim=6
-GATGTT
->343 dim=6
-ATGTTG
->343 dim=6
-TGTTGA
->344 dim=6
-GAAACG
->344 dim=6
-AAACGC
->344 dim=6
-AACGCA
->345 dim=6
-AAAAAG
->345 dim=6
-AAAAGA
->345 dim=6
-AAAGAG
->346 dim=6
-CCGTGG
->346 dim=6
-CGTGGC
->346 dim=6
-GTGGCG
->347 dim=6
-GGTGAT
->347 dim=6
-GTGATG
->347 dim=6
-TGATGG
->348 dim=6
-AGCAAC
->348 dim=6
-GCAACT
->348 dim=6
-CAACTG
->349 dim=6
-ACTTAC
->349 dim=6
-CTTACG
->349 dim=6
-TTACGT
->350 dim=6
-GCAGGT
->350 dim=6
-CAGGTG
->350 dim=6
-AGGTGG
->351 dim=6
-GGCAGG
->351 dim=6
-GCAGGA
->351 dim=6
-CAGGAA
->352 dim=6
-ACGTTA
->352 dim=6
-CGTTAC
->352 dim=6
-GTTACA
->353 dim=6
-ACCACA
->353 dim=6
-CCACAG
->353 dim=6
-CACAGG
->354 dim=6
-AAGCCG
->354 dim=6
-AGCCGC
->354 dim=6
-GCCGCT
->355 dim=6
-AGCCTT
->355 dim=6
-GCCTTG
->355 dim=6
-CCTTGC
->356 dim=6
-ATACCG
->356 dim=6
-TACCGG
->356 dim=6
-ACCGGA
->357 dim=6
-AGTGGG
->357 dim=6
-GTGGGT
->357 dim=6
-TGGGTC
->358 dim=6
-CAGCAT
->358 dim=6
-AGCATT
->358 dim=6
-GCATTC
->359 dim=6
-AAATGG
->359 dim=6
-AATGGG
->359 dim=6
-ATGGGT
->360 dim=6
-CCTGTT
->360 dim=6
-CTGTTC
->360 dim=6
-TGTTCA
->361 dim=6
-TTACGC
->361 dim=6
-TACGCC
->361 dim=6
-ACGCCG
->362 dim=6
-CCCTCT
->362 dim=6
-CCTCTC
->362 dim=6
-CTCTCA
->363 dim=6
-AGCCAG
->363 dim=6
-GCCAGC
->363 dim=6
-CCAGCA
->364 dim=6
-TGGTAC
->364 dim=6
-GGTACT
->364 dim=6
-GTACTG
->365 dim=6
-ATCGAC
->365 dim=6
-TCGACT
->365 dim=6
-CGACTT
->366 dim=6
-GTGCTG
->366 dim=6
-TGCTGG
->366 dim=6
-GCTGGG
->367 dim=6
-GGCATA
->367 dim=6
-GCATAG
->367 dim=6
-CATAGC
->368 dim=6
-TGGTTG
->368 dim=6
-GGTTGA
->368 dim=6
-GTTGAA
->369 dim=6
-TGCCGA
->369 dim=6
-GCCGAA
->369 dim=6
-CCGAAG
->370 dim=6
-TGCGAG
->370 dim=6
-GCGAGT
->370 dim=6
-CGAGTG
->371 dim=6
-ACGCAT
->371 dim=6
-CGCATT
->371 dim=6
-GCATTA
->372 dim=6
-ATTGGC
->372 dim=6
-TTGGCG
->372 dim=6
-TGGCGT
->373 dim=6
-CGTAAG
->373 dim=6
-GTAAGC
->373 dim=6
-TAAGCT
->374 dim=6
-ATCGAA
->374 dim=6
-TCGAAG
->374 dim=6
-CGAAGA
->375 dim=6
-CCGGTC
->375 dim=6
-CGGTCA
->375 dim=6
-GGTCAA
->376 dim=6
-CAACGG
->376 dim=6
-AACGGG
->376 dim=6
-ACGGGC
->377 dim=6
-ATGTAC
->377 dim=6
-TGTACA
->377 dim=6
-GTACAT
->378 dim=6
-GGGAAA
->378 dim=6
-GGAAAA
->378 dim=6
-GAAAAT
->379 dim=6
-TACGTG
->379 dim=6
-ACGTGT
->379 dim=6
-CGTGTC
->380 dim=6
-TGGTGC
->380 dim=6
-GGTGCT
->380 dim=6
-GTGCTG
->381 dim=6
-GGGAAA
->381 dim=6
-GGAAAT
->381 dim=6
-GAAATG
->382 dim=6
-TGCTCG
->382 dim=6
-GCTCGG
->382 dim=6
-CTCGGG
->383 dim=6
-TCAGGT
->383 dim=6
-CAGGTG
->383 dim=6
-AGGTGC
->384 dim=6
-TAACAA
->384 dim=6
-AACAAC
->384 dim=6
-ACAACC
->385 dim=6
-CGCTTT
->385 dim=6
-GCTTTT
->385 dim=6
-CTTTTA
->386 dim=6
-GCGCAC
->386 dim=6
-CGCACC
->386 dim=6
-GCACCT
->387 dim=6
-AAGTTC
->387 dim=6
-AGTTCT
->387 dim=6
-GTTCTC
->388 dim=6
-TCCAGA
->388 dim=6
-CCAGAT
->388 dim=6
-CAGATC
->389 dim=6
-TCTCCG
->389 dim=6
-CTCCGG
->389 dim=6
-TCCGGC
->390 dim=6
-GAAAAG
->390 dim=6
-AAAAGA
->390 dim=6
-AAAGAA
->391 dim=6
-CTGCCC
->391 dim=6
-TGCCCG
->391 dim=6
-GCCCGC
->392 dim=6
-CGGTCA
->392 dim=6
-GGTCAG
->392 dim=6
-GTCAGG
->393 dim=6
-GAACTG
->393 dim=6
-AACTGG
->393 dim=6
-ACTGGA
->394 dim=6
-GCCGCG
->394 dim=6
-CCGCGT
->394 dim=6
-CGCGTG
->395 dim=6
-GCTAAC
->395 dim=6
-CTAACT
->395 dim=6
-TAACTC
->396 dim=6
-CTGGCG
->396 dim=6
-TGGCGT
->396 dim=6
-GGCGTG
->397 dim=6
-TTTGCC
->397 dim=6
-TTGCCG
->397 dim=6
-TGCCGC
->398 dim=6
-TGCGCT
->398 dim=6
-GCGCTG
->398 dim=6
-CGCTGA
->399 dim=6
-AATTTT
->399 dim=6
-ATTTTA
->399 dim=6
-TTTTAT
->400 dim=6
-GACTGC
->400 dim=6
-ACTGCA
->400 dim=6
-CTGCAA
->401 dim=6
-TCACCA
->401 dim=6
-CACCAA
->401 dim=6
-ACCAAC
->402 dim=6
-GCAGGG
->402 dim=6
-CAGGGG
->402 dim=6
-AGGGGC
->403 dim=6
-GGCTTT
->403 dim=6
-GCTTTG
->403 dim=6
-CTTTGA
->404 dim=6
-CCTCGT
->404 dim=6
-CTCGTG
->404 dim=6
-TCGTGA
->405 dim=6
-CATGAG
->405 dim=6
-ATGAGT
->405 dim=6
-TGAGTT
->406 dim=6
-TGGTGC
->406 dim=6
-GGTGCG
->406 dim=6
-GTGCGG
->407 dim=6
-GGCGGC
->407 dim=6
-GCGGCA
->407 dim=6
-CGGCAG
->408 dim=6
-ATTCTT
->408 dim=6
-TTCTTT
->408 dim=6
-TCTTTC
->409 dim=6
-GTGTTT
->409 dim=6
-TGTTTG
->409 dim=6
-GTTTGT
->410 dim=6
-TTTCTC
->410 dim=6
-TTCTCC
->410 dim=6
-TCTCCG
->411 dim=6
-AAAAAG
->411 dim=6
-AAAAGG
->411 dim=6
-AAAGGC
->412 dim=6
-TCGTCG
->412 dim=6
-CGTCGA
->412 dim=6
-GTCGAC
->413 dim=6
-CCGATC
->413 dim=6
-CGATCA
->413 dim=6
-GATCAG
->414 dim=6
-CGTCAG
->414 dim=6
-GTCAGG
->414 dim=6
-TCAGGT
->415 dim=6
-CATGCG
->415 dim=6
-ATGCGA
->415 dim=6
-TGCGAG
->416 dim=6
-AAAGGC
->416 dim=6
-AAGGCG
->416 dim=6
-AGGCGA
->417 dim=6
-CGCCGA
->417 dim=6
-GCCGAT
->417 dim=6
-CCGATT
->418 dim=6
-GCTTAA
->418 dim=6
-CTTAAT
->418 dim=6
-TTAATT
->419 dim=6
-TAAAAA
->419 dim=6
-AAAAAT
->419 dim=6
-AAAATA
->420 dim=6
-CAACCA
->420 dim=6
-AACCAT
->420 dim=6
-ACCATG
->421 dim=6
-GGCGAT
->421 dim=6
-GCGATG
->421 dim=6
-CGATGA
->422 dim=6
-GTGCTG
->422 dim=6
-TGCTGC
->422 dim=6
-GCTGCC
->423 dim=6
-CATGGC
->423 dim=6
-ATGGCC
->423 dim=6
-TGGCCT
->424 dim=6
-AACATT
->424 dim=6
-ACATTG
->424 dim=6
-CATTGT
->425 dim=6
-GCCAAA
->425 dim=6
-CCAAAG
->425 dim=6
-CAAAGA
->426 dim=6
-TTCAGT
->426 dim=6
-TCAGTC
->426 dim=6
-CAGTCT
->427 dim=6
-ACCGTT
->427 dim=6
-CCGTTT
->427 dim=6
-CGTTTG
->428 dim=6
-TCATCA
->428 dim=6
-CATCAG
->428 dim=6
-ATCAGC
->429 dim=6
-CAGGCT
->429 dim=6
-AGGCTG
->429 dim=6
-GGCTGT
->430 dim=6
-GGCAGA
->430 dim=6
-GCAGAT
->430 dim=6
-CAGATC
->431 dim=6
-CCTGTT
->431 dim=6
-CTGTTG
->431 dim=6
-TGTTGA
->432 dim=6
-ACGAGG
->432 dim=6
-CGAGGT
->432 dim=6
-GAGGTA
->433 dim=6
-CGGCGC
->433 dim=6
-GGCGCT
->433 dim=6
-GCGCTG
->434 dim=6
-AATCTC
->434 dim=6
-ATCTCT
->434 dim=6
-TCTCTG
->435 dim=6
-TGCTCA
->435 dim=6
-GCTCAG
->435 dim=6
-CTCAGG
->436 dim=6
-CACAGC
->436 dim=6
-ACAGCT
->436 dim=6
-CAGCTC
->437 dim=6
-TGCCGG
->437 dim=6
-GCCGGT
->437 dim=6
-CCGGTG
->438 dim=6
-AAAAGG
->438 dim=6
-AAAGGC
->438 dim=6
-AAGGCC
->439 dim=6
-TGGTCG
->439 dim=6
-GGTCGC
->439 dim=6
-GTCGCG
->440 dim=6
-AAAGTC
->440 dim=6
-AAGTCT
->440 dim=6
-AGTCTC
->441 dim=6
-CAGGGG
->441 dim=6
-AGGGGC
->441 dim=6
-GGGGCA
->442 dim=6
-TGCGCG
->442 dim=6
-GCGCGA
->442 dim=6
-CGCGAA
->443 dim=6
-GTGAAA
->443 dim=6
-TGAAAA
->443 dim=6
-GAAAAA
->444 dim=6
-GGCGCG
->444 dim=6
-GCGCGG
->444 dim=6
-CGCGGG
->445 dim=6
-AAATGG
->445 dim=6
-AATGGC
->445 dim=6
-ATGGCG
->446 dim=6
-TGAAGA
->446 dim=6
-GAAGAT
->446 dim=6
-AAGATG
->447 dim=6
-TGATCT
->447 dim=6
-GATCTG
->447 dim=6
-ATCTGC
->448 dim=6
-AAGATT
->448 dim=6
-AGATTG
->448 dim=6
-GATTGC
->449 dim=6
-ACCATT
->449 dim=6
-CCATTA
->449 dim=6
-CATTAG
->450 dim=6
-GAAAAA
->450 dim=6
-AAAAAT
->450 dim=6
-AAAATC
->451 dim=6
-TGGAGC
->451 dim=6
-GGAGCT
->451 dim=6
-GAGCTT
->452 dim=6
-AATCTG
->452 dim=6
-ATCTGC
->452 dim=6
-TCTGCT
->453 dim=6
-TATCAT
->453 dim=6
-ATCATC
->453 dim=6
-TCATCT
->454 dim=6
-ATGCCA
->454 dim=6
-TGCCAG
->454 dim=6
-GCCAGG
->455 dim=6
-ACGTGG
->455 dim=6
-CGTGGC
->455 dim=6
-GTGGCA
->456 dim=6
-GCGGCG
->456 dim=6
-CGGCGC
->456 dim=6
-GGCGCG
->457 dim=6
-CATTAC
->457 dim=6
-ATTACC
->457 dim=6
-TTACCA
->458 dim=6
-GGCGGC
->458 dim=6
-GCGGCG
->458 dim=6
-CGGCGC
->459 dim=6
-GATTCT
->459 dim=6
-ATTCTC
->459 dim=6
-TTCTCG
->460 dim=6
-ATATCA
->460 dim=6
-TATCAA
->460 dim=6
-ATCAAC
->461 dim=6
-TGGAAC
->461 dim=6
-GGAACT
->461 dim=6
-GAACTG
->462 dim=6
-TATTGA
->462 dim=6
-ATTGAA
->462 dim=6
-TTGAAA
->463 dim=6
-GCGGCG
->463 dim=6
-CGGCGG
->463 dim=6
-GGCGGT
->464 dim=6
-TTAGGT
->464 dim=6
-TAGGTC
->464 dim=6
-AGGTCA
->465 dim=6
-ACCCGG
->465 dim=6
-CCCGGT
->465 dim=6
-CCGGTC
->466 dim=6
-GTGTTG
->466 dim=6
-TGTTGA
->466 dim=6
-GTTGAA
->467 dim=6
-TTTATG
->467 dim=6
-TTATGC
->467 dim=6
-TATGCC
->468 dim=6
-AAGGCT
->468 dim=6
-AGGCTT
->468 dim=6
-GGCTTA
->469 dim=6
-CAACGC
->469 dim=6
-AACGCT
->469 dim=6
-ACGCTG
->470 dim=6
-TCTCGC
->470 dim=6
-CTCGCT
->470 dim=6
-TCGCTC
->471 dim=6
-CTCATC
->471 dim=6
-TCATCA
->471 dim=6
-CATCAG
->472 dim=6
-GCTGGT
->472 dim=6
-CTGGTG
->472 dim=6
-TGGTGA
->473 dim=6
-TGTGGC
->473 dim=6
-GTGGCG
->473 dim=6
-TGGCGA
->474 dim=6
-CGCCGC
->474 dim=6
-GCCGCC
->474 dim=6
-CCGCCG
->475 dim=6
-CGCGTA
->475 dim=6
-GCGTAA
->475 dim=6
-CGTAAG
->476 dim=6
-ATCTCC
->476 dim=6
-TCTCCG
->476 dim=6
-CTCCGG
->477 dim=6
-GCGCAC
->477 dim=6
-CGCACC
->477 dim=6
-GCACCT
->478 dim=6
-CAAAAA
->478 dim=6
-AAAAAG
->478 dim=6
-AAAAGG
->479 dim=6
-AGTAAG
->479 dim=6
-GTAAGT
->479 dim=6
-TAAGTG
->480 dim=6
-AAGAGT
->480 dim=6
-AGAGTG
->480 dim=6
-GAGTGT
->481 dim=6
-TTTTAT
->481 dim=6
-TTTATT
->481 dim=6
-TTATTG
->482 dim=6
-GTATTT
->482 dim=6
-TATTTT
->482 dim=6
-ATTTTT
->483 dim=6
-GGCAGG
->483 dim=6
-GCAGGA
->483 dim=6
-CAGGAA
->484 dim=6
-CGCGCG
->484 dim=6
-GCGCGT
->484 dim=6
-CGCGTC
->485 dim=6
-ATGGTA
->485 dim=6
-TGGTAA
->485 dim=6
-GGTAAT
->486 dim=6
-GAAAAA
->486 dim=6
-AAAAAT
->486 dim=6
-AAAATG
->487 dim=6
-ATTGCG
->487 dim=6
-TTGCGG
->487 dim=6
-TGCGGC
->488 dim=6
-TTCTGC
->488 dim=6
-TCTGCG
->488 dim=6
-CTGCGG
->489 dim=6
-ATCAAC
->489 dim=6
-TCAACA
->489 dim=6
-CAACAT
->490 dim=6
-AAAAAT
->490 dim=6
-AAAATT
->490 dim=6
-AAATTA
->491 dim=6
-GGCAGA
->491 dim=6
-GCAGAG
->491 dim=6
-CAGAGA
->492 dim=6
-CGGCGT
->492 dim=6
-GGCGTA
->492 dim=6
-GCGTAA
->493 dim=6
-ATATTG
->493 dim=6
-TATTGA
->493 dim=6
-ATTGAA
->494 dim=6
-TATCAG
->494 dim=6
-ATCAGT
->494 dim=6
-TCAGTG
->495 dim=6
-ATGGGT
->495 dim=6
-TGGGTT
->495 dim=6
-GGGTTA
->496 dim=6
-GGATAT
->496 dim=6
-GATATT
->496 dim=6
-ATATTG
->497 dim=6
-AAGGGC
->497 dim=6
-AGGGCG
->497 dim=6
-GGGCGT
->498 dim=6
-CTCATC
->498 dim=6
-TCATCA
->498 dim=6
-CATCAG
->499 dim=6
-TCGCCG
->499 dim=6
-CGCCGC
->499 dim=6
-GCCGCT
->500 dim=6
-ATGAAG
->500 dim=6
-TGAAGA
->500 dim=6
-GAAGAC
->501 dim=6
-CCGGAA
->501 dim=6
-CGGAAA
->501 dim=6
-GGAAAT
->502 dim=6
-GGTGCG
->502 dim=6
-GTGCGG
->502 dim=6
-TGCGGG
->503 dim=6
-TTATCA
->503 dim=6
-TATCAG
->503 dim=6
-ATCAGT
->504 dim=6
-TGCCCC
->504 dim=6
-GCCCCG
->504 dim=6
-CCCCGG
->505 dim=6
-AATTGA
->505 dim=6
-ATTGAA
->505 dim=6
-TTGAAA
->506 dim=6
-GGGCGC
->506 dim=6
-GGCGCT
->506 dim=6
-GCGCTT
->507 dim=6
-ATTGTC
->507 dim=6
-TTGTCG
->507 dim=6
-TGTCGC
->508 dim=6
-TTAATG
->508 dim=6
-TAATGA
->508 dim=6
-AATGAC
->509 dim=6
-GTGCTC
->509 dim=6
-TGCTCG
->509 dim=6
-GCTCGG
->510 dim=6
-CAGATC
->510 dim=6
-AGATCC
->510 dim=6
-GATCCC
->511 dim=6
-CTATGA
->511 dim=6
-TATGAC
->511 dim=6
-ATGACA
->512 dim=6
-CTCTGC
->512 dim=6
-TCTGCC
->512 dim=6
-CTGCCC
->513 dim=6
-ATCAGT
->513 dim=6
-TCAGTT
->513 dim=6
-CAGTTT
->514 dim=6
-GCCCCG
->514 dim=6
-CCCCGG
->514 dim=6
-CCCGGC
->515 dim=6
-GCAGAG
->515 dim=6
-CAGAGA
->515 dim=6
-AGAGAC
->516 dim=6
-GAGCAA
->516 dim=6
-AGCAAC
->516 dim=6
-GCAACT
->517 dim=6
-CACTCG
->517 dim=6
-ACTCGT
->517 dim=6
-CTCGTT
->518 dim=6
-ACCGTT
->518 dim=6
-CCGTTA
->518 dim=6
-CGTTAT
->519 dim=6
-CTTACG
->519 dim=6
-TTACGT
->519 dim=6
-TACGTG
->520 dim=6
-CGCCGC
->520 dim=6
-GCCGCC
->520 dim=6
-CCGCCG
->521 dim=6
-CCCGCA
->521 dim=6
-CCGCAG
->521 dim=6
-CGCAGA
->522 dim=6
-ATATAG
->522 dim=6
-TATAGG
->522 dim=6
-ATAGGC
->523 dim=6
-TCGTGA
->523 dim=6
-CGTGAA
->523 dim=6
-GTGAAA
->524 dim=6
-CGACCA
->524 dim=6
-GACCAC
->524 dim=6
-ACCACT
->525 dim=6
-TATGTT
->525 dim=6
-ATGTTG
->525 dim=6
-TGTTGG
->526 dim=6
-GTGGTC
->526 dim=6
-TGGTCA
->526 dim=6
-GGTCAA
->527 dim=6
-GCGGGC
->527 dim=6
-CGGGCT
->527 dim=6
-GGGCTG
->528 dim=6
-AGAAAA
->528 dim=6
-GAAAAT
->528 dim=6
-AAAATG
->529 dim=6
-GTTCTC
->529 dim=6
-TTCTCC
->529 dim=6
-TCTCCG
->530 dim=6
-CAGTTT
->530 dim=6
-AGTTTG
->530 dim=6
-GTTTGT
->531 dim=6
-CGCGTG
->531 dim=6
-GCGTGG
->531 dim=6
-CGTGGT
->532 dim=6
-TTAATG
->532 dim=6
-TAATGA
->532 dim=6
-AATGAC
->533 dim=6
-TGAAAT
->533 dim=6
-GAAATT
->533 dim=6
-AAATTG
->534 dim=6
-CTGTTC
->534 dim=6
-TGTTCA
->534 dim=6
-GTTCAG
->535 dim=6
-CGGCCT
->535 dim=6
-GGCCTG
->535 dim=6
-GCCTGT
->536 dim=6
-TGAATG
->536 dim=6
-GAATGA
->536 dim=6
-AATGAA
->537 dim=6
-CGGGCT
->537 dim=6
-GGGCTG
->537 dim=6
-GGCTGA
->538 dim=6
-AGTTGC
->538 dim=6
-GTTGCG
->538 dim=6
-TTGCGT
->539 dim=6
-AGTGAT
->539 dim=6
-GTGATT
->539 dim=6
-TGATTT
->540 dim=6
-TCGTCG
->540 dim=6
-CGTCGA
->540 dim=6
-GTCGAT
->541 dim=6
-AAGTTC
->541 dim=6
-AGTTCG
->541 dim=6
-GTTCGG
->542 dim=6
-TTGTCG
->542 dim=6
-TGTCGC
->542 dim=6
-GTCGCC
->543 dim=6
-CTGCTG
->543 dim=6
-TGCTGG
->543 dim=6
-GCTGGA
->544 dim=6
-AAAATA
->544 dim=6
-AAATAC
->544 dim=6
-AATACC
->545 dim=6
-GATGTG
->545 dim=6
-ATGTGG
->545 dim=6
-TGTGGC
->546 dim=6
-CCACCG
->546 dim=6
-CACCGT
->546 dim=6
-ACCGTC
->547 dim=6
-ACAGAC
->547 dim=6
-CAGACA
->547 dim=6
-AGACAG
->548 dim=6
-AGTGCT
->548 dim=6
-GTGCTG
->548 dim=6
-TGCTGG
->549 dim=6
-TATGCG
->549 dim=6
-ATGCGG
->549 dim=6
-TGCGGC
->550 dim=6
-GCCGAA
->550 dim=6
-CCGAAG
->550 dim=6
-CGAAGT
->551 dim=6
-GCGAAG
->551 dim=6
-CGAAGG
->551 dim=6
-GAAGGC
->552 dim=6
-CTGGTG
->552 dim=6
-TGGTGA
->552 dim=6
-GGTGAT
->553 dim=6
-AAAAAA
->553 dim=6
-AAAAAA
->553 dim=6
-AAAAAT
->554 dim=6
-GAAGAT
->554 dim=6
-AAGATG
->554 dim=6
-AGATGG
->555 dim=6
-TGAGTA
->555 dim=6
-GAGTAA
->555 dim=6
-AGTAAA
->556 dim=6
-GTACAT
->556 dim=6
-TACATC
->556 dim=6
-ACATCA
->557 dim=6
-CAAGCC
->557 dim=6
-AAGCCG
->557 dim=6
-AGCCGC
->558 dim=6
-ATGCAG
->558 dim=6
-TGCAGT
->558 dim=6
-GCAGTT
->559 dim=6
-GACGGT
->559 dim=6
-ACGGTG
->559 dim=6
-CGGTGT
->560 dim=6
-GTTAGA
->560 dim=6
-TTAGAC
->560 dim=6
-TAGACG
->561 dim=6
-CCAAAG
->561 dim=6
-CAAAGG
->561 dim=6
-AAAGGT
->562 dim=6
-AAATGT
->562 dim=6
-AATGTC
->562 dim=6
-ATGTCG
->563 dim=6
-GGAAAA
->563 dim=6
-GAAAAG
->563 dim=6
-AAAAGT
->564 dim=6
-TGAGGC
->564 dim=6
-GAGGCG
->564 dim=6
-AGGCGG
->565 dim=6
-CCGCAA
->565 dim=6
-CGCAAA
->565 dim=6
-GCAAAG
->566 dim=6
-GGGATT
->566 dim=6
-GGATTT
->566 dim=6
-GATTTC
->567 dim=6
-TGAATG
->567 dim=6
-GAATGA
->567 dim=6
-AATGAA
->568 dim=6
-GGGCTT
->568 dim=6
-GGCTTA
->568 dim=6
-GCTTAG
->569 dim=6
-GAATAA
->569 dim=6
-AATAAC
->569 dim=6
-ATAACA
->570 dim=6
-TCGTGA
->570 dim=6
-CGTGAA
->570 dim=6
-GTGAAA
->571 dim=6
-AAGAGT
->571 dim=6
-AGAGTG
->571 dim=6
-GAGTGT
->572 dim=6
-TGCTGC
->572 dim=6
-GCTGCA
->572 dim=6
-CTGCAT
->573 dim=6
-GCATAG
->573 dim=6
-CATAGC
->573 dim=6
-ATAGCG
->574 dim=6
-CAGATA
->574 dim=6
-AGATAA
->574 dim=6
-GATAAA
->575 dim=6
-ATCTGC
->575 dim=6
-TCTGCT
->575 dim=6
-CTGCTC
->576 dim=6
-AAAATC
->576 dim=6
-AAATCG
->576 dim=6
-AATCGC
->577 dim=6
-AGCAAT
->577 dim=6
-GCAATG
->577 dim=6
-CAATGC
->578 dim=6
-TTTCAG
->578 dim=6
-TTCAGG
->578 dim=6
-TCAGGT
->579 dim=6
-GGCACC
->579 dim=6
-GCACCG
->579 dim=6
-CACCGT
->580 dim=6
-TCGCCG
->580 dim=6
-CGCCGC
->580 dim=6
-GCCGCT
->581 dim=6
-CCACCG
->581 dim=6
-CACCGT
->581 dim=6
-ACCGTC
->582 dim=6
-TTGCCG
->582 dim=6
-TGCCGT
->582 dim=6
-GCCGTG
->583 dim=6
-AGGGAT
->583 dim=6
-GGGATC
->583 dim=6
-GGATCT
->584 dim=6
-GCGCTA
->584 dim=6
-CGCTAT
->584 dim=6
-GCTATG
->585 dim=6
-TAAAAA
->585 dim=6
-AAAAAA
->585 dim=6
-AAAAAC
->586 dim=6
-CTTATA
->586 dim=6
-TTATAT
->586 dim=6
-TATATC
->587 dim=6
-GAAGGT
->587 dim=6
-AAGGTT
->587 dim=6
-AGGTTT
->588 dim=6
-AGTCTG
->588 dim=6
-GTCTGA
->588 dim=6
-TCTGAC
->589 dim=6
-TCTCGC
->589 dim=6
-CTCGCT
->589 dim=6
-TCGCTC
->590 dim=6
-GTCTGA
->590 dim=6
-TCTGAT
->590 dim=6
-CTGATA
->591 dim=6
-TCAAGG
->591 dim=6
-CAAGGG
->591 dim=6
-AAGGGC
->592 dim=6
-GCGGTG
->592 dim=6
-CGGTGC
->592 dim=6
-GGTGCT
->593 dim=6
-TGCAGC
->593 dim=6
-GCAGCG
->593 dim=6
-CAGCGA
->594 dim=6
-GCCAGG
->594 dim=6
-CCAGGG
->594 dim=6
-CAGGGT
->595 dim=6
-GCGATG
->595 dim=6
-CGATGC
->595 dim=6
-GATGCC
->596 dim=6
-GCGATG
->596 dim=6
-CGATGC
->596 dim=6
-GATGCC
->597 dim=6
-GATCTC
->597 dim=6
-ATCTCT
->597 dim=6
-TCTCTT
->598 dim=6
-CAAGTG
->598 dim=6
-AAGTGC
->598 dim=6
-AGTGCC
->599 dim=6
-GTGGTG
->599 dim=6
-TGGTGC
->599 dim=6
-GGTGCT
->600 dim=6
-GGTCAG
->600 dim=6
-GTCAGG
->600 dim=6
-TCAGGA
->601 dim=6
-TTAATT
->601 dim=6
-TAATTC
->601 dim=6
-AATTCG
->602 dim=6
-CCCGGG
->602 dim=6
-CCGGGG
->602 dim=6
-CGGGGA
->603 dim=6
-CATCTG
->603 dim=6
-ATCTGC
->603 dim=6
-TCTGCT
->604 dim=6
-ACGCGC
->604 dim=6
-CGCGCC
->604 dim=6
-GCGCCC
->605 dim=6
-AATTGA
->605 dim=6
-ATTGAA
->605 dim=6
-TTGAAA
->606 dim=6
-CACAGC
->606 dim=6
-ACAGCT
->606 dim=6
-CAGCTC
->607 dim=6
-CAATAA
->607 dim=6
-AATAAC
->607 dim=6
-ATAACG
->608 dim=6
-TAAATT
->608 dim=6
-AAATTA
->608 dim=6
-AATTAA
->609 dim=6
-GCTGAA
->609 dim=6
-CTGAAC
->609 dim=6
-TGAACC
->610 dim=6
-TGGCAG
->610 dim=6
-GGCAGT
->610 dim=6
-GCAGTG
->611 dim=6
-CGGCAG
->611 dim=6
-GGCAGA
->611 dim=6
-GCAGAG
->612 dim=6
-TTGGCG
->612 dim=6
-TGGCGG
->612 dim=6
-GGCGGT
->613 dim=6
-GGCTGA
->613 dim=6
-GCTGAC
->613 dim=6
-CTGACG
->614 dim=6
-TCAGGT
->614 dim=6
-CAGGTT
->614 dim=6
-AGGTTA
->615 dim=6
-TACAGA
->615 dim=6
-ACAGAG
->615 dim=6
-CAGAGT
->616 dim=6
-CCTGCC
->616 dim=6
-CTGCCG
->616 dim=6
-TGCCGT
->617 dim=6
-CCGCGC
->617 dim=6
-CGCGCT
->617 dim=6
-GCGCTG
->618 dim=6
-ACACAG
->618 dim=6
-CACAGA
->618 dim=6
-ACAGAA
->619 dim=6
-CATTAC
->619 dim=6
-ATTACC
->619 dim=6
-TTACCC
->620 dim=6
-AAAACG
->620 dim=6
-AAACGC
->620 dim=6
-AACGCC
->621 dim=6
-GTGGCT
->621 dim=6
-TGGCTG
->621 dim=6
-GGCTGT
->622 dim=6
-GATTTG
->622 dim=6
-ATTTGC
->622 dim=6
-TTTGCC
->623 dim=6
-CGGTGT
->623 dim=6
-GGTGTT
->623 dim=6
-GTGTTT
->624 dim=6
-CCGCAA
->624 dim=6
-CGCAAA
->624 dim=6
-GCAAAG
->625 dim=6
-GGCCCG
->625 dim=6
-GCCCGC
->625 dim=6
-CCCGCG
->626 dim=6
-TTTTCT
->626 dim=6
-TTTCTG
->626 dim=6
-TTCTGC
->627 dim=6
-GTGCTG
->627 dim=6
-TGCTGG
->627 dim=6
-GCTGGG
->628 dim=6
-GAAATC
->628 dim=6
-AAATCC
->628 dim=6
-AATCCC
->629 dim=6
-TGCCGA
->629 dim=6
-GCCGAC
->629 dim=6
-CCGACT
->630 dim=6
-CGCGGG
->630 dim=6
-GCGGGA
->630 dim=6
-CGGGAA
->631 dim=6
-CGAGTG
->631 dim=6
-GAGTGT
->631 dim=6
-AGTGTT
->632 dim=6
-GGCCAT
->632 dim=6
-GCCATT
->632 dim=6
-CCATTA
->633 dim=6
-ATGACG
->633 dim=6
-TGACGT
->633 dim=6
-GACGTT
->634 dim=6
-ATGATC
->634 dim=6
-TGATCG
->634 dim=6
-GATCGA
->635 dim=6
-TTAACG
->635 dim=6
-TAACGC
->635 dim=6
-AACGCC
->636 dim=6
-TGTCGA
->636 dim=6
-GTCGAT
->636 dim=6
-TCGATC
->637 dim=6
-CAAAGT
->637 dim=6
-AAAGTG
->637 dim=6
-AAGTGA
->638 dim=6
-GGTACG
->638 dim=6
-GTACGC
->638 dim=6
-TACGCT
->639 dim=6
-TGGTTA
->639 dim=6
-GGTTAC
->639 dim=6
-GTTACC
->640 dim=6
-GTCTGA
->640 dim=6
-TCTGAC
->640 dim=6
-CTGACA
->641 dim=6
-ATAACA
->641 dim=6
-TAACAT
->641 dim=6
-AACATG
->642 dim=6
-GTGGTT
->642 dim=6
-TGGTTC
->642 dim=6
-GGTTCT
->643 dim=6
-TTTTGC
->643 dim=6
-TTTGCG
->643 dim=6
-TTGCGC
->644 dim=6
-CTCAAT
->644 dim=6
-TCAATC
->644 dim=6
-CAATCT
->645 dim=6
-TGAAAC
->645 dim=6
-GAAACG
->645 dim=6
-AAACGC
->646 dim=6
-GCGGTG
->646 dim=6
-CGGTGC
->646 dim=6
-GGTGCG
->647 dim=6
-CATGAG
->647 dim=6
-ATGAGT
->647 dim=6
-TGAGTT
->648 dim=6
-TGAAGA
->648 dim=6
-GAAGAT
->648 dim=6
-AAGATT
->649 dim=6
-TATCAG
->649 dim=6
-ATCAGC
->649 dim=6
-TCAGCC
->650 dim=6
-GCGCTG
->650 dim=6
-CGCTGA
->650 dim=6
-GCTGAT
->651 dim=6
-GCAGAG
->651 dim=6
-CAGAGA
->651 dim=6
-AGAGAC
->652 dim=6
-TCCGAC
->652 dim=6
-CCGACT
->652 dim=6
-CGACTA
->653 dim=6
-CGGATA
->653 dim=6
-GGATAG
->653 dim=6
-GATAGC
->654 dim=6
-TGCTCG
->654 dim=6
-GCTCGG
->654 dim=6
-CTCGGG
->655 dim=6
-TTCTTT
->655 dim=6
-TCTTTC
->655 dim=6
-CTTTCA
->656 dim=6
-GGTTTC
->656 dim=6
-GTTTCA
->656 dim=6
-TTTCAC
->657 dim=6
-GCGGCA
->657 dim=6
-CGGCAA
->657 dim=6
-GGCAAG
->658 dim=6
-TTCGGC
->658 dim=6
-TCGGCG
->658 dim=6
-CGGCGG
->659 dim=6
-CCAGTG
->659 dim=6
-CAGTGC
->659 dim=6
-AGTGCC
->660 dim=6
-TTTTTC
->660 dim=6
-TTTTCG
->660 dim=6
-TTTCGA
->661 dim=6
-GTTGGA
->661 dim=6
-TTGGAA
->661 dim=6
-TGGAAG
->662 dim=6
-GCCGTT
->662 dim=6
-CCGTTG
->662 dim=6
-CGTTGG
->663 dim=6
-TTCTTG
->663 dim=6
-TCTTGG
->663 dim=6
-CTTGGT
->664 dim=6
-CGTTGG
->664 dim=6
-GTTGGT
->664 dim=6
-TTGGTA
->665 dim=6
-CCGCAC
->665 dim=6
-CGCACC
->665 dim=6
-GCACCT
->666 dim=6
-GGATTA
->666 dim=6
-GATTAC
->666 dim=6
-ATTACT
->667 dim=6
-CTGAAC
->667 dim=6
-TGAACG
->667 dim=6
-GAACGC
->668 dim=6
-CGAAAT
->668 dim=6
-GAAATT
->668 dim=6
-AAATTC
->669 dim=6
-TTGAAA
->669 dim=6
-TGAAAA
->669 dim=6
-GAAAAA
->670 dim=6
-TGTACT
->670 dim=6
-GTACTT
->670 dim=6
-TACTTC
->671 dim=6
-ATGCCG
->671 dim=6
-TGCCGA
->671 dim=6
-GCCGAA
->672 dim=6
-TGATGG
->672 dim=6
-GATGGC
->672 dim=6
-ATGGCT
->673 dim=6
-TGCCGC
->673 dim=6
-GCCGCG
->673 dim=6
-CCGCGC
->674 dim=6
-CGTTGG
->674 dim=6
-GTTGGC
->674 dim=6
-TTGGCG
->675 dim=6
-GTATTT
->675 dim=6
-TATTTT
->675 dim=6
-ATTTTT
->676 dim=6
-GCGTGA
->676 dim=6
-CGTGAA
->676 dim=6
-GTGAAG
->677 dim=6
-TCCAGT
->677 dim=6
-CCAGTG
->677 dim=6
-CAGTGG
->678 dim=6
-TTTTAT
->678 dim=6
-TTTATG
->678 dim=6
-TTATGG
->679 dim=6
-TGTTTT
->679 dim=6
-GTTTTC
->679 dim=6
-TTTTCT
->680 dim=6
-CCAAAT
->680 dim=6
-CAAATA
->680 dim=6
-AAATAA
->681 dim=6
-GTGGGT
->681 dim=6
-TGGGTG
->681 dim=6
-GGGTGC
->682 dim=6
-CAGATA
->682 dim=6
-AGATAA
->682 dim=6
-GATAAA
->683 dim=6
-TTTATG
->683 dim=6
-TTATGC
->683 dim=6
-TATGCC
->684 dim=6
-CAAGGG
->684 dim=6
-AAGGGC
->684 dim=6
-AGGGCA
->685 dim=6
-CCGGTA
->685 dim=6
-CGGTAA
->685 dim=6
-GGTAAT
->686 dim=6
-GTTGAA
->686 dim=6
-TTGAAG
->686 dim=6
-TGAAGT
->687 dim=6
-GATTAC
->687 dim=6
-ATTACT
->687 dim=6
-TTACTA
->688 dim=6
-ACCCGC
->688 dim=6
-CCCGCC
->688 dim=6
-CCGCCG
->689 dim=6
-TCTGTC
->689 dim=6
-CTGTCA
->689 dim=6
-TGTCAC
->690 dim=6
-TACCAC
->690 dim=6
-ACCACC
->690 dim=6
-CCACCA
->691 dim=6
-CGAGAT
->691 dim=6
-GAGATC
->691 dim=6
-AGATCT
->692 dim=6
-AAGAAG
->692 dim=6
-AGAAGG
->692 dim=6
-GAAGGC
->693 dim=6
-GGGGAT
->693 dim=6
-GGGATT
->693 dim=6
-GGATTA
->694 dim=6
-CTGGAG
->694 dim=6
-TGGAGC
->694 dim=6
-GGAGCT
->695 dim=6
-GAGATG
->695 dim=6
-AGATGA
->695 dim=6
-GATGAT
->696 dim=6
-GTCGGG
->696 dim=6
-TCGGGT
->696 dim=6
-CGGGTT
->697 dim=6
-TGCCAG
->697 dim=6
-GCCAGG
->697 dim=6
-CCAGGC
->698 dim=6
-GCTCCA
->698 dim=6
-CTCCAG
->698 dim=6
-TCCAGC
->699 dim=6
-GCCAGC
->699 dim=6
-CCAGCC
->699 dim=6
-CAGCCG
->700 dim=6
-GCGGTG
->700 dim=6
-CGGTGA
->700 dim=6
-GGTGAC
->701 dim=6
-GATGTG
->701 dim=6
-ATGTGC
->701 dim=6
-TGTGCT
->702 dim=6
-TGAACG
->702 dim=6
-GAACGG
->702 dim=6
-AACGGG
->703 dim=6
-GTGGCG
->703 dim=6
-TGGCGA
->703 dim=6
-GGCGAA
->704 dim=6
-GTCAGA
->704 dim=6
-TCAGAG
->704 dim=6
-CAGAGC
->705 dim=6
-GCTGCA
->705 dim=6
-CTGCAT
->705 dim=6
-TGCATG
->706 dim=6
-GAAATT
->706 dim=6
-AAATTG
->706 dim=6
-AATTGA
->707 dim=6
-CAGGCT
->707 dim=6
-AGGCTG
->707 dim=6
-GGCTGT
->708 dim=6
-TCGCCC
->708 dim=6
-CGCCCA
->708 dim=6
-GCCCAG
->709 dim=6
-GCACAG
->709 dim=6
-CACAGA
->709 dim=6
-ACAGAC
->710 dim=6
-ACATGG
->710 dim=6
-CATGGT
->710 dim=6
-ATGGTT
->711 dim=6
-CTGCTC
->711 dim=6
-TGCTCA
->711 dim=6
-GCTCAA
->712 dim=6
-GTTACC
->712 dim=6
-TTACCG
->712 dim=6
-TACCGT
->713 dim=6
-TAAAGT
->713 dim=6
-AAAGTC
->713 dim=6
-AAGTCT
->714 dim=6
-GCATGG
->714 dim=6
-CATGGC
->714 dim=6
-ATGGCG
->715 dim=6
-ATAAGC
->715 dim=6
-TAAGCT
->715 dim=6
-AAGCTG
->716 dim=6
-TTGGTA
->716 dim=6
-TGGTAC
->716 dim=6
-GGTACT
->717 dim=6
-AGGGTT
->717 dim=6
-GGGTTT
->717 dim=6
-GGTTTG
->718 dim=6
-GCCGCT
->718 dim=6
-CCGCTT
->718 dim=6
-CGCTTT
->719 dim=6
-CATGGC
->719 dim=6
-ATGGCA
->719 dim=6
-TGGCAA
->720 dim=6
-CGCGTC
->720 dim=6
-GCGTCT
->720 dim=6
-CGTCTT
->721 dim=6
-ACGGTT
->721 dim=6
-CGGTTC
->721 dim=6
-GGTTCC
->722 dim=6
-TGACGG
->722 dim=6
-GACGGG
->722 dim=6
-ACGGGA
->723 dim=6
-TGGGAC
->723 dim=6
-GGGACG
->723 dim=6
-GGACGC
->724 dim=6
-GTTGGC
->724 dim=6
-TTGGCA
->724 dim=6
-TGGCAT
->725 dim=6
-GACCAA
->725 dim=6
-ACCAAA
->725 dim=6
-CCAAAG
->726 dim=6
-TGGAAA
->726 dim=6
-GGAAAA
->726 dim=6
-GAAAAG
->727 dim=6
-CCGCCA
->727 dim=6
-CGCCAA
->727 dim=6
-GCCAAA
->728 dim=6
-CCTGGA
->728 dim=6
-CTGGAA
->728 dim=6
-TGGAAC
->729 dim=6
-TCAGCC
->729 dim=6
-CAGCCA
->729 dim=6
-AGCCAG
->730 dim=6
-GCCCTG
->730 dim=6
-CCCTGG
->730 dim=6
-CCTGGC
->731 dim=6
-TCGAAG
->731 dim=6
-CGAAGA
->731 dim=6
-GAAGAA
->732 dim=6
-CGAAAT
->732 dim=6
-GAAATT
->732 dim=6
-AAATTC
->733 dim=6
-GCTGGC
->733 dim=6
-CTGGCA
->733 dim=6
-TGGCAC
->734 dim=6
-TTACCC
->734 dim=6
-TACCCC
->734 dim=6
-ACCCCC
->735 dim=6
-CTTCTA
->735 dim=6
-TTCTAT
->735 dim=6
-TCTATA
->736 dim=6
-TTGACG
->736 dim=6
-TGACGG
->736 dim=6
-GACGGT
->737 dim=6
-AGGCCC
->737 dim=6
-GGCCCG
->737 dim=6
-GCCCGT
->738 dim=6
-CCGTTT
->738 dim=6
-CGTTTA
->738 dim=6
-GTTTAA
->739 dim=6
-TGGTTA
->739 dim=6
-GGTTAC
->739 dim=6
-GTTACC
->740 dim=6
-ACATTG
->740 dim=6
-CATTGT
->740 dim=6
-ATTGTC
->741 dim=6
-TCCGGC
->741 dim=6
-CCGGCC
->741 dim=6
-CGGCCC
->742 dim=6
-AGGATG
->742 dim=6
-GGATGC
->742 dim=6
-GATGCT
->743 dim=6
-TGCGCG
->743 dim=6
-GCGCGT
->743 dim=6
-CGCGTT
->744 dim=6
-CAAGTT
->744 dim=6
-AAGTTA
->744 dim=6
-AGTTAG
->745 dim=6
-GAAAAA
->745 dim=6
-AAAAAA
->745 dim=6
-AAAAAG
->746 dim=6
-ACGTGA
->746 dim=6
-CGTGAA
->746 dim=6
-GTGAAC
->747 dim=6
-TCTCGG
->747 dim=6
-CTCGGT
->747 dim=6
-TCGGTG
->748 dim=6
-CGCCCG
->748 dim=6
-GCCCGT
->748 dim=6
-CCCGTA
->749 dim=6
-AAGTTT
->749 dim=6
-AGTTTT
->749 dim=6
-GTTTTG
->750 dim=6
-CCTGCA
->750 dim=6
-CTGCAT
->750 dim=6
-TGCATG
->751 dim=6
-AGGCAG
->751 dim=6
-GGCAGG
->751 dim=6
-GCAGGG
->752 dim=6
-ACGCCC
->752 dim=6
-CGCCCT
->752 dim=6
-GCCCTG
->753 dim=6
-AGGGCA
->753 dim=6
-GGGCAT
->753 dim=6
-GGCATT
->754 dim=6
-GGGTCA
->754 dim=6
-GGTCAT
->754 dim=6
-GTCATT
->755 dim=6
-CCCCGC
->755 dim=6
-CCCGCA
->755 dim=6
-CCGCAC
->756 dim=6
-CTTCTG
->756 dim=6
-TTCTGA
->756 dim=6
-TCTGAC
->757 dim=6
-GTGTGG
->757 dim=6
-TGTGGC
->757 dim=6
-GTGGCG
->758 dim=6
-AAATGC
->758 dim=6
-AATGCA
->758 dim=6
-ATGCAG
->759 dim=6
-ACTGAA
->759 dim=6
-CTGAAA
->759 dim=6
-TGAAAG
->760 dim=6
-GCACCA
->760 dim=6
-CACCAT
->760 dim=6
-ACCATT
->761 dim=6
-ATAGCA
->761 dim=6
-TAGCAT
->761 dim=6
-AGCATC
->762 dim=6
-CCCTCT
->762 dim=6
-CCTCTC
->762 dim=6
-CTCTCA
->763 dim=6
-TTGCTG
->763 dim=6
-TGCTGA
->763 dim=6
-GCTGAA
->764 dim=6
-TCCAGC
->764 dim=6
-CCAGCG
->764 dim=6
-CAGCGC
->765 dim=6
-GTGCCC
->765 dim=6
-TGCCCG
->765 dim=6
-GCCCGA
->766 dim=6
-TAACAT
->766 dim=6
-AACATG
->766 dim=6
-ACATGG
->767 dim=6
-TATTGA
->767 dim=6
-ATTGAC
->767 dim=6
-TTGACT
->768 dim=6
-CGCATT
->768 dim=6
-GCATTA
->768 dim=6
-CATTAG
->769 dim=6
-GAAAAA
->769 dim=6
-AAAAAT
->769 dim=6
-AAAATC
->770 dim=6
-TCGCTT
->770 dim=6
-CGCTTT
->770 dim=6
-GCTTTC
->771 dim=6
-GCGCGT
->771 dim=6
-CGCGTG
->771 dim=6
-GCGTGT
->772 dim=6
-ACGCTG
->772 dim=6
-CGCTGC
->772 dim=6
-GCTGCG
->773 dim=6
-CACCGT
->773 dim=6
-ACCGTC
->773 dim=6
-CCGTCC
->774 dim=6
-TACTTT
->774 dim=6
-ACTTTA
->774 dim=6
-CTTTAA
->775 dim=6
-GCAATG
->775 dim=6
-CAATGA
->775 dim=6
-AATGAC
->776 dim=6
-GTGCCA
->776 dim=6
-TGCCAG
->776 dim=6
-GCCAGC
->777 dim=6
-TTGCCG
->777 dim=6
-TGCCGC
->777 dim=6
-GCCGCG
->778 dim=6
-TTTACC
->778 dim=6
-TTACCC
->778 dim=6
-TACCCA
->779 dim=6
-CACCAT
->779 dim=6
-ACCATT
->779 dim=6
-CCATTA
->780 dim=6
-CCCTGG
->780 dim=6
-CCTGGC
->780 dim=6
-CTGGCC
->781 dim=6
-TGATGA
->781 dim=6
-GATGAA
->781 dim=6
-ATGAAG
->782 dim=6
-GCTGGC
->782 dim=6
-CTGGCT
->782 dim=6
-TGGCTT
->783 dim=6
-AAGAAT
->783 dim=6
-AGAATA
->783 dim=6
-GAATAT
->784 dim=6
-GGAAAA
->784 dim=6
-GAAAAT
->784 dim=6
-AAAATA
->785 dim=6
-ATATAG
->785 dim=6
-TATAGG
->785 dim=6
-ATAGGC
->786 dim=6
-GTTGGC
->786 dim=6
-TTGGCA
->786 dim=6
-TGGCAA
->787 dim=6
-ACTGCT
->787 dim=6
-CTGCTG
->787 dim=6
-TGCTGG
->788 dim=6
-AAAATA
->788 dim=6
-AAATAC
->788 dim=6
-AATACC
->789 dim=6
-TGAGAA
->789 dim=6
-GAGAAC
->789 dim=6
-AGAACC
->790 dim=6
-GGTGCG
->790 dim=6
-GTGCGC
->790 dim=6
-TGCGCT
->791 dim=6
-CCGCCA
->791 dim=6
-CGCCAA
->791 dim=6
-GCCAAA
->792 dim=6
-GGTGTT
->792 dim=6
-GTGTTG
->792 dim=6
-TGTTGC
->793 dim=6
-GGCTGG
->793 dim=6
-GCTGGA
->793 dim=6
-CTGGAT
->794 dim=6
-GCCTTA
->794 dim=6
-CCTTAG
->794 dim=6
-CTTAGT
->795 dim=6
-CGTCAG
->795 dim=6
-GTCAGG
->795 dim=6
-TCAGGT
->796 dim=6
-TGTCGT
->796 dim=6
-GTCGTG
->796 dim=6
-TCGTGG
->797 dim=6
-ATTACT
->797 dim=6
-TTACTA
->797 dim=6
-TACTAC
->798 dim=6
-CTGCGA
->798 dim=6
-TGCGAT
->798 dim=6
-GCGATC
->799 dim=6
-CCAATA
->799 dim=6
-CAATAT
->799 dim=6
-AATATC
->800 dim=6
-AAAACT
->800 dim=6
-AAACTG
->800 dim=6
-AACTGC
->801 dim=6
-GCTGCA
->801 dim=6
-CTGCAT
->801 dim=6
-TGCATG
->802 dim=6
-ACTGGA
->802 dim=6
-CTGGAG
->802 dim=6
-TGGAGC
->803 dim=6
-TGACAT
->803 dim=6
-GACATG
->803 dim=6
-ACATGG
->804 dim=6
-ATTCTG
->804 dim=6
-TTCTGG
->804 dim=6
-TCTGGA
->805 dim=6
-CGAATC
->805 dim=6
-GAATCT
->805 dim=6
-AATCTG
->806 dim=6
-ACGTGG
->806 dim=6
-CGTGGG
->806 dim=6
-GTGGGA
->807 dim=6
-CGTATT
->807 dim=6
-GTATTT
->807 dim=6
-TATTTT
->808 dim=6
-ATGGTA
->808 dim=6
-TGGTAT
->808 dim=6
-GGTATG
->809 dim=6
-TCTTTG
->809 dim=6
-CTTTGC
->809 dim=6
-TTTGCT
->810 dim=6
-TGACAC
->810 dim=6
-GACACC
->810 dim=6
-ACACCA
->811 dim=6
-TGTTGA
->811 dim=6
-GTTGAC
->811 dim=6
-TTGACG
->812 dim=6
-GTTGGG
->812 dim=6
-TTGGGG
->812 dim=6
-TGGGGC
->813 dim=6
-GGGCGC
->813 dim=6
-GGCGCT
->813 dim=6
-GCGCTT
->814 dim=6
-TGGCAG
->814 dim=6
-GGCAGA
->814 dim=6
-GCAGAT
->815 dim=6
-GGAGCT
->815 dim=6
-GAGCTT
->815 dim=6
-AGCTTG
->816 dim=6
-ATGGTA
->816 dim=6
-TGGTAA
->816 dim=6
-GGTAAT
->817 dim=6
-CCGCCA
->817 dim=6
-CGCCAA
->817 dim=6
-GCCAAA
->818 dim=6
-ACCTCG
->818 dim=6
-CCTCGG
->818 dim=6
-CTCGGA
->819 dim=6
-GGCGCG
->819 dim=6
-GCGCGG
->819 dim=6
-CGCGGG
->820 dim=6
-ACATCC
->820 dim=6
-CATCCA
->820 dim=6
-ATCCAT
->821 dim=6
-AAACAC
->821 dim=6
-AACACA
->821 dim=6
-ACACAG
->822 dim=6
-AAACCA
->822 dim=6
-AACCAT
->822 dim=6
-ACCATT
->823 dim=6
-CCAATA
->823 dim=6
-CAATAT
->823 dim=6
-AATATC
->824 dim=6
-CGGGTT
->824 dim=6
-GGGTTT
->824 dim=6
-GGTTTG
->825 dim=6
-GAGGGT
->825 dim=6
-AGGGTG
->825 dim=6
-GGGTGA
->826 dim=6
-TCCGAA
->826 dim=6
-CCGAAT
->826 dim=6
-CGAATA
->827 dim=6
-CCTCTA
->827 dim=6
-CTCTAT
->827 dim=6
-TCTATG
->828 dim=6
-CGCTGC
->828 dim=6
-GCTGCT
->828 dim=6
-CTGCTG
->829 dim=6
-ACTTCC
->829 dim=6
-CTTCCT
->829 dim=6
-TTCCTG
->830 dim=6
-CTTATA
->830 dim=6
-TTATAT
->830 dim=6
-TATATC
->831 dim=6
-TGATTA
->831 dim=6
-GATTAA
->831 dim=6
-ATTAAA
->832 dim=6
-AGTTGG
->832 dim=6
-GTTGGA
->832 dim=6
-TTGGAA
->833 dim=6
-AATCTC
->833 dim=6
-ATCTCT
->833 dim=6
-TCTCTG
->834 dim=6
-TTAGTA
->834 dim=6
-TAGTAA
->834 dim=6
-AGTAAG
->835 dim=6
-GGGCAA
->835 dim=6
-GGCAAT
->835 dim=6
-GCAATG
->836 dim=6
-TTCTTT
->836 dim=6
-TCTTTC
->836 dim=6
-CTTTCA
->837 dim=6
-ACAGAG
->837 dim=6
-CAGAGT
->837 dim=6
-AGAGTA
->838 dim=6
-CGGGAC
->838 dim=6
-GGGACT
->838 dim=6
-GGACTC
->839 dim=6
-CATTCC
->839 dim=6
-ATTCCG
->839 dim=6
-TTCCGG
->840 dim=6
-TGCCGT
->840 dim=6
-GCCGTG
->840 dim=6
-CCGTGG
->841 dim=6
-GTTTGA
->841 dim=6
-TTTGAT
->841 dim=6
-TTGATG
->842 dim=6
-TTCGGC
->842 dim=6
-TCGGCG
->842 dim=6
-CGGCGG
->843 dim=6
-AAAGAG
->843 dim=6
-AAGAGC
->843 dim=6
-AGAGCC
->844 dim=6
-CAAAGC
->844 dim=6
-AAAGCT
->844 dim=6
-AAGCTG
->845 dim=6
-CCATTA
->845 dim=6
-CATTAC
->845 dim=6
-ATTACC
->846 dim=6
-CAGTTG
->846 dim=6
-AGTTGC
->846 dim=6
-GTTGCG
->847 dim=6
-ACGAAG
->847 dim=6
-CGAAGG
->847 dim=6
-GAAGGC
->848 dim=6
-AGCTGA
->848 dim=6
-GCTGAA
->848 dim=6
-CTGAAC
->849 dim=6
-GATGGT
->849 dim=6
-ATGGTA
->849 dim=6
-TGGTAA
->850 dim=6
-CATGGC
->850 dim=6
-ATGGCA
->850 dim=6
-TGGCAT
->851 dim=6
-ACTATT
->851 dim=6
-CTATTA
->851 dim=6
-TATTAT
->852 dim=6
-TGCGCT
->852 dim=6
-GCGCTA
->852 dim=6
-CGCTAT
->853 dim=6
-CGGGTT
->853 dim=6
-GGGTTT
->853 dim=6
-GGTTTG
->854 dim=6
-CGTATC
->854 dim=6
-GTATCT
->854 dim=6
-TATCTC
->855 dim=6
-GTATTG
->855 dim=6
-TATTGC
->855 dim=6
-ATTGCG
->856 dim=6
-TTTTGC
->856 dim=6
-TTTGCG
->856 dim=6
-TTGCGC
->857 dim=6
-TTGCCA
->857 dim=6
-TGCCAG
->857 dim=6
-GCCAGG
->858 dim=6
-TTCCAG
->858 dim=6
-TCCAGC
->858 dim=6
-CCAGCC
->859 dim=6
-TGGCCT
->859 dim=6
-GGCCTT
->859 dim=6
-GCCTTC
->860 dim=6
-TGGCAA
->860 dim=6
-GGCAAA
->860 dim=6
-GCAAAT
->861 dim=6
-GCCGGC
->861 dim=6
-CCGGCG
->861 dim=6
-CGGCGT
->862 dim=6
-CCGATT
->862 dim=6
-CGATTG
->862 dim=6
-GATTGT
->863 dim=6
-TTACCC
->863 dim=6
-TACCCA
->863 dim=6
-ACCCAA
->864 dim=6
-TGATTC
->864 dim=6
-GATTCT
->864 dim=6
-ATTCTC
->865 dim=6
-TACAGG
->865 dim=6
-ACAGGA
->865 dim=6
-CAGGAA
->866 dim=6
-CTTCCT
->866 dim=6
-TTCCTG
->866 dim=6
-TCCTGC
->867 dim=6
-CATTAC
->867 dim=6
-ATTACG
->867 dim=6
-TTACGA
->868 dim=6
-TGAAAA
->868 dim=6
-GAAAAA
->868 dim=6
-AAAAAA
->869 dim=6
-TTTTTT
->869 dim=6
-TTTTTT
->869 dim=6
-TTTTTT
->870 dim=6
-CCAATA
->870 dim=6
-CAATAT
->870 dim=6
-AATATG
->871 dim=6
-GCGTGA
->871 dim=6
-CGTGAA
->871 dim=6
-GTGAAG
->872 dim=6
-TCATCT
->872 dim=6
-CATCTG
->872 dim=6
-ATCTGC
->873 dim=6
-ACGGGA
->873 dim=6
-CGGGAC
->873 dim=6
-GGGACT
->874 dim=6
-CTCACC
->874 dim=6
-TCACCA
->874 dim=6
-CACCAA
->875 dim=6
-ATATGG
->875 dim=6
-TATGGT
->875 dim=6
-ATGGTG
->876 dim=6
-GGCGGC
->876 dim=6
-GCGGCG
->876 dim=6
-CGGCGC
->877 dim=6
-GTGACG
->877 dim=6
-TGACGG
->877 dim=6
-GACGGA
->878 dim=6
-AAGACG
->878 dim=6
-AGACGA
->878 dim=6
-GACGAA
->879 dim=6
-GGCGCT
->879 dim=6
-GCGCTA
->879 dim=6
-CGCTAA
->880 dim=6
-CGGTCA
->880 dim=6
-GGTCAT
->880 dim=6
-GTCATT
->881 dim=6
-TACTTC
->881 dim=6
-ACTTCC
->881 dim=6
-CTTCCA
->882 dim=6
-GGAAAA
->882 dim=6
-GAAAAG
->882 dim=6
-AAAAGA
->883 dim=6
-CGATCG
->883 dim=6
-GATCGG
->883 dim=6
-ATCGGT
->884 dim=6
-CAGAAG
->884 dim=6
-AGAAGC
->884 dim=6
-GAAGCC
->885 dim=6
-TCATCA
->885 dim=6
-CATCAG
->885 dim=6
-ATCAGC
->886 dim=6
-ATCAGT
->886 dim=6
-TCAGTG
->886 dim=6
-CAGTGC
->887 dim=6
-GCAATC
->887 dim=6
-CAATCA
->887 dim=6
-AATCAT
->888 dim=6
-TCGATC
->888 dim=6
-CGATCC
->888 dim=6
-GATCCG
->889 dim=6
-ACCATT
->889 dim=6
-CCATTA
->889 dim=6
-CATTAG
->890 dim=6
-ATCGAC
->890 dim=6
-TCGACT
->890 dim=6
-CGACTT
->891 dim=6
-CCGGCC
->891 dim=6
-CGGCCC
->891 dim=6
-GGCCCG
->892 dim=6
-CGGTAC
->892 dim=6
-GGTACA
->892 dim=6
-GTACAT
->893 dim=6
-TTCTTT
->893 dim=6
-TCTTTC
->893 dim=6
-CTTTCA
->894 dim=6
-CAACGG
->894 dim=6
-AACGGG
->894 dim=6
-ACGGGC
->895 dim=6
-CGCTAA
->895 dim=6
-GCTAAA
->895 dim=6
-CTAAAG
->896 dim=6
-CACTGC
->896 dim=6
-ACTGCC
->896 dim=6
-CTGCCG
->897 dim=6
-GACACC
->897 dim=6
-ACACCA
->897 dim=6
-CACCAA
->898 dim=6
-TGTGCG
->898 dim=6
-GTGCGA
->898 dim=6
-TGCGAG
->899 dim=6
-CAACAT
->899 dim=6
-AACATC
->899 dim=6
-ACATCC
->900 dim=6
-TGTCTT
->900 dim=6
-GTCTTT
->900 dim=6
-TCTTTG
->901 dim=6
-AAGAAC
->901 dim=6
-AGAACT
->901 dim=6
-GAACTG
->902 dim=6
-AGCCGC
->902 dim=6
-GCCGCT
->902 dim=6
-CCGCTG
->903 dim=6
-GTTCAA
->903 dim=6
-TTCAAA
->903 dim=6
-TCAAAG
->904 dim=6
-TTATAC
->904 dim=6
-TATACC
->904 dim=6
-ATACCG
->905 dim=6
-TTTGAT
->905 dim=6
-TTGATG
->905 dim=6
-TGATGT
->906 dim=6
-AGCTTT
->906 dim=6
-GCTTTC
->906 dim=6
-CTTTCT
->907 dim=6
-ATGGTG
->907 dim=6
-TGGTGC
->907 dim=6
-GGTGCA
->908 dim=6
-CCGTTA
->908 dim=6
-CGTTAT
->908 dim=6
-GTTATC
->909 dim=6
-CATGTC
->909 dim=6
-ATGTCC
->909 dim=6
-TGTCCT
->910 dim=6
-ATTCAG
->910 dim=6
-TTCAGT
->910 dim=6
-TCAGTC
->911 dim=6
-CCAGGC
->911 dim=6
-CAGGCA
->911 dim=6
-AGGCAG
->912 dim=6
-GCGCGT
->912 dim=6
-CGCGTG
->912 dim=6
-GCGTGT
->913 dim=6
-AAATCT
->913 dim=6
-AATCTG
->913 dim=6
-ATCTGC
->914 dim=6
-GCGAAA
->914 dim=6
-CGAAAT
->914 dim=6
-GAAATT
->915 dim=6
-TGCAGC
->915 dim=6
-GCAGCG
->915 dim=6
-CAGCGA
->916 dim=6
-TATTGC
->916 dim=6
-ATTGCT
->916 dim=6
-TTGCTG
->917 dim=6
-CAGGAA
->917 dim=6
-AGGAAG
->917 dim=6
-GGAAGA
->918 dim=6
-CCCAGT
->918 dim=6
-CCAGTT
->918 dim=6
-CAGTTC
->919 dim=6
-AGTGTC
->919 dim=6
-GTGTCT
->919 dim=6
-TGTCTG
->920 dim=6
-TGCCGC
->920 dim=6
-GCCGCG
->920 dim=6
-CCGCGT
->921 dim=6
-CGCTGA
->921 dim=6
-GCTGAT
->921 dim=6
-CTGATG
->922 dim=6
-TTCTGA
->922 dim=6
-TCTGAC
->922 dim=6
-CTGACG
->923 dim=6
-CGAACG
->923 dim=6
-GAACGT
->923 dim=6
-AACGTA
->924 dim=6
-CCTGCG
->924 dim=6
-CTGCGA
->924 dim=6
-TGCGAT
->925 dim=6
-TCGCGG
->925 dim=6
-CGCGGC
->925 dim=6
-GCGGCG
->926 dim=6
-AGGAAG
->926 dim=6
-GGAAGC
->926 dim=6
-GAAGCG
->927 dim=6
-CAGGAA
->927 dim=6
-AGGAAA
->927 dim=6
-GGAAAC
->928 dim=6
-AGCTAT
->928 dim=6
-GCTATT
->928 dim=6
-CTATTG
->929 dim=6
-GCGTGC
->929 dim=6
-CGTGCG
->929 dim=6
-GTGCGC
->930 dim=6
-ACTGCT
->930 dim=6
-CTGCTC
->930 dim=6
-TGCTCA
->931 dim=6
-TAAAAA
->931 dim=6
-AAAAAT
->931 dim=6
-AAAATA
->932 dim=6
-AACAAC
->932 dim=6
-ACAACC
->932 dim=6
-CAACCT
->933 dim=6
-TTGATA
->933 dim=6
-TGATAT
->933 dim=6
-GATATT
->934 dim=6
-TGCTGG
->934 dim=6
-GCTGGC
->934 dim=6
-CTGGCA
->935 dim=6
-ACAGAT
->935 dim=6
-CAGATA
->935 dim=6
-AGATAA
->936 dim=6
-ATTGCT
->936 dim=6
-TTGCTC
->936 dim=6
-TGCTCA
->937 dim=6
-TGGCGG
->937 dim=6
-GGCGGC
->937 dim=6
-GCGGCC
->938 dim=6
-CGTATC
->938 dim=6
-GTATCC
->938 dim=6
-TATCCG
->939 dim=6
-CTGCTA
->939 dim=6
-TGCTAC
->939 dim=6
-GCTACG
->940 dim=6
-CAATCT
->940 dim=6
-AATCTC
->940 dim=6
-ATCTCT
->941 dim=6
-CAATAT
->941 dim=6
-AATATA
->941 dim=6
-ATATAG
->942 dim=6
-AAGCCT
->942 dim=6
-AGCCTT
->942 dim=6
-GCCTTG
->943 dim=6
-CTCGGG
->943 dim=6
-TCGGGG
->943 dim=6
-CGGGGC
->944 dim=6
-GTCAAG
->944 dim=6
-TCAAGG
->944 dim=6
-CAAGGG
->945 dim=6
-GGTGTC
->945 dim=6
-GTGTCT
->945 dim=6
-TGTCTT
->946 dim=6
-ATATCG
->946 dim=6
-TATCGT
->946 dim=6
-ATCGTT
->947 dim=6
-TGCTGG
->947 dim=6
-GCTGGC
->947 dim=6
-CTGGCG
->948 dim=6
-CATTAC
->948 dim=6
-ATTACC
->948 dim=6
-TTACCA
->949 dim=6
-GTGAAC
->949 dim=6
-TGAACT
->949 dim=6
-GAACTG
->950 dim=6
-CTTTAC
->950 dim=6
-TTTACC
->950 dim=6
-TTACCC
->951 dim=6
-CACAAC
->951 dim=6
-ACAACG
->951 dim=6
-CAACGT
->952 dim=6
-TGCCAG
->952 dim=6
-GCCAGC
->952 dim=6
-CCAGCC
->953 dim=6
-CGGGGC
->953 dim=6
-GGGGCG
->953 dim=6
-GGGCGG
->954 dim=6
-AGCAAA
->954 dim=6
-GCAAAG
->954 dim=6
-CAAAGC
->955 dim=6
-GCCGTA
->955 dim=6
-CCGTAT
->955 dim=6
-CGTATT
->956 dim=6
-TAAAAA
->956 dim=6
-AAAAAA
->956 dim=6
-AAAAAC
->957 dim=6
-CCTGCA
->957 dim=6
-CTGCAT
->957 dim=6
-TGCATG
->958 dim=6
-TCTTCT
->958 dim=6
-CTTCTG
->958 dim=6
-TTCTGA
->959 dim=6
-CACGGT
->959 dim=6
-ACGGTT
->959 dim=6
-CGGTTG
->960 dim=6
-CTGTGC
->960 dim=6
-TGTGCT
->960 dim=6
-GTGCTG
->961 dim=6
-GACGCA
->961 dim=6
-ACGCAA
->961 dim=6
-CGCAAC
->962 dim=6
-GATCGG
->962 dim=6
-ATCGGT
->962 dim=6
-TCGGTT
->963 dim=6
-GCCTTG
->963 dim=6
-CCTTGC
->963 dim=6
-CTTGCA
->964 dim=6
-AAAACA
->964 dim=6
-AAACAT
->964 dim=6
-AACATG
->965 dim=6
-TGATGA
->965 dim=6
-GATGAA
->965 dim=6
-ATGAAG
->966 dim=6
-CGTCGG
->966 dim=6
-GTCGGT
->966 dim=6
-TCGGTG
->967 dim=6
-GCGAGC
->967 dim=6
-CGAGCT
->967 dim=6
 GAGCTG
->968 dim=6
-CTGCGC
->968 dim=6
-TGCGCG
->968 dim=6
-GCGCGA
->969 dim=6
-ACTGTA
->969 dim=6
-CTGTAC
->969 dim=6
-TGTACT
->970 dim=6
-GCTGGT
->970 dim=6
-CTGGTT
->970 dim=6
-TGGTTT
->971 dim=6
-GGTTAT
->971 dim=6
-GTTATC
->971 dim=6
-TTATCG
->972 dim=6
-AGGGAT
->972 dim=6
-GGGATG
->972 dim=6
-GGATGG
->973 dim=6
-GTCGAT
->973 dim=6
-TCGATC
->973 dim=6
-CGATCG
->974 dim=6
-GACACT
->974 dim=6
-ACACTC
->974 dim=6
-CACTCG
->975 dim=6
-ACTGCT
->975 dim=6
-CTGCTC
->975 dim=6
-TGCTCA
->976 dim=6
-GCGAAG
->976 dim=6
-CGAAGG
->976 dim=6
-GAAGGT
->977 dim=6
-CGAGGT
->977 dim=6
-GAGGTT
->977 dim=6
-AGGTTG
->978 dim=6
-CCGCGT
->978 dim=6
-CGCGTG
->978 dim=6
-GCGTGA
->979 dim=6
-AAGCAA
->979 dim=6
-AGCAAT
->979 dim=6
-GCAATG
->980 dim=6
-GTGGCG
->980 dim=6
-TGGCGC
->980 dim=6
-GGCGCG
->981 dim=6
-TCGATG
->981 dim=6
-CGATGT
->981 dim=6
-GATGTC
->982 dim=6
-AACTGG
->982 dim=6
-ACTGGA
->982 dim=6
-CTGGAG
->983 dim=6
-GCGCGG
->983 dim=6
-CGCGGA
->983 dim=6
-GCGGAT
->984 dim=6
-CAGCGA
->984 dim=6
-AGCGAT
->984 dim=6
-GCGATG
->985 dim=6
-AGAGTT
->985 dim=6
-GAGTTT
->985 dim=6
-AGTTTA
->986 dim=6
-CAGAGA
->986 dim=6
-AGAGAC
->986 dim=6
-GAGACA
->987 dim=6
-GGTACT
->987 dim=6
-GTACTG
->987 dim=6
-TACTGC
->988 dim=6
+>0 dim=6
+AGCTGA
+>0 dim=6
 GCTGAA
->988 dim=6
+>1 dim=6
+GTAGCG
+>1 dim=6
+TAGCGG
+>1 dim=6
+AGCGGA
+>2 dim=6
+CCCACC
+>2 dim=6
+CCACCT
+>2 dim=6
+CACCTT
+>3 dim=6
+ATAAAC
+>3 dim=6
+TAAACA
+>3 dim=6
+AAACAT
+>4 dim=6
+CGATGA
+>4 dim=6
+GATGAA
+>4 dim=6
+ATGAAG
+>5 dim=6
+CAACCC
+>5 dim=6
+AACCCT
+>5 dim=6
+ACCCTT
+>6 dim=6
+GTCCAT
+>6 dim=6
+TCCATT
+>6 dim=6
+CCATTC
+>7 dim=6
+CGGGCC
+>7 dim=6
+GGGCCT
+>7 dim=6
+GGCCTG
+>8 dim=6
+CAACTT
+>8 dim=6
+AACTTC
+>8 dim=6
+ACTTCG
+>9 dim=6
+GACACC
+>9 dim=6
+ACACCG
+>9 dim=6
+CACCGC
+>10 dim=6
+AAAAAA
+>10 dim=6
+AAAAAC
+>10 dim=6
+AAAACC
+>11 dim=6
+CGAAAG
+>11 dim=6
+GAAAGA
+>11 dim=6
+AAAGAG
+>12 dim=6
+GATGCG
+>12 dim=6
+ATGCGC
+>12 dim=6
+TGCGCA
+>13 dim=6
+GCTTCA
+>13 dim=6
+CTTCAT
+>13 dim=6
+TTCATT
+>14 dim=6
+AGCGCG
+>14 dim=6
+GCGCGA
+>14 dim=6
+CGCGAA
+>15 dim=6
+TAACTG
+>15 dim=6
+AACTGG
+>15 dim=6
+ACTGGA
+>16 dim=6
+GCTCAC
+>16 dim=6
+CTCACG
+>16 dim=6
+TCACGG
+>17 dim=6
+CAATGC
+>17 dim=6
+AATGCG
+>17 dim=6
+ATGCGA
+>18 dim=6
+AGACCA
+>18 dim=6
+GACCAC
+>18 dim=6
+ACCACC
+>19 dim=6
+TCCCTT
+>19 dim=6
+CCCTTT
+>19 dim=6
+CCTTTG
+>20 dim=6
 CTGAAT
->988 dim=6
-TGAATC
->989 dim=6
-AACGCC
->989 dim=6
-ACGCCG
->989 dim=6
-CGCCGA
->990 dim=6
-GGTAAC
->990 dim=6
-GTAACA
->990 dim=6
-TAACAA
->991 dim=6
-CTGATA
->991 dim=6
-TGATAG
->991 dim=6
-GATAGC
->992 dim=6
-GAGTGG
->992 dim=6
-AGTGGC
->992 dim=6
-GTGGCT
->993 dim=6
-ACATTG
->993 dim=6
-CATTGT
->993 dim=6
-ATTGTC
->994 dim=6
-CCACCC
->994 dim=6
-CACCCG
->994 dim=6
-ACCCGC
->995 dim=6
+>20 dim=6
+TGAATA
+>20 dim=6
+GAATAA
+>21 dim=6
+TCAAAC
+>21 dim=6
+CAAACT
+>21 dim=6
+AAACTG
+>22 dim=6
+GTCTGG
+>22 dim=6
+TCTGGG
+>22 dim=6
+CTGGGG
+>23 dim=6
+CTCTTC
+>23 dim=6
+TCTTCT
+>23 dim=6
+CTTCTG
+>24 dim=6
+TTAGCG
+>24 dim=6
+TAGCGA
+>24 dim=6
+AGCGAT
+>25 dim=6
+CGTTAA
+>25 dim=6
+GTTAAT
+>25 dim=6
+TTAATG
+>26 dim=6
+CCTGGC
+>26 dim=6
+CTGGCT
+>26 dim=6
+TGGCTT
+>27 dim=6
+GTCTAT
+>27 dim=6
+TCTATA
+>27 dim=6
+CTATAA
+>28 dim=6
+CTGGTG
+>28 dim=6
+TGGTGC
+>28 dim=6
+GGTGCA
+>29 dim=6
+CAAAGG
+>29 dim=6
+AAAGGC
+>29 dim=6
+AAGGCG
+>30 dim=6
+TGGATG
+>30 dim=6
+GGATGC
+>30 dim=6
+GATGCC
+>31 dim=6
+AATTCT
+>31 dim=6
 ATTCTC
->995 dim=6
+>31 dim=6
+TTCTCA
+>32 dim=6
+TCATAC
+>32 dim=6
+CATACT
+>32 dim=6
+ATACTC
+>33 dim=6
+CACCAT
+>33 dim=6
+ACCATG
+>33 dim=6
+CCATGT
+>34 dim=6
+GGGAAA
+>34 dim=6
+GGAAAT
+>34 dim=6
+GAAATG
+>35 dim=6
+ACTGTT
+>35 dim=6
+CTGTTT
+>35 dim=6
+TGTTTT
+>36 dim=6
+TCTTCT
+>36 dim=6
+CTTCTC
+>36 dim=6
 TTCTCG
->995 dim=6
-TCTCGC
->996 dim=6
-TGTTGA
->996 dim=6
-GTTGAC
->996 dim=6
+>37 dim=6
+GGCGGG
+>37 dim=6
+GCGGGT
+>37 dim=6
+CGGGTG
+>38 dim=6
+CTGGTC
+>38 dim=6
+TGGTCA
+>38 dim=6
+GGTCAG
+>39 dim=6
+AGCGGT
+>39 dim=6
+GCGGTT
+>39 dim=6
+CGGTTT
+>40 dim=6
+ATCAGC
+>40 dim=6
+TCAGCG
+>40 dim=6
+CAGCGG
+>41 dim=6
+AAGGCC
+>41 dim=6
+AGGCCC
+>41 dim=6
+GGCCCA
+>42 dim=6
+GCAGAG
+>42 dim=6
+CAGAGG
+>42 dim=6
+AGAGGA
+>43 dim=6
+GGTTCA
+>43 dim=6
+GTTCAG
+>43 dim=6
+TTCAGC
+>44 dim=6
+CCGTCG
+>44 dim=6
+CGTCGC
+>44 dim=6
+GTCGCT
+>45 dim=6
+GGCATT
+>45 dim=6
+GCATTA
+>45 dim=6
+CATTAA
+>46 dim=6
+CGCCTG
+>46 dim=6
+GCCTGG
+>46 dim=6
+CCTGGG
+>47 dim=6
+ATCTGC
+>47 dim=6
+TCTGCA
+>47 dim=6
+CTGCAC
+>48 dim=6
+TTAATG
+>48 dim=6
+TAATGT
+>48 dim=6
+AATGTT
+>49 dim=6
+GATCTT
+>49 dim=6
+ATCTTT
+>49 dim=6
+TCTTTC
+>50 dim=6
+GGAAGG
+>50 dim=6
+GAAGGG
+>50 dim=6
+AAGGGC
+>51 dim=6
+CTGGTT
+>51 dim=6
+TGGTTG
+>51 dim=6
+GGTTGA
+>52 dim=6
+GCGAGT
+>52 dim=6
+CGAGTA
+>52 dim=6
+GAGTAA
+>53 dim=6
+AAGCCA
+>53 dim=6
+AGCCAG
+>53 dim=6
+GCCAGA
+>54 dim=6
+ACTCTA
+>54 dim=6
+CTCTAT
+>54 dim=6
+TCTATC
+>55 dim=6
+AAGGCG
+>55 dim=6
+AGGCGT
+>55 dim=6
+GGCGTG
+>56 dim=6
+CGCAAC
+>56 dim=6
+GCAACT
+>56 dim=6
+CAACTT
+>57 dim=6
+ATGCAG
+>57 dim=6
+TGCAGA
+>57 dim=6
+GCAGAC
+>58 dim=6
+ATACTG
+>58 dim=6
+TACTGG
+>58 dim=6
+ACTGGA
+>59 dim=6
+AAATCC
+>59 dim=6
+AATCCT
+>59 dim=6
+ATCCTT
+>60 dim=6
+AATTCC
+>60 dim=6
+ATTCCT
+>60 dim=6
+TTCCTC
+>61 dim=6
+GAGCAG
+>61 dim=6
+AGCAGT
+>61 dim=6
+GCAGTT
+>62 dim=6
+CAGCGT
+>62 dim=6
+AGCGTT
+>62 dim=6
+GCGTTG
+>63 dim=6
+TTGATT
+>63 dim=6
+TGATTA
+>63 dim=6
+GATTAA
+>64 dim=6
+TTCGCG
+>64 dim=6
+TCGCGA
+>64 dim=6
+CGCGAC
+>65 dim=6
+ACCCTT
+>65 dim=6
+CCCTTG
+>65 dim=6
+CCTTGA
+>66 dim=6
+AACACC
+>66 dim=6
+ACACCA
+>66 dim=6
+CACCAC
+>67 dim=6
+CTGCGC
+>67 dim=6
+TGCGCA
+>67 dim=6
+GCGCAG
+>68 dim=6
+TGCCCG
+>68 dim=6
+GCCCGA
+>68 dim=6
+CCCGAT
+>69 dim=6
+GGTTAC
+>69 dim=6
+GTTACG
+>69 dim=6
+TTACGA
+>70 dim=6
+AAGATC
+>70 dim=6
+AGATCA
+>70 dim=6
+GATCAG
+>71 dim=6
+TTCGGA
+>71 dim=6
+TCGGAA
+>71 dim=6
+CGGAAG
+>72 dim=6
+GAATCA
+>72 dim=6
+AATCAA
+>72 dim=6
+ATCAAT
+>73 dim=6
+AAAAAA
+>73 dim=6
+AAAAAT
+>73 dim=6
+AAAATC
+>74 dim=6
+GCCGTT
+>74 dim=6
+CCGTTC
+>74 dim=6
+CGTTCA
+>75 dim=6
+TCAAAG
+>75 dim=6
+CAAAGA
+>75 dim=6
+AAAGAT
+>76 dim=6
+TCCAAC
+>76 dim=6
+CCAACC
+>76 dim=6
+CAACCC
+>77 dim=6
+CTGGCA
+>77 dim=6
+TGGCAC
+>77 dim=6
+GGCACG
+>78 dim=6
+TTCTCG
+>78 dim=6
+TCTCGG
+>78 dim=6
+CTCGGC
+>79 dim=6
+AGTGGC
+>79 dim=6
+GTGGCG
+>79 dim=6
+TGGCGG
+>80 dim=6
+AACGAT
+>80 dim=6
+ACGATC
+>80 dim=6
+CGATCG
+>81 dim=6
+GCCTGC
+>81 dim=6
+CCTGCG
+>81 dim=6
+CTGCGC
+>82 dim=6
+TGCGTC
+>82 dim=6
+GCGTCC
+>82 dim=6
+CGTCCG
+>83 dim=6
+CGCGTA
+>83 dim=6
+GCGTAT
+>83 dim=6
+CGTATC
+>84 dim=6
+GGCAGG
+>84 dim=6
+GCAGGG
+>84 dim=6
+CAGGGG
+>85 dim=6
+TCATGC
+>85 dim=6
+CATGCT
+>85 dim=6
+ATGCTG
+>86 dim=6
+ATTCTT
+>86 dim=6
+TTCTTT
+>86 dim=6
+TCTTTA
+>87 dim=6
+TTGCGG
+>87 dim=6
+TGCGGT
+>87 dim=6
+GCGGTG
+>88 dim=6
+GCGCTA
+>88 dim=6
+CGCTAC
+>88 dim=6
+GCTACT
+>89 dim=6
+GCGTTC
+>89 dim=6
+CGTTCA
+>89 dim=6
+GTTCAG
+>90 dim=6
+TTGGCT
+>90 dim=6
+TGGCTT
+>90 dim=6
+GGCTTA
+>91 dim=6
+GGATGT
+>91 dim=6
+GATGTG
+>91 dim=6
+ATGTGG
+>92 dim=6
+GAGCAA
+>92 dim=6
+AGCAAA
+>92 dim=6
+GCAAAC
+>93 dim=6
+CAGAAC
+>93 dim=6
+AGAACC
+>93 dim=6
+GAACCA
+>94 dim=6
+ATCAAA
+>94 dim=6
+TCAAAA
+>94 dim=6
+CAAAAA
+>95 dim=6
+GTACAG
+>95 dim=6
+TACAGA
+>95 dim=6
+ACAGAC
+>96 dim=6
+ATATAA
+>96 dim=6
+TATAAA
+>96 dim=6
+ATAAAC
+>97 dim=6
+TTGTTA
+>97 dim=6
+TGTTAA
+>97 dim=6
+GTTAAC
+>98 dim=6
+ACTTTA
+>98 dim=6
+CTTTAG
+>98 dim=6
+TTTAGC
+>99 dim=6
+GCGCCA
+>99 dim=6
+CGCCAG
+>99 dim=6
+GCCAGC
+>100 dim=6
+ACTTTA
+>100 dim=6
+CTTTAT
+>100 dim=6
+TTTATC
+>101 dim=6
+GGTGGT
+>101 dim=6
+GTGGTT
+>101 dim=6
+TGGTTG
+>102 dim=6
+ATCAGG
+>102 dim=6
+TCAGGA
+>102 dim=6
+CAGGAA
+>103 dim=6
+GAAACC
+>103 dim=6
+AAACCG
+>103 dim=6
+AACCGA
+>104 dim=6
+CCAGAC
+>104 dim=6
+CAGACG
+>104 dim=6
+AGACGA
+>105 dim=6
+CGCGTG
+>105 dim=6
+GCGTGT
+>105 dim=6
+CGTGTG
+>106 dim=6
+CCATAC
+>106 dim=6
+CATACG
+>106 dim=6
+ATACGT
+>107 dim=6
+CGCCGA
+>107 dim=6
+GCCGAG
+>107 dim=6
+CCGAGC
+>108 dim=6
+GATATA
+>108 dim=6
+ATATAG
+>108 dim=6
+TATAGG
+>109 dim=6
+GTGGTG
+>109 dim=6
+TGGTGT
+>109 dim=6
+GGTGTT
+>110 dim=6
+GTCTTT
+>110 dim=6
+TCTTTC
+>110 dim=6
+CTTTCT
+>111 dim=6
+GATTTG
+>111 dim=6
+ATTTGA
+>111 dim=6
+TTTGAT
+>112 dim=6
+GGTCTG
+>112 dim=6
+GTCTGG
+>112 dim=6
+TCTGGA
+>113 dim=6
+GTAGTT
+>113 dim=6
+TAGTTT
+>113 dim=6
+AGTTTT
+>114 dim=6
+GCACGG
+>114 dim=6
+CACGGG
+>114 dim=6
+ACGGGG
+>115 dim=6
+CAGGAA
+>115 dim=6
+AGGAAA
+>115 dim=6
+GGAAAT
+>116 dim=6
+CGGGAA
+>116 dim=6
+GGGAAG
+>116 dim=6
+GGAAGT
+>117 dim=6
+ACGCAG
+>117 dim=6
+CGCAGG
+>117 dim=6
+GCAGGG
+>118 dim=6
+GACTGG
+>118 dim=6
+ACTGGT
+>118 dim=6
+CTGGTT
+>119 dim=6
+GAACCG
+>119 dim=6
+AACCGG
+>119 dim=6
+ACCGGG
+>120 dim=6
+AGCTAT
+>120 dim=6
+GCTATT
+>120 dim=6
+CTATTG
+>121 dim=6
+ATAATT
+>121 dim=6
+TAATTA
+>121 dim=6
+AATTAT
+>122 dim=6
+GCGGCG
+>122 dim=6
+CGGCGC
+>122 dim=6
+GGCGCT
+>123 dim=6
+GCCGCC
+>123 dim=6
+CCGCCG
+>123 dim=6
+CGCCGG
+>124 dim=6
+AACCTT
+>124 dim=6
+ACCTTC
+>124 dim=6
+CCTTCA
+>125 dim=6
+GGCTGG
+>125 dim=6
+GCTGGG
+>125 dim=6
+CTGGGA
+>126 dim=6
+ATCTGG
+>126 dim=6
+TCTGGT
+>126 dim=6
+CTGGTA
+>127 dim=6
+CAGATT
+>127 dim=6
+AGATTT
+>127 dim=6
+GATTTC
+>128 dim=6
+ATCGCG
+>128 dim=6
+TCGCGT
+>128 dim=6
+CGCGTT
+>129 dim=6
+ACGCTG
+>129 dim=6
+CGCTGT
+>129 dim=6
+GCTGTC
+>130 dim=6
+AAACTG
+>130 dim=6
+AACTGA
+>130 dim=6
+ACTGAT
+>131 dim=6
+CTGCTG
+>131 dim=6
+TGCTGA
+>131 dim=6
+GCTGAT
+>132 dim=6
+CTCTCT
+>132 dim=6
+TCTCTT
+>132 dim=6
+CTCTTC
+>133 dim=6
+GAGCAA
+>133 dim=6
+AGCAAA
+>133 dim=6
+GCAAAT
+>134 dim=6
+GGTCAG
+>134 dim=6
+GTCAGA
+>134 dim=6
+TCAGAA
+>135 dim=6
+CCAGCA
+>135 dim=6
+CAGCAT
+>135 dim=6
+AGCATA
+>136 dim=6
+ATTTGT
+>136 dim=6
+TTTGTA
+>136 dim=6
+TTGTAC
+>137 dim=6
+TAGAGC
+>137 dim=6
+AGAGCG
+>137 dim=6
+GAGCGA
+>138 dim=6
+TACCAT
+>138 dim=6
+ACCATT
+>138 dim=6
+CCATTA
+>139 dim=6
+CCGGCA
+>139 dim=6
+CGGCAT
+>139 dim=6
+GGCATC
+>140 dim=6
+GATCGT
+>140 dim=6
+ATCGTC
+>140 dim=6
+TCGTCT
+>141 dim=6
+CATTGC
+>141 dim=6
+ATTGCT
+>141 dim=6
+TTGCTG
+>142 dim=6
+TGGAGA
+>142 dim=6
+GGAGAA
+>142 dim=6
+GAGAAA
+>143 dim=6
+CGCCAT
+>143 dim=6
+GCCATC
+>143 dim=6
+CCATCG
+>144 dim=6
+AGTCAT
+>144 dim=6
+GTCATT
+>144 dim=6
+TCATTG
+>145 dim=6
+AAGGAA
+>145 dim=6
+AGGAAT
+>145 dim=6
+GGAATA
+>146 dim=6
+AGATTT
+>146 dim=6
+GATTTT
+>146 dim=6
+ATTTTA
+>147 dim=6
+TGACAG
+>147 dim=6
+GACAGG
+>147 dim=6
+ACAGGG
+>148 dim=6
+TCGTTG
+>148 dim=6
+CGTTGT
+>148 dim=6
+GTTGTT
+>149 dim=6
+CGGCGG
+>149 dim=6
+GGCGGC
+>149 dim=6
+GCGGCG
+>150 dim=6
+AAGATG
+>150 dim=6
+AGATGC
+>150 dim=6
+GATGCC
+>151 dim=6
+TTTTCA
+>151 dim=6
+TTTCAG
+>151 dim=6
+TTCAGC
+>152 dim=6
+GCAGCG
+>152 dim=6
+CAGCGT
+>152 dim=6
+AGCGTT
+>153 dim=6
+AAAAGG
+>153 dim=6
+AAAGGC
+>153 dim=6
+AAGGCA
+>154 dim=6
+CGCGGC
+>154 dim=6
+GCGGCA
+>154 dim=6
+CGGCAC
+>155 dim=6
+AACCTT
+>155 dim=6
+ACCTTG
+>155 dim=6
+CCTTGT
+>156 dim=6
+GGATTT
+>156 dim=6
+GATTTG
+>156 dim=6
+ATTTGT
+>157 dim=6
+TTAATA
+>157 dim=6
+TAATAC
+>157 dim=6
+AATACA
+>158 dim=6
+CCTACC
+>158 dim=6
+CTACCG
+>158 dim=6
+TACCGA
+>159 dim=6
+CGCCGC
+>159 dim=6
+GCCGCT
+>159 dim=6
+CCGCTG
+>160 dim=6
+TGCCCA
+>160 dim=6
+GCCCAT
+>160 dim=6
+CCCATC
+>161 dim=6
+GCCCTT
+>161 dim=6
+CCCTTT
+>161 dim=6
+CCTTTG
+>162 dim=6
+ATCGGT
+>162 dim=6
+TCGGTC
+>162 dim=6
+CGGTCG
+>163 dim=6
+TAAGTT
+>163 dim=6
+AAGTTG
+>163 dim=6
+AGTTGC
+>164 dim=6
+CCAGGG
+>164 dim=6
+CAGGGA
+>164 dim=6
+AGGGAA
+>165 dim=6
+GCCTAC
+>165 dim=6
+CCTACG
+>165 dim=6
+CTACGA
+>166 dim=6
+CGGTAT
+>166 dim=6
+GGTATC
+>166 dim=6
+GTATCC
+>167 dim=6
+AAATCG
+>167 dim=6
+AATCGT
+>167 dim=6
+ATCGTC
+>168 dim=6
+AGCTGG
+>168 dim=6
+GCTGGT
+>168 dim=6
+CTGGTG
+>169 dim=6
+AGATTA
+>169 dim=6
+GATTAA
+>169 dim=6
+ATTAAT
+>170 dim=6
+GCGCCT
+>170 dim=6
+CGCCTG
+>170 dim=6
+GCCTGC
+>171 dim=6
+ACTTCA
+>171 dim=6
+CTTCAA
+>171 dim=6
+TTCAAA
+>172 dim=6
+GACGGA
+>172 dim=6
+ACGGAA
+>172 dim=6
+CGGAAC
+>173 dim=6
+GTGGCC
+>173 dim=6
+TGGCCA
+>173 dim=6
+GGCCAT
+>174 dim=6
+CGCTAC
+>174 dim=6
+GCTACT
+>174 dim=6
+CTACTT
+>175 dim=6
+CCTCGT
+>175 dim=6
+CTCGTG
+>175 dim=6
+TCGTGA
+>176 dim=6
+TGGCGC
+>176 dim=6
+GGCGCG
+>176 dim=6
+GCGCGT
+>177 dim=6
+GGTTGG
+>177 dim=6
+GTTGGG
+>177 dim=6
+TTGGGG
+>178 dim=6
+GTTCGC
+>178 dim=6
+TTCGCT
+>178 dim=6
+TCGCTG
+>179 dim=6
+GGCAAA
+>179 dim=6
+GCAAAG
+>179 dim=6
+CAAAGC
+>180 dim=6
+GCCCCG
+>180 dim=6
+CCCCGT
+>180 dim=6
+CCCGTG
+>181 dim=6
+ACCGAT
+>181 dim=6
+CCGATA
+>181 dim=6
+CGATAA
+>182 dim=6
+GTGCAT
+>182 dim=6
+TGCATG
+>182 dim=6
+GCATGT
+>183 dim=6
+GGCGTA
+>183 dim=6
+GCGTAA
+>183 dim=6
+CGTAAA
+>184 dim=6
+CAGTAA
+>184 dim=6
+AGTAAC
+>184 dim=6
+GTAACA
+>185 dim=6
+CCGGGT
+>185 dim=6
+CGGGTG
+>185 dim=6
+GGGTGA
+>186 dim=6
+TGAGTT
+>186 dim=6
+GAGTTG
+>186 dim=6
+AGTTGC
+>187 dim=6
+TTTAGC
+>187 dim=6
+TTAGCC
+>187 dim=6
+TAGCCG
+>188 dim=6
+CGGCAG
+>188 dim=6
+GGCAGG
+>188 dim=6
+GCAGGA
+>189 dim=6
+CCTTTA
+>189 dim=6
+CTTTAT
+>189 dim=6
+TTTATG
+>190 dim=6
+TACCTG
+>190 dim=6
+ACCTGG
+>190 dim=6
+CCTGGG
+>191 dim=6
+TCTATC
+>191 dim=6
+CTATCG
+>191 dim=6
+TATCGA
+>192 dim=6
+CCCGTC
+>192 dim=6
+CCGTCG
+>192 dim=6
+CGTCGC
+>193 dim=6
+TCGGGC
+>193 dim=6
+CGGGCG
+>193 dim=6
+GGGCGA
+>194 dim=6
+CCGTGT
+>194 dim=6
+CGTGTA
+>194 dim=6
+GTGTAT
+>195 dim=6
+CAGGGT
+>195 dim=6
+AGGGTA
+>195 dim=6
+GGGTAT
+>196 dim=6
+CTCGAT
+>196 dim=6
+TCGATG
+>196 dim=6
+CGATGG
+>197 dim=6
+CGGGTC
+>197 dim=6
+GGGTCA
+>197 dim=6
+GGTCAC
+>198 dim=6
+GGCCAT
+>198 dim=6
+GCCATT
+>198 dim=6
+CCATTT
+>199 dim=6
+CCATAA
+>199 dim=6
+CATAAT
+>199 dim=6
+ATAATG
+>200 dim=6
+CTGGTA
+>200 dim=6
+TGGTAC
+>200 dim=6
+GGTACG
+>201 dim=6
+CTGCGA
+>201 dim=6
+TGCGAG
+>201 dim=6
+GCGAGC
+>202 dim=6
+TAGCTA
+>202 dim=6
+AGCTAA
+>202 dim=6
+GCTAAT
+>203 dim=6
+AGGTCT
+>203 dim=6
+GGTCTG
+>203 dim=6
+GTCTGG
+>204 dim=6
+CGAAAC
+>204 dim=6
+GAAACA
+>204 dim=6
+AAACAC
+>205 dim=6
+GGTAAT
+>205 dim=6
+GTAATT
+>205 dim=6
+TAATTT
+>206 dim=6
+AAGCCT
+>206 dim=6
+AGCCTT
+>206 dim=6
+GCCTTT
+>207 dim=6
+CAGGTT
+>207 dim=6
+AGGTTG
+>207 dim=6
+GGTTGC
+>208 dim=6
+TCAGGG
+>208 dim=6
+CAGGGT
+>208 dim=6
+AGGGTC
+>209 dim=6
+TTTATG
+>209 dim=6
+TTATGG
+>209 dim=6
+TATGGT
+>210 dim=6
+GGCGAC
+>210 dim=6
+GCGACG
+>210 dim=6
+CGACGG
+>211 dim=6
+AACCCA
+>211 dim=6
+ACCCAC
+>211 dim=6
+CCCACG
+>212 dim=6
+ACACTG
+>212 dim=6
+CACTGA
+>212 dim=6
+ACTGAC
+>213 dim=6
+CCTGCA
+>213 dim=6
+CTGCAT
+>213 dim=6
+TGCATG
+>214 dim=6
+TGGTTG
+>214 dim=6
+GGTTGA
+>214 dim=6
+GTTGAA
+>215 dim=6
+TCGCCA
+>215 dim=6
+CGCCAA
+>215 dim=6
+GCCAAA
+>216 dim=6
+TCCAGA
+>216 dim=6
+CCAGAT
+>216 dim=6
+CAGATC
+>217 dim=6
+TAATAA
+>217 dim=6
+AATAAC
+>217 dim=6
+ATAACG
+>218 dim=6
+GAAAAC
+>218 dim=6
+AAAACT
+>218 dim=6
+AAACTG
+>219 dim=6
+TGGATG
+>219 dim=6
+GGATGA
+>219 dim=6
+GATGAT
+>220 dim=6
+GACGGC
+>220 dim=6
+ACGGCG
+>220 dim=6
+CGGCGC
+>221 dim=6
+AGCCCG
+>221 dim=6
+GCCCGT
+>221 dim=6
+CCCGTA
+>222 dim=6
+TCTCGG
+>222 dim=6
+CTCGGC
+>222 dim=6
+TCGGCA
+>223 dim=6
+CCAGTC
+>223 dim=6
+CAGTCA
+>223 dim=6
+AGTCAG
+>224 dim=6
+CGTATT
+>224 dim=6
+GTATTC
+>224 dim=6
+TATTCG
+>225 dim=6
+ATATGT
+>225 dim=6
+TATGTT
+>225 dim=6
+ATGTTT
+>226 dim=6
+ATCGAT
+>226 dim=6
+TCGATC
+>226 dim=6
+CGATCG
+>227 dim=6
+AGCAGA
+>227 dim=6
+GCAGAG
+>227 dim=6
+CAGAGC
+>228 dim=6
+TGCATT
+>228 dim=6
+GCATTA
+>228 dim=6
+CATTAT
+>229 dim=6
+CCAGTT
+>229 dim=6
+CAGTTC
+>229 dim=6
+AGTTCC
+>230 dim=6
+CGAAAA
+>230 dim=6
+GAAAAT
+>230 dim=6
+AAAATC
+>231 dim=6
+CTAACC
+>231 dim=6
+TAACCC
+>231 dim=6
+AACCCA
+>232 dim=6
+TGAAAA
+>232 dim=6
+GAAAAA
+>232 dim=6
+AAAAAT
+>233 dim=6
+TTTTTA
+>233 dim=6
+TTTTAC
+>233 dim=6
+TTTACC
+>234 dim=6
+TTCGAT
+>234 dim=6
+TCGATG
+>234 dim=6
+CGATGA
+>235 dim=6
+GCTGGA
+>235 dim=6
+CTGGAC
+>235 dim=6
+TGGACA
+>236 dim=6
+TGACCC
+>236 dim=6
+GACCCT
+>236 dim=6
+ACCCTG
+>237 dim=6
+GTCCAG
+>237 dim=6
+TCCAGT
+>237 dim=6
+CCAGTA
+>238 dim=6
+ATGCAA
+>238 dim=6
+TGCAAA
+>238 dim=6
+GCAAAA
+>239 dim=6
+ATGCGA
+>239 dim=6
+TGCGAA
+>239 dim=6
+GCGAAT
+>240 dim=6
+AGAGCA
+>240 dim=6
+GAGCAT
+>240 dim=6
+AGCATG
+>241 dim=6
+TTCCGG
+>241 dim=6
+TCCGGG
+>241 dim=6
+CCGGGC
+>242 dim=6
+CATGAA
+>242 dim=6
+ATGAAA
+>242 dim=6
+TGAAAA
+>243 dim=6
+CGCTAG
+>243 dim=6
+GCTAGT
+>243 dim=6
+CTAGTC
+>244 dim=6
+CCCGGC
+>244 dim=6
+CCGGCA
+>244 dim=6
+CGGCAG
+>245 dim=6
+CGCGTA
+>245 dim=6
+GCGTAC
+>245 dim=6
+CGTACC
+>246 dim=6
+GGCGTG
+>246 dim=6
+GCGTGG
+>246 dim=6
+CGTGGC
+>247 dim=6
+CCGCCA
+>247 dim=6
+CGCCAA
+>247 dim=6
+GCCAAT
+>248 dim=6
+CAATCA
+>248 dim=6
+AATCAT
+>248 dim=6
+ATCATC
+>249 dim=6
+CAGGCA
+>249 dim=6
+AGGCAA
+>249 dim=6
+GGCAAG
+>250 dim=6
+CAATAA
+>250 dim=6
+AATAAT
+>250 dim=6
+ATAATT
+>251 dim=6
+TATTGA
+>251 dim=6
+ATTGAA
+>251 dim=6
+TTGAAG
+>252 dim=6
+GCGGGC
+>252 dim=6
+CGGGCT
+>252 dim=6
+GGGCTA
+>253 dim=6
+TGAAGA
+>253 dim=6
+GAAGAA
+>253 dim=6
+AAGAAA
+>254 dim=6
+AAGCTC
+>254 dim=6
+AGCTCT
+>254 dim=6
+GCTCTC
+>255 dim=6
+ATACTT
+>255 dim=6
+TACTTA
+>255 dim=6
+ACTTAG
+>256 dim=6
+TTCGGT
+>256 dim=6
+TCGGTG
+>256 dim=6
+CGGTGG
+>257 dim=6
+TTCCAT
+>257 dim=6
+TCCATT
+>257 dim=6
+CCATTT
+>258 dim=6
+GGAAAG
+>258 dim=6
+GAAAGA
+>258 dim=6
+AAAGAG
+>259 dim=6
+CAACAC
+>259 dim=6
+AACACC
+>259 dim=6
+ACACCG
+>260 dim=6
+GCGATT
+>260 dim=6
+CGATTC
+>260 dim=6
+GATTCA
+>261 dim=6
+CTAAAC
+>261 dim=6
+TAAACA
+>261 dim=6
+AAACAG
+>262 dim=6
+TGGCTA
+>262 dim=6
+GGCTAT
+>262 dim=6
+GCTATG
+>263 dim=6
+GATCGG
+>263 dim=6
+ATCGGT
+>263 dim=6
+TCGGTA
+>264 dim=6
+CAATGG
+>264 dim=6
+AATGGA
+>264 dim=6
+ATGGAT
+>265 dim=6
+CTCTAC
+>265 dim=6
+TCTACA
+>265 dim=6
+CTACAA
+>266 dim=6
+ATGAAG
+>266 dim=6
+TGAAGA
+>266 dim=6
+GAAGAA
+>267 dim=6
+AACAAT
+>267 dim=6
+ACAATT
+>267 dim=6
+CAATTA
+>268 dim=6
+CTCCCC
+>268 dim=6
+TCCCCA
+>268 dim=6
+CCCCAA
+>269 dim=6
+CAGCGC
+>269 dim=6
+AGCGCA
+>269 dim=6
+GCGCAT
+>270 dim=6
+GCACGA
+>270 dim=6
+CACGAT
+>270 dim=6
+ACGATC
+>271 dim=6
+ATGCCG
+>271 dim=6
+TGCCGC
+>271 dim=6
+GCCGCC
+>272 dim=6
+CACGAC
+>272 dim=6
+ACGACC
+>272 dim=6
+CGACCG
+>273 dim=6
+TCTCGG
+>273 dim=6
+CTCGGC
+>273 dim=6
+TCGGCG
+>274 dim=6
+CCTTAA
+>274 dim=6
+CTTAAA
+>274 dim=6
+TTAAAG
+>275 dim=6
+AATCCC
+>275 dim=6
+ATCCCT
+>275 dim=6
+TCCCTA
+>276 dim=6
+CCATAA
+>276 dim=6
+CATAAT
+>276 dim=6
+ATAATG
+>277 dim=6
+GCTACC
+>277 dim=6
+CTACCC
+>277 dim=6
+TACCCA
+>278 dim=6
+GATAGT
+>278 dim=6
+ATAGTC
+>278 dim=6
+TAGTCG
+>279 dim=6
+TCCGAA
+>279 dim=6
+CCGAAT
+>279 dim=6
+CGAATA
+>280 dim=6
+CGGCGG
+>280 dim=6
+GGCGGT
+>280 dim=6
+GCGGTT
+>281 dim=6
+TGCGCG
+>281 dim=6
+GCGCGG
+>281 dim=6
+CGCGGT
+>282 dim=6
+GTAATG
+>282 dim=6
+TAATGT
+>282 dim=6
+AATGTT
+>283 dim=6
+TGTGAT
+>283 dim=6
+GTGATC
+>283 dim=6
+TGATCG
+>284 dim=6
+CCTGCC
+>284 dim=6
+CTGCCG
+>284 dim=6
+TGCCGG
+>285 dim=6
+ACGTAG
+>285 dim=6
+CGTAGC
+>285 dim=6
+GTAGCG
+>286 dim=6
+ACACCG
+>286 dim=6
+CACCGT
+>286 dim=6
+ACCGTG
+>287 dim=6
+CTGCGC
+>287 dim=6
+TGCGCT
+>287 dim=6
+GCGCTG
+>288 dim=6
+AAGGTC
+>288 dim=6
+AGGTCA
+>288 dim=6
+GGTCAT
+>289 dim=6
+GCAGTA
+>289 dim=6
+CAGTAG
+>289 dim=6
+AGTAGA
+>290 dim=6
+GGGTAA
+>290 dim=6
+GGTAAG
+>290 dim=6
+GTAAGA
+>291 dim=6
+GCGAAG
+>291 dim=6
+CGAAGC
+>291 dim=6
+GAAGCG
+>292 dim=6
+GACATC
+>292 dim=6
+ACATCA
+>292 dim=6
+CATCAC
+>293 dim=6
+CTGGTG
+>293 dim=6
+TGGTGG
+>293 dim=6
+GGTGGT
+>294 dim=6
+AATCCA
+>294 dim=6
+ATCCAT
+>294 dim=6
+TCCATC
+>295 dim=6
+CGGCAG
+>295 dim=6
+GGCAGT
+>295 dim=6
+GCAGTG
+>296 dim=6
+CATCGG
+>296 dim=6
+ATCGGC
+>296 dim=6
+TCGGCA
+>297 dim=6
+CTCTAC
+>297 dim=6
+TCTACC
+>297 dim=6
+CTACCT
+>298 dim=6
+GGGTTG
+>298 dim=6
+GGTTGT
+>298 dim=6
+GTTGTG
+>299 dim=6
+CACGCT
+>299 dim=6
+ACGCTG
+>299 dim=6
+CGCTGA
+>300 dim=6
+TGGATG
+>300 dim=6
+GGATGA
+>300 dim=6
+GATGAA
+>301 dim=6
+ACCTGT
+>301 dim=6
+CCTGTG
+>301 dim=6
+CTGTGC
+>302 dim=6
+TCGGTA
+>302 dim=6
+CGGTAG
+>302 dim=6
+GGTAGA
+>303 dim=6
+AATGGC
+>303 dim=6
+ATGGCG
+>303 dim=6
+TGGCGC
+>304 dim=6
+ATATCG
+>304 dim=6
+TATCGC
+>304 dim=6
+ATCGCT
+>305 dim=6
+AACCGA
+>305 dim=6
+ACCGAA
+>305 dim=6
+CCGAAC
+>306 dim=6
+GGAACT
+>306 dim=6
+GAACTG
+>306 dim=6
+AACTGA
+>307 dim=6
+GGCTGC
+>307 dim=6
+GCTGCG
+>307 dim=6
+CTGCGT
+>308 dim=6
+CCCCAG
+>308 dim=6
+CCCAGA
+>308 dim=6
+CCAGAC
+>309 dim=6
+CGCAGT
+>309 dim=6
+GCAGTA
+>309 dim=6
+CAGTAA
+>310 dim=6
+ATGGCC
+>310 dim=6
+TGGCCA
+>310 dim=6
+GGCCAA
+>311 dim=6
+TTGCCG
+>311 dim=6
+TGCCGC
+>311 dim=6
+GCCGCA
+>312 dim=6
+AAGTGT
+>312 dim=6
+AGTGTT
+>312 dim=6
+GTGTTG
+>313 dim=6
+ATTTCA
+>313 dim=6
+TTTCAG
+>313 dim=6
+TTCAGT
+>314 dim=6
+ATCACC
+>314 dim=6
+TCACCC
+>314 dim=6
+CACCCA
+>315 dim=6
+GCGTCA
+>315 dim=6
+CGTCAC
+>315 dim=6
+GTCACG
+>316 dim=6
+TCGTGA
+>316 dim=6
+CGTGAT
+>316 dim=6
+GTGATG
+>317 dim=6
+CGTTGC
+>317 dim=6
+GTTGCA
+>317 dim=6
+TTGCAA
+>318 dim=6
+TGTTAC
+>318 dim=6
+GTTACC
+>318 dim=6
+TTACCA
+>319 dim=6
+CTGGTG
+>319 dim=6
+TGGTGT
+>319 dim=6
+GGTGTA
+>320 dim=6
+TCGGGG
+>320 dim=6
+CGGGGC
+>320 dim=6
+GGGGCG
+>321 dim=6
+GTGTTC
+>321 dim=6
+TGTTCC
+>321 dim=6
+GTTCCG
+>322 dim=6
+CTGGTG
+>322 dim=6
+TGGTGT
+>322 dim=6
+GGTGTA
+>323 dim=6
+ATTACG
+>323 dim=6
+TTACGG
+>323 dim=6
+TACGGC
+>324 dim=6
+GGGTAA
+>324 dim=6
+GGTAAT
+>324 dim=6
+GTAATC
+>325 dim=6
+TTGCCG
+>325 dim=6
+TGCCGA
+>325 dim=6
+GCCGAT
+>326 dim=6
+GACTGT
+>326 dim=6
+ACTGTC
+>326 dim=6
+CTGTCA
+>327 dim=6
+AAAACC
+>327 dim=6
+AAACCT
+>327 dim=6
+AACCTG
+>328 dim=6
+TTTTGT
+>328 dim=6
+TTTGTT
+>328 dim=6
+TTGTTT
+>329 dim=6
+CCGTTA
+>329 dim=6
+CGTTAC
+>329 dim=6
+GTTACG
+>330 dim=6
+ATCTAC
+>330 dim=6
+TCTACC
+>330 dim=6
+CTACCC
+>331 dim=6
+TATATG
+>331 dim=6
+ATATGT
+>331 dim=6
+TATGTC
+>332 dim=6
+GGAAGG
+>332 dim=6
+GAAGGC
+>332 dim=6
+AAGGCC
+>333 dim=6
+AATTAC
+>333 dim=6
+ATTACT
+>333 dim=6
+TTACTC
+>334 dim=6
+GAGTGT
+>334 dim=6
+AGTGTG
+>334 dim=6
+GTGTGG
+>335 dim=6
+TCGGCT
+>335 dim=6
+CGGCTT
+>335 dim=6
+GGCTTC
+>336 dim=6
+AAAGCC
+>336 dim=6
+AAGCCA
+>336 dim=6
+AGCCAT
+>337 dim=6
+TGATGC
+>337 dim=6
+GATGCA
+>337 dim=6
+ATGCAA
+>338 dim=6
+TCGAAG
+>338 dim=6
+CGAAGC
+>338 dim=6
+GAAGCG
+>339 dim=6
+AGGTCG
+>339 dim=6
+GGTCGC
+>339 dim=6
+GTCGCA
+>340 dim=6
+GGTGAT
+>340 dim=6
+GTGATG
+>340 dim=6
+TGATGC
+>341 dim=6
+GTCAGG
+>341 dim=6
+TCAGGC
+>341 dim=6
+CAGGCG
+>342 dim=6
+TTTGAC
+>342 dim=6
 TTGACG
->997 dim=6
-GCGGAA
->997 dim=6
-CGGAAA
->997 dim=6
-GGAAAA
->998 dim=6
+>342 dim=6
+TGACGC
+>343 dim=6
+CGTTTA
+>343 dim=6
+GTTTAC
+>343 dim=6
+TTTACT
+>344 dim=6
+CGGATG
+>344 dim=6
+GGATGA
+>344 dim=6
+GATGAT
+>345 dim=6
+CACGGC
+>345 dim=6
+ACGGCT
+>345 dim=6
+CGGCTG
+>346 dim=6
+CAGTGG
+>346 dim=6
+AGTGGC
+>346 dim=6
+GTGGCT
+>347 dim=6
+TGGAGA
+>347 dim=6
+GGAGAT
+>347 dim=6
+GAGATC
+>348 dim=6
+ATTGAT
+>348 dim=6
+TTGATG
+>348 dim=6
+TGATGA
+>349 dim=6
+GCCATT
+>349 dim=6
+CCATTC
+>349 dim=6
+CATTCC
+>350 dim=6
+CGTAGA
+>350 dim=6
+GTAGAT
+>350 dim=6
+TAGATA
+>351 dim=6
+ACAGCG
+>351 dim=6
+CAGCGG
+>351 dim=6
+AGCGGA
+>352 dim=6
+GCTCGT
+>352 dim=6
+CTCGTT
+>352 dim=6
+TCGTTC
+>353 dim=6
+TCGACC
+>353 dim=6
+CGACCG
+>353 dim=6
+GACCGC
+>354 dim=6
+CGCCGT
+>354 dim=6
+GCCGTA
+>354 dim=6
+CCGTAT
+>355 dim=6
+CATCTG
+>355 dim=6
+ATCTGC
+>355 dim=6
+TCTGCT
+>356 dim=6
+CAGGCT
+>356 dim=6
+AGGCTA
+>356 dim=6
+GGCTAA
+>357 dim=6
+CGGTTG
+>357 dim=6
+GGTTGT
+>357 dim=6
+GTTGTC
+>358 dim=6
+TTAAAT
+>358 dim=6
+TAAATA
+>358 dim=6
+AAATAA
+>359 dim=6
+CGCCAC
+>359 dim=6
+GCCACC
+>359 dim=6
+CCACCG
+>360 dim=6
+GCGAAT
+>360 dim=6
+CGAATT
+>360 dim=6
+GAATTT
+>361 dim=6
+GTTATC
+>361 dim=6
+TTATCG
+>361 dim=6
+TATCGA
+>362 dim=6
+AGGATC
+>362 dim=6
+GGATCA
+>362 dim=6
+GATCAG
+>363 dim=6
+GCCTGA
+>363 dim=6
+CCTGAT
+>363 dim=6
+CTGATC
+>364 dim=6
+CATATT
+>364 dim=6
+ATATTG
+>364 dim=6
+TATTGG
+>365 dim=6
+TTATAA
+>365 dim=6
+TATAAA
+>365 dim=6
+ATAAAG
+>366 dim=6
+GGAACC
+>366 dim=6
+GAACCT
+>366 dim=6
+AACCTG
+>367 dim=6
+GATCCA
+>367 dim=6
+ATCCAG
+>367 dim=6
+TCCAGA
+>368 dim=6
+AGCAAT
+>368 dim=6
+GCAATC
+>368 dim=6
+CAATCG
+>369 dim=6
+CGCCAC
+>369 dim=6
+GCCACA
+>369 dim=6
+CCACAC
+>370 dim=6
+TTTTTT
+>370 dim=6
+TTTTTC
+>370 dim=6
+TTTTCC
+>371 dim=6
+ACCTGT
+>371 dim=6
+CCTGTG
+>371 dim=6
+CTGTGC
+>372 dim=6
+TGGCTA
+>372 dim=6
+GGCTAC
+>372 dim=6
+GCTACC
+>373 dim=6
+TCTGTA
+>373 dim=6
+CTGTAC
+>373 dim=6
+TGTACG
+>374 dim=6
+ATGAAG
+>374 dim=6
+TGAAGA
+>374 dim=6
+GAAGAC
+>375 dim=6
+AGATAT
+>375 dim=6
+GATATA
+>375 dim=6
+ATATAA
+>376 dim=6
+ACAGGT
+>376 dim=6
+CAGGTA
+>376 dim=6
+AGGTAA
+>377 dim=6
+GCGCAC
+>377 dim=6
+CGCACG
+>377 dim=6
+GCACGA
+>378 dim=6
+ACGTCT
+>378 dim=6
+CGTCTT
+>378 dim=6
+GTCTTG
+>379 dim=6
+TTGCAG
+>379 dim=6
+TGCAGG
+>379 dim=6
+GCAGGA
+>380 dim=6
+AATTTC
+>380 dim=6
+ATTTCC
+>380 dim=6
+TTTCCA
+>381 dim=6
+TTATCC
+>381 dim=6
+TATCCA
+>381 dim=6
+ATCCAG
+>382 dim=6
+AGCGGT
+>382 dim=6
+GCGGTG
+>382 dim=6
+CGGTGC
+>383 dim=6
+GGTAAC
+>383 dim=6
+GTAACT
+>383 dim=6
+TAACTG
+>384 dim=6
+GCAGCA
+>384 dim=6
+CAGCAG
+>384 dim=6
+AGCAGA
+>385 dim=6
+TTTGCT
+>385 dim=6
+TTGCTA
+>385 dim=6
+TGCTAT
+>386 dim=6
+CGTGGC
+>386 dim=6
+GTGGCC
+>386 dim=6
+TGGCCT
+>387 dim=6
+AAGAGC
+>387 dim=6
+AGAGCT
+>387 dim=6
+GAGCTG
+>388 dim=6
+CGACCG
+>388 dim=6
+GACCGT
+>388 dim=6
+ACCGTC
+>389 dim=6
+CCAGTT
+>389 dim=6
+CAGTTC
+>389 dim=6
+AGTTCC
+>390 dim=6
+CAGCAC
+>390 dim=6
+AGCACT
+>390 dim=6
+GCACTT
+>391 dim=6
+ATCAAG
+>391 dim=6
+TCAAGG
+>391 dim=6
+CAAGGA
+>392 dim=6
+TTGCCA
+>392 dim=6
+TGCCAT
+>392 dim=6
+GCCATG
+>393 dim=6
+GTTTCC
+>393 dim=6
+TTTCCG
+>393 dim=6
+TTCCGG
+>394 dim=6
+TGCAAG
+>394 dim=6
+GCAAGG
+>394 dim=6
+CAAGGC
+>395 dim=6
+CGCCAC
+>395 dim=6
+GCCACC
+>395 dim=6
+CCACCG
+>396 dim=6
+CGGCGT
+>396 dim=6
+GGCGTC
+>396 dim=6
+GCGTCA
+>397 dim=6
+TTGGTG
+>397 dim=6
+TGGTGA
+>397 dim=6
+GGTGAC
+>398 dim=6
+ATTTCG
+>398 dim=6
+TTTCGG
+>398 dim=6
+TTCGGT
+>399 dim=6
+TTGGAA
+>399 dim=6
+TGGAAG
+>399 dim=6
+GGAAGG
+>400 dim=6
+TTTACG
+>400 dim=6
+TTACGC
+>400 dim=6
+TACGCT
+>401 dim=6
+TACCAC
+>401 dim=6
+ACCACA
+>401 dim=6
+CCACAC
+>402 dim=6
+GGTGAC
+>402 dim=6
+GTGACG
+>402 dim=6
+TGACGT
+>403 dim=6
+TACCCA
+>403 dim=6
+ACCCAG
+>403 dim=6
+CCCAGA
+>404 dim=6
+CGCATT
+>404 dim=6
+GCATTC
+>404 dim=6
+CATTCT
+>405 dim=6
+TTCCCG
+>405 dim=6
+TCCCGA
+>405 dim=6
+CCCGAC
+>406 dim=6
+CGCAAC
+>406 dim=6
+GCAACA
+>406 dim=6
+CAACAG
+>407 dim=6
+TAATAC
+>407 dim=6
+AATACG
+>407 dim=6
+ATACGG
+>408 dim=6
+TGGGGC
+>408 dim=6
+GGGGCG
+>408 dim=6
+GGGCGT
+>409 dim=6
+TGTACG
+>409 dim=6
+GTACGT
+>409 dim=6
+TACGTG
+>410 dim=6
+GGACTC
+>410 dim=6
+GACTCG
+>410 dim=6
+ACTCGC
+>411 dim=6
+ACAAAG
+>411 dim=6
+CAAAGA
+>411 dim=6
+AAAGAG
+>412 dim=6
+GAGCAG
+>412 dim=6
+AGCAGA
+>412 dim=6
+GCAGAA
+>413 dim=6
+ATTCTG
+>413 dim=6
+TTCTGG
+>413 dim=6
+TCTGGA
+>414 dim=6
+CGTCCG
+>414 dim=6
+GTCCGT
+>414 dim=6
+TCCGTG
+>415 dim=6
+TGCGTT
+>415 dim=6
+GCGTTC
+>415 dim=6
+CGTTCC
+>416 dim=6
+ATCAGG
+>416 dim=6
+TCAGGC
+>416 dim=6
+CAGGCC
+>417 dim=6
+ATAACG
+>417 dim=6
+TAACGG
+>417 dim=6
+AACGGG
+>418 dim=6
+TGCCGT
+>418 dim=6
+GCCGTG
+>418 dim=6
+CCGTGG
+>419 dim=6
+CTACCG
+>419 dim=6
+TACCGC
+>419 dim=6
+ACCGCC
+>420 dim=6
+GAGCAG
+>420 dim=6
+AGCAGG
+>420 dim=6
+GCAGGG
+>421 dim=6
+GATTCG
+>421 dim=6
+ATTCGT
+>421 dim=6
+TTCGTG
+>422 dim=6
+GGGACG
+>422 dim=6
+GGACGC
+>422 dim=6
+GACGCT
+>423 dim=6
+ACAGGG
+>423 dim=6
+CAGGGT
+>423 dim=6
+AGGGTA
+>424 dim=6
+AGCGGT
+>424 dim=6
+GCGGTA
+>424 dim=6
+CGGTAT
+>425 dim=6
+AGTCAT
+>425 dim=6
+GTCATT
+>425 dim=6
+TCATTG
+>426 dim=6
+TCACGC
+>426 dim=6
+CACGCA
+>426 dim=6
+ACGCAT
+>427 dim=6
+GCGTAA
+>427 dim=6
+CGTAAA
+>427 dim=6
+GTAAAC
+>428 dim=6
+CTGGCG
+>428 dim=6
+TGGCGG
+>428 dim=6
+GGCGGC
+>429 dim=6
+GGCGTT
+>429 dim=6
+GCGTTC
+>429 dim=6
+CGTTCA
+>430 dim=6
+GGCGAC
+>430 dim=6
+GCGACT
+>430 dim=6
+CGACTG
+>431 dim=6
+GAAGTT
+>431 dim=6
+AAGTTT
+>431 dim=6
+AGTTTT
+>432 dim=6
+CAGGCT
+>432 dim=6
+AGGCTA
+>432 dim=6
+GGCTAC
+>433 dim=6
+TGTGCC
+>433 dim=6
+GTGCCG
+>433 dim=6
+TGCCGG
+>434 dim=6
+TTGGTC
+>434 dim=6
+TGGTCA
+>434 dim=6
+GGTCAG
+>435 dim=6
+AGGGCT
+>435 dim=6
+GGGCTT
+>435 dim=6
+GGCTTG
+>436 dim=6
+TTTACC
+>436 dim=6
+TTACCA
+>436 dim=6
+TACCAC
+>437 dim=6
+ATCAAG
+>437 dim=6
+TCAAGC
+>437 dim=6
+CAAGCG
+>438 dim=6
+CTGACC
+>438 dim=6
+TGACCC
+>438 dim=6
+GACCCT
+>439 dim=6
+GAGGCG
+>439 dim=6
+AGGCGA
+>439 dim=6
+GGCGAA
+>440 dim=6
+GGACGC
+>440 dim=6
+GACGCC
+>440 dim=6
+ACGCCA
+>441 dim=6
+GAGCGG
+>441 dim=6
+AGCGGC
+>441 dim=6
+GCGGCA
+>442 dim=6
+TTGCCG
+>442 dim=6
+TGCCGT
+>442 dim=6
+GCCGTG
+>443 dim=6
+CTTCCA
+>443 dim=6
+TTCCAG
+>443 dim=6
+TCCAGA
+>444 dim=6
+GGCAAT
+>444 dim=6
+GCAATC
+>444 dim=6
+CAATCC
+>445 dim=6
+GGCTAC
+>445 dim=6
+GCTACC
+>445 dim=6
+CTACCC
+>446 dim=6
+GTGACC
+>446 dim=6
+TGACCG
+>446 dim=6
+GACCGA
+>447 dim=6
+GTTCTC
+>447 dim=6
+TTCTCG
+>447 dim=6
+TCTCGG
+>448 dim=6
+TCCACC
+>448 dim=6
+CCACCA
+>448 dim=6
+CACCAG
+>449 dim=6
+ATCGGT
+>449 dim=6
+TCGGTC
+>449 dim=6
+CGGTCA
+>450 dim=6
+GCGCAT
+>450 dim=6
+CGCATG
+>450 dim=6
+GCATGG
+>451 dim=6
+GTGAAG
+>451 dim=6
+TGAAGA
+>451 dim=6
+GAAGAG
+>452 dim=6
+TTTTGG
+>452 dim=6
+TTTGGG
+>452 dim=6
+TTGGGG
+>453 dim=6
+TGGATG
+>453 dim=6
+GGATGC
+>453 dim=6
+GATGCC
+>454 dim=6
+GTTTGT
+>454 dim=6
+TTTGTT
+>454 dim=6
+TTGTTG
+>455 dim=6
+ATTTGA
+>455 dim=6
+TTTGAC
+>455 dim=6
+TTGACC
+>456 dim=6
+AAATTG
+>456 dim=6
+AATTGA
+>456 dim=6
+ATTGAT
+>457 dim=6
+GAGCGG
+>457 dim=6
+AGCGGC
+>457 dim=6
+GCGGCG
+>458 dim=6
+TTCTGA
+>458 dim=6
+TCTGAA
+>458 dim=6
+CTGAAA
+>459 dim=6
+ACACAA
+>459 dim=6
+CACAAG
+>459 dim=6
+ACAAGG
+>460 dim=6
+AGCTGG
+>460 dim=6
+GCTGGT
+>460 dim=6
+CTGGTT
+>461 dim=6
+TCAGAC
+>461 dim=6
+CAGACC
+>461 dim=6
+AGACCC
+>462 dim=6
+TCTCCG
+>462 dim=6
+CTCCGG
+>462 dim=6
+TCCGGC
+>463 dim=6
+CATCAG
+>463 dim=6
+ATCAGC
+>463 dim=6
+TCAGCT
+>464 dim=6
+AATGCT
+>464 dim=6
+ATGCTA
+>464 dim=6
+TGCTAC
+>465 dim=6
+AATAAC
+>465 dim=6
+ATAACA
+>465 dim=6
+TAACAA
+>466 dim=6
+AAGCCC
+>466 dim=6
+AGCCCT
+>466 dim=6
+GCCCTG
+>467 dim=6
+TTCACA
+>467 dim=6
 TCACAA
+>467 dim=6
+CACAAA
+>468 dim=6
+GCTGCT
+>468 dim=6
+CTGCTG
+>468 dim=6
+TGCTGT
+>469 dim=6
+TGCCAG
+>469 dim=6
+GCCAGG
+>469 dim=6
+CCAGGC
+>470 dim=6
+CGAATC
+>470 dim=6
+GAATCG
+>470 dim=6
+AATCGC
+>471 dim=6
+CAGCTT
+>471 dim=6
+AGCTTG
+>471 dim=6
+GCTTGC
+>472 dim=6
+TACAGA
+>472 dim=6
+ACAGAG
+>472 dim=6
+CAGAGC
+>473 dim=6
+TTCGTC
+>473 dim=6
+TCGTCT
+>473 dim=6
+CGTCTG
+>474 dim=6
+TAGCTG
+>474 dim=6
+AGCTGA
+>474 dim=6
+GCTGAG
+>475 dim=6
+AGCTGG
+>475 dim=6
+GCTGGG
+>475 dim=6
+CTGGGT
+>476 dim=6
+CGTTAA
+>476 dim=6
+GTTAAC
+>476 dim=6
+TTAACA
+>477 dim=6
+CCACTA
+>477 dim=6
+CACTAC
+>477 dim=6
+ACTACC
+>478 dim=6
+GAAAGC
+>478 dim=6
+AAAGCA
+>478 dim=6
+AAGCAA
+>479 dim=6
+GTGTTG
+>479 dim=6
+TGTTGA
+>479 dim=6
+GTTGAA
+>480 dim=6
+TGTCAG
+>480 dim=6
+GTCAGG
+>480 dim=6
+TCAGGC
+>481 dim=6
+TCGCCC
+>481 dim=6
+CGCCCA
+>481 dim=6
+GCCCAT
+>482 dim=6
+TTTCCT
+>482 dim=6
+TTCCTG
+>482 dim=6
+TCCTGC
+>483 dim=6
+GTTAAA
+>483 dim=6
+TTAAAG
+>483 dim=6
+TAAAGC
+>484 dim=6
+GCGCCT
+>484 dim=6
+CGCCTT
+>484 dim=6
+GCCTTT
+>485 dim=6
+CCAGCA
+>485 dim=6
+CAGCAC
+>485 dim=6
+AGCACG
+>486 dim=6
+TTTATG
+>486 dim=6
+TTATGC
+>486 dim=6
+TATGCA
+>487 dim=6
+AATATC
+>487 dim=6
+ATATCG
+>487 dim=6
+TATCGC
+>488 dim=6
+GATTTA
+>488 dim=6
+ATTTAG
+>488 dim=6
+TTTAGC
+>489 dim=6
+GCGTGC
+>489 dim=6
+CGTGCA
+>489 dim=6
+GTGCAT
+>490 dim=6
+GAAGAA
+>490 dim=6
+AAGAAA
+>490 dim=6
+AGAAAA
+>491 dim=6
+AAATTC
+>491 dim=6
+AATTCC
+>491 dim=6
+ATTCCA
+>492 dim=6
+AAAACT
+>492 dim=6
+AAACTG
+>492 dim=6
+AACTGT
+>493 dim=6
+TGGCGA
+>493 dim=6
+GGCGAA
+>493 dim=6
+GCGAAC
+>494 dim=6
+GATGCT
+>494 dim=6
+ATGCTG
+>494 dim=6
+TGCTGG
+>495 dim=6
+CAGCCA
+>495 dim=6
+AGCCAG
+>495 dim=6
+GCCAGT
+>496 dim=6
+GATCCA
+>496 dim=6
+ATCCAT
+>496 dim=6
+TCCATG
+>497 dim=6
+CCTTTC
+>497 dim=6
+CTTTCG
+>497 dim=6
+TTTCGG
+>498 dim=6
+AGGGCT
+>498 dim=6
+GGGCTT
+>498 dim=6
+GGCTTT
+>499 dim=6
+ACGGGG
+>499 dim=6
+CGGGGT
+>499 dim=6
+GGGGTT
+>500 dim=6
+AAAACC
+>500 dim=6
+AAACCT
+>500 dim=6
+AACCTG
+>501 dim=6
+TATTTT
+>501 dim=6
+ATTTTC
+>501 dim=6
+TTTTCG
+>502 dim=6
+CTTCAA
+>502 dim=6
+TTCAAC
+>502 dim=6
+TCAACT
+>503 dim=6
+CAGGAA
+>503 dim=6
+AGGAAA
+>503 dim=6
+GGAAAC
+>504 dim=6
+CCGCTG
+>504 dim=6
+CGCTGA
+>504 dim=6
+GCTGAC
+>505 dim=6
+CACGGG
+>505 dim=6
+ACGGGA
+>505 dim=6
+CGGGAA
+>506 dim=6
+AAAGAC
+>506 dim=6
+AAGACA
+>506 dim=6
+AGACAC
+>507 dim=6
+GGGCGC
+>507 dim=6
+GGCGCG
+>507 dim=6
+GCGCGG
+>508 dim=6
+GTTCTG
+>508 dim=6
+TTCTGG
+>508 dim=6
+TCTGGC
+>509 dim=6
+GAATTT
+>509 dim=6
+AATTTG
+>509 dim=6
+ATTTGC
+>510 dim=6
+CGTGGG
+>510 dim=6
+GTGGGT
+>510 dim=6
+TGGGTG
+>511 dim=6
+ATTCCT
+>511 dim=6
+TTCCTG
+>511 dim=6
+TCCTGG
+>512 dim=6
+GATGAA
+>512 dim=6
+ATGAAA
+>512 dim=6
+TGAAAC
+>513 dim=6
+GGACAA
+>513 dim=6
+GACAAT
+>513 dim=6
+ACAATT
+>514 dim=6
+ATCAAG
+>514 dim=6
+TCAAGA
+>514 dim=6
+CAAGAA
+>515 dim=6
+GCCAAT
+>515 dim=6
+CCAATC
+>515 dim=6
+CAATCA
+>516 dim=6
+GTTCTT
+>516 dim=6
+TTCTTA
+>516 dim=6
+TCTTAC
+>517 dim=6
+CCCCAA
+>517 dim=6
+CCCAAA
+>517 dim=6
+CCAAAG
+>518 dim=6
+CACCGA
+>518 dim=6
+ACCGAT
+>518 dim=6
+CCGATA
+>519 dim=6
+GTGTTG
+>519 dim=6
+TGTTGA
+>519 dim=6
+GTTGAA
+>520 dim=6
+AGCAGA
+>520 dim=6
+GCAGAC
+>520 dim=6
+CAGACC
+>521 dim=6
+CGGGAG
+>521 dim=6
+GGGAGT
+>521 dim=6
+GGAGTG
+>522 dim=6
+TGTACC
+>522 dim=6
+GTACCT
+>522 dim=6
+TACCTG
+>523 dim=6
+AATATT
+>523 dim=6
+ATATTT
+>523 dim=6
+TATTTT
+>524 dim=6
+GTCCCC
+>524 dim=6
+TCCCCA
+>524 dim=6
+CCCCAG
+>525 dim=6
+GTCGAC
+>525 dim=6
+TCGACG
+>525 dim=6
+CGACGT
+>526 dim=6
+CTGAAA
+>526 dim=6
+TGAAAG
+>526 dim=6
+GAAAGC
+>527 dim=6
+TGCGCC
+>527 dim=6
+GCGCCA
+>527 dim=6
+CGCCAG
+>528 dim=6
+GAATCC
+>528 dim=6
+AATCCA
+>528 dim=6
+ATCCAG
+>529 dim=6
+GTTAAA
+>529 dim=6
+TTAAAA
+>529 dim=6
+TAAAAT
+>530 dim=6
+ACTACC
+>530 dim=6
+CTACCT
+>530 dim=6
+TACCTG
+>531 dim=6
+CAGACA
+>531 dim=6
+AGACAG
+>531 dim=6
+GACAGC
+>532 dim=6
+GCTTGT
+>532 dim=6
+CTTGTT
+>532 dim=6
+TTGTTC
+>533 dim=6
+CTGGTG
+>533 dim=6
+TGGTGC
+>533 dim=6
+GGTGCA
+>534 dim=6
+TAAAGC
+>534 dim=6
+AAAGCA
+>534 dim=6
+AAGCAG
+>535 dim=6
+CTGCCG
+>535 dim=6
+TGCCGA
+>535 dim=6
+GCCGAT
+>536 dim=6
+CACAAA
+>536 dim=6
+ACAAAT
+>536 dim=6
+CAAATT
+>537 dim=6
+CTTTAT
+>537 dim=6
+TTTATC
+>537 dim=6
+TTATCA
+>538 dim=6
+GTCATC
+>538 dim=6
+TCATCC
+>538 dim=6
+CATCCT
+>539 dim=6
+ACCATT
+>539 dim=6
+CCATTG
+>539 dim=6
+CATTGC
+>540 dim=6
+CCAGAA
+>540 dim=6
+CAGAAA
+>540 dim=6
+AGAAAG
+>541 dim=6
+TAATAA
+>541 dim=6
+AATAAA
+>541 dim=6
+ATAAAA
+>542 dim=6
+ATTGTT
+>542 dim=6
+TTGTTG
+>542 dim=6
+TGTTGT
+>543 dim=6
+AAAAAA
+>543 dim=6
+AAAAAT
+>543 dim=6
+AAAATA
+>544 dim=6
+GTGCTG
+>544 dim=6
+TGCTGA
+>544 dim=6
+GCTGAG
+>545 dim=6
+TGACGA
+>545 dim=6
+GACGAC
+>545 dim=6
+ACGACC
+>546 dim=6
+CGCCGG
+>546 dim=6
+GCCGGA
+>546 dim=6
+CCGGAT
+>547 dim=6
+CATTAC
+>547 dim=6
+ATTACG
+>547 dim=6
+TTACGT
+>548 dim=6
+GTGCTG
+>548 dim=6
+TGCTGC
+>548 dim=6
+GCTGCT
+>549 dim=6
+GGGGAT
+>549 dim=6
+GGGATT
+>549 dim=6
+GGATTT
+>550 dim=6
+CCTGTG
+>550 dim=6
+CTGTGC
+>550 dim=6
+TGTGCT
+>551 dim=6
+TAACGC
+>551 dim=6
+AACGCT
+>551 dim=6
+ACGCTA
+>552 dim=6
+TAATTC
+>552 dim=6
+AATTCA
+>552 dim=6
+ATTCAG
+>553 dim=6
+GATACC
+>553 dim=6
+ATACCC
+>553 dim=6
+TACCCA
+>554 dim=6
+CCCGTG
+>554 dim=6
+CCGTGA
+>554 dim=6
+CGTGAG
+>555 dim=6
+AGTTCT
+>555 dim=6
+GTTCTC
+>555 dim=6
+TTCTCC
+>556 dim=6
+CGCCTG
+>556 dim=6
+GCCTGA
+>556 dim=6
+CCTGAT
+>557 dim=6
+ATAGCG
+>557 dim=6
+TAGCGC
+>557 dim=6
+AGCGCA
+>558 dim=6
+CCTACC
+>558 dim=6
+CTACCG
+>558 dim=6
+TACCGA
+>559 dim=6
+TGTGAG
+>559 dim=6
+GTGAGT
+>559 dim=6
+TGAGTA
+>560 dim=6
+CCAGGA
+>560 dim=6
+CAGGAT
+>560 dim=6
+AGGATT
+>561 dim=6
+GATAAT
+>561 dim=6
+ATAATC
+>561 dim=6
+TAATCA
+>562 dim=6
+AGGAAG
+>562 dim=6
+GGAAGA
+>562 dim=6
+GAAGAG
+>563 dim=6
+TCACCC
+>563 dim=6
+CACCCA
+>563 dim=6
+ACCCAA
+>564 dim=6
+GAGCTG
+>564 dim=6
+AGCTGG
+>564 dim=6
+GCTGGG
+>565 dim=6
+CGTTGC
+>565 dim=6
+GTTGCC
+>565 dim=6
+TTGCCA
+>566 dim=6
+GCTGAA
+>566 dim=6
+CTGAAG
+>566 dim=6
+TGAAGT
+>567 dim=6
+GAACCT
+>567 dim=6
+AACCTG
+>567 dim=6
+ACCTGA
+>568 dim=6
+ATAAAA
+>568 dim=6
+TAAAAC
+>568 dim=6
+AAAACC
+>569 dim=6
+ATCGGT
+>569 dim=6
+TCGGTA
+>569 dim=6
+CGGTAA
+>570 dim=6
+CAGAAG
+>570 dim=6
+AGAAGA
+>570 dim=6
+GAAGAA
+>571 dim=6
+CAGCGT
+>571 dim=6
+AGCGTG
+>571 dim=6
+GCGTGC
+>572 dim=6
+TCATCT
+>572 dim=6
+CATCTT
+>572 dim=6
+ATCTTC
+>573 dim=6
+GACAAA
+>573 dim=6
+ACAAAC
+>573 dim=6
+CAAACA
+>574 dim=6
+GAATCA
+>574 dim=6
+AATCAG
+>574 dim=6
+ATCAGG
+>575 dim=6
+TGCCCA
+>575 dim=6
+GCCCAT
+>575 dim=6
+CCCATA
+>576 dim=6
+GTGTCT
+>576 dim=6
+TGTCTA
+>576 dim=6
+GTCTAC
+>577 dim=6
+TGGATG
+>577 dim=6
+GGATGC
+>577 dim=6
+GATGCC
+>578 dim=6
+AAAGGC
+>578 dim=6
+AAGGCT
+>578 dim=6
+AGGCTT
+>579 dim=6
+TATCGT
+>579 dim=6
+ATCGTC
+>579 dim=6
+TCGTCA
+>580 dim=6
+ACGGTC
+>580 dim=6
+CGGTCA
+>580 dim=6
+GGTCAG
+>581 dim=6
+ACCCGG
+>581 dim=6
+CCCGGA
+>581 dim=6
+CCGGAA
+>582 dim=6
+CTTCGC
+>582 dim=6
+TTCGCG
+>582 dim=6
+TCGCGG
+>583 dim=6
+TCGGCA
+>583 dim=6
+CGGCAT
+>583 dim=6
+GGCATC
+>584 dim=6
+ATTACG
+>584 dim=6
+TTACGA
+>584 dim=6
+TACGAC
+>585 dim=6
+GAACGG
+>585 dim=6
+AACGGC
+>585 dim=6
+ACGGCT
+>586 dim=6
+ATACGA
+>586 dim=6
+TACGAT
+>586 dim=6
+ACGATC
+>587 dim=6
+AAAATT
+>587 dim=6
+AAATTT
+>587 dim=6
+AATTTA
+>588 dim=6
+TTATCG
+>588 dim=6
+TATCGT
+>588 dim=6
+ATCGTG
+>589 dim=6
+GGCTCG
+>589 dim=6
+GCTCGT
+>589 dim=6
+CTCGTT
+>590 dim=6
+GAAAAA
+>590 dim=6
+AAAAAG
+>590 dim=6
+AAAAGA
+>591 dim=6
+TTTGGC
+>591 dim=6
+TTGGCA
+>591 dim=6
+TGGCAC
+>592 dim=6
+GGCGCG
+>592 dim=6
+GCGCGT
+>592 dim=6
+CGCGTG
+>593 dim=6
+AAAAAG
+>593 dim=6
+AAAAGA
+>593 dim=6
+AAAGAA
+>594 dim=6
+CAGCAG
+>594 dim=6
+AGCAGT
+>594 dim=6
+GCAGTG
+>595 dim=6
+AATACA
+>595 dim=6
+ATACAC
+>595 dim=6
+TACACA
+>596 dim=6
+TGGCAG
+>596 dim=6
+GGCAGT
+>596 dim=6
+GCAGTG
+>597 dim=6
+TCGGCA
+>597 dim=6
+CGGCAT
+>597 dim=6
+GGCATG
+>598 dim=6
+GGCATC
+>598 dim=6
+GCATCG
+>598 dim=6
+CATCGA
+>599 dim=6
+AACGCC
+>599 dim=6
+ACGCCG
+>599 dim=6
+CGCCGA
+>600 dim=6
+AAGCTG
+>600 dim=6
+AGCTGC
+>600 dim=6
+GCTGCG
+>601 dim=6
+CGGACA
+>601 dim=6
+GGACAT
+>601 dim=6
+GACATG
+>602 dim=6
+ACCGTT
+>602 dim=6
+CCGTTG
+>602 dim=6
+CGTTGC
+>603 dim=6
+TTACTC
+>603 dim=6
+TACTCC
+>603 dim=6
+ACTCCA
+>604 dim=6
+GCTTTG
+>604 dim=6
+CTTTGG
+>604 dim=6
+TTTGGT
+>605 dim=6
+TGGTTC
+>605 dim=6
+GGTTCG
+>605 dim=6
+GTTCGT
+>606 dim=6
+GTGACC
+>606 dim=6
+TGACCG
+>606 dim=6
+GACCGC
+>607 dim=6
+TGAAGT
+>607 dim=6
+GAAGTT
+>607 dim=6
+AAGTTC
+>608 dim=6
+AACTTA
+>608 dim=6
+ACTTAC
+>608 dim=6
+CTTACC
+>609 dim=6
+TCGTGA
+>609 dim=6
+CGTGAA
+>609 dim=6
+GTGAAA
+>610 dim=6
+ATGCCT
+>610 dim=6
+TGCCTT
+>610 dim=6
+GCCTTT
+>611 dim=6
+AATATC
+>611 dim=6
+ATATCA
+>611 dim=6
+TATCAG
+>612 dim=6
+TGGCCT
+>612 dim=6
+GGCCTG
+>612 dim=6
+GCCTGT
+>613 dim=6
+TTGACT
+>613 dim=6
+TGACTG
+>613 dim=6
+GACTGT
+>614 dim=6
+GCGAAG
+>614 dim=6
+CGAAGG
+>614 dim=6
+GAAGGC
+>615 dim=6
+AGTGGC
+>615 dim=6
+GTGGCC
+>615 dim=6
+TGGCCC
+>616 dim=6
+CTTTAA
+>616 dim=6
+TTTAAG
+>616 dim=6
+TTAAGT
+>617 dim=6
+GGTTCG
+>617 dim=6
+GTTCGA
+>617 dim=6
+TTCGAC
+>618 dim=6
+CCTTGA
+>618 dim=6
+CTTGAT
+>618 dim=6
+TTGATA
+>619 dim=6
+GCCAGT
+>619 dim=6
+CCAGTT
+>619 dim=6
+CAGTTG
+>620 dim=6
+ACCCGG
+>620 dim=6
+CCCGGC
+>620 dim=6
+CCGGCA
+>621 dim=6
+AACCAC
+>621 dim=6
+ACCACC
+>621 dim=6
+CCACCG
+>622 dim=6
+TATTGG
+>622 dim=6
+ATTGGC
+>622 dim=6
+TTGGCC
+>623 dim=6
+AAACTG
+>623 dim=6
+AACTGC
+>623 dim=6
+ACTGCC
+>624 dim=6
+ATGGAT
+>624 dim=6
+TGGATT
+>624 dim=6
+GGATTA
+>625 dim=6
+GACGCA
+>625 dim=6
+ACGCAT
+>625 dim=6
+CGCATA
+>626 dim=6
+GAACTC
+>626 dim=6
+AACTCG
+>626 dim=6
+ACTCGA
+>627 dim=6
+ATTTCG
+>627 dim=6
+TTTCGA
+>627 dim=6
+TTCGAT
+>628 dim=6
+AACATC
+>628 dim=6
+ACATCA
+>628 dim=6
+CATCAA
+>629 dim=6
+CCGACT
+>629 dim=6
+CGACTA
+>629 dim=6
+GACTAA
+>630 dim=6
+CTCGGC
+>630 dim=6
+TCGGCA
+>630 dim=6
+CGGCAT
+>631 dim=6
+AACACT
+>631 dim=6
+ACACTG
+>631 dim=6
+CACTGC
+>632 dim=6
+TCACTG
+>632 dim=6
+CACTGG
+>632 dim=6
+ACTGGC
+>633 dim=6
+GATTTG
+>633 dim=6
+ATTTGT
+>633 dim=6
+TTTGTG
+>634 dim=6
+GATCAG
+>634 dim=6
+ATCAGG
+>634 dim=6
+TCAGGC
+>635 dim=6
+TGCTGA
+>635 dim=6
+GCTGAT
+>635 dim=6
+CTGATT
+>636 dim=6
+GACGCC
+>636 dim=6
+ACGCCA
+>636 dim=6
+CGCCAG
+>637 dim=6
+GCGCGT
+>637 dim=6
+CGCGTG
+>637 dim=6
+GCGTGT
+>638 dim=6
+AAAATG
+>638 dim=6
+AAATGC
+>638 dim=6
+AATGCG
+>639 dim=6
+TGCTGC
+>639 dim=6
+GCTGCA
+>639 dim=6
+CTGCAT
+>640 dim=6
+TGTTGA
+>640 dim=6
+GTTGAT
+>640 dim=6
+TTGATT
+>641 dim=6
+CTTCCC
+>641 dim=6
+TTCCCG
+>641 dim=6
+TCCCGA
+>642 dim=6
+AGATCT
+>642 dim=6
+GATCTG
+>642 dim=6
+ATCTGA
+>643 dim=6
+CGCAGT
+>643 dim=6
+GCAGTC
+>643 dim=6
+CAGTCA
+>644 dim=6
+TGCCCG
+>644 dim=6
+GCCCGC
+>644 dim=6
+CCCGCA
+>645 dim=6
+CGCTGG
+>645 dim=6
+GCTGGG
+>645 dim=6
+CTGGGA
+>646 dim=6
+ATCGCT
+>646 dim=6
+TCGCTC
+>646 dim=6
+CGCTCG
+>647 dim=6
+AGATGT
+>647 dim=6
+GATGTG
+>647 dim=6
+ATGTGC
+>648 dim=6
+AACTTC
+>648 dim=6
+ACTTCC
+>648 dim=6
+CTTCCG
+>649 dim=6
+TGCCTT
+>649 dim=6
+GCCTTT
+>649 dim=6
+CCTTTT
+>650 dim=6
+ACGCCG
+>650 dim=6
+CGCCGA
+>650 dim=6
+GCCGAT
+>651 dim=6
+GCACAA
+>651 dim=6
+CACAAA
+>651 dim=6
+ACAAAC
+>652 dim=6
+TTACGA
+>652 dim=6
+TACGAC
+>652 dim=6
+ACGACA
+>653 dim=6
+ATCTGT
+>653 dim=6
+TCTGTA
+>653 dim=6
+CTGTAC
+>654 dim=6
+GGAACG
+>654 dim=6
+GAACGA
+>654 dim=6
+AACGAT
+>655 dim=6
+AGCGCC
+>655 dim=6
+GCGCCA
+>655 dim=6
+CGCCAC
+>656 dim=6
+CCATCA
+>656 dim=6
+CATCAT
+>656 dim=6
+ATCATG
+>657 dim=6
+TGACAT
+>657 dim=6
+GACATC
+>657 dim=6
+ACATCG
+>658 dim=6
+GATAAC
+>658 dim=6
+ATAACA
+>658 dim=6
+TAACAG
+>659 dim=6
+CCAATT
+>659 dim=6
+CAATTA
+>659 dim=6
+AATTAC
+>660 dim=6
+ACGAAA
+>660 dim=6
+CGAAAT
+>660 dim=6
+GAAATA
+>661 dim=6
+GATAGT
+>661 dim=6
+ATAGTG
+>661 dim=6
+TAGTGT
+>662 dim=6
+GAATGG
+>662 dim=6
+AATGGG
+>662 dim=6
+ATGGGG
+>663 dim=6
+TAAGCA
+>663 dim=6
+AAGCAG
+>663 dim=6
+AGCAGC
+>664 dim=6
+GCGCCG
+>664 dim=6
+CGCCGA
+>664 dim=6
+GCCGAT
+>665 dim=6
+TTGCCT
+>665 dim=6
+TGCCTG
+>665 dim=6
+GCCTGA
+>666 dim=6
+GACGGG
+>666 dim=6
+ACGGGC
+>666 dim=6
+CGGGCA
+>667 dim=6
+ACTGAA
+>667 dim=6
+CTGAAA
+>667 dim=6
+TGAAAG
+>668 dim=6
+AACGCC
+>668 dim=6
+ACGCCA
+>668 dim=6
+CGCCAG
+>669 dim=6
+TCTATT
+>669 dim=6
+CTATTT
+>669 dim=6
+TATTTG
+>670 dim=6
+GCAGCA
+>670 dim=6
+CAGCAA
+>670 dim=6
+AGCAAG
+>671 dim=6
+CTATAG
+>671 dim=6
+TATAGC
+>671 dim=6
+ATAGCT
+>672 dim=6
+GACGTT
+>672 dim=6
+ACGTTT
+>672 dim=6
+CGTTTC
+>673 dim=6
+ATCGAC
+>673 dim=6
+TCGACG
+>673 dim=6
+CGACGA
+>674 dim=6
+GGCTAA
+>674 dim=6
+GCTAAC
+>674 dim=6
+CTAACC
+>675 dim=6
+CCCTCG
+>675 dim=6
+CCTCGA
+>675 dim=6
+CTCGAA
+>676 dim=6
+AAAGCT
+>676 dim=6
+AAGCTG
+>676 dim=6
+AGCTGG
+>677 dim=6
+CGGGGC
+>677 dim=6
+GGGGCC
+>677 dim=6
+GGGCCT
+>678 dim=6
+CATTTT
+>678 dim=6
+ATTTTG
+>678 dim=6
+TTTTGA
+>679 dim=6
+ATCGCT
+>679 dim=6
+TCGCTG
+>679 dim=6
+CGCTGA
+>680 dim=6
+TAGGCG
+>680 dim=6
+AGGCGC
+>680 dim=6
+GGCGCT
+>681 dim=6
+TACCCG
+>681 dim=6
+ACCCGC
+>681 dim=6
+CCCGCT
+>682 dim=6
+CGCTGG
+>682 dim=6
+GCTGGC
+>682 dim=6
+CTGGCG
+>683 dim=6
+CGCCCA
+>683 dim=6
+GCCCAG
+>683 dim=6
+CCCAGC
+>684 dim=6
+CGTTGT
+>684 dim=6
+GTTGTT
+>684 dim=6
+TTGTTT
+>685 dim=6
+TCGCGT
+>685 dim=6
+CGCGTT
+>685 dim=6
+GCGTTG
+>686 dim=6
+GGTGTC
+>686 dim=6
+GTGTCT
+>686 dim=6
+TGTCTT
+>687 dim=6
+TAAAAC
+>687 dim=6
+AAAACG
+>687 dim=6
+AAACGT
+>688 dim=6
+GTAACG
+>688 dim=6
+TAACGC
+>688 dim=6
+AACGCC
+>689 dim=6
+CTTACA
+>689 dim=6
+TTACAC
+>689 dim=6
+TACACT
+>690 dim=6
+TGAAGG
+>690 dim=6
+GAAGGG
+>690 dim=6
+AAGGGC
+>691 dim=6
+GCGCGA
+>691 dim=6
+CGCGAC
+>691 dim=6
+GCGACC
+>692 dim=6
+GGTTCC
+>692 dim=6
+GTTCCT
+>692 dim=6
+TTCCTG
+>693 dim=6
+CTTCGG
+>693 dim=6
+TTCGGT
+>693 dim=6
+TCGGTT
+>694 dim=6
+ACCGTT
+>694 dim=6
+CCGTTC
+>694 dim=6
+CGTTCT
+>695 dim=6
+TCACCG
+>695 dim=6
+CACCGT
+>695 dim=6
+ACCGTT
+>696 dim=6
+TTTGCA
+>696 dim=6
+TTGCAT
+>696 dim=6
+TGCATT
+>697 dim=6
+CAGATA
+>697 dim=6
+AGATAG
+>697 dim=6
+GATAGT
+>698 dim=6
+TCTGAT
+>698 dim=6
+CTGATT
+>698 dim=6
+TGATTT
+>699 dim=6
+GGATCA
+>699 dim=6
+GATCAT
+>699 dim=6
+ATCATC
+>700 dim=6
+CACCGC
+>700 dim=6
+ACCGCG
+>700 dim=6
+CCGCGA
+>701 dim=6
+CGCCCT
+>701 dim=6
+GCCCTG
+>701 dim=6
+CCCTGG
+>702 dim=6
+ACTGAC
+>702 dim=6
+CTGACC
+>702 dim=6
+TGACCG
+>703 dim=6
+GGATGA
+>703 dim=6
+GATGAT
+>703 dim=6
+ATGATG
+>704 dim=6
+GCTGGA
+>704 dim=6
+CTGGAA
+>704 dim=6
+TGGAAA
+>705 dim=6
+AGAAAA
+>705 dim=6
+GAAAAC
+>705 dim=6
+AAAACG
+>706 dim=6
+ACACCA
+>706 dim=6
+CACCAG
+>706 dim=6
+ACCAGC
+>707 dim=6
+CGGCGT
+>707 dim=6
+GGCGTG
+>707 dim=6
+GCGTGT
+>708 dim=6
+TTTGTT
+>708 dim=6
+TTGTTC
+>708 dim=6
+TGTTCT
+>709 dim=6
+GGCGCT
+>709 dim=6
+GCGCTG
+>709 dim=6
+CGCTGT
+>710 dim=6
+TGAGAG
+>710 dim=6
+GAGAGG
+>710 dim=6
+AGAGGC
+>711 dim=6
+TAGCGG
+>711 dim=6
+AGCGGA
+>711 dim=6
+GCGGAA
+>712 dim=6
+GGGAAC
+>712 dim=6
+GGAACG
+>712 dim=6
+GAACGT
+>713 dim=6
+ACGTAA
+>713 dim=6
+CGTAAG
+>713 dim=6
+GTAAGT
+>714 dim=6
+TTATCT
+>714 dim=6
+TATCTC
+>714 dim=6
+ATCTCG
+>715 dim=6
+CCCATT
+>715 dim=6
+CCATTT
+>715 dim=6
+CATTTT
+>716 dim=6
+TTTAAT
+>716 dim=6
+TTAATT
+>716 dim=6
+TAATTG
+>717 dim=6
+TTTATG
+>717 dim=6
+TTATGC
+>717 dim=6
+TATGCC
+>718 dim=6
+ATGGAG
+>718 dim=6
+TGGAGA
+>718 dim=6
+GGAGAA
+>719 dim=6
+GGGTGG
+>719 dim=6
+GGTGGT
+>719 dim=6
+GTGGTT
+>720 dim=6
+ATCGTA
+>720 dim=6
+TCGTAC
+>720 dim=6
+CGTACC
+>721 dim=6
+GGAAAG
+>721 dim=6
+GAAAGA
+>721 dim=6
+AAAGAG
+>722 dim=6
+GCATTG
+>722 dim=6
+CATTGA
+>722 dim=6
+ATTGAC
+>723 dim=6
+TCGAGA
+>723 dim=6
+CGAGAT
+>723 dim=6
+GAGATT
+>724 dim=6
+GGTCTG
+>724 dim=6
+GTCTGC
+>724 dim=6
+TCTGCC
+>725 dim=6
+ACCATT
+>725 dim=6
+CCATTC
+>725 dim=6
+CATTCT
+>726 dim=6
+ATTAAA
+>726 dim=6
+TTAAAA
+>726 dim=6
+TAAAAC
+>727 dim=6
+CAATCA
+>727 dim=6
+AATCAC
+>727 dim=6
+ATCACA
+>728 dim=6
+CAGGCT
+>728 dim=6
+AGGCTT
+>728 dim=6
+GGCTTT
+>729 dim=6
+ACGTTA
+>729 dim=6
+CGTTAC
+>729 dim=6
+GTTACC
+>730 dim=6
+TGCCAA
+>730 dim=6
+GCCAAT
+>730 dim=6
+CCAATA
+>731 dim=6
+TTGTCG
+>731 dim=6
+TGTCGA
+>731 dim=6
+GTCGAC
+>732 dim=6
+CCTCGA
+>732 dim=6
+CTCGAC
+>732 dim=6
+TCGACG
+>733 dim=6
+TGCGGT
+>733 dim=6
+GCGGTA
+>733 dim=6
+CGGTAG
+>734 dim=6
+ACTGCC
+>734 dim=6
+CTGCCG
+>734 dim=6
+TGCCGA
+>735 dim=6
+CTACGG
+>735 dim=6
+TACGGC
+>735 dim=6
+ACGGCA
+>736 dim=6
+TTCGCA
+>736 dim=6
+TCGCAG
+>736 dim=6
+CGCAGG
+>737 dim=6
+GAACGT
+>737 dim=6
+AACGTA
+>737 dim=6
+ACGTAA
+>738 dim=6
+AGGATA
+>738 dim=6
+GGATAA
+>738 dim=6
+GATAAC
+>739 dim=6
+TATAGA
+>739 dim=6
+ATAGAC
+>739 dim=6
+TAGACT
+>740 dim=6
+GATGTT
+>740 dim=6
+ATGTTG
+>740 dim=6
+TGTTGC
+>741 dim=6
+GTTGGG
+>741 dim=6
+TTGGGA
+>741 dim=6
+TGGGAT
+>742 dim=6
+GCTGAA
+>742 dim=6
+CTGAAA
+>742 dim=6
+TGAAAG
+>743 dim=6
+CCTTAT
+>743 dim=6
+CTTATA
+>743 dim=6
+TTATAT
+>744 dim=6
+AAGCGC
+>744 dim=6
+AGCGCA
+>744 dim=6
+GCGCAA
+>745 dim=6
+ATTCTC
+>745 dim=6
+TTCTCG
+>745 dim=6
+TCTCGG
+>746 dim=6
+GCAGAA
+>746 dim=6
+CAGAAG
+>746 dim=6
+AGAAGA
+>747 dim=6
+GTGTGA
+>747 dim=6
+TGTGAA
+>747 dim=6
+GTGAAT
+>748 dim=6
+GGTACA
+>748 dim=6
+GTACAC
+>748 dim=6
+TACACA
+>749 dim=6
+CCAAAA
+>749 dim=6
+CAAAAC
+>749 dim=6
+AAAACG
+>750 dim=6
+ATCTTT
+>750 dim=6
+TCTTTT
+>750 dim=6
+CTTTTT
+>751 dim=6
+GTAGCA
+>751 dim=6
+TAGCAA
+>751 dim=6
+AGCAAT
+>752 dim=6
+TTCCTG
+>752 dim=6
+TCCTGA
+>752 dim=6
+CCTGAT
+>753 dim=6
+AGACTC
+>753 dim=6
+GACTCT
+>753 dim=6
+ACTCTT
+>754 dim=6
+TGCTGC
+>754 dim=6
+GCTGCG
+>754 dim=6
+CTGCGA
+>755 dim=6
+ACCGCA
+>755 dim=6
+CCGCAG
+>755 dim=6
+CGCAGA
+>756 dim=6
+GCTGAT
+>756 dim=6
+CTGATG
+>756 dim=6
+TGATGA
+>757 dim=6
+CGTTTT
+>757 dim=6
+GTTTTG
+>757 dim=6
+TTTTGC
+>758 dim=6
+GCGATG
+>758 dim=6
+CGATGA
+>758 dim=6
+GATGAA
+>759 dim=6
+TAGCAC
+>759 dim=6
+AGCACC
+>759 dim=6
+GCACCA
+>760 dim=6
+TAGAGC
+>760 dim=6
+AGAGCA
+>760 dim=6
+GAGCAG
+>761 dim=6
+TGAGGC
+>761 dim=6
+GAGGCA
+>761 dim=6
+AGGCAT
+>762 dim=6
+GCGCTG
+>762 dim=6
+CGCTGC
+>762 dim=6
+GCTGCA
+>763 dim=6
+TTATCG
+>763 dim=6
+TATCGA
+>763 dim=6
+ATCGAT
+>764 dim=6
+CAGCTT
+>764 dim=6
+AGCTTA
+>764 dim=6
+GCTTAC
+>765 dim=6
+GAAGAC
+>765 dim=6
+AAGACA
+>765 dim=6
+AGACAT
+>766 dim=6
+CAGCGA
+>766 dim=6
+AGCGAC
+>766 dim=6
+GCGACA
+>767 dim=6
+CAAGGT
+>767 dim=6
+AAGGTG
+>767 dim=6
+AGGTGT
+>768 dim=6
+ACCAGT
+>768 dim=6
+CCAGTA
+>768 dim=6
+CAGTAT
+>769 dim=6
+ACACTT
+>769 dim=6
+CACTTT
+>769 dim=6
+ACTTTA
+>770 dim=6
+AGAAAA
+>770 dim=6
+GAAAAT
+>770 dim=6
+AAAATG
+>771 dim=6
+GTTTAA
+>771 dim=6
+TTTAAA
+>771 dim=6
+TTAAAG
+>772 dim=6
+TGTCAC
+>772 dim=6
+GTCACG
+>772 dim=6
+TCACGC
+>773 dim=6
+CATCCT
+>773 dim=6
+ATCCTG
+>773 dim=6
+TCCTGA
+>774 dim=6
+GTTTCT
+>774 dim=6
+TTTCTA
+>774 dim=6
+TTCTAC
+>775 dim=6
+CTATCG
+>775 dim=6
+TATCGA
+>775 dim=6
+ATCGAA
+>776 dim=6
+AGCGTA
+>776 dim=6
+GCGTAC
+>776 dim=6
+CGTACT
+>777 dim=6
+CAAAGC
+>777 dim=6
+AAAGCC
+>777 dim=6
+AAGCCG
+>778 dim=6
+TTGTGC
+>778 dim=6
+TGTGCT
+>778 dim=6
+GTGCTG
+>779 dim=6
+GTACAC
+>779 dim=6
+TACACC
+>779 dim=6
+ACACCA
+>780 dim=6
+ATATAA
+>780 dim=6
+TATAAA
+>780 dim=6
+ATAAAC
+>781 dim=6
+ATCCAG
+>781 dim=6
+TCCAGC
+>781 dim=6
+CCAGCT
+>782 dim=6
+AAAGAA
+>782 dim=6
+AAGAAG
+>782 dim=6
+AGAAGG
+>783 dim=6
+CCACTC
+>783 dim=6
+CACTCA
+>783 dim=6
+ACTCAG
+>784 dim=6
+GAAGTT
+>784 dim=6
+AAGTTT
+>784 dim=6
+AGTTTC
+>785 dim=6
+CCGCCC
+>785 dim=6
+CGCCCA
+>785 dim=6
+GCCCAG
+>786 dim=6
+TAATCT
+>786 dim=6
+AATCTG
+>786 dim=6
+ATCTGT
+>787 dim=6
+CGGACG
+>787 dim=6
+GGACGG
+>787 dim=6
+GACGGC
+>788 dim=6
+CACAAT
+>788 dim=6
+ACAATG
+>788 dim=6
+CAATGC
+>789 dim=6
+GTTACA
+>789 dim=6
+TTACAC
+>789 dim=6
+TACACC
+>790 dim=6
+CGCAGG
+>790 dim=6
+GCAGGC
+>790 dim=6
+CAGGCC
+>791 dim=6
+TGCACA
+>791 dim=6
+GCACAG
+>791 dim=6
+CACAGT
+>792 dim=6
+GTGACC
+>792 dim=6
+TGACCG
+>792 dim=6
+GACCGT
+>793 dim=6
+GTCAGT
+>793 dim=6
+TCAGTG
+>793 dim=6
+CAGTGG
+>794 dim=6
+AGCCGA
+>794 dim=6
+GCCGAG
+>794 dim=6
+CCGAGT
+>795 dim=6
+TAGATG
+>795 dim=6
+AGATGG
+>795 dim=6
+GATGGG
+>796 dim=6
+TCATCC
+>796 dim=6
+CATCCC
+>796 dim=6
+ATCCCC
+>797 dim=6
+TGTAAA
+>797 dim=6
+GTAAAG
+>797 dim=6
+TAAAGT
+>798 dim=6
+CACCGA
+>798 dim=6
+ACCGAT
+>798 dim=6
+CCGATA
+>799 dim=6
+TGATGC
+>799 dim=6
+GATGCT
+>799 dim=6
+ATGCTG
+>800 dim=6
+TTTTGC
+>800 dim=6
+TTTGCA
+>800 dim=6
+TTGCAG
+>801 dim=6
+CACTGC
+>801 dim=6
+ACTGCC
+>801 dim=6
+CTGCCG
+>802 dim=6
+CTTGAT
+>802 dim=6
+TTGATG
+>802 dim=6
+TGATGG
+>803 dim=6
+ATAAGC
+>803 dim=6
+TAAGCC
+>803 dim=6
+AAGCCA
+>804 dim=6
+GAAAGT
+>804 dim=6
+AAAGTT
+>804 dim=6
+AAGTTG
+>805 dim=6
+CCTGGT
+>805 dim=6
+CTGGTA
+>805 dim=6
+TGGTAC
+>806 dim=6
+GTTCTG
+>806 dim=6
+TTCTGT
+>806 dim=6
+TCTGTT
+>807 dim=6
+GGCAGA
+>807 dim=6
+GCAGAA
+>807 dim=6
+CAGAAA
+>808 dim=6
+AAGCCA
+>808 dim=6
+AGCCAG
+>808 dim=6
+GCCAGT
+>809 dim=6
+ATGCCG
+>809 dim=6
+TGCCGA
+>809 dim=6
+GCCGAT
+>810 dim=6
+CGTGAT
+>810 dim=6
+GTGATA
+>810 dim=6
+TGATAA
+>811 dim=6
+GGTCAA
+>811 dim=6
+GTCAAA
+>811 dim=6
+TCAAAC
+>812 dim=6
+GCACGT
+>812 dim=6
+CACGTT
+>812 dim=6
+ACGTTG
+>813 dim=6
+GTAAGT
+>813 dim=6
+TAAGTT
+>813 dim=6
+AAGTTT
+>814 dim=6
+GACCAT
+>814 dim=6
+ACCATC
+>814 dim=6
+CCATCC
+>815 dim=6
+TAGCAA
+>815 dim=6
+AGCAAT
+>815 dim=6
+GCAATC
+>816 dim=6
+CACACG
+>816 dim=6
+ACACGC
+>816 dim=6
+CACGCT
+>817 dim=6
+GAAACG
+>817 dim=6
+AAACGC
+>817 dim=6
+AACGCT
+>818 dim=6
+GCAACG
+>818 dim=6
+CAACGG
+>818 dim=6
+AACGGT
+>819 dim=6
+CGGTGC
+>819 dim=6
+GGTGCG
+>819 dim=6
+GTGCGG
+>820 dim=6
+TGTGCG
+>820 dim=6
+GTGCGC
+>820 dim=6
+TGCGCC
+>821 dim=6
+GCTGTT
+>821 dim=6
+CTGTTT
+>821 dim=6
+TGTTTC
+>822 dim=6
+GGTTGA
+>822 dim=6
+GTTGAA
+>822 dim=6
+TTGAAT
+>823 dim=6
+GCAGCG
+>823 dim=6
+CAGCGG
+>823 dim=6
+AGCGGA
+>824 dim=6
+GTGAAT
+>824 dim=6
+TGAATT
+>824 dim=6
+GAATTC
+>825 dim=6
+CGGCAA
+>825 dim=6
+GGCAAA
+>825 dim=6
+GCAAAG
+>826 dim=6
+CAAAAA
+>826 dim=6
+AAAAAA
+>826 dim=6
+AAAAAT
+>827 dim=6
+ACAAAC
+>827 dim=6
+CAAACG
+>827 dim=6
+AAACGC
+>828 dim=6
+GATGAC
+>828 dim=6
+ATGACG
+>828 dim=6
+TGACGA
+>829 dim=6
+GAGTTC
+>829 dim=6
+AGTTCC
+>829 dim=6
+GTTCCG
+>830 dim=6
+CCGCAG
+>830 dim=6
+CGCAGA
+>830 dim=6
+GCAGAT
+>831 dim=6
+CTTGAT
+>831 dim=6
+TTGATC
+>831 dim=6
+TGATCT
+>832 dim=6
+TCAAAG
+>832 dim=6
+CAAAGT
+>832 dim=6
+AAAGTG
+>833 dim=6
+ATCTGG
+>833 dim=6
+TCTGGA
+>833 dim=6
+CTGGAT
+>834 dim=6
+CGACAG
+>834 dim=6
+GACAGT
+>834 dim=6
+ACAGTC
+>835 dim=6
+TGTTGC
+>835 dim=6
+GTTGCT
+>835 dim=6
+TTGCTG
+>836 dim=6
+TTTCAC
+>836 dim=6
+TTCACT
+>836 dim=6
+TCACTG
+>837 dim=6
+AGACTG
+>837 dim=6
+GACTGC
+>837 dim=6
+ACTGCG
+>838 dim=6
+CGTGCT
+>838 dim=6
+GTGCTG
+>838 dim=6
+TGCTGA
+>839 dim=6
+TGGTCG
+>839 dim=6
+GGTCGT
+>839 dim=6
+GTCGTG
+>840 dim=6
+GCACTT
+>840 dim=6
+CACTTT
+>840 dim=6
+ACTTTA
+>841 dim=6
+CAGTTC
+>841 dim=6
+AGTTCC
+>841 dim=6
+GTTCCG
+>842 dim=6
+ATCAGT
+>842 dim=6
+TCAGTG
+>842 dim=6
+CAGTGC
+>843 dim=6
+ATGCGA
+>843 dim=6
+TGCGAA
+>843 dim=6
+GCGAAA
+>844 dim=6
+AGGATC
+>844 dim=6
+GGATCC
+>844 dim=6
+GATCCA
+>845 dim=6
+AGTGGC
+>845 dim=6
+GTGGCT
+>845 dim=6
+TGGCTT
+>846 dim=6
+ACGCTC
+>846 dim=6
+CGCTCC
+>846 dim=6
+GCTCCA
+>847 dim=6
+CTGGCG
+>847 dim=6
+TGGCGC
+>847 dim=6
+GGCGCA
+>848 dim=6
+AGAAGG
+>848 dim=6
+GAAGGG
+>848 dim=6
+AAGGGA
+>849 dim=6
+GCGCTG
+>849 dim=6
+CGCTGG
+>849 dim=6
+GCTGGT
+>850 dim=6
+AGGCGG
+>850 dim=6
+GGCGGC
+>850 dim=6
+GCGGCA
+>851 dim=6
+AACAAT
+>851 dim=6
+ACAATG
+>851 dim=6
+CAATGC
+>852 dim=6
+TTAACG
+>852 dim=6
+TAACGG
+>852 dim=6
+AACGGC
+>853 dim=6
+CTTAAA
+>853 dim=6
+TTAAAT
+>853 dim=6
+TAAATT
+>854 dim=6
+ACACCT
+>854 dim=6
+CACCTA
+>854 dim=6
+ACCTAA
+>855 dim=6
+TCACCC
+>855 dim=6
+CACCCA
+>855 dim=6
+ACCCAC
+>856 dim=6
+GAAGAA
+>856 dim=6
+AAGAAA
+>856 dim=6
+AGAAAA
+>857 dim=6
+ACGATG
+>857 dim=6
+CGATGG
+>857 dim=6
+GATGGC
+>858 dim=6
+AAACCC
+>858 dim=6
+AACCCT
+>858 dim=6
+ACCCTG
+>859 dim=6
+AAGCTG
+>859 dim=6
+AGCTGG
+>859 dim=6
+GCTGGA
+>860 dim=6
+CGACTA
+>860 dim=6
+GACTAA
+>860 dim=6
+ACTAAA
+>861 dim=6
+AGCTTC
+>861 dim=6
+GCTTCT
+>861 dim=6
+CTTCTA
+>862 dim=6
+TTGTTC
+>862 dim=6
+TGTTCA
+>862 dim=6
+GTTCAG
+>863 dim=6
+GTACTC
+>863 dim=6
+TACTCG
+>863 dim=6
+ACTCGC
+>864 dim=6
+CGCGAA
+>864 dim=6
+GCGAAG
+>864 dim=6
+CGAAGG
+>865 dim=6
+TTCATT
+>865 dim=6
+TCATTC
+>865 dim=6
+CATTCA
+>866 dim=6
+TTACGC
+>866 dim=6
+TACGCA
+>866 dim=6
+ACGCAC
+>867 dim=6
+CACAGG
+>867 dim=6
+ACAGGT
+>867 dim=6
+CAGGTT
+>868 dim=6
+TACTTC
+>868 dim=6
+ACTTCA
+>868 dim=6
+CTTCAA
+>869 dim=6
+AATACC
+>869 dim=6
+ATACCC
+>869 dim=6
+TACCCT
+>870 dim=6
+AAGTAA
+>870 dim=6
+AGTAAA
+>870 dim=6
+GTAAAT
+>871 dim=6
+GAGCCG
+>871 dim=6
+AGCCGG
+>871 dim=6
+GCCGGG
+>872 dim=6
+TCGCAG
+>872 dim=6
+CGCAGG
+>872 dim=6
+GCAGGT
+>873 dim=6
+GTGTAG
+>873 dim=6
+TGTAGG
+>873 dim=6
+GTAGGC
+>874 dim=6
+TTCATC
+>874 dim=6
+TCATCA
+>874 dim=6
+CATCAT
+>875 dim=6
+AACGAA
+>875 dim=6
+ACGAAG
+>875 dim=6
+CGAAGT
+>876 dim=6
+GTACCA
+>876 dim=6
+TACCAG
+>876 dim=6
+ACCAGA
+>877 dim=6
+GCACCT
+>877 dim=6
+CACCTT
+>877 dim=6
+ACCTTA
+>878 dim=6
+CGGCAC
+>878 dim=6
+GGCACG
+>878 dim=6
+GCACGG
+>879 dim=6
+CTGAAA
+>879 dim=6
+TGAAAG
+>879 dim=6
+GAAAGT
+>880 dim=6
+ACATGG
+>880 dim=6
+CATGGC
+>880 dim=6
+ATGGCA
+>881 dim=6
+AGACAG
+>881 dim=6
+GACAGC
+>881 dim=6
+ACAGCG
+>882 dim=6
+CGTAAA
+>882 dim=6
+GTAAAT
+>882 dim=6
+TAAATC
+>883 dim=6
+TTTTGC
+>883 dim=6
+TTTGCT
+>883 dim=6
+TTGCTG
+>884 dim=6
+CTGCGA
+>884 dim=6
+TGCGAC
+>884 dim=6
+GCGACG
+>885 dim=6
+AGCTAT
+>885 dim=6
+GCTATT
+>885 dim=6
+CTATTG
+>886 dim=6
+AAGATG
+>886 dim=6
+AGATGA
+>886 dim=6
+GATGAT
+>887 dim=6
+GCGGCA
+>887 dim=6
+CGGCAA
+>887 dim=6
+GGCAAA
+>888 dim=6
+CGACCT
+>888 dim=6
+GACCTG
+>888 dim=6
+ACCTGC
+>889 dim=6
+TGATAT
+>889 dim=6
+GATATG
+>889 dim=6
+ATATGA
+>890 dim=6
+GTACTC
+>890 dim=6
+TACTCA
+>890 dim=6
+ACTCAT
+>891 dim=6
+TGGTGA
+>891 dim=6
+GGTGAC
+>891 dim=6
+GTGACG
+>892 dim=6
+CTAAAG
+>892 dim=6
+TAAAGG
+>892 dim=6
+AAAGGA
+>893 dim=6
+GATGTA
+>893 dim=6
+ATGTAG
+>893 dim=6
+TGTAGA
+>894 dim=6
+GGCGCA
+>894 dim=6
+GCGCAT
+>894 dim=6
+CGCATT
+>895 dim=6
+TGAACA
+>895 dim=6
+GAACAA
+>895 dim=6
+AACAAG
+>896 dim=6
+GTTACC
+>896 dim=6
+TTACCG
+>896 dim=6
+TACCGA
+>897 dim=6
+TCTCTT
+>897 dim=6
+CTCTTC
+>897 dim=6
+TCTTCG
+>898 dim=6
+GTACTA
+>898 dim=6
+TACTAC
+>898 dim=6
+ACTACT
+>899 dim=6
+TAATCC
+>899 dim=6
+AATCCA
+>899 dim=6
+ATCCAG
+>900 dim=6
+TGTACA
+>900 dim=6
+GTACAT
+>900 dim=6
+TACATA
+>901 dim=6
+ATAAAA
+>901 dim=6
+TAAAAT
+>901 dim=6
+AAAATC
+>902 dim=6
+GAAATA
+>902 dim=6
+AAATAA
+>902 dim=6
+AATAAT
+>903 dim=6
+CCTTTA
+>903 dim=6
+CTTTAC
+>903 dim=6
+TTTACT
+>904 dim=6
+ATGGCG
+>904 dim=6
+TGGCGA
+>904 dim=6
+GGCGAC
+>905 dim=6
+GCAATA
+>905 dim=6
+CAATAA
+>905 dim=6
+AATAAC
+>906 dim=6
+TACCAT
+>906 dim=6
+ACCATT
+>906 dim=6
+CCATTC
+>907 dim=6
+GCCGCC
+>907 dim=6
+CCGCCC
+>907 dim=6
+CGCCCA
+>908 dim=6
+AGCTGG
+>908 dim=6
+GCTGGA
+>908 dim=6
+CTGGAT
+>909 dim=6
+AGCCGC
+>909 dim=6
+GCCGCT
+>909 dim=6
+CCGCTG
+>910 dim=6
+AGGTGG
+>910 dim=6
+GGTGGC
+>910 dim=6
+GTGGCA
+>911 dim=6
+TCTACA
+>911 dim=6
+CTACAT
+>911 dim=6
+TACATT
+>912 dim=6
+TTTACG
+>912 dim=6
+TTACGC
+>912 dim=6
+TACGCT
+>913 dim=6
+TTTAGT
+>913 dim=6
+TTAGTC
+>913 dim=6
+TAGTCC
+>914 dim=6
+ATCCAG
+>914 dim=6
+TCCAGC
+>914 dim=6
+CCAGCA
+>915 dim=6
+TACTGG
+>915 dim=6
+ACTGGA
+>915 dim=6
+CTGGAG
+>916 dim=6
+AGCTTT
+>916 dim=6
+GCTTTG
+>916 dim=6
+CTTTGT
+>917 dim=6
+ATCTGC
+>917 dim=6
+TCTGCA
+>917 dim=6
+CTGCAT
+>918 dim=6
+AAGTGT
+>918 dim=6
+AGTGTA
+>918 dim=6
+GTGTAA
+>919 dim=6
+ATGACC
+>919 dim=6
+TGACCG
+>919 dim=6
+GACCGG
+>920 dim=6
+AGAATA
+>920 dim=6
+GAATAT
+>920 dim=6
+AATATC
+>921 dim=6
+CCGAAA
+>921 dim=6
+CGAAAG
+>921 dim=6
+GAAAGA
+>922 dim=6
+AATATC
+>922 dim=6
+ATATCG
+>922 dim=6
+TATCGA
+>923 dim=6
+AATCGA
+>923 dim=6
+ATCGAG
+>923 dim=6
+TCGAGC
+>924 dim=6
+CAGTGT
+>924 dim=6
+AGTGTT
+>924 dim=6
+GTGTTG
+>925 dim=6
+AAGCTA
+>925 dim=6
+AGCTAT
+>925 dim=6
+GCTATC
+>926 dim=6
+CAACGT
+>926 dim=6
+AACGTT
+>926 dim=6
+ACGTTT
+>927 dim=6
+CCTTCA
+>927 dim=6
+CTTCAA
+>927 dim=6
+TTCAAA
+>928 dim=6
+AGGTGA
+>928 dim=6
+GGTGAT
+>928 dim=6
+GTGATA
+>929 dim=6
+AAGCCC
+>929 dim=6
+AGCCCA
+>929 dim=6
+GCCCAG
+>930 dim=6
+CGGCGG
+>930 dim=6
+GGCGGT
+>930 dim=6
+GCGGTC
+>931 dim=6
+CAAAAT
+>931 dim=6
+AAAATC
+>931 dim=6
+AAATCG
+>932 dim=6
+CAGTTG
+>932 dim=6
+AGTTGG
+>932 dim=6
+GTTGGT
+>933 dim=6
+ACCGGA
+>933 dim=6
+CCGGAG
+>933 dim=6
+CGGAGC
+>934 dim=6
+ACGGGT
+>934 dim=6
+CGGGTA
+>934 dim=6
+GGGTAT
+>935 dim=6
+AAATCT
+>935 dim=6
+AATCTG
+>935 dim=6
+ATCTGG
+>936 dim=6
+CCTTTT
+>936 dim=6
+CTTTTG
+>936 dim=6
+TTTTGT
+>937 dim=6
+ATGTAA
+>937 dim=6
+TGTAAG
+>937 dim=6
+GTAAGC
+>938 dim=6
+AGTCCA
+>938 dim=6
+GTCCAG
+>938 dim=6
+TCCAGT
+>939 dim=6
+GCTCAT
+>939 dim=6
+CTCATG
+>939 dim=6
+TCATGC
+>940 dim=6
+GGCTGG
+>940 dim=6
+GCTGGC
+>940 dim=6
+CTGGCG
+>941 dim=6
+ATTTTG
+>941 dim=6
+TTTTGG
+>941 dim=6
+TTTGGC
+>942 dim=6
+GCGCGC
+>942 dim=6
+CGCGCA
+>942 dim=6
+GCGCAG
+>943 dim=6
+ATCGAA
+>943 dim=6
+TCGAAG
+>943 dim=6
+CGAAGT
+>944 dim=6
+TGATAT
+>944 dim=6
+GATATT
+>944 dim=6
+ATATTG
+>945 dim=6
+TCGATG
+>945 dim=6
+CGATGA
+>945 dim=6
+GATGAG
+>946 dim=6
+CATACC
+>946 dim=6
+ATACCG
+>946 dim=6
+TACCGC
+>947 dim=6
+GCTGAG
+>947 dim=6
+CTGAGT
+>947 dim=6
+TGAGTC
+>948 dim=6
+GATCCG
+>948 dim=6
+ATCCGC
+>948 dim=6
+TCCGCA
+>949 dim=6
+TCACGG
+>949 dim=6
+CACGGG
+>949 dim=6
+ACGGGT
+>950 dim=6
+CCGAAT
+>950 dim=6
+CGAATG
+>950 dim=6
+GAATGA
+>951 dim=6
+GTGGTT
+>951 dim=6
+TGGTTG
+>951 dim=6
+GGTTGA
+>952 dim=6
+AACCGG
+>952 dim=6
+ACCGGA
+>952 dim=6
+CCGGAA
+>953 dim=6
+ATAGCC
+>953 dim=6
+TAGCCC
+>953 dim=6
+AGCCCT
+>954 dim=6
+AGTTGC
+>954 dim=6
+GTTGCG
+>954 dim=6
+TTGCGC
+>955 dim=6
+CACTGA
+>955 dim=6
+ACTGAT
+>955 dim=6
+CTGATA
+>956 dim=6
+GGCAAC
+>956 dim=6
+GCAACA
+>956 dim=6
+CAACAA
+>957 dim=6
+AAACAT
+>957 dim=6
+AACATT
+>957 dim=6
+ACATTT
+>958 dim=6
+CGTGGC
+>958 dim=6
+GTGGCG
+>958 dim=6
+TGGCGA
+>959 dim=6
+ATTGCT
+>959 dim=6
+TTGCTG
+>959 dim=6
+TGCTGG
+>960 dim=6
+AGCACC
+>960 dim=6
+GCACCG
+>960 dim=6
+CACCGG
+>961 dim=6
+AGGGCT
+>961 dim=6
+GGGCTA
+>961 dim=6
+GGCTAC
+>962 dim=6
+TGCCCA
+>962 dim=6
+GCCCAA
+>962 dim=6
+CCCAAG
+>963 dim=6
+GATTTA
+>963 dim=6
+ATTTAC
+>963 dim=6
+TTTACG
+>964 dim=6
+ATCAGC
+>964 dim=6
+TCAGCA
+>964 dim=6
+CAGCAC
+>965 dim=6
+AACCAC
+>965 dim=6
+ACCACG
+>965 dim=6
+CCACGC
+>966 dim=6
+AAGCGT
+>966 dim=6
+AGCGTC
+>966 dim=6
+GCGTCA
+>967 dim=6
+CACTGA
+>967 dim=6
+ACTGAT
+>967 dim=6
+CTGATA
+>968 dim=6
+AAGGTC
+>968 dim=6
+AGGTCT
+>968 dim=6
+GGTCTG
+>969 dim=6
+GCGCCC
+>969 dim=6
+CGCCCG
+>969 dim=6
+GCCCGC
+>970 dim=6
+TTCCGG
+>970 dim=6
+TCCGGT
+>970 dim=6
+CCGGTA
+>971 dim=6
+GGCGTG
+>971 dim=6
+GCGTGC
+>971 dim=6
+CGTGCA
+>972 dim=6
+TAGTCG
+>972 dim=6
+AGTCGT
+>972 dim=6
+GTCGTC
+>973 dim=6
+GGGCGC
+>973 dim=6
+GGCGCT
+>973 dim=6
+GCGCTC
+>974 dim=6
+GTATCA
+>974 dim=6
+TATCAT
+>974 dim=6
+ATCATT
+>975 dim=6
+GGTCGA
+>975 dim=6
+GTCGAT
+>975 dim=6
+TCGATC
+>976 dim=6
+AAAAAA
+>976 dim=6
+AAAAAA
+>976 dim=6
+AAAAAC
+>977 dim=6
+TTTGCC
+>977 dim=6
+TTGCCG
+>977 dim=6
+TGCCGG
+>978 dim=6
+ACCCAC
+>978 dim=6
+CCCACA
+>978 dim=6
+CCACAC
+>979 dim=6
+AAGCAG
+>979 dim=6
+AGCAGC
+>979 dim=6
+GCAGCA
+>980 dim=6
+GCGGCG
+>980 dim=6
+CGGCGG
+>980 dim=6
+GGCGGC
+>981 dim=6
+AAAGCA
+>981 dim=6
+AAGCAT
+>981 dim=6
+AGCATT
+>982 dim=6
+ACCGCT
+>982 dim=6
+CCGCTG
+>982 dim=6
+CGCTGG
+>983 dim=6
+CAAGTG
+>983 dim=6
+AAGTGC
+>983 dim=6
+AGTGCC
+>984 dim=6
+ACCACG
+>984 dim=6
+CCACGT
+>984 dim=6
+CACGTC
+>985 dim=6
+GTTTAT
+>985 dim=6
+TTTATG
+>985 dim=6
+TTATGC
+>986 dim=6
+CCGAAT
+>986 dim=6
+CGAATA
+>986 dim=6
+GAATAT
+>987 dim=6
+AAAGGC
+>987 dim=6
+AAGGCG
+>987 dim=6
+AGGCGC
+>988 dim=6
+GCCCGC
+>988 dim=6
+CCCGCT
+>988 dim=6
+CCGCTC
+>989 dim=6
+CCATGT
+>989 dim=6
+CATGTG
+>989 dim=6
+ATGTGA
+>990 dim=6
+AATAAT
+>990 dim=6
+ATAATT
+>990 dim=6
+TAATTG
+>991 dim=6
+CGCTGG
+>991 dim=6
+GCTGGA
+>991 dim=6
+CTGGAA
+>992 dim=6
+TCGGTG
+>992 dim=6
+CGGTGC
+>992 dim=6
+GGTGCC
+>993 dim=6
+CTTGTT
+>993 dim=6
+TTGTTA
+>993 dim=6
+TGTTAT
+>994 dim=6
+TGTTGA
+>994 dim=6
+GTTGAA
+>994 dim=6
+TTGAAA
+>995 dim=6
+TGCGGC
+>995 dim=6
+GCGGCA
+>995 dim=6
+CGGCAT
+>996 dim=6
+TCTCAT
+>996 dim=6
+CTCATC
+>996 dim=6
+TCATCC
+>997 dim=6
+GCTGTC
+>997 dim=6
+CTGTCG
+>997 dim=6
+TGTCGG
 >998 dim=6
-CACAAC
+CTCGCT
 >998 dim=6
-ACAACG
+TCGCTG
+>998 dim=6
+CGCTGG
 >999 dim=6
-CGTTGG
+TTGCAA
 >999 dim=6
-GTTGGC
+TGCAAA
 >999 dim=6
-TTGGCG
+GCAAAA
