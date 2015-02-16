@@ -5,7 +5,8 @@ import timeit
 from optparse import OptionParser
 
 #Modify it to your working dir
-WORKING_DIR = "/home/stevenliu/workspace/multipleK/"
+# WORKING_DIR = "/home/stevenliu/workspace/multipleK/" # for old server
+WORKING_DIR = "/home/stevenliu/workspace/multipleK_paper/multipleK/" # for new server
 #WORKING_DIR = "/media/psf/Home/MultipleK/bin/multipleK/"
 ref_file = WORKING_DIR + 'data/test.fa'
 read_file = WORKING_DIR + 'data/multipleK/read.fa'
@@ -39,6 +40,8 @@ print "\n****** generate kmers from reads ******\n"
 # fasta_fastkmer.py is for kmer list of fasta format
 cmd = "python bin/reads2kmer/fasta_fastkmer.py --output "+ kmer_file +" --klength "+ klength  +" --readsfile " + read_file
 print "output kmer file: \n" + kmer_file
+#print "sleep for 5 seconds..."
+#time.sleep(5)
 os.system(cmd)
 
 print "\n****** compile bond-tree ******\n"

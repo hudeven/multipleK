@@ -14,15 +14,25 @@ kmerLength = int(options.kmerLength)
 
 kmer_file = open(kmerFilename, 'w')
 
-kmer_list=[]
+kmer_list=""
+buffer_size = 255
+count = 0
 for seq_record in SeqIO.parse(readsFilename,"fasta"):
     cur = 0
     cur_max = len(seq_record) - kmerLength
     for cur in range(0, cur_max):
-	kmer_seq = seq_record.seq[cur:cur+kmerLength];
-	kmer = SeqIO.SeqRecord(kmer_seq, id=seq_record.id, name=seq_record.name, description=seq_record.description)
-	kmer_list.append(kmer)
-
-SeqIO.write(kmer_list, kmer_file, "fasta");
+	kmer_seq = str(seq_record.seq[cur:cur+kmerLength]);
+	kmer = '>' + seq_record.id + '\n' + kmer_seq + '\n'
+	# kmer = SeqIO.SeqRecord(kmer_seq, id=seq_record.id, description="")
+	# kmer = SeqIO.SeqRecord(kmer_seq, id=seq_record.id, name=seq_record.name, description=seq_record.description)
+	kmer_list += kmer
+	count += 1;
+        if count > buffer_size:
+	    kmer_file.write(kmer_list);
+	    count = 0
+	    kmer_list = "";
+	    # SeqIO.write(kmer_list, kmer_file, "fasta");
+if count != 0:
+    kmer_file.write(kmer_list)
 kmer_file.close()
 

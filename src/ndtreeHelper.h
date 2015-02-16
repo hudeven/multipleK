@@ -13,6 +13,7 @@ KSEQ_INIT(gzFile, gzread)
 #include "logClass.h"
 #include <limits.h>
 #include "config.h"
+#include <time.h>
 #include <iostream>
 using namespace std;
 
@@ -79,6 +80,7 @@ void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_S
 
 void clear_result();
 void batchRandomBoxQuery(int K);
+void onlineBoxQuery(int K, char *queryStr);
 void batchBoxQuery();
 vector< vector<int> >  makeBoxQueryData_for_linearScan(ifstream & query_file);
 //result of this LinearScanBoxQuery should be 
@@ -406,26 +408,15 @@ void ndtreeHelper::batchBuild_with_duplicate(long  size)
 void ndtreeHelper::clear_record()
 {
 fstream typeid_file;
-fstream readid_file;
 const char* typeid_filename = (globalRecordFilename+".typeid").c_str();
-const char* readid_filename = (globalRecordFilename+".readid").c_str();
 typeid_file.open(typeid_filename, ios::binary | ios::out | ios::trunc);
-readid_file.open(readid_filename, ios::binary | ios::out | ios::trunc);
 if(typeid_file.fail())
 {
-    cout<<"can't open file "<< typeid_filename <<endl;
-    exit(1);
-}
-if(readid_file.fail())
-{
-    cout<<"can't open file "<< readid_filename <<endl;
+    cout<<"can't open record.typeid file "<< typeid_filename <<endl;
     exit(1);
 }
 typeid_file.clear();
-readid_file.clear();
 typeid_file.close();
-readid_file.close();
-
 }
 
 
@@ -437,6 +428,7 @@ void ndtreeHelper::batchBuild_with_duplicate_record(bool newtree, long  size)
     clear_record();
 
     duplicateDataPoints=0;
+    int distinctDataPoints = 0;
     ND_tree ndt;
     Leaf_entry new_data/*, query_data, db_data*/;
     Error_code result;
@@ -451,71 +443,42 @@ void ndtreeHelper::batchBuild_with_duplicate_record(bool newtree, long  size)
     kseq_t *seq;
     int tmp;
 
-    ifstream data_file;
-    ifstream aux_file;
-
     kmer_file = gzopen(globalDataFilename.c_str(), "r");
     seq = kseq_init(kmer_file);
 
-    data_file.open(globalDataFilename.c_str());
-    aux_file.open(globalAuxFilename.c_str());
-/*
-    if (data_file.fail())
-    {
-        cout<<"cant open file "<<globalDataFilename<<endl;
-        exit(1);
-    }
-*/
-    if(aux_file.fail())
-    {
-	cout<<"cant open file "<<globalAuxFilename<<endl;
-	exit(1);
-    }
+    int count_records = 0;
+    int total_records = 0;
+    while((tmp = kseq_read(seq)) >= 0)
+	total_records++; 
+
+    gzclose(kmer_file);
+    // reset the file pointer to the beginning
+    kmer_file = gzopen(globalDataFilename.c_str(), "r");
+    seq = kseq_init(kmer_file);
+
     int number_of_io = 0;
-    string line;
-    string line_aux;
-    getline(data_file, line);
-    getline(aux_file, line_aux);
-    int distinctDataPoints = 0;
-    char n;
-    char n_aux;
-  //  for(long  i = 0; i < num_of_points && !data_file.eof(); i++)
+
+    time_t start, pause;
+    time(&start);
+
     while((tmp = kseq_read(seq)) >= 0)
     {
-#ifdef LOG_VECTOR_INDEX
-        logO.log2File("----------");logO.log2File(i);logO.log2File("\n");
-#endif
-#ifdef LOG_SPLITTING_VECTOR_INDEX
-        vector_index = i;
-#endif
+	// show rate of progress, very useful for big data
+	count_records++;
+	if(count_records % 50 == 0) {
+		double percent = count_records * 100.0 / total_records;
+		time(&pause);	
+		double diff = difftime(pause, start);
+		int remaining =(int)(diff * (total_records - count_records)/ count_records);
+		int min = remaining / 60;
+		int sec = remaining % 60;
+		printf("\r%.0lf%%\t%d min %d sec remaining...", count_records * 100.0 / total_records, min, sec);
 
-/*
-	if(((int)seq->seq.l) != DIM)
-		printf("input kmer length %d didn't match dim %d in dim.h!\n", (int)seq->seq.l, DIM);
-	else
-		printf("input kmer length %d\n", (int)seq->seq.l);
-*/
-/*	
-        istringstream instr(line);
-	istringstream instr_aux(line_aux);
-        for(int j = 0; j < DIM; j++)
-        {
-            instr >> n;
-            new_data.key[j] = n - '0';
-        }
-*/
+	}
 	for (int j = 0; j < seq->seq.l; j++) 
 	    new_data.key[j] = letter2num(seq->seq.s[j]);
 
 	typeid_global = atoi(seq->name.s);
-
-
-
-	//as the readid part hasn't been implemented
-	//I exchange this 2 lines to treat readid as typeid	
-	//instr_aux >> typeid_global;
-	//instr_aux >> readid_global;
-	        
 
 	new_data.record_count = 1; 
         result = ndt.insert_use_link(new_data, number_of_io);
@@ -527,10 +490,7 @@ void ndtreeHelper::batchBuild_with_duplicate_record(bool newtree, long  size)
         {
             distinctDataPoints++;
         }
-        getline(data_file, line);
-	getline(aux_file, line_aux);
     }
-    data_file.close();
     cout<<"Duplicate data points encountered:"<<duplicateDataPoints<<endl;
     cout<<"DistinctDataPoints data points indexed:"<<distinctDataPoints<<endl;
     cout<<"Total data points read:"<<size <<endl;
@@ -966,6 +926,54 @@ query_result_file.clear();
 query_result_file.close();
 }
 
+
+
+void ndtreeHelper::onlineBoxQuery(int K, char *queryStr)
+{
+    string input=globalIndexFilename;
+    ND_tree ndt;
+    ndt.read_existing_tree(input);
+    LocalDMBRInfoCalculation();
+    
+    Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE];
+    int query_results_size[MAX_K];
+    Dir_entry *boxQueryData;
+    char queryK[255]; 
+boxQueryData = makeRandomBoxQueryData(queryStr, K, queryK);
+int maxShift = K - DIM;
+int number_of_io ;
+for(int i=0; i <= maxShift; i++) {
+	ndt.box_query(boxQueryData[i], query_results[i], query_results_size[i], number_of_io);
+}
+
+int total_record_num = 0;
+//calculate total record in the result
+for(int i=0; i <= maxShift; i++) {
+    for(int k = 0; k < query_results_size[i]; k++)
+	total_record_num += query_results[i][k].record_count;
+
+}
+
+if(query_results_size[0] == 0){
+	cout << "Not found!" << endl;
+} else {
+	for(int i=0; i < query_results_size[0]; i++) {
+		string output = "Found: ";
+		for (int j = 0; j < DIM; j++)
+			output += num2letter(query_results[0][i].key[j]);
+		cout << output << endl;
+	}
+}
+
+}
+
+
+
+
+
+
+
+
 void ndtreeHelper::batchRandomBoxQuery(int K)
 {
 clear_result();
@@ -976,7 +984,7 @@ clear_result();
     
     Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE];
     int query_results_size[MAX_K];
-    Dir_entry *boxQueryData;
+    Dir_entry *boxquerydata;
 
     int num_of_points=TOTAL_BOX_QUERY_NUM;
 
@@ -1000,15 +1008,15 @@ clear_result();
         debug_boxQ_leaf_hit_peak=0;
 	char queryK[MAX_K] = {'\0'};
 
-        boxQueryData = makeRandomBoxQueryData(seq->seq.s, K, queryK);
-	int maxShift = K - DIM;
-	for(int i=0; i <= maxShift; i++) {
-	        ndt.box_query(boxQueryData[i], query_results[i], query_results_size[i], number_of_io);
+        boxquerydata = makeRandomBoxQueryData(seq->seq.s, K, queryK);
+	int maxshift = K - DIM;
+	for(int i=0; i <= maxshift; i++) {
+	        ndt.box_query(boxquerydata[i], query_results[i], query_results_size[i], number_of_io);
 	}
 
 
 	//calculate total record in the result
-	for(int i=0; i <= maxShift; i++) {
+	for(int i=0; i <= maxshift; i++) {
             for(int k = 0; k < query_results_size[i]; k++)
 		total_record_num += query_results[i][k].record_count;
 
@@ -1021,7 +1029,7 @@ clear_result();
         total_results_size += query_results_size[0];
         debug_boxQ_leaf_hit_for_all.push_back(debug_boxQ_leaf_hit_peak);
 
- 	//output_records_array(query_results, query_results_size, queryK, maxShift);
+ 	//output_records_array(query_results, query_results_size, queryk, maxshift);
  	output_records_fasta(query_results[0], query_results_size[0],seq->name.s, seq->seq.s);
 
     }
@@ -1032,14 +1040,14 @@ kseq_destroy(seq);
 gzclose(query_file);
 
 
-    cout<<"boxSize= RANDOM, AvG boxquery I/O: " << static_cast<double>(total_number_of_io) / num_of_points << endl;
-  cout<<" AvG matched data point found="<< static_cast<double>(total_results_size)/num_of_points<< endl; 
-    cout << " AvG leaf node accessed: " << static_cast<double>(debug_boxQ_leaf_accessed) / num_of_points << endl;
-  cout<<"total boxquery I/O="<<static_cast<double>(total_number_of_io)<<endl;
+    cout<<"boxsize= random, avg boxquery i/o: " << static_cast<double>(total_number_of_io) / num_of_points << endl;
+  cout<<" avg matched data point found="<< static_cast<double>(total_results_size)/num_of_points<< endl; 
+    cout << " avg leaf node accessed: " << static_cast<double>(debug_boxQ_leaf_accessed) / num_of_points << endl;
+  cout<<"total boxquery i/o="<<static_cast<double>(total_number_of_io)<<endl;
      cout<<"total matched data points="<< static_cast<double>(total_results_size)<< endl; 
      cout<<"total matched records = "<< static_cast<double>(total_record_num)<<endl;
    
-    //assert(debug_boxQ_leaf_hit_for_all.size()==num_of_points);
+    //assert(debug_boxq_leaf_hit_for_all.size()==num_of_points);
     int debug_tatol=0;
     for(unsigned int i=0;i<debug_boxQ_leaf_hit_for_all.size();i++)
     {
@@ -1048,111 +1056,34 @@ gzclose(query_file);
     
     }
 
-    cout << " AvG leaf node hit peak: " << static_cast<double>(debug_tatol) / num_of_points << endl;
+    cout << " avg leaf node hit peak: " << static_cast<double>(debug_tatol) / num_of_points << endl;
     
-    if(RUNNING_ENVIRONMENT == WINDOWS)
-        system("pause");
-}
-
-
-
-void ndtreeHelper::batchBoxQuery()
-{
-    string input=globalIndexFilename;
-    ND_tree ndt;
-    ndt.read_existing_tree(input);
-    LocalDMBRInfoCalculation();
-
-	for(boxSize=BOX_SIZE_START_AT;boxSize<BOX_SIZE_STOP_BEFORE;boxSize+=BOX_SIZE_STEP)
-    {
-        //logO.clearLogs();
-        Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE];
-        int query_results_size;
-
-
-        Dir_entry boxQueryData;
-
-        string query_fn="c:\\temp\\boxqueryAll.txt";
-        if(RUNNING_ENVIRONMENT == UNIX)
-            query_fn="boxqueryAll.txt";
-        else
-            query_fn="C:\\temp\\boxqueryAll.txt";
-        int num_of_points=TOTAL_BOX_QUERY_NUM;
-
-        ifstream query_file;
-        query_file.open(query_fn.c_str());
-    if (query_file.fail())
-    {
-        cout<<"cant open file "<<query_fn<<endl;
-        exit(1);
-
-    }
-
-        debug_boxQ_leaf_hit_for_all.clear();
-        debug_boxQ_leaf_accessed=0;
-
-        int number_of_io ;
-        int total_number_of_io = 0;
-
-        int total_results_size=0;
-        for(int i = 0; i < num_of_points; i++)
-        {
-            debug_boxQ_leaf_hit_peak=0;
-            boxQueryData = makeBoxQueryData(query_file);
-            ndt.box_query(boxQueryData, query_results, query_results_size, number_of_io);
-            total_number_of_io += number_of_io;
-            total_results_size += query_results_size;
-            debug_boxQ_leaf_hit_for_all.push_back(debug_boxQ_leaf_hit_peak);
-
-        }
-
-
-        query_file.close();
-        cout<<"boxSize= "<<boxSize<< " AvG boxquery I/O: " << static_cast<double>(total_number_of_io) / num_of_points << endl;
-        cout<<" AvG matched data point found="<< static_cast<double>(total_results_size)/num_of_points<< endl; 
-
-
-        cout << " AvG leaf node accessed: " << static_cast<double>(debug_boxQ_leaf_accessed) / num_of_points << endl;
-
-        assert(debug_boxQ_leaf_hit_for_all.size()==num_of_points);
-        int debug_tatol=0;
-        for(unsigned int i=0;i<debug_boxQ_leaf_hit_for_all.size();i++)
-        {
-            
-            debug_tatol+=debug_boxQ_leaf_hit_for_all.at(i);
-        
-        }
-
-        cout << " AvG leaf node hit peak: " << static_cast<double>(debug_tatol) / num_of_points << endl;
-    }
-    if(RUNNING_ENVIRONMENT == WINDOWS)
-        system("pause");
 }
 
 
 vector< vector<int> >  ndtreeHelper::makeBoxQueryData_for_linearScan(ifstream & query_file)
 {
 
-    //int maxDimAndContDim = 16;//01/09/2007
+    //int maxdimandcontdim = 16;//01/09/2007
 
 
     string line;
 
-    vector< vector<int> >  boxQueryData;
-    boxQueryData.resize(DIM);
+    vector< vector<int> >  boxquerydata;
+    boxquerydata.resize(DIM);
 
     for(int j=0;j<DIM;j++)
     {
 
         getline(query_file, line);
         istringstream instr(line);
-        boxQueryData[j].clear();
+        boxquerydata[j].clear();
 
         int v;
         for(int t=0;t<(boxSize*A[j])/10;t++)
         {
             instr>>v;
-            boxQueryData[j].push_back(v);
+            boxquerydata[j].push_back(v);
 
         }
     }
@@ -1166,10 +1097,10 @@ vector< vector<int> >  ndtreeHelper::makeBoxQueryData_for_linearScan(ifstream & 
     for(int i=0;i<MAX_DIM_AND_CONTDIM;i++)
         getline(query_file, line);
 
-    assert(boxQueryData.size()==DIM);
-    assert(boxQueryData[0].size()==boxSize);
+    assert(boxquerydata.size()==DIM);
+    assert(boxquerydata[0].size()==boxSize);
 
-    return boxQueryData;
+    return boxquerydata;
 }
 
 
@@ -1179,17 +1110,17 @@ vector< vector<int> >  ndtreeHelper::makeBoxQueryData_for_linearScan(ifstream & 
 
 
 
-//result of this LinearScanBoxQuery should be 
-void ndtreeHelper::LinearScanBoxQuery(int dataNUM)
+//result of this linearscanboxquery should be 
+void ndtreeHelper::LinearScanBoxQuery(int datanum)
 {
-//    Leaf_entry query_results [QUERY_RESULTS_BUFFER_SIZE];
+//    leaf_entry query_results [query_results_buffer_size];
 
 
 //    int query_results_size;
 
 
-    int db_size=dataNUM;
-    string query_fn="c:\\temp\\boxqueryAll.txt";
+    int db_size=datanum;
+    string query_fn="c:\\temp\\boxqueryall.txt";
 
 
     ifstream query_file;
@@ -1213,16 +1144,16 @@ void ndtreeHelper::LinearScanBoxQuery(int dataNUM)
 
         int num_of_points=200;
 
-        int totalNumOfMatches=0;
+        int totalnumofmatches=0;
 
         for(int i = 0; i < num_of_points; i++) // for every query point
         {
 
-            vector< vector<int> > matchedPoints;
-            matchedPoints.clear();
+            vector< vector<int> > matchedpoints;
+            matchedpoints.clear();
 
-            vector< vector<int> >  boxQueryData;
-            boxQueryData = makeBoxQueryData_for_linearScan(query_file);
+            vector< vector<int> >  boxquerydata;
+            boxquerydata = makeBoxQueryData_for_linearScan(query_file);
 
 
 
@@ -1258,35 +1189,35 @@ void ndtreeHelper::LinearScanBoxQuery(int dataNUM)
                 }
 
 
-                bool matchOnAllDim = true;        
-                for(unsigned int s=0;(s<boxQueryData.size())&&matchOnAllDim ;s++)
+                bool matchonalldim = true;        
+                for(unsigned int s=0;(s<boxquerydata.size())&&matchonalldim ;s++)
                 {
-                    bool matchOnOneDim=false;
-                    for(unsigned int x=0;x<boxQueryData[s].size();x++)    
-                        if(boxQueryData[s][x]==db_data[s])
-                            matchOnOneDim=true;
+                    bool matchononedim=false;
+                    for(unsigned int x=0;x<boxquerydata[s].size();x++)    
+                        if(boxquerydata[s][x]==db_data[s])
+                            matchononedim=true;
 
-                    if(!matchOnOneDim)
-                        matchOnAllDim=false;
+                    if(!matchononedim)
+                        matchonalldim=false;
 
                 }
 
 
 
-                if(matchOnAllDim)
+                if(matchonalldim)
                 {
-                    bool findDuplicate=false;
-                    for(unsigned int i=0;i<matchedPoints.size();i++)
-                        if(matchedPoints.at(i)==db_data)
-                            findDuplicate=true;
+                    bool findduplicate=false;
+                    for(unsigned int i=0;i<matchedpoints.size();i++)
+                        if(matchedpoints.at(i)==db_data)
+                            findduplicate=true;
 
-                    if(!findDuplicate)
+                    if(!findduplicate)
                     {
-                        matchedPoints.push_back(db_data);
-                        //for(int t1=0;t1<boxQueryData.size();t1++)
+                        matchedpoints.push_back(db_data);
+                        //for(int t1=0;t1<boxquerydata.size();t1++)
                         //{
-                        //    for(int t2=0;t2<boxQueryData.at(t1).size();t2++)
-                        //        cout<<boxQueryData.at(t1).at(t2)<<" ";
+                        //    for(int t2=0;t2<boxquerydata.at(t1).size();t2++)
+                        //        cout<<boxquerydata.at(t1).at(t2)<<" ";
                         //    cout<<endl;
  
                         //}    
@@ -1302,15 +1233,15 @@ void ndtreeHelper::LinearScanBoxQuery(int dataNUM)
 
             } 
             db_file.close();
-            totalNumOfMatches+=(int)matchedPoints.size();
+            totalnumofmatches+=(int)matchedpoints.size();
 
         }// end of         for(int i = 0; i < num_of_points; i++) // for every query point
 
 
 
 
-        cout<<"linear scan boxSize="<<boxSize<<endl;
-        cout <<  "matched data # from linear scan:" << static_cast<double>(totalNumOfMatches) / num_of_points << endl;
+        cout<<"linear scan boxsize="<<boxSize<<endl;
+        cout <<  "matched data # from linear scan:" << static_cast<double>(totalnumofmatches) / num_of_points << endl;
 
     }
     query_file.close();
@@ -1323,26 +1254,26 @@ void ndtreeHelper::LinearScanBoxQuery(int dataNUM)
 
 void ndtreeHelper::display_help()
 {
-    cout<<"This implementation of BoND Tree was modified by Alok"<<endl;
-    cout<<"It only works with discrete dimensions and performs random sized box queries."<<endl;
-    cout<<"Please feel free to contact Alok at watvealo@cse.msu.edu for any comments"<<endl;
+    cout<<"this implementation of bond tree was modified by alok"<<endl;
+    cout<<"it only works with discrete dimensions and performs random sized box queries."<<endl;
+    cout<<"please feel free to contact alok at watvealo@cse.msu.edu for any comments"<<endl;
     cout<<"or suggestions"<<endl;
-    cout<<"Currently supported options are "<<endl;
-    cout<<"1) "<<" : Specifies the template for index filenames. As there"<<endl;
+    cout<<"currently supported options are "<<endl;
+    cout<<"1) "<<" : specifies the template for index filenames. as there"<<endl;
     cout<<"\tare multiple files created, each file will have this name as the prefix"<<endl;
     cout<<"and be appended with the suitable suffix (0,1,2...)"<<endl;
-    cout<<"2) "<<" : Specifies the data file to be loaded in the index"<<endl;
-    cout<<"\tDatafile must be in CSV format."<<endl;
-    cout<<"3) "<<" : Name of the box query file"<<endl;
-//  cout<<"\t\tBox query is specified as x1,x2,x3:y1,y2:z1"<<endl;
-//  cout<<"\t\t\tHere, x1..x3 are characters range along first dimension, y1-y2 is range along second"<<endl;
+    cout<<"2) "<<" : specifies the data file to be loaded in the index"<<endl;
+    cout<<"\tdatafile must be in csv format."<<endl;
+    cout<<"3) "<<" : name of the box query file"<<endl;
+//  cout<<"\t\tbox query is specified as x1,x2,x3:y1,y2:z1"<<endl;
+//  cout<<"\t\t\there, x1..x3 are characters range along first dimension, y1-y2 is range along second"<<endl;
 //  cout<<"dimension and so on"<<endl
-    cout<<"4) "<<" : Name of the range query file"<<endl;
-    cout<<"5) "<<" : Radius of the range query"<<endl;
+    cout<<"4) "<<" : name of the range query file"<<endl;
+    cout<<"5) "<<" : radius of the range query"<<endl;
     cout<<"6) "<<" : number of records in the data file that should be skipped"<<endl;
-    cout<<"7) "<<" : Number of data records to be loaded in the database"<<endl;
-    cout<<"8) "<<" : Flag indicating that a new index file should be created"<<endl;
-    cout<<"\tANY EXISTING INDEX FILE WILL BE DELETED"<<endl;
+    cout<<"7) "<<" : number of data records to be loaded in the database"<<endl;
+    cout<<"8) "<<" : flag indicating that a new index file should be created"<<endl;
+    cout<<"\tany existing index file will be deleted"<<endl;
 }
 
 #endif

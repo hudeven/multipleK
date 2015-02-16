@@ -93,19 +93,10 @@ void update_record(int record_id)
 fstream typeid_file;
 //fstream readid_file;
 string tmp = globalRecordFilename;
-const char* readid_filename = (tmp.append(".readid")).c_str();
 tmp = globalRecordFilename;
 const char* typeid_filename = (tmp.append(".typeid")).c_str();
 
-//readid_file.open(readid_filename,fstream::in | fstream::out);
 typeid_file.open(typeid_filename,ios_base::binary | ios_base::in | ios_base::out);
-/*
-if(readid_file.fail())
-{
-    cout<<"can't open file .readid"<<endl;
-    exit(1);
-}
-*/
 if(typeid_file.fail())
 {
     cout<<"can't open file .typeid"<<endl;
@@ -121,43 +112,19 @@ int i;
 for(i=1; i<=type_num; i++)
 {
     if(typeid_global == type_array[i])
-	break;
+	return;
 }
-if(i<=type_num)
-    return;
 
-type_num++;
-type_array[type_num] = typeid_global;
-type_array[0] = type_num;
-
-/*
-int min =0;
-
-for(int i=1; i<type_num+1; i++)
-{
-    min = i;
-    for(int j=i; j<type_num+1; j++)
-    {
-	if(type_array[j]<type_array[min])
-	{
-	    min = j;
-	}
-    }
-    if(min != i)
-    {
-	int tmp = type_array[i];
-	type_array[i] = type_array[min];
-	type_array[min] = tmp;
-    }
-    
+if(type_num + 1 < TYPE_ARRAY_SIZE){
+	type_num++;
+	type_array[type_num] = typeid_global;
+	type_array[0] = type_num;
+} else {
+	cout << "type_num > " << TYPE_ARRAY_SIZE << " , discard !" << endl;
 }
-*/
-
 typeid_file.seekp(record_id * sizeof(type_array), ios::beg);
-
 typeid_file.write((char*)type_array, sizeof(type_array));
 
-//readid_file.close();
 typeid_file.close();
 
 }
@@ -372,28 +339,11 @@ Error_code Leaf_node::insert_new_data(Leaf_entry &new_data, double leaf_min_util
 
 
 //Find the last line of record file, record is the line number
-fstream record_file, readid_file, typeid_file;
+fstream typeid_file;
 string recordFilename = globalRecordFilename;
-const char* record_filename = (recordFilename).c_str();
-const char* readid_filename = (recordFilename.append(".readid")).c_str();
-recordFilename = globalRecordFilename;
 const char* typeid_filename = (recordFilename.append(".typeid")).c_str();
 
-record_file.open(record_filename,ios_base::app);
-//readid_file.open(readid_filename,fstream::out);
 typeid_file.open(typeid_filename, ios_base::binary | ios_base::out | ios_base::in);
-if(record_file.fail())
-{
-    cout<<"can't open file "<<record_filename<<endl;
-    exit(1);
-}
-/*
-if(readid_file.fail())
-{
-    cout<<"can't open file "<< readid_filename << endl;
-    exit(1);
-}
-*/
 if(typeid_file.fail())
 {
     cout<<"can't open file "<< typeid_filename <<endl;
@@ -402,19 +352,14 @@ if(typeid_file.fail())
 static int record_count=-1;
 
 record_count++;
-record_file << record_count <<endl;
 
 int type_array[TYPE_ARRAY_SIZE]={0};
 type_array[0] = 1;
 type_array[1] = typeid_global;
-//write (read id, type id) to record file
 typeid_file.seekp(record_count * sizeof(type_array), ios::beg);
 typeid_file.write((const char*)type_array, sizeof(type_array));
-//typeid_file << "1 " << typeid_global << endl;
 
 new_data.record = record_count;
-record_file.close();
-//readid_file.close();
 typeid_file.close();
 
 //array record_type[][] for test

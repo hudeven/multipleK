@@ -12,6 +12,8 @@ BOX_SIZE_START_AT	config.h	/^const int BOX_SIZE_START_AT = 1;$/;"	v
 BOX_SIZE_STEP	config.h	/^const int BOX_SIZE_STEP = 1;$/;"	v
 BOX_SIZE_STOP_BEFORE	config.h	/^const int BOX_SIZE_STOP_BEFORE = A[0];$/;"	v
 BYTES_PER_DIM_IN_DMBR	config.h	/^const int BYTES_PER_DIM_IN_DMBR = ((ALPHA%8)==0)?(ALPHA\/8):(ALPHA\/8+1);$/;"	v
+CC	makefile	/^CC=g++$/;"	m
+CFLAGS	makefile	/^CFLAGS=-g -std=c++11$/;"	m
 CNTDIM	config.h	/^const int CNTDIM = 0; $/;"	v
 CONFIG_H	config.h	2;"	d
 DIM	dim.h	/^const int DIM = 6;/;"	v
@@ -35,6 +37,7 @@ Error_code	utility.h	/^enum Error_code { duplicate_error, not_present, success, 
 GotoLine	Leaf_node.h	/^std::fstream& GotoLine(std::fstream& file, unsigned int num){$/;"	f
 INT_INF	utility.h	/^const int INT_INF = numeric_limits<int> :: max( );$/;"	v
 Item	ndtreeHelper.h	/^class Item$/;"	c
+K	queryK.py	/^K = int(options.KLength)$/;"	v
 KSEQ_INIT	kseq.h	217;"	d
 KSTREAM_INIT	kseq.h	139;"	d
 KSTRING_T	kseq.h	81;"	d
@@ -51,7 +54,7 @@ LOGCLASS	logClass.h	2;"	d
 Leaf_entry	Leaf_entry.h	/^struct Leaf_entry$/;"	s
 Leaf_node	Leaf_node.h	/^Leaf_node::Leaf_node(int* alphabet_sizes):Node(alphabet_sizes)$/;"	f	class:Leaf_node
 Leaf_node	Leaf_node.h	/^class Leaf_node:public Node {$/;"	c
-LinearScanBoxQuery	ndtreeHelper.h	/^void ndtreeHelper::LinearScanBoxQuery(int dataNUM)$/;"	f	class:ndtreeHelper
+LinearScanBoxQuery	ndtreeHelper.h	/^void ndtreeHelper::LinearScanBoxQuery(int datanum)$/;"	f	class:ndtreeHelper
 LocalDMBRInfoCalculation	ndtreeHelper.h	/^void ndtreeHelper::LocalDMBRInfoCalculation()$/;"	f	class:ndtreeHelper
 MASKS	utility.h	/^const unsigned char MASKS[] = {1, 2, 4, 8, 16, 32, 64, 128};$/;"	v
 MAX_ALPHABET_SIZE	Node.h	/^const int MAX_ALPHABET_SIZE = 255; \/\/ Define the maximum length of the ND-tree file name$/;"	v
@@ -94,11 +97,11 @@ __KS_GETUNTIL	kseq.h	92;"	d
 __KS_TYPE	kseq.h	41;"	d
 __kstring_t	kseq.h	/^typedef struct __kstring_t {$/;"	s
 alphabet_sizes	ND_tree.h	/^   int alphabet_sizes[DIM]; \/\/ Dynamic array of alphabet sizes$/;"	m	class:ND_tree
+analyzeFilename	queryK.py	/^analyzeFilename = outputFilename+".an"$/;"	v
 aux_tree_node	Dir_node.h	/^	  aux_tree_node(){$/;"	f	struct:Dir_node::aux_tree_node
 aux_tree_node	Dir_node.h	/^	  aux_tree_node(const aux_tree_node& orig) {$/;"	f	struct:Dir_node::aux_tree_node
 aux_tree_node	Dir_node.h	/^   struct aux_tree_node{$/;"	s	class:Dir_node
 available_block_numbers	ND_tree.h	/^   stack<unsigned int> available_block_numbers; \/\/ The block numbers (<= max_block_number) of the nodes being deleted and become available again$/;"	m	class:ND_tree
-batchBoxQuery	ndtreeHelper.h	/^void ndtreeHelper::batchBoxQuery()$/;"	f	class:ndtreeHelper
 batchBuild_with_duplicate	ndtreeHelper.h	/^void ndtreeHelper::batchBuild_with_duplicate(long  size)$/;"	f	class:ndtreeHelper
 batchBuild_with_duplicate_record	ndtreeHelper.h	/^void ndtreeHelper::batchBuild_with_duplicate_record(bool newtree, long  size)$/;"	f	class:ndtreeHelper
 batchGrow_with_duplicate	ndtreeHelper.h	/^void ndtreeHelper::batchGrow_with_duplicate(long skipSize, long sizeGrowTo)$/;"	f	class:ndtreeHelper
@@ -112,6 +115,7 @@ bitmap_byte_lut	Node.h	/^    int bitmap_byte_lut[MAX_ALPHABET_SIZE]; \/\/ Given 
 bitmap_to_letters	Node.cpp	/^void Node::bitmap_to_letters(unsigned char* bitmap_set, int byte_size, unsigned char* letters, int &letter_count)$/;"	f	class:Node
 bitmap_to_letters	Node.h	/^void Node::bitmap_to_letters(unsigned char* bitmap_set, int byte_size, unsigned char* letters, int &letter_count)$/;"	f	class:Node
 box_query	ND_tree.h	/^void ND_tree::box_query($/;"	f	class:ND_tree
+boxqueryFilename	queryK.py	/^boxqueryFilename = options.boxquery$/;"	v
 cal_DMBR	Dir_node.h	/^void Dir_node::cal_DMBR(Dir_entry* dir_entries, int num_of_dir_entries, unsigned char* new_DMBR){$/;"	f	class:Dir_node
 cal_DMBR	Dir_node.h	/^void Dir_node::cal_DMBR(Dir_entry* dir_entries, int* indices_of_dir_entries_used, int num_of_dir_entries_used, unsigned char* new_DMBR){$/;"	f	class:Dir_node
 cal_DMBR	Dir_node.h	/^void Dir_node::cal_DMBR(vector<Dir_entry> &  dir_entries, int* indices_of_dir_entries_used, int num_of_dir_entries_used, unsigned char* new_DMBR){$/;"	f	class:Dir_node
@@ -126,6 +130,8 @@ choose_subtree	ND_tree.h	/^unsigned int ND_tree::choose_subtree(Leaf_entry &new_
 clearLogs	logClass.cpp	/^void logClass::clearLogs(string fileName)$/;"	f	class:logClass
 clear_record	ndtreeHelper.h	/^void ndtreeHelper::clear_record()$/;"	f	class:ndtreeHelper
 clear_result	ndtreeHelper.h	/^void ndtreeHelper::clear_result()$/;"	f	class:ndtreeHelper
+cmd	queryK.py	/^    cmd = '.\/ndTree --boxquery ' + subqueryFilename$/;"	v
+cmd	queryK.py	/^    cmd = 'python ..\/bin\/intersect_result\/fast_intersect_result.py --input '+resultFilename+' --output '+outputFilename$/;"	v
 cnt	Dir_node.h	/^      int cnt; \/\/ number of children$/;"	m	struct:Dir_node::aux_tree_node
 cntkey	Leaf_entry.h	/^    float cntkey[CNTDIM]; \/\/ Continuous dimensions. A string of CNTDIM floating point values. $/;"	m	struct:Leaf_entry
 count	Dir_node.h	/^   int count; \/\/ curent number of entries in the node$/;"	m	class:Dir_node
@@ -149,7 +155,6 @@ entriesVec	Dir_node.h	/^	vector<Dir_entry> entriesVec;$/;"	m	class:Dir_node
 entry_set	Dir_node.h	/^      int *entry_set; \/\/ entries (indices) whose component set corresponds to the set_entry$/;"	m	struct:Dir_node::set_entry
 entry_set	Leaf_node.h	/^        int entry_set[LEAF_NODE_SIZE + 1]; \/\/ entries (indices) whose letter corresponds to the letter_entry$/;"	m	struct:Leaf_node::letter_entry
 exact_query_use_link	ND_tree.h	/^Error_code ND_tree::exact_query_use_link(Leaf_entry &query_data, int &number_of_io){$/;"	f	class:ND_tree
-f	test.py	/^f = open("dim.h", 'w')$/;"	v
 fail	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	e	enum:Error_code
 find_best_child	Dir_node.h	/^void Dir_node::find_best_child(const Leaf_entry &new_data, int* alphabet_sizes, unsigned int& child_block_no, int& child_index){$/;"	f	class:Dir_node
 find_covering_entries	Dir_node.h	/^void Dir_node::find_covering_entries(const Leaf_entry &query_data, vector<int> &covered_block_numbers){$/;"	f	class:Dir_node
@@ -184,6 +189,7 @@ is_set	Dir_node.h	/^      bool is_set; \/\/ true: sets, false: roots$/;"	m	struc
 is_within_Hamming_dist	Dir_node.h	/^bool Dir_node::is_within_Hamming_dist(const Leaf_entry &query_data, unsigned char* DMBR, int range){$/;"	f	class:Dir_node
 is_within_box	Dir_node.h	/^bool Dir_node::is_within_box($/;"	f	class:Dir_node
 is_within_box	Leaf_node.h	/^bool Leaf_node::is_within_box(const unsigned char box_query_data_DMBR[DMBR_SIZE], unsigned char* DMBR)$/;"	f	class:Leaf_node
+k	queryK.py	/^k = int(options.kLength)$/;"	v
 key	Leaf_entry.h	/^    unsigned char key[DIM]; \/\/ Key: a string of DIM characters, represented as 0 to (alphabet_size-1)$/;"	m	struct:Leaf_entry
 kroundup32	kseq.h	89;"	d
 ks_eof	kseq.h	48;"	d
@@ -230,19 +236,23 @@ ndtree	multipleK.h	/^ndtreeHelper ndtree;$/;"	m	class:multipleK
 ndtreeHelper	ndtreeHelper.h	/^class ndtreeHelper {$/;"	c
 ndtreeHelper	ndtreeHelper.h	/^ndtreeHelper::ndtreeHelper() {$/;"	f	class:ndtreeHelper
 not_present	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	e	enum:Error_code
+num2letter	ndtreeHelper.h	/^char ndtreeHelper::num2letter(int num){$/;"	f	class:ndtreeHelper
 numLetters	Dir_node.h	/^	  int numLetters;	$/;"	m	struct:Dir_node::aux_tree_node
 num_of_available_block_numbers	ND_tree.h	/^   unsigned int num_of_available_block_numbers; \/\/ Number of available block numbers stored in stack available_block_numbers$/;"	m	class:ND_tree
 num_of_entry_set	Dir_node.h	/^	  int num_of_entry_set;$/;"	m	struct:Dir_node::set_entry
 num_of_sets	Dir_node.h	/^	  int num_of_sets;$/;"	m	struct:Dir_node::aux_tree_node
+onlineBoxQuery	ndtreeHelper.h	/^void ndtreeHelper::onlineBoxQuery(int K, char *queryStr)$/;"	f	class:ndtreeHelper
 operator =	Dir_node.h	/^	  aux_tree_node& operator=(const aux_tree_node& orig) {$/;"	f	struct:Dir_node::aux_tree_node
 operator =	Dir_node.h	/^	  set_entry& operator=(const set_entry& orig) {$/;"	f	struct:Dir_node::set_entry
+outputFilename	queryK.py	/^outputFilename = options.outputFile$/;"	v
 output_record	Leaf_node.h	/^void output_record(int record_id)$/;"	f
 output_records	ndtreeHelper.h	/^void ndtreeHelper::output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)$/;"	f	class:ndtreeHelper
 output_records	ndtreeHelper.h	/^void ndtreeHelper::output_records(Leaf_entry* query_results, int query_results_size)$/;"	f	class:ndtreeHelper
 output_records_array	ndtreeHelper.h	/^void ndtreeHelper::output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)$/;"	f	class:ndtreeHelper
-output_records_fasta	ndtreeHelper.h	/^void ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char queryK[])$/;"	f	class:ndtreeHelper
+output_records_fasta	ndtreeHelper.h	/^void ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[], char queryK[])$/;"	f	class:ndtreeHelper
 overflow	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	e	enum:Error_code
 parent	Dir_node.h	/^      int parent; \/\/ index of parent$/;"	m	struct:Dir_node::aux_tree_node
+parser	queryK.py	/^parser = OptionParser()$/;"	v
 print_OneEntry_OnOneDscDim	Dir_node.h	/^void Dir_node::print_OneEntry_OnOneDscDim( Dir_entry*  oneEntry,int entryIndex, int dimNum,int* alphabet_sizes )$/;"	f	class:Dir_node
 print_OneEntry_OnOneDscDim	Leaf_node.h	/^void Leaf_node::print_OneEntry_OnOneDscDim(const Leaf_entry* const oneEntry,int entryIndex, int dimNum)$/;"	f	class:Leaf_node
 print_information	ND_tree.h	/^void ND_tree::print_information(){$/;"	f	class:ND_tree
@@ -257,6 +267,7 @@ record	Leaf_entry.h	/^    ND_tree_record record;    $/;"	m	struct:Leaf_entry
 record_count	Leaf_entry.h	/^    ND_tree_record_count record_count; \/\/ Actual data, usually a pointer$/;"	m	struct:Leaf_entry
 resizeSetEntry	Dir_node.h	/^	  void resizeSetEntry(int numSet)$/;"	f	struct:Dir_node::set_entry
 resizeSets	Dir_node.h	/^	  void resizeSets(int numSet)$/;"	f	struct:Dir_node::aux_tree_node
+resultFilename	queryK.py	/^resultFilename = subqueryFilename + ".result"$/;"	v
 retrieve	Leaf_node.h	/^Error_code Leaf_node::retrieve(Leaf_entry& query_data)$/;"	f	class:Leaf_node
 retrieve_by_box_query_use_link_v2	Leaf_node.h	/^Error_code Leaf_node::retrieve_by_box_query_use_link_v2($/;"	f	class:Leaf_node
 retrieve_by_hamming_dist	Leaf_node.h	/^Error_code Leaf_node::retrieve_by_hamming_dist(const Leaf_entry& query_data, int range, Leaf_entry * query_results, int& number_of_query_results,int& number_of_io)$/;"	f	class:Leaf_node
@@ -305,6 +316,8 @@ split_algorithm_after_knapsack	Leaf_node.h	/^void Leaf_node::split_algorithm_aft
 string2binary	utility.cpp	/^void string2binary(const string &origString, unsigned char* const ptr)$/;"	f
 string_to_int	logClass.cpp	/^int logClass::string_to_int(string s){$/;"	f	class:logClass
 string_to_int	utility.cpp	/^int string_to_int(string s){$/;"	f
+subqueryFilename	queryK.py	/^subqueryFilename = boxqueryFilename + ".sub"$/;"	v
+subquery_file	queryK.py	/^    subquery_file = open(subqueryFilename, 'w')$/;"	v
 success	utility.h	/^enum Error_code { duplicate_error, not_present, success, overflow, underflow, range_err, fail };$/;"	e	enum:Error_code
 tmp_DMBR_bit_lut	ndtreeHelper.h	/^int tmp_DMBR_bit_lut[DIM][MAX_ALPHABET_SIZE]; \/\/ Given a dim and a letter, store the coresponding bit in DMBR$/;"	m	class:ndtreeHelper
 tmp_DMBR_byte_lut	ndtreeHelper.h	/^int tmp_DMBR_byte_lut[DIM][MAX_ALPHABET_SIZE]; \/\/ Given a dim and a letter, store the coresponding byte in DMBR$/;"	m	class:ndtreeHelper

@@ -6,6 +6,7 @@ struct option longopts[] = {
     { "index", required_argument, NULL,'i'},
     { "data", required_argument, NULL,'d'},
     { "boxquery", required_argument, NULL,'b'},
+    { "online_boxquery", required_argument, NULL,'o'},
     { "querydim", required_argument, NULL,'q'},
     { "rangequery", required_argument, NULL,'r'},
     { "aux", required_argument, NULL,'a'},
@@ -24,9 +25,11 @@ int main(int argc, char *argv[])
 	bool newTree = false;
 	bool isInsert = false;
 	bool isBoxQuery = false;
+	bool isOnline = false;
+	char *onlineQueryStr;
 	int c;
     	while((c = getopt_long(argc, argv, 
-		"k:i:d:b:q:r:s:a:c:m:h", longopts, NULL)) != -1){
+		"k:i:d:b:q:o:r:s:a:c:m:h", longopts, NULL)) != -1){
 
 		switch (c){
 		case 'k':
@@ -49,6 +52,12 @@ int main(int argc, char *argv[])
 		case 'q':
 		    printf("query dimension is %s.\n", optarg);
 		    query_dim = atoi(optarg);
+		    break;
+		case 'o':
+		    onlineQueryStr = optarg;
+		    printf("query string is %s.\n", onlineQueryStr);
+		    isBoxQuery = true;
+		    isOnline = true;
 		    break;
 		case 'r':
 		    printf("range query file name is %s.\n", optarg);
@@ -93,8 +102,12 @@ int main(int argc, char *argv[])
         }
 
 	if( isBoxQuery ) {
-		cout<<"Box query file "<<globalBQFilename<<endl;
-		ndtree.batchRandomBoxQuery(query_dim);
+		if (isOnline) {
+			ndtree.onlineBoxQuery(query_dim, onlineQueryStr);
+		} else {
+			cout<<"Box query file "<<globalBQFilename<<endl;
+			ndtree.batchRandomBoxQuery(query_dim);
+		}
 	}
 	
     

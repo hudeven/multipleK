@@ -15,7 +15,7 @@ mac:
 gdb:
 	gdb --args ndTree --dimension 6 --index ../data/index.bin --data ../data/data.fa --boxquery ../data/boxquery.txt --mode rebuild  --record ../data/record  --querydim 6
 rebuild:
-	./ndTree --mode rebuild --data ../data/multipleK/kmer.fa
+	gdb --args ndTree --mode rebuild --data ../data/multipleK/kmer.fa
 query:
 	gdb --args ndTree --boxquery  /home/stevenliu/workspace/multipleK/data/multipleK/boxquery.sub
 clean:
