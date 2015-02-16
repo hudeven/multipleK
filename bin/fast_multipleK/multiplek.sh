@@ -1,1 +1,1 @@
-python multiplek.py  --klength 10 -s 11 -e 12 -q 1000
+python multiplek.py  --klength 6 -s 7 -e 8 -q 1000

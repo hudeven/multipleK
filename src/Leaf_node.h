@@ -129,6 +129,7 @@ typeid_file.close();
 
 }
 
+/*
 void update_record_array(int record_id)
 {
 
@@ -148,6 +149,7 @@ record_type[record_id][type_num] = typeid_global;
 record_type[record_id][0] = type_num;
 
 }
+*/
 
 Error_code Leaf_node::retrieve(Leaf_entry& query_data)
 {
@@ -165,7 +167,7 @@ Error_code Leaf_node::retrieve(Leaf_entry& query_data)
 update_record(entries[i].record);	    
 
 //array record_type for test
-update_record_array(entries[i].record);
+//update_record_array(entries[i].record);
 //array record_type for test
 
 
