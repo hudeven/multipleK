@@ -117,6 +117,8 @@ void ND_tree::create_empty_tree(
    Leaf_node* root_node = new Leaf_node(alphabet_sizes);
    root_node->write_node(ND_file, root);
    delete root_node;
+   // reset recordid_global to 0 ==> clear record.typeid file
+   recordid_global = 0;
 
    write_tree_info(ND_file);
 
@@ -1090,7 +1092,9 @@ void ND_tree::read_tree_info(fstream& ND_file)
    ND_file.read((char*)(&root), sizeof(unsigned int));
    unsigned int dummy;
   ND_file.read((char*)(&dummy), sizeof(unsigned int));//read in DIR_NODE_SIZE and Leaf_NODE_SIZE
-  ND_file.read((char*)(&dummy), sizeof(unsigned int));
+
+  // reover recordid_global , it is the next available location for type array
+  ND_file.read((char*)(&recordid_global), sizeof(unsigned int));
 
    if(num_of_available_block_numbers > 0){
       unsigned int block_number;
@@ -1120,9 +1124,9 @@ void ND_tree::write_tree_info(fstream& ND_file)
    ND_file.write((const char*)(&height), sizeof(int));
    ND_file.write((const char*)(&root), sizeof(unsigned int));
 	 int temp1 = 0;
-	 int temp2 = 0;
   ND_file.write((const char*)(&temp1 ), sizeof(unsigned int));
-  ND_file.write((const char*)(&temp2 ), sizeof(unsigned int));
+  // save recordid_global, it is the next available location for type arra
+  ND_file.write((const char*)(&recordid_global), sizeof(unsigned int));
 
 
 

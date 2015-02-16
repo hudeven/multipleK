@@ -96,7 +96,7 @@ const int try_all_dim_with_minUtil = 1;
 int readid_global;
 int typeid_global;
 
-int record_type[999999][128]={0};
+//int record_type[999999][128]={0};
 
 string globalRQFilename = "../data/rangequeryAll.txt";
 string globalDataFilename = "../data/data.fa";
@@ -111,7 +111,13 @@ int debug_boxQ_leaf_hit_peak;
 int debug_height;
 
 const int MAX_K=255; //buffer size for multiple K related array
-const int TYPE_ARRAY_SIZE = 4096 * 2;
+const int TYPE_ARRAY_SIZE = 64;
+
+const char END_ARRAY = -1;
+
+int recordid_global = 0;
+int valid_insert_num_global = 0;
+int total_links_num_global = 0;
 
 logClass logO;
 #endif

@@ -472,7 +472,8 @@ void ndtreeHelper::batchBuild_with_duplicate_record(bool newtree, long  size)
 		int remaining =(int)(diff * (total_records - count_records)/ count_records);
 		int min = remaining / 60;
 		int sec = remaining % 60;
-		printf("\r%.0lf%%\t%d min %d sec remaining...", count_records * 100.0 / total_records, min, sec);
+		double avgLinksPerInsert = total_links_num_global * 1.0 / valid_insert_num_global;
+		printf("\r%.0lf%%\t%d min %d sec remaining\tAvg LPI: %.2lf", percent, min, sec, avgLinksPerInsert);
 
 	}
 	for (int j = 0; j < seq->seq.l; j++) 
@@ -786,7 +787,7 @@ void ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_B
     int type_array[TYPE_ARRAY_SIZE]={0};
     int output[256]={0};
     output[0]=0;
-    int type_num;
+//    int type_num;
     int record_id;
 
 for(int k=0; k<query_results_size; k++){
@@ -799,17 +800,35 @@ for(int k=0; k<query_results_size; k++){
     record_id = query_results[k].record;
     typeid_file.seekg(record_id * sizeof(type_array), ios::beg);
     typeid_file.read((char*)type_array, sizeof(type_array));
-    type_num = type_array[0];
-    int i;
-    if(type_num > TYPE_ARRAY_SIZE - 1) {
+    //type_num = type_array[0];
+    //int i;
+    /*if(type_num > TYPE_ARRAY_SIZE - 1) {
 	cout << "type_num > " << TYPE_ARRAY_SIZE - 1 << " :"<<type_num<<endl;
 	type_num = TYPE_ARRAY_SIZE - 1;
     }
     for(i=1; i<type_num; i++){
 	tuple += to_string(type_array[i]) + ",";
     }
+    
     tuple += to_string(type_array[type_num]);
+    */
 //    cout<<tuple<<endl;
+
+    //replace
+    int cur = 0;
+    int i = 0;
+    string idStr = "";
+    while(type_array[i] != END_ARRAY){
+	if(i == TYPE_ARRAY_SIZE -1){
+	   cur = type_array[i];
+	   typeid_file.seekg(cur * sizeof(type_array), ios::beg);
+	   typeid_file.read((char*)type_array, sizeof(type_array));
+	   i = -1;
+	}
+	idStr += to_string(type_array[i]) + ",";
+	i++;
+    }
+    tuple += idStr.substr(0, idStr.size()-1);
     query_result_file << tuple << endl;
 }
 
@@ -818,7 +837,7 @@ for(int k=0; k<query_results_size; k++){
  
 }
 
-
+/*
 //output the cancer types in the query result to file
 void ndtreeHelper::output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift)
 {
@@ -909,7 +928,7 @@ if(type_num > TYPE_ARRAY_SIZE -1) {
     query_result_file.close();
 
 }
-
+*/
 
 void ndtreeHelper::clear_result()
 {

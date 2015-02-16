@@ -88,8 +88,9 @@ void moveToLine(fstream file, int lineNum)
 }
 
 
-void update_record(int record_id)
+int update_record(int record_id)
 {
+int cur = record_id;
 fstream typeid_file;
 //fstream readid_file;
 string tmp = globalRecordFilename;
@@ -103,18 +104,66 @@ if(typeid_file.fail())
     exit(1);
 }
 int type_array[TYPE_ARRAY_SIZE]={0};
-int type_num;
-typeid_file.seekg(record_id * sizeof(type_array), ios::beg);
+//int type_num = 0;
+typeid_file.seekg(cur * sizeof(type_array), ios::beg);
 typeid_file.read((char*)type_array, sizeof(type_array));
 
-type_num = type_array[0];
+//type_num = type_array[0];
+/*
 int i;
 for(i=1; i<=type_num; i++)
 {
     if(typeid_global == type_array[i])
 	return;
 }
+*/
+//replace
+int links_num = 0;
+int i=0;
+while(type_array[i] != END_ARRAY){ 
+    if(type_array[i] == typeid_global){
+	// duplicate id, skip!
+	return -1;
+    }
+    // the last id in type_array is index of next type_array
+    if(i == TYPE_ARRAY_SIZE-1){ 
+	cur = type_array[i];
+	typeid_file.seekg(cur * sizeof(type_array), ios::beg);
+	typeid_file.read((char*)type_array, sizeof(type_array));
+	links_num++;
+	i = -1;
+    }
+    i++;
+}
+// E: end of array, X: inserting typeid, N:next record id
+//case1: ***E**  => ***XE*		normal
+//case2: ****E*  => ****XE 		normal
+//case3: *****E  => *****N  N:XE....	insert new record and link
 
+if(i == TYPE_ARRAY_SIZE - 1){
+    //link to new record
+    type_array[i] = recordid_global;
+    typeid_file.seekp(cur * sizeof(type_array), ios::beg);
+    typeid_file.write((char*)type_array, sizeof(type_array));
+   
+    //insert new recrod
+    type_array[0] = typeid_global;
+    type_array[1] = END_ARRAY;
+    cur = recordid_global;
+    typeid_file.seekp(cur * sizeof(type_array), ios::beg);
+    typeid_file.write((char*)type_array, sizeof(type_array));
+    
+    recordid_global++;
+
+} else {
+    type_array[i] = typeid_global;
+    type_array[i+1] = END_ARRAY;
+    typeid_file.seekp(cur * sizeof(type_array), ios::beg);
+    typeid_file.write((char*)type_array, sizeof(type_array));
+}
+
+
+/*
 if(type_num + 1 < TYPE_ARRAY_SIZE){
 	type_num++;
 	type_array[type_num] = typeid_global;
@@ -124,9 +173,10 @@ if(type_num + 1 < TYPE_ARRAY_SIZE){
 }
 typeid_file.seekp(record_id * sizeof(type_array), ios::beg);
 typeid_file.write((char*)type_array, sizeof(type_array));
+*/
 
 typeid_file.close();
-
+return links_num;
 }
 
 /*
@@ -163,8 +213,13 @@ Error_code Leaf_node::retrieve(Leaf_entry& query_data)
         {
             //query_data = entries[i];           
 	    entries[i].record_count++;
-
-update_record(entries[i].record);	    
+	   int links_num;
+	   if((links_num=update_record(entries[i].record)) == -1) {
+		
+	   } else {
+		valid_insert_num_global++;
+		total_links_num_global += links_num;
+	   }    
 
 //array record_type for test
 //update_record_array(entries[i].record);
@@ -348,7 +403,7 @@ const char* typeid_filename = (recordFilename.append(".typeid")).c_str();
 typeid_file.open(typeid_filename, ios_base::binary | ios_base::out | ios_base::in);
 if(typeid_file.fail())
 {
-    cout<<"can't open file "<< typeid_filename <<endl;
+    cout<<"can't open typeid file "<< typeid_filename <<endl;
     exit(1);
 }
 static int record_count=-1;
@@ -356,17 +411,22 @@ static int record_count=-1;
 record_count++;
 
 int type_array[TYPE_ARRAY_SIZE]={0};
-type_array[0] = 1;
-type_array[1] = typeid_global;
-typeid_file.seekp(record_count * sizeof(type_array), ios::beg);
+//type_array[0] = 1;
+//type_array[1] = typeid_global;
+type_array[0] = typeid_global;
+type_array[1] =END_ARRAY;
+//typeid_file.seekp(record_count * sizeof(type_array), ios::beg);
+//typeid_file.write((const char*)type_array, sizeof(type_array));
+typeid_file.seekp(recordid_global * sizeof(type_array), ios::beg);
 typeid_file.write((const char*)type_array, sizeof(type_array));
-
-new_data.record = record_count;
+//new_data.record = record_count;
+new_data.record = recordid_global;
+recordid_global++;
 typeid_file.close();
 
 //array record_type[][] for test
-record_type[record_count][0]=1;
-record_type[record_count][1]=typeid_global;
+//record_type[record_count][0]=1;
+//record_type[record_count][1]=typeid_global;
 //
 	
     if(count < LEAF_NODE_SIZE)
