@@ -74,7 +74,7 @@ void batchRangeQuery();
 void output_records(Leaf_entry* query_results, int query_results_size);
 //output the cancer types in the query result to file
 void output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
-void output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[],  char queryK[]);
+string output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[],  char queryK[]);
 //output the cancer types in the query result to file
 void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
 
@@ -119,8 +119,11 @@ int ndtreeHelper::letter2num(char letter){
         case 'N':
 	    num = 4;
 	    break;
-	default:
+	case 'X':
 	    num = 5;
+	    break;
+	default:
+	    num = 6;
     }
 
     return num;
@@ -143,6 +146,9 @@ char ndtreeHelper::num2letter(int num){
 	    break;
 	case 4:
 	    letter = 'N';
+	    break;
+	case 5:
+	    letter = 'X';
 	    break;
 	default:
 	    letter = '?';
@@ -766,7 +772,7 @@ if(type_num > TYPE_ARRAY_SIZE - 1) {
 
 
 //output the cancer types in the query result to file
-void ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[], char queryK[])
+string ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[], char queryK[])
 {
   string typeid_filename = (globalRecordFilename+".typeid").c_str();
   string query_result_filename = (globalBQFilename +".result").c_str();
@@ -789,6 +795,8 @@ void ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_B
     output[0]=0;
 //    int type_num;
     int record_id;
+
+string retStr = "";
 
 for(int k=0; k<query_results_size; k++){
     string kmer="";
@@ -830,11 +838,12 @@ for(int k=0; k<query_results_size; k++){
     }
     tuple += idStr.substr(0, idStr.size()-1);
     query_result_file << tuple << endl;
+    retStr += tuple;
 }
 
     typeid_file.close();
     query_result_file.close();
- 
+    return retStr;
 }
 
 /*
@@ -976,12 +985,11 @@ for(int i=0; i <= maxShift; i++) {
 if(query_results_size[0] == 0){
 	cout << "Not found!" << endl;
 } else {
-	for(int i=0; i < query_results_size[0]; i++) {
-		string output = "Found: ";
-		for (int j = 0; j < DIM; j++)
-			output += num2letter(query_results[0][i].key[j]);
-		cout << output << endl;
-	}
+// Return output string !!!!
+	string output = "Found: \n";
+        char tmp[1] = {'i'};
+ 	output += output_records_fasta(query_results[0], query_results_size[0],tmp, queryStr);
+	cout << output << endl;
 }
 
 }

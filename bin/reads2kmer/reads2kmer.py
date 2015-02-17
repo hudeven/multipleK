@@ -6,23 +6,27 @@ from optparse import OptionParser
 parser = OptionParser()
 parser.add_option('-o','--output', dest = "outputFile", help = "Name of the output file")
 parser.add_option('-k','--klength', dest = "kmerLength", help = "Length of kmer")
-parser.add_option('-f','--readsfile', dest = "readsFilename", help = "Name of the reads file")
+parser.add_option('-r','--readsfile', dest = "readsFilename", help = "Name of the reads file")
+parser.add_option('-f','--format', dest = "formatstr", help = "format of read file: fasta / fastq")
 (options, args) = parser.parse_args(sys.argv[1:])
 kmerFilename = options.outputFile
 readsFilename = options.readsFilename
 kmerLength = int(options.kmerLength)
+read_id = -1;
+formatStr = options.formatstr
 
 kmer_file = open(kmerFilename, 'w')
-
 kmer_list=""
 buffer_size = 255
 count = 0
-for seq_record in SeqIO.parse(readsFilename,"fasta"):
+
+for seq_record in SeqIO.parse(readsFilename,formatStr):
+    read_id += 1
     cur = 0
     cur_max = len(seq_record) - kmerLength
     for cur in range(0, cur_max):
 	kmer_seq = str(seq_record.seq[cur:cur+kmerLength]);
-	kmer = '>' + seq_record.id + '\n' + kmer_seq + '\n'
+	kmer = '>' + str(read_id) +' '+ seq_record.id + '\n' + kmer_seq + '\n'
 	# kmer = SeqIO.SeqRecord(kmer_seq, id=seq_record.id, description="")
 	# kmer = SeqIO.SeqRecord(kmer_seq, id=seq_record.id, name=seq_record.name, description=seq_record.description)
 	kmer_list += kmer

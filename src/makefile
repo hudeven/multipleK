@@ -17,7 +17,7 @@ gdb:
 rebuild:
 	gdb --args ndTree --mode rebuild --data ../data/multipleK/kmer.fa
 query:
-	gdb --args ndTree --boxquery  /home/stevenliu/workspace/multipleK/data/multipleK/boxquery.sub
+	gdb --args ndTree --boxquery  ../data/multipleK/boxquery20.sub
 clean:
 	rm -f *.o
 
