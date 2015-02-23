@@ -119,8 +119,8 @@ int ndtreeHelper::letter2num(char letter){
         case 'N':
 	    num = 4;
 	    break;
-	case 'X':
-	    num = 5;
+	case UNI_ELEM:
+	    num = UNI_ELEM_NUM; // MUST be continous, 5
 	    break;
 	default:
 	    num = 6;
@@ -147,8 +147,8 @@ char ndtreeHelper::num2letter(int num){
 	case 4:
 	    letter = 'N';
 	    break;
-	case 5:
-	    letter = 'X';
+	case UNI_ELEM_NUM:
+	    letter = UNI_ELEM;
 	    break;
 	default:
 	    letter = '?';
@@ -831,7 +831,8 @@ for(int k=0; k<query_results_size; k++){
 	   cur = type_array[i];
 	   typeid_file.seekg(cur * sizeof(type_array), ios::beg);
 	   typeid_file.read((char*)type_array, sizeof(type_array));
-	   i = -1;
+	   i = 0;
+	   continue;
 	}
 	idStr += to_string(type_array[i]) + ",";
 	i++;

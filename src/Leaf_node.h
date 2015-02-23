@@ -253,7 +253,8 @@ bool Leaf_node::is_within_box(const unsigned char box_query_data_DMBR[DMBR_SIZE]
         matchOnThisDim=false;
 
         for(i=0;i<BYTES_PER_DIM_IN_DMBR;i++)
-            if((DMBR[j+i] & box_query_data_DMBR[j+i])!= 0)
+	    // Or Accept Universal Element
+            if((DMBR[j+i] & box_query_data_DMBR[j+i])!= 0 || box_query_data_DMBR[j+i] == UNI_ELEM_MASK)
                 matchOnThisDim = true;
 
         if (matchOnThisDim == false)
@@ -1618,6 +1619,11 @@ void Leaf_node::create_DMBR(Leaf_entry* leaf_entries, int num_of_leaf_entries, u
             byte_no = this->DMBR_byte_lut[j][leaf_entries[i].key[j]];
             bit_no = this->DMBR_bit_lut[j][leaf_entries[i].key[j]];
             new_DMBR[byte_no] |= MASKS[bit_no];
+	    /*
+	    if(new_DMBR[byte_no] == 32){
+	   	 cout << bit_no<<endl;
+	    }
+	    */
         }
     }
 }

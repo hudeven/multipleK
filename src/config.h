@@ -114,6 +114,9 @@ const int MAX_K=255; //buffer size for multiple K related array
 const int TYPE_ARRAY_SIZE = 64;
 
 const char END_ARRAY = -1;
+const char UNI_ELEM = 'X';
+const int UNI_ELEM_NUM = 7; // must be 5
+const int UNI_ELEM_MASK = 128; // must be 32 = 0010 0000
 
 int recordid_global = 0;
 int valid_insert_num_global = 0;

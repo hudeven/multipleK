@@ -44,8 +44,9 @@ total_count = fcount + nfcount;
 if total_count == 0:
     print "total count is 0"
 else:
-    print 1.0*fcount / (fcount+nfcount);
-    outputStr += str(1.0*fcount / (fcount+nfcount));
+    rate = 1.0*fcount / (fcount+nfcount);
+    print "###### Accuracy = "+str(rate)
+    outputStr += "###### Accuracy = " + str(rate);
     output_file.write(outputStr);
     output_file.close();
     result_file.close();

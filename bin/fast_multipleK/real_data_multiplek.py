@@ -6,7 +6,7 @@ from optparse import OptionParser
 
 #Modify it to your working dir
 # WORKING_DIR = "/home/stevenliu/workspace/multipleK/" # for old server
-WORKING_DIR = "/home/stevenliu/workspace/multipleK_paper/multipleK/" # for new server
+WORKING_DIR = "/home/stevenliu/workspace/multipleK_paper_runing_human/multipleK/" # for new server
 #WORKING_DIR = "/media/psf/Home/MultipleK/bin/multipleK/"
 read_file = WORKING_DIR + 'data/multipleK/homo_read.fastq'
 kmer_file = WORKING_DIR + 'data/multipleK/kmer.fa'

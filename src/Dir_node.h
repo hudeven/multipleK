@@ -953,7 +953,8 @@ bool Dir_node::is_within_box(
 		matchOnThisDim=false;
 
 		for(i=0;i<BYTES_PER_DIM_IN_DMBR;i++)
-			if((DMBR[j+i] & box_query_data.DMBR[j+i])!= 0)
+			// Or Accept Universal Element
+			if((DMBR[j+i] & box_query_data.DMBR[j+i])!= 0 || box_query_data.DMBR[j+i] == UNI_ELEM_MASK)
 				matchOnThisDim = true;
 
 		if (matchOnThisDim == false)

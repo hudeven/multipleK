@@ -6,10 +6,12 @@ from Bio import SeqIO
 parser = OptionParser()
 parser.add_option('-i', '--input', dest = 'inputFile', help = 'input file name')
 parser.add_option('-o', '--output', dest ='outputFile', help = 'output file name')
+parser.add_option('-a', '--action', dest ='action', help = 'intersect / union')
 
 (options, args) =parser.parse_args(sys.argv[1:])
 inputFilename = options.inputFile
 outputFilename = options.outputFile
+action = options.action
 
 result_file = open(outputFilename, "w")
 
@@ -19,7 +21,11 @@ hist = {}
 for record in SeqIO.parse(inputFilename, "fasta"):
     if record.id != old_id and old_id != -1:
 	query = ">" + str(old_id) + "\n";
-	its = ','.join(key for key in hist if hist[key]==set_num)
+	if action == 'union':
+	    its = ','.join(key for key in hist)
+	else:
+	    its = ','.join(key for key in hist if hist[key]==set_num)
+
 	if its != "":
 	    query += its
 	    result_file.write(query+"\n");
