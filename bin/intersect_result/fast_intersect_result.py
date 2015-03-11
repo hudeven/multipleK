@@ -24,6 +24,12 @@ for record in SeqIO.parse(inputFilename, "fasta"):
 	if action == 'union':
 	    its = ','.join(key for key in hist)
 	else:
+	    # only save 1 read id
+	    #its = ""
+	    #for key in hist:
+	    #	if hist[key] == set_num:
+	    #	    its = key
+	    #	    break
 	    its = ','.join(key for key in hist if hist[key]==set_num)
 
 	if its != "":

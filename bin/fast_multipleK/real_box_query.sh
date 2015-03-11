@@ -1,1 +1,1 @@
-python real_box_query.py  --klength 12 -s 12 -e 25 -q 100000
+python real_box_query.py  --klength 9 -s 10 -e 40 -q 100000

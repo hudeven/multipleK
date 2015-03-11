@@ -8,10 +8,10 @@ from optparse import OptionParser
 # WORKING_DIR = "/home/stevenliu/workspace/multipleK/" # for old server
 WORKING_DIR = "/home/stevenliu/workspace/multipleK_paper_runing_human/multipleK/" # for new server
 #WORKING_DIR = "/media/psf/Home/MultipleK/bin/multipleK/"
-read_file = WORKING_DIR + 'data/multipleK/SRR1798198.fastq'
+read_file = WORKING_DIR + 'data/multipleK/homo_read.fastq'
 kmer_file = WORKING_DIR + 'data/multipleK/kmer.fa'
-query_file = WORKING_DIR + 'data/multipleK/boxquery'
-result_file = WORKING_DIR + 'data/multipleK/result'
+query_file = WORKING_DIR + 'data/multipleK/patterns/pattern0/pattern0_'
+result_file = WORKING_DIR + 'data/multipleK/patterns/pattern1/e2/result'
 
 
 
@@ -31,14 +31,6 @@ start = timeit.default_timer()
 
 os.chdir(WORKING_DIR)
 
-print "\n****** generate kmers from reads ******\n"
-# fasta_fastkmer.py is for kmer list of fasta format
-cmd = "python bin/reads2kmer/reads2kmer.py --output "+ kmer_file +" --klength "+ klength  +" --readsfile " + read_file + ' --format ' + 'fastq'
-print "output kmer file: \n" + kmer_file
-#print "sleep for 5 seconds..."
-#time.sleep(5)
-os.system(cmd)
-
 print "\n****** compile bond-tree ******\n"
 os.chdir(WORKING_DIR + 'src/')
 # modify kmer length in code file dim.h and then compile bondtree
@@ -47,19 +39,9 @@ dim_file.write("const int DIM = " + klength + ";")
 dim_file.close()
 os.system("make");
 
-print "\n****** build index tree ******\n"
-cmd = './ndTree --data '+ kmer_file + ' --mode rebuild ';
-os.system(cmd)
-
 
 print "\n****** multiple K query ******\n"
 for i in range(startk, endk+1):
-    print "\n******generate random box query******\n"
-    os.chdir(WORKING_DIR)
-    cmd = 'python bin/random_boxquery/random_fast_boxquery.py --num '+ querynum  +'  --klength '+ str(i) +' --output '+ query_file + str(i) +' --read '+ read_file +' --boxsize 1'+ ' --format '+ 'fastq'
-    os.system(cmd)
-    print "output query file: \n" + query_file + str(i)
-
     print "\n****** do box query k=" + klength + " K=" + str(i)
     os.chdir(WORKING_DIR + 'src/')
     cmd = 'python queryK.py -k '+ klength + ' -K '+ str(i) + ' -b ' + query_file + str(i) + ' -o '+ result_file + str(i)
