@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 from Bio import SeqIO
+from Bio.Seq import Seq
 from optparse import OptionParser
 import random
  
@@ -20,19 +21,17 @@ readlength = int(options.readlength)
 coverage = int(options.coverage)
 error = int(options.error)
 
-
-
 #There should be one and only one record, the entire genome:
 record = SeqIO.read(open(refFilename), "fasta")
- 
+seqNoN = str(record.seq).replace('N','')
 frags=[]
-limit=len(record.seq)
+limit=len(seqNoN)
 readnum = coverage * limit / readlength
 for i in range(0, readnum) :
     start=random.randint(0,limit-readlength)
     end=start+readlength
-    frag=record.seq[start:end]
-    readitem=SeqIO.SeqRecord(frag,id= str(i+1000),name=record.name, description=record.description)
+    frag=seqNoN[start:end]
+    readitem=SeqIO.SeqRecord(Seq(frag),id= str(i+1000),name=record.name, description=record.description)
     frags.append(readitem)
  
 output_handle = open(outFilename, "w")

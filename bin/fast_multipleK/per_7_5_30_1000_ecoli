@@ -1,0 +1,2140 @@
+g++ -g -std=c++11 -c main.cpp
+g++ -g -std=c++11 -o ndTree main.o -lz utility.o logClass.o 
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 5
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 89.1634569168
+###### Accuracy = 1.0
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 5
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 88.329449892
+###### Accuracy = 1.0
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 5
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 87.2149620056
+###### Accuracy = 1.0
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 5
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 88.5989639759
+###### Accuracy = 1.0
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 6
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 20.3939380646
+###### Accuracy = 1.0
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 6
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 20.2862479687
+###### Accuracy = 1.0
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 6
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 19.4727640152
+###### Accuracy = 1.0
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 6
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 18.373278141
+###### Accuracy = 1.0
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 7
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 3.5245039463
+###### Accuracy = 1.0
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 7
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 4.07222890854
+###### Accuracy = 1.0
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 7
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 3.68936896324
+###### Accuracy = 1.0
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 7
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 3.11115002632
+###### Accuracy = 1.0
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 8
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 7.04920601845
+###### Accuracy = 0.982153116243
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 8
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 6.57420897484
+###### Accuracy = 0.982153116243
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 8
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 7.19131398201
+###### Accuracy = 0.982153116243
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 8
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 7.51060414314
+###### Accuracy = 0.982153116243
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 9
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 9.59539103508
+###### Accuracy = 0.957958782516
+
+****** compile bond-tree ******
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery5
+
+****** do box query k=7 K=5
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 89.2303302288
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 89.1134648323
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 87.2870409489
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 88.6706631184
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery6
+
+****** do box query k=7 K=6
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 20.4561769962
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 20.3966259956
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 19.5315728188
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 18.4342901707
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery7
+
+****** do box query k=7 K=7
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 3.58148407936
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 4.13033008575
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 3.75037503242
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 3.17070794106
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery8
+
+****** do box query k=7 K=8
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 7.10888195038
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 6.63367700577
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 7.25121307373
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 7.56957197189
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9
+
+****** do box query k=7 K=9
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 9.65369701385
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 9
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 9.75502204895
+###### Accuracy = 0.957958782516
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 9
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 10.6518368721
+###### Accuracy = 0.957958782516
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 9
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 10.0106310844
+###### Accuracy = 0.957958782516
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 10
+valid optimization(reduces sub queries):
+0.9665
+overall optimization
+0.9665
+###### query time = 12.2786540985
+###### Accuracy = 0.939517303115
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 10
+valid optimization(reduces sub queries):
+0.984
+overall optimization
+0.984
+###### query time = 12.6835770607
+###### Accuracy = 0.921534494064
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 10
+valid optimization(reduces sub queries):
+0.99975
+overall optimization
+0.99975
+###### query time = 14.5079779625
+###### Accuracy = 0.94234568516
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 10
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 13.3685090542
+###### Accuracy = 0.942434553403
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 11
+valid optimization(reduces sub queries):
+0.833
+overall optimization
+0.833
+###### query time = 13.7987499237
+###### Accuracy = 0.929142375782
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 11
+valid optimization(reduces sub queries):
+0.9338
+overall optimization
+0.9338
+###### query time = 14.1269829273
+###### Accuracy = 0.871411274866
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 11
+valid optimization(reduces sub queries):
+0.9994
+overall optimization
+0.9994
+###### query time = 15.5629820824
+###### Accuracy = 0.947100911992
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 11
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 16.0604288578
+###### Accuracy = 0.947489800881
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 12
+valid optimization(reduces sub queries):
+0.703333333333
+overall optimization
+0.703333333333
+###### query time = 13.9987740517
+###### Accuracy = 0.938656703169
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 12
+valid optimization(reduces sub queries):
+0.823666666667
+overall optimization
+0.823666666667
+###### query time = 17.323830843
+###### Accuracy = 0.841793571917
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 12
+valid optimization(reduces sub queries):
+0.991666666667
+overall optimization
+0.991666666667
+###### query time = 18.7502999306
+###### Accuracy = 0.961321360809
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 12
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 20.2154200077
+###### Accuracy = 0.966933516363
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 13
+valid optimization(reduces sub queries):
+0.583571428571
+overall optimization
+0.583571428571
+###### query time = 14.2057681084
+###### Accuracy = 0.951453440873
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 13
+valid optimization(reduces sub queries):
+0.715
+overall optimization
+0.715
+###### query time = 17.3337628841
+###### Accuracy = 0.833602671947
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 13
+valid optimization(reduces sub queries):
+0.955428571429
+overall optimization
+0.955428571429
+###### query time = 22.3120560646
+###### Accuracy = 0.948844703935
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 9.8140130043
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 10.7113230228
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 10.0707321167
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery10
+
+****** do box query k=7 K=10
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 12.3371429443
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 12.7431299686
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 14.5679690838
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 13.4298779964
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery11
+
+****** do box query k=7 K=11
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 13.8567700386
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 14.1853609085
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 15.6276340485
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 16.1188099384
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery12
+
+****** do box query k=7 K=12
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 14.057300806
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 17.3829278946
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 18.8127400875
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 20.2750988007
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery13
+
+****** do box query k=7 K=13
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 14.2667119503
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 17.394726038
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 22.3690149784
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 13
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 23.4227252007
+###### Accuracy = 0.980880499938
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 14
+valid optimization(reduces sub queries):
+0.510125
+overall optimization
+0.510125
+###### query time = 13.0668230057
+###### Accuracy = 0.983315882379
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 14
+valid optimization(reduces sub queries):
+0.61475
+overall optimization
+0.61475
+###### query time = 15.8729279041
+###### Accuracy = 0.857053482911
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 14
+valid optimization(reduces sub queries):
+0.88025
+overall optimization
+0.88025
+###### query time = 21.3139989376
+###### Accuracy = 0.936002019287
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 14
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 25.7950611115
+###### Accuracy = 0.994437379818
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 15
+valid optimization(reduces sub queries):
+0.447111111111
+overall optimization
+0.447111111111
+###### query time = 13.760311842
+###### Accuracy = 0.983146364987
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 15
+valid optimization(reduces sub queries):
+0.536
+overall optimization
+0.536
+###### query time = 14.8763160706
+###### Accuracy = 0.888451516917
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 15
+valid optimization(reduces sub queries):
+0.798888888889
+overall optimization
+0.798888888889
+###### query time = 23.3695540428
+###### Accuracy = 0.918740413737
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 15
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 27.619437933
+###### Accuracy = 0.998055555556
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 16
+valid optimization(reduces sub queries):
+0.4025
+overall optimization
+0.4025
+###### query time = 12.528963089
+###### Accuracy = 0.991879282199
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 16
+valid optimization(reduces sub queries):
+0.4674
+overall optimization
+0.4674
+###### query time = 16.3533270359
+###### Accuracy = 0.886798832257
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 16
+valid optimization(reduces sub queries):
+0.7205
+overall optimization
+0.7205
+###### query time = 22.8251121044
+###### Accuracy = 0.904821208116
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 16
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 33.261849165
+###### Accuracy = 0.998684445647
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 17
+valid optimization(reduces sub queries):
+0.364
+overall optimization
+0.364
+###### query time = 13.9497029781
+###### Accuracy = 0.991530129405
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 17
+valid optimization(reduces sub queries):
+0.427363636364
+overall optimization
+0.427363636364
+###### query time = 15.6729280949
+###### Accuracy = 0.918371674501
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 17
+valid optimization(reduces sub queries):
+0.662363636364
+overall optimization
+0.662363636364
+###### query time = 24.3181400299
+###### Accuracy = 0.888355395267
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 17
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 35.4958720207
+###### Accuracy = 0.998777206851
+%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 23.4824237823
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery14
+
+****** do box query k=7 K=14
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 13.1267530918
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 15.9340131283
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 21.3756887913
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 25.8547980785
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery15
+
+****** do box query k=7 K=15
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 13.8201179504
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 14.9344398975
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.4275319576
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 27.6776471138
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery16
+
+****** do box query k=7 K=16
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 12.5876209736
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 16.4112520218
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 22.885281086
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 33.3207581043
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery17
+
+****** do box query k=7 K=17
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 14.009980917
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 15.7317709923
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 24.3774008751
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 35.5528941154
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery18
+
+****** do box quStrategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 18
+valid optimization(reduces sub queries):
+0.33175
+overall optimization
+0.33175
+###### query time = 12.850112915
+###### Accuracy = 0.997155299258
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 18
+valid optimization(reduces sub queries):
+0.38225
+overall optimization
+0.38225
+###### query time = 15.7017579079
+###### Accuracy = 0.920790296407
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 18
+valid optimization(reduces sub queries):
+0.600916666667
+overall optimization
+0.600916666667
+###### query time = 23.8036940098
+###### Accuracy = 0.878993487337
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 18
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 35.7381010056
+###### Accuracy = 0.999472222222
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 19
+valid optimization(reduces sub queries):
+0.306923076923
+overall optimization
+0.306923076923
+###### query time = 14.1494579315
+###### Accuracy = 0.996249574736
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 19
+valid optimization(reduces sub queries):
+0.351461538462
+overall optimization
+0.351461538462
+###### query time = 15.2001979351
+###### Accuracy = 0.928494371433
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 19
+valid optimization(reduces sub queries):
+0.558538461538
+overall optimization
+0.558538461538
+###### query time = 25.6849460602
+###### Accuracy = 0.880541126953
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 19
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 40.7607429028
+###### Accuracy = 0.999483333333
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 20
+valid optimization(reduces sub queries):
+0.283142857143
+overall optimization
+0.283142857143
+###### query time = 12.8156399727
+###### Accuracy = 0.998169660895
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 20
+valid optimization(reduces sub queries):
+0.325571428571
+overall optimization
+0.325571428571
+###### query time = 13.6584060192
+###### Accuracy = 0.931110135689
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 20
+valid optimization(reduces sub queries):
+0.510714285714
+overall optimization
+0.510714285714
+###### query time = 23.8306701183
+###### Accuracy = 0.867663560189
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 20
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 41.8078680038
+###### Accuracy = 0.999352380952
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 21
+valid optimization(reduces sub queries):
+0.266
+overall optimization
+0.266
+###### query time = 13.6168181896
+###### Accuracy = 0.998747211122
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 21
+valid optimization(reduces sub queries):
+0.303866666667
+overall optimization
+0.303866666667
+###### query time = 15.7596411705
+###### Accuracy = 0.939020481786
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 21
+valid optimization(reduces sub queries):
+0.476866666667
+overall optimization
+0.476866666667
+###### query time = 22.9444818497
+###### Accuracy = 0.847805846026
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 21
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 48.0098791122
+###### Accuracy = 0.999449592075
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 22
+valid optimization(reduces sub queries):
+0.2481875
+overall optimization
+0.2481875
+###### query time = 12.696436882
+###### Accuracy = 0.99785116732
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 22
+valid optimization(reduces sub queries):
+0.2803125
+overall optimization
+0.2803125
+###### query time = 13.6277370453
+###### Accuracy = 0.931324979527
+ery k=7 K=18
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 12.9083938599
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 15.7620820999
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.8645410538
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 35.7951021194
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery19
+
+****** do box query k=7 K=19
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 14.2079570293
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 15.258630991
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 25.7452700138
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 40.8209719658
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery20
+
+****** do box query k=7 K=20
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 12.8754880428
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 13.7170948982
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.8906319141
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 41.8646929264
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery21
+
+****** do box query k=7 K=21
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 13.6765949726
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 15.8202989101
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.0026409626
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 48.0684239864
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery22
+
+****** do box query k=7 K=22
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 12.7544410229
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 13.6855938435
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 22
+valid optimization(reduces sub queries):
+0.44825
+overall optimization
+0.44825
+###### query time = 23.4065480232
+###### Accuracy = 0.849389483974
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 22
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 50.6189320087
+###### Accuracy = 0.999892598123
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 23
+valid optimization(reduces sub queries):
+0.234647058824
+overall optimization
+0.234647058824
+###### query time = 13.3599469662
+###### Accuracy = 0.996877045177
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 23
+valid optimization(reduces sub queries):
+0.263058823529
+overall optimization
+0.263058823529
+###### query time = 14.1938109398
+###### Accuracy = 0.926917657655
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 23
+valid optimization(reduces sub queries):
+0.420588235294
+overall optimization
+0.420588235294
+###### query time = 24.2784938812
+###### Accuracy = 0.817330703589
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 23
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 55.6966710091
+###### Accuracy = 0.9999
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 24
+valid optimization(reduces sub queries):
+0.220944444444
+overall optimization
+0.220944444444
+###### query time = 13.1912400723
+###### Accuracy = 0.997391863692
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 24
+valid optimization(reduces sub queries):
+0.247333333333
+overall optimization
+0.247333333333
+###### query time = 14.9106059074
+###### Accuracy = 0.924803302835
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 24
+valid optimization(reduces sub queries):
+0.395944444444
+overall optimization
+0.395944444444
+###### query time = 23.625287056
+###### Accuracy = 0.818595979135
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 24
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 57.3263418674
+###### Accuracy = 0.99975
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 25
+valid optimization(reduces sub queries):
+0.209473684211
+overall optimization
+0.209473684211
+###### query time = 13.7510581017
+###### Accuracy = 0.994886013747
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 25
+valid optimization(reduces sub queries):
+0.233473684211
+overall optimization
+0.233473684211
+###### query time = 14.1617319584
+###### Accuracy = 0.926127926826
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 25
+valid optimization(reduces sub queries):
+0.377526315789
+overall optimization
+0.377526315789
+###### query time = 23.8242580891
+###### Accuracy = 0.817545891357
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 25
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 60.3242168427
+###### Accuracy = 0.999833333333
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 26
+valid optimization(reduces sub queries):
+0.20105
+overall optimization
+0.20105
+###### query time = 11.6133069992
+###### Accuracy = 0.996138697957
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 26
+valid optimization(reduces sub queries):
+0.2243
+overall optimization
+0.2243
+###### query time = 15.0740599632
+###### Accuracy = 0.927937962362
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 26
+valid optimization(reduces sub queries):
+0.36055
+overall optimization
+0.36055
+###### query time = 24.7477889061
+###### Accuracy = 0.810758119885
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 26
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 63.9980330467
+###### Accuracy = 0.999367460317
+  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.4652791023
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 50.6777551174
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery23
+
+****** do box query k=7 K=23
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 13.4186599255
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 14.2541179657
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 24.3387329578
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 55.7567448616
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery24
+
+****** do box query k=7 K=24
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 13.2519319057
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 14.9701490402
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.6854569912
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 57.3882219791
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery25
+
+****** do box query k=7 K=25
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 13.8125479221
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 14.21976614
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.8826420307
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 60.384239912
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery26
+
+****** do box query k=7 K=26
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 11.6725640297
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 15.1327450275
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 24.8076329231
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 64.0583600998
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 27
+valid optimization(reduces sub queries):
+0.189666666667
+overall optimization
+0.189666666667
+###### query time = 12.9854531288
+###### Accuracy = 0.996899085956
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 27
+valid optimization(reduces sub queries):
+0.210904761905
+overall optimization
+0.210904761905
+###### query time = 13.7181282043
+###### Accuracy = 0.923994086462
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 27
+valid optimization(reduces sub queries):
+0.342428571429
+overall optimization
+0.342428571429
+###### query time = 22.3439769745
+###### Accuracy = 0.801380526557
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 27
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 66.6362290382
+###### Accuracy = 0.999488404453
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 28
+valid optimization(reduces sub queries):
+0.181227272727
+overall optimization
+0.181227272727
+###### query time = 12.7519850731
+###### Accuracy = 0.997589788296
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 28
+valid optimization(reduces sub queries):
+0.202545454545
+overall optimization
+0.202545454545
+###### query time = 14.5346541405
+###### Accuracy = 0.926918629094
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 28
+valid optimization(reduces sub queries):
+0.328681818182
+overall optimization
+0.328681818182
+###### query time = 23.4526689053
+###### Accuracy = 0.802891058898
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 28
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 70.6879789829
+###### Accuracy = 0.999766328431
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 29
+valid optimization(reduces sub queries):
+0.172869565217
+overall optimization
+0.172869565217
+###### query time = 12.8708019257
+###### Accuracy = 0.996546343963
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 29
+valid optimization(reduces sub queries):
+0.192608695652
+overall optimization
+0.192608695652
+###### query time = 14.6688849926
+###### Accuracy = 0.920566503471
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 29
+valid optimization(reduces sub queries):
+0.31247826087
+overall optimization
+0.31247826087
+###### query time = 23.6859138012
+###### Accuracy = 0.778358197462
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 29
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 73.956444025
+###### Accuracy = 0.999309920635
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 30
+valid optimization(reduces sub queries):
+0.165791666667
+overall optimization
+0.165791666667
+###### query time = 13.2437989712
+###### Accuracy = 0.998296889493
+Strategy is random
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 30
+valid optimization(reduces sub queries):
+0.184958333333
+overall optimization
+0.184958333333
+###### query time = 14.5124268532
+###### Accuracy = 0.918891906933
+Strategy is sequential
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 30
+valid optimization(reduces sub queries):
+0.300291666667
+overall optimization
+0.300291666667
+###### query time = 23.1374850273
+###### Accuracy = 0.765764800513
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 30
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 78.3808479309
+###### Accuracy = 0.999648232203
+query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery27
+
+****** do box query k=7 K=27
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 13.0431249142
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 13.7753829956
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 22.4018850327
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 66.6959729195
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery28
+
+****** do box query k=7 K=28
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 12.8135361671
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 14.593875885
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.5109109879
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 70.7460079193
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery29
+
+****** do box query k=7 K=29
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 12.9297299385
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 14.7298760414
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.7456550598
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 74.0135788918
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery30
+
+****** do box query k=7 K=30
+%%%%%%%%%%%%%%%%%%%%%%%% BFS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time BFS: 13.3015639782
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Random %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Random: 14.5711040497
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Sequential %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Sequential: 23.1940190792
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Full %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Time Full: 78.4393649101
+
+****** alignment ******
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+***** Done ******
+
+
+
+***** running time *****
+
+84.1134970188

@@ -40,38 +40,38 @@ int main(int argc, char *argv[])
 		    globalIndexFilename = optarg;
 		    break;
 		case 'd':
-		    printf("data file name is %s.\n", optarg);
+		    printf("data file name is %s\n", optarg);
 		    globalDataFilename = optarg;
 		    isInsert = true;
 		    break;
 		case 'b':
-		    printf("box query file name is %s.\n", optarg);
+		    printf("box query file name is %s\n", optarg);
 		    globalBQFilename = optarg;
 		    isBoxQuery = true;
 		    break;
 		case 'q':
-		    printf("query dimension is %s.\n", optarg);
+		    printf("query dimension is %s\n", optarg);
 		    query_dim = atoi(optarg);
 		    break;
 		case 'o':
 		    onlineQueryStr = optarg;
-		    printf("query string is %s.\n", onlineQueryStr);
+		    printf("query string is %s\n", onlineQueryStr);
 		    isBoxQuery = true;
 		    isOnline = true;
 		    break;
 		case 'r':
-		    printf("range query file name is %s.\n", optarg);
+		    printf("range query file name is %s\n", optarg);
 		    globalRQFilename = optarg;
 		    break;
 		case 's':
-		    printf("skip is %s.\n", optarg);
+		    printf("skip is %s\n", optarg);
 		    break;
 		case 'a':
-		    printf("aux file name is %s.\n", optarg);
+		    printf("aux file name is %s\n", optarg);
 		    globalAuxFilename = optarg;
 		    break;
 		case 'c':
-		    printf("record file name is %s.\n", optarg);
+		    printf("record file name is %s\n", optarg);
 		    globalRecordFilename = optarg;
 		    break;
 		case 'm':

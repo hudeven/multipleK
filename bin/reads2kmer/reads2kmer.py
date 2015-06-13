@@ -7,14 +7,15 @@ parser = OptionParser()
 parser.add_option('-o','--output', dest = "outputFile", help = "Name of the output file")
 parser.add_option('-k','--klength', dest = "kmerLength", help = "Length of kmer")
 parser.add_option('-r','--readsfile', dest = "readsFilename", help = "Name of the reads file")
-parser.add_option('-f','--format', dest = "formatstr", help = "format of read file: fasta / fastq")
 (options, args) = parser.parse_args(sys.argv[1:])
 kmerFilename = options.outputFile
 readsFilename = options.readsFilename
 kmerLength = int(options.kmerLength)
 read_id = -1;
-formatStr = options.formatstr
-
+if readsFilename[-1] == 'a':
+    formatStr = 'fasta'
+else:
+    formatStr = 'fastq'
 kmer_file = open(kmerFilename, 'w')
 kmer_list=""
 buffer_size = 255

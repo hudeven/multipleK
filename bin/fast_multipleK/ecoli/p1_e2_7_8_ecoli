@@ -1,0 +1,49 @@
+g++ -g -std=c++11 -c main.cpp
+g++ -g -std=c++11 -o ndTree main.o -lz utility.o logClass.o 
+box query file name is /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/data/multipleK/patterns/pattern1/e2/pattern1_e2_8.sub.
+Box query file /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/data/multipleK/patterns/pattern1/e2/pattern1_e2_8.sub
+boxsize= random, avg boxquery i/o: 949.78
+ avg matched data point found=1.1
+ avg leaf node accessed: 1.1
+total boxquery i/o=94978
+total matched data points=110
+total matched records = 189857
+ avg leaf node hit peak: 1.1
+read id set with size greater than threshold will be kick out!
+threshold = 0
+100
+
+****** Generating subqueries ******
+
+Big K query k = 7 K = 8 sub = 100
+
+****** run ndtree ******
+
+
+****** intersect result *******
+
+optimization(reduces sub queries):
+1
+###### query time = 1.00444579124
+###### Accuracy = 0.940018958812
+
+****** compile bond-tree ******
+
+
+****** multiple K query ******
+
+
+****** do box query k=7 K=8
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+***** running time *****
+
+20.043006897

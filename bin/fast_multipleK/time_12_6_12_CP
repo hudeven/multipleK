@@ -1,0 +1,141 @@
+g++ -g -std=c++11 -c main.cpp
+g++ -g -std=c++11 -o ndTree main.o -lz utility.o logClass.o 
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 6 mode box
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 132.129508018
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 6 mode exact
+valid optimization(reduces sub queries):
+overall optimization
+3.51213727679e-05
+###### query time = 10.8556919098
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 7 mode box
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+0.995833333333
+###### query time = 43.1906480789
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 7 mode exact
+valid optimization(reduces sub queries):
+overall optimization
+0.000165690104167
+###### query time = 3.75633811951
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 8 mode box
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+0.9608
+###### query time = 19.8486790657
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 8 mode exact
+valid optimization(reduces sub queries):
+overall optimization
+0.00080078125
+###### query time = 2.71824884415
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 9 mode box
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+0.837
+###### query time = 8.9045791626
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 9 mode exact
+valid optimization(reduces sub queries):
+overall optimization
+0.00484765625
+###### query time = 2.65809416771
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 10 mode box
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+0.659333333333
+###### query time = 4.49972581863
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 10 mode exact
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+0.0275
+###### query time = 2.36659789085
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 11 mode box
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+0.623
+###### query time = 2.12866520882
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 11 mode exact
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+0.151125
+###### query time = 1.82502698898
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 12 mode box
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 1.74482893944
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 12 K = 12 mode exact
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 1.88762497902
+
+****** compile bond-tree ******
+

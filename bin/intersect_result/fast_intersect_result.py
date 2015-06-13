@@ -7,11 +7,18 @@ parser = OptionParser()
 parser.add_option('-i', '--input', dest = 'inputFile', help = 'input file name')
 parser.add_option('-o', '--output', dest ='outputFile', help = 'output file name')
 parser.add_option('-a', '--action', dest ='action', help = 'intersect / union')
+parser.add_option('-t', '--threshold', dest ='threshold', help = 'read id set with size greater than threshold will be kick out!')
 
 (options, args) =parser.parse_args(sys.argv[1:])
 inputFilename = options.inputFile
 outputFilename = options.outputFile
 action = options.action
+threshold = 0;
+if options.threshold != None:
+	threshold = (int)(options.threshold)
+
+print "read id set with size greater than threshold will be kick out!" 
+print "threshold = " + str(threshold) 
 
 result_file = open(outputFilename, "w")
 
@@ -33,8 +40,9 @@ for record in SeqIO.parse(inputFilename, "fasta"):
 	    its = ','.join(key for key in hist if hist[key]==set_num)
 
 	if its != "":
-	    query += its
-	    result_file.write(query+"\n");
+	    if threshold == 0 or len(its.split(',')) < threshold:
+	        query += its
+	        result_file.write(query+"\n");
 	hist.clear()
 	set_num = 0;
 	
@@ -54,7 +62,8 @@ for record in SeqIO.parse(inputFilename, "fasta"):
 query = ">"+str(old_id) + "\n";
 its = ','.join(key for key in hist if hist[key]==set_num)
 if its != "":
-    query += its
-    result_file.write(query+"\n");
+    if threshold == 0 or len(its.split(',')) < threshold:
+        query += its
+        result_file.write(query+"\n");
 result_file.close()
 	    

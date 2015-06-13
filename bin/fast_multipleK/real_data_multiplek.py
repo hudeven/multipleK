@@ -6,14 +6,18 @@ from optparse import OptionParser
 
 #Modify it to your working dir
 # WORKING_DIR = "/home/stevenliu/workspace/multipleK/" # for old server
-WORKING_DIR = "/home/stevenliu/workspace/multipleK_paper_runing_human/multipleK/" # for new server
+#WORKING_DIR = "/home/stevenliu/workspace/multipleK_paper_runing_human/multipleK/" # for new server
+WORKING_DIR = "/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/" # for new server
 #WORKING_DIR = "/media/psf/Home/MultipleK/bin/multipleK/"
-read_file = WORKING_DIR + 'data/multipleK/SRR1798198.fastq'
+#read_file = WORKING_DIR + 'data/multipleK/SRR1798198.fastq'
+#read_file = WORKING_DIR + 'data/multipleK/random_read.fastq'
+#read_file = WORKING_DIR + 'data/multipleK/reads_ecoli.fasta'
+read_file = WORKING_DIR + 'data/multipleK/read_CP65671.fasta '
 kmer_file = WORKING_DIR + 'data/multipleK/kmer.fa'
 query_file = WORKING_DIR + 'data/multipleK/boxquery'
 result_file = WORKING_DIR + 'data/multipleK/result'
 
-
+fast_format = 'fasta'
 
 parser = OptionParser()
 parser.add_option('-k','--klength', dest = "klength", help = "length of kmer")
@@ -33,7 +37,7 @@ os.chdir(WORKING_DIR)
 
 print "\n****** generate kmers from reads ******\n"
 # fasta_fastkmer.py is for kmer list of fasta format
-cmd = "python bin/reads2kmer/reads2kmer.py --output "+ kmer_file +" --klength "+ klength  +" --readsfile " + read_file + ' --format ' + 'fastq'
+cmd = "python bin/reads2kmer/reads2kmer.py --output "+ kmer_file +" --klength "+ klength  +" --readsfile " + read_file + ' --format ' + fast_format
 print "output kmer file: \n" + kmer_file
 #print "sleep for 5 seconds..."
 #time.sleep(5)
@@ -56,7 +60,7 @@ print "\n****** multiple K query ******\n"
 for i in range(startk, endk+1):
     print "\n******generate random box query******\n"
     os.chdir(WORKING_DIR)
-    cmd = 'python bin/random_boxquery/random_fast_boxquery.py --num '+ querynum  +'  --klength '+ str(i) +' --output '+ query_file + str(i) +' --read '+ read_file +' --boxsize 1'+ ' --format '+ 'fastq'
+    cmd = 'python bin/random_boxquery/random_fast_boxquery.py --num '+ querynum  +'  --klength '+ str(i) +' --output '+ query_file + str(i) +' --read '+ read_file +' --boxsize 1'+ ' --format '+ fast_format
     os.system(cmd)
     print "output query file: \n" + query_file + str(i)
 
@@ -66,7 +70,7 @@ for i in range(startk, endk+1):
     os.system(cmd)
 
     print "\n****** alignment ******\n"
-    cmd = 'python ../bin/align_kmer_read/fast_align_kmer_read.py --readsfile ' + read_file + ' --resultsfile ' + result_file + str(i) + ' --queryfile ' + query_file + str(i) + ' --format ' + 'fastq'
+    cmd = 'python ../bin/align_kmer_read/fast_align_kmer_read.py --readsfile ' + read_file + ' --resultsfile ' + result_file + str(i) + ' --queryfile ' + query_file + str(i) + ' --format ' + fast_format
     os.system(cmd)
     
     print "\n\n\n***** Done ******\n\n\n"

@@ -75,6 +75,7 @@ void output_records(Leaf_entry* query_results, int query_results_size);
 //output the cancer types in the query result to file
 void output_records(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
 string output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[],  char queryK[]);
+string output_records_ids(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[],  char queryK[]);
 //output the cancer types in the query result to file
 void output_records_array(Leaf_entry query_results[MAX_K][QUERY_RESULTS_BUFFER_SIZE], int query_results_size[], char queryK[], int maxShift);
 
@@ -771,6 +772,61 @@ if(type_num > TYPE_ARRAY_SIZE - 1) {
 }
 
 
+
+//output the cancer types in the query result to file
+string ndtreeHelper::output_records_ids(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[], char queryK[])
+{
+  string typeid_filename = (globalRecordFilename+".typeid").c_str();
+
+    fstream typeid_file;
+  
+    typeid_file.open(typeid_filename.c_str(), ios_base::binary | ios_base::in);
+
+    if(typeid_file.fail()) {
+	cout << "can't open file typeid " << typeid_filename << endl;
+    }
+
+    int type_array[TYPE_ARRAY_SIZE]={0};
+    int output[256]={0};
+    output[0]=0;
+//    int type_num;
+    int record_id;
+
+string retStr = "";
+
+for(int k=0; k<query_results_size; k++){
+    string kmer="";
+    for(int p = 0; p < DIM; p++){
+	kmer += num2letter(query_results[k].key[p]);
+    }
+//    string tuple = ">" + string(queryK)+" "+kmer+"\n";
+
+    record_id = query_results[k].record;
+    typeid_file.seekg(record_id * sizeof(type_array), ios::beg);
+    typeid_file.read((char*)type_array, sizeof(type_array));
+
+    int cur = 0;
+    int i = 0;
+    string idStr = "";
+    while(type_array[i] != END_ARRAY){
+	if(i == TYPE_ARRAY_SIZE -1){
+	   cur = type_array[i];
+	   typeid_file.seekg(cur * sizeof(type_array), ios::beg);
+	   typeid_file.read((char*)type_array, sizeof(type_array));
+	   i = 0;
+	   continue;
+	}
+	idStr += to_string(type_array[i]) + ",";
+	i++;
+    }
+    retStr += idStr;
+}
+    typeid_file.close();
+    return retStr.substr(0, retStr.size()-1);
+}
+
+
+
 //output the cancer types in the query result to file
 string ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS_BUFFER_SIZE], int query_results_size, char query_id[], char queryK[])
 {
@@ -796,14 +852,13 @@ string ndtreeHelper::output_records_fasta(Leaf_entry query_results[QUERY_RESULTS
 //    int type_num;
     int record_id;
 
-string retStr = "";
+string tuple = ">" + string(query_id) + " "+string(queryK)+"\n";
 
 for(int k=0; k<query_results_size; k++){
     string kmer="";
     for(int p = 0; p < DIM; p++){
 	kmer += num2letter(query_results[k].key[p]);
     }
-    string tuple = ">" + string(query_id) + " "+string(queryK)+" "+kmer+"\n";
 
     record_id = query_results[k].record;
     typeid_file.seekg(record_id * sizeof(type_array), ios::beg);
@@ -837,14 +892,13 @@ for(int k=0; k<query_results_size; k++){
 	idStr += to_string(type_array[i]) + ",";
 	i++;
     }
-    tuple += idStr.substr(0, idStr.size()-1);
-    query_result_file << tuple << endl;
-    retStr += tuple;
+    tuple += idStr;
 }
-
+    tuple = tuple.substr(0, tuple.size()-1);
+    query_result_file << tuple << endl;
     typeid_file.close();
     query_result_file.close();
-    return retStr;
+    return tuple;
 }
 
 /*
@@ -989,7 +1043,7 @@ if(query_results_size[0] == 0){
 // Return output string !!!!
 	string output = "Found: \n";
         char tmp[1] = {'i'};
- 	output += output_records_fasta(query_results[0], query_results_size[0],tmp, queryStr);
+ 	output += output_records_ids(query_results[0], query_results_size[0],tmp, queryStr);
 	cout << output << endl;
 }
 

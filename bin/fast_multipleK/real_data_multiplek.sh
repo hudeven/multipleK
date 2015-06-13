@@ -1,1 +1,1 @@
-python real_data_multiplek.py  --klength 7 -s 8 -e 30 -q 100000
+python real_data_multiplek.py  --klength 10 -s 11 -e 11 -q 100000

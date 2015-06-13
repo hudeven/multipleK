@@ -1,0 +1,701 @@
+g++ -g -std=c++11 -c main.cpp
+g++ -g -std=c++11 -o ndTree main.o -lz utility.o logClass.o 
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 7
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 8.15036511421
+###### Accuracy = 1.0
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 8
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 14.0773749352
+###### Accuracy = 0.968906110518
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 9
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 22.6525731087
+###### Accuracy = 0.928442313128
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 10
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 23.6029109955
+###### Accuracy = 0.890077248027
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 11
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 34.0095250607
+###### Accuracy = 0.858449096829
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 12
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 42.9041228294
+###### Accuracy = 0.850674183933
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 13
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 48.7947969437
+###### Accuracy = 0.869065464096
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 14
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 58.3146541119
+###### Accuracy = 0.904201384438
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 15
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 66.0445849895
+###### Accuracy = 0.939996424318
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 16
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 74.1927928925
+###### Accuracy = 0.952248997183
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 17
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 79.1350810528
+###### Accuracy = 0.978435361183
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 18
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 86.4349198341
+###### Accuracy = 0.987761433099
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 19
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 92.3924059868
+###### Accuracy = 0.995318823704
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 20
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 100.162564993
+###### Accuracy = 0.996171221498
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 21
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 106.714474916
+###### Accuracy = 0.996321293159
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 22
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 113.279453993
+###### Accuracy = 0.996546808019
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 23
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 122.084794998
+###### Accuracy = 0.996469713354
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 24
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 131.608267069
+###### Accuracy = 0.997426725863
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 25
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 134.118588924
+###### Accuracy = 0.997240139032
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 26
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 140.223686934
+###### Accuracy = 0.996779204469
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 27
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 153.560036898
+###### Accuracy = 0.997094741553
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 28
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 155.380853891
+###### Accuracy = 0.99699077078
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 29
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 161.924762964
+###### Accuracy = 0.996441864058
+Strategy is bfs
+
+****** Generating subqueries ******
+
+Multiple K query k = 7 K = 30
+valid optimization(reduces sub queries):
+1.0
+overall optimization
+1.0
+###### query time = 173.513058901
+###### Accuracy = 0.99761187452
+
+****** compile bond-tree ******
+
+
+****** multiple K query k=7 K=7 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=7
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=8 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=8
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=9 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=9
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=10 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=10
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=11 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=11
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=12 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=12
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=13 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=13
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=14 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=14
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=15 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=15
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=16 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=16
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=17 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=17
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=18 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=18
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=19 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=19
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=20 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=20
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=21 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=21
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=22 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=22
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=23 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=23
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=24 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=24
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=25 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=25
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=26 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=26
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=27 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=27
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=28 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=28
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=29 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=29
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+****** multiple K query k=7 K=30 ******
+
+
+******generate random box query******
+
+
+****** do box query k=7 K=30
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+

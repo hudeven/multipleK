@@ -1,0 +1,1273 @@
+g++ -g -std=c++11 -c main.cpp
+g++ -g -std=c++11 -o ndTree main.o -lz utility.o logClass.o 
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 5
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXAATCAXXXX
+subquery= XXXXAATCA
+subquery= AATCAXXXX
+subquery= XXAATCAXX
+subquery= XXXAATCAX
+subquery= XAATCAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXGCAAAXXXX
+subquery= XXXXGCAAA
+subquery= GCAAAXXXX
+subquery= XXGCAAAXX
+subquery= XXXGCAAAX
+subquery= XGCAAAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXAGGGGXXXX
+subquery= XXXXAGGGG
+subquery= AGGGGXXXX
+subquery= XXAGGGGXX
+subquery= XXXAGGGGX
+subquery= XAGGGGXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXCTAGAXXXX
+subquery= XXXXCTAGA
+subquery= CTAGAXXXX
+subquery= XXCTAGAXX
+subquery= XXXCTAGAX
+subquery= XCTAGAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXTTTCAXXXX
+subquery= XXXXTTTCA
+subquery= TTTCAXXXX
+subquery= XXTTTCAXX
+subquery= XXXTTTCAX
+subquery= XTTTCAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXGCAAAXXXX
+subquery= XXXXGCAAA
+subquery= GCAAAXXXX
+subquery= XXGCAAAXX
+subquery= XXXGCAAAX
+subquery= XGCAAAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXACTCCXXXX
+subquery= XXXXACTCC
+subquery= ACTCCXXXX
+subquery= XXACTCCXX
+subquery= XXXACTCCX
+subquery= XACTCCXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXAATTAXXXX
+subquery= XXXXAATTA
+subquery= AATTAXXXX
+subquery= XXAATTAXX
+subquery= XXXAATTAX
+subquery= XAATTAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXATTTTXXXX
+subquery= XXXXATTTT
+subquery= ATTTTXXXX
+subquery= XXATTTTXX
+subquery= XXXATTTTX
+subquery= XATTTTXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXTAAATXXXX
+subquery= XXXXTAAAT
+subquery= TAAATXXXX
+subquery= XXTAAATXX
+subquery= XXXTAAATX
+subquery= XTAAATXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXAAAATXXXX
+subquery= XXXXAAAAT
+subquery= AAAATXXXX
+subquery= XXAAAATXX
+subquery= XXXAAAATX
+subquery= XAAAATXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXCGGGTXXXX
+subquery= XXXXCGGGT
+subquery= CGGGTXXXX
+subquery= XXCGGGTXX
+subquery= XXXCGGGTX
+subquery= XCGGGTXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXCTTTTXXXX
+subquery= XXXXCTTTT
+subquery= CTTTTXXXX
+subquery= XXCTTTTXX
+subquery= XXXCTTTTX
+subquery= XCTTTTXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXCCCCAXXXX
+subquery= XXXXCCCCA
+subquery= CCCCAXXXX
+subquery= XXCCCCAXX
+subquery= XXXCCCCAX
+subquery= XCCCCAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXCTTTCXXXX
+subquery= XXXXCTTTC
+subquery= CTTTCXXXX
+subquery= XXCTTTCXX
+subquery= XXXCTTTCX
+subquery= XCTTTCXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXTATTTXXXX
+subquery= XXXXTATTT
+subquery= TATTTXXXX
+subquery= XXTATTTXX
+subquery= XXXTATTTX
+subquery= XTATTTXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXATTTTXXXX
+subquery= XXXXATTTT
+subquery= ATTTTXXXX
+subquery= XXATTTTXX
+subquery= XXXATTTTX
+subquery= XATTTTXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXATTAAXXXX
+subquery= XXXXATTAA
+subquery= ATTAAXXXX
+subquery= XXATTAAXX
+subquery= XXXATTAAX
+subquery= XATTAAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXCCCTAXXXX
+subquery= XXXXCCCTA
+subquery= CCCTAXXXX
+subquery= XXCCCTAXX
+subquery= XXXCCCTAX
+subquery= XCCCTAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXATCCAXXXX
+subquery= XXXXATCCA
+subquery= ATCCAXXXX
+subquery= XXATCCAXX
+subquery= XXXATCCAX
+subquery= XATCCAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXAGGGAXXXX
+subquery= XXXXAGGGA
+subquery= AGGGAXXXX
+subquery= XXAGGGAXX
+subquery= XXXAGGGAX
+subquery= XAGGGAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXCAGTAXXXX
+subquery= XXXXCAGTA
+subquery= CAGTAXXXX
+subquery= XXCAGTAXX
+subquery= XXXCAGTAX
+subquery= XCAGTAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXCATTTXXXX
+subquery= XXXXCATTT
+subquery= CATTTXXXX
+subquery= XXCATTTXX
+subquery= XXXCATTTX
+subquery= XCATTTXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXTGTTAXXXX
+subquery= XXXXTGTTA
+subquery= TGTTAXXXX
+subquery= XXTGTTAXX
+subquery= XXXTGTTAX
+subquery= XTGTTAXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXGTGCTXXXX
+subquery= XXXXGTGCT
+subquery= GTGCTXXXX
+subquery= XXGTGCTXX
+subquery= XXXGTGCTX
+subquery= XGTGCTXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXACATTXXXX
+subquery= XXXXACATT
+subquery= ACATTXXXX
+subquery= XXACATTXX
+subquery= XXXACATTX
+subquery= XACATTXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXTCTTTXXXX
+subquery= XXXXTCTTT
+subquery= TCTTTXXXX
+subquery= XXTCTTTXX
+subquery= XXXTCTTTX
+subquery= XTCTTTXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXGGCATXXXX
+subquery= XXXXGGCAT
+subquery= GGCATXXXX
+subquery= XXGGCATXX
+subquery= XXXGGCATX
+subquery= XGGCATXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXTTGGGXXXX
+subquery= XXXXTTGGG
+subquery= TTGGGXXXX
+subquery= XXTTGGGXX
+subquery= XXXTTGGGX
+subquery= XTTGGGXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXTCCTCXXXX
+subquery= XXXXTCCTC
+subquery= TCCTCXXXX
+subquery= XXTCCTCXX
+subquery= XXXTCCTCX
+subquery= XTCCTCXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXAAGAGXXXX
+subquery= XXXXAAGAG
+subquery= AAGAGXXXX
+subquery= XXAAGAGXX
+subquery= XXXAAGAGX
+subquery= XAAGAGXXX
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXCTCAGXXXX
+subquery= XXXXCTCAG
+subquery= CTCAGXXXX
+subquery= XXCTCAGXX
+subquery= XXXCTCAGX
+subquery= XCTCAGXXX
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 5
+Strategy is random
+****** rset = [0, 2, 1, 4, 3]
+fullMer=XXXXAATCAXXXX
+subquery= XXXXAATCA
+subquery= XXAATCAXX
+subquery= XXXAATCAX
+subquery= AATCAXXXX
+subquery= XAATCAXXX
+Strategy is random
+****** rset = [2, 3, 0, 4, 1]
+fullMer=XXXXGCAAAXXXX
+subquery= XXGCAAAXX
+subquery= XGCAAAXXX
+subquery= XXXXGCAAA
+subquery= GCAAAXXXX
+subquery= XXXGCAAAX
+Strategy is random
+****** rset = [4, 3, 2, 1, 0]
+fullMer=XXXXAGGGGXXXX
+subquery= AGGGGXXXX
+subquery= XAGGGGXXX
+subquery= XXAGGGGXX
+subquery= XXXAGGGGX
+subquery= XXXXAGGGG
+Strategy is random
+****** rset = [4, 2, 3, 0, 1]
+fullMer=XXXXCTAGAXXXX
+subquery= CTAGAXXXX
+subquery= XXCTAGAXX
+subquery= XCTAGAXXX
+subquery= XXXXCTAGA
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 5
+Strategy is sequential
+****** rset = [0, 1, 2, 3, 4]
+fullMer=XXXXAATCAXXXX
+subquery= XXXXAATCA
+subquery= XXXAATCAX
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 5
+Strategy is bfs
+****** rset = [0, 4, 2, 1, 3]
+fullMer=XXXXAATCAXXXX
+subquery= XXXXAATCA
+subquery= AATCAXXXX
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 6
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00213813781738
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 6
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00128102302551
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 6
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.0012481212616
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 6
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124216079712
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 7
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00152516365051
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 7
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00125217437744
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 7
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.0012800693512
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 7
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.001296043396
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 8
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00125002861023
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 8
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126004219055
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 8
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00127911567688
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 8
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00125098228455
+box query file name is /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9.sub.
+Box query file /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9.sub
+boxsize= random, avg boxquery i/o: 0
+ avg matched data point found=0
+ avg leaf node accessed: 0
+total boxquery i/o=0
+total matched data points=0
+total matched records = 0
+ avg leaf node hit peak: 0
+
+****** Generating subqueries ******
+
+Normal K query k = 9 K = 9
+
+****** run ndtree ******
+
+
+****** union result *******
+
+###### query time = 0.0278189182281
+box query file name is /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9.sub.
+Box query file /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9.sub
+boxsize= random, avg boxquery i/o: 0
+ avg matched data point found=0
+ avg leaf node accessed: 0
+total boxquery i/o=0
+total matched data points=0
+total matched records = 0
+ avg leaf node hit peak: 0
+
+****** Generating subqueries ******
+
+Normal K query k = 9 K = 9
+
+****** run ndtree ******
+
+
+****** union result *******
+
+###### query time = 0.024178981781
+box query file name is /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9.sub.
+Box query file /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9.sub
+boxsize= random, avg boxquery i/o: 0
+ avg matched data point found=0
+ avg leaf node accessed: 0
+total boxquery i/o=0
+total matched data points=0
+total matched records = 0
+ avg leaf node hit peak: 0
+
+****** Generating subqueries ******
+
+Normal K query k = 9 K = 9
+
+****** run ndtree ******
+
+
+****** union result *******
+
+###### query time = 0.0246870517731
+box query file name is /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9.sub.
+Box query file /home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9.sub
+boxsize= random, avg boxquery i/o: 0
+ avg matched data point found=0
+ avg leaf node accessed: 0
+total boxquery i/o=0
+total matched data points=0
+total matched records = 0
+ avg leaf node hit peak: 0
+
+****** Generating subqueries ******
+
+Normal K query k = 9 K = 9
+
+****** run ndtree ******
+
+
+****** union result *******
+
+###### query time = 0.0284972190857
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 10
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124502182007
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 10
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00123691558838
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 10
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00127983093262
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 10
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00125002861023
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 11
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126099586487
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 11
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00125098228455
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 11
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.0012538433075
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 11
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00125193595886
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 12
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.0012640953064
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 12
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00123310089111
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 12
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.0012538433075
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 12
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00123906135559
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 13
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126886367798
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 13
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124192237854
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 13
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00127792358398
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 13
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124192237854
+
+****** compile bond-tree ******
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery5
+
+****** do box query k=9 K=5
+Time BFS: 4.98639702797
+
+****** alignment ******
+
+Time Random: 0.453926086426
+
+****** alignment ******
+
+Time Sequential: 0.087406873703
+
+****** alignment ******
+
+Time Full: 0.0843591690063
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery6
+
+****** do box query k=9 K=6
+Time BFS: 0.0575721263885
+
+****** alignment ******
+
+Time Random: 0.0572519302368
+
+****** alignment ******
+
+Time Sequential: 0.057806968689
+
+****** alignment ******
+
+Time Full: 0.0577349662781
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery7
+
+****** do box query k=9 K=7
+Time BFS: 0.0579090118408
+
+****** alignment ******
+
+Time Random: 0.0580039024353
+
+****** alignment ******
+
+Time Sequential: 0.0585281848907
+
+****** alignment ******
+
+Time Full: 0.0590288639069
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery8
+
+****** do box query k=9 K=8
+Time BFS: 0.0581791400909
+
+****** alignment ******
+
+Time Random: 0.0591790676117
+
+****** alignment ******
+
+Time Sequential: 0.0583159923553
+
+****** alignment ******
+
+Time Full: 0.0577509403229
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery9
+
+****** do box query k=9 K=9
+Time BFS: 0.0855240821838
+
+****** alignment ******
+
+Time Random: 0.0820767879486
+
+****** alignment ******
+
+Time Sequential: 0.0824339389801
+
+****** alignment ******
+
+Time Full: 0.0862209796906
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery10
+
+****** do box query k=9 K=10
+Time BFS: 0.0574789047241
+
+****** alignment ******
+
+Time Random: 0.0580291748047
+
+****** alignment ******
+
+Time Sequential: 0.0568120479584
+
+****** alignment ******
+
+Time Full: 0.0579628944397
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery11
+
+****** do box query k=9 K=11
+Time BFS: 0.0577030181885
+
+****** alignment ******
+
+Time Random: 0.058620929718
+
+****** alignment ******
+
+Time Sequential: 0.0576961040497
+
+****** alignment ******
+
+Time Full: 0.057893037796
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery12
+
+****** do box query k=9 K=12
+Time BFS: 0.057797908783
+
+****** alignment ******
+
+Time Random: 0.057765007019
+
+****** alignment ******
+
+Time Sequential: 0.0577170848846
+
+****** alignment ******
+
+Time Full: 0.0576050281525
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery13
+
+****** do box query k=9 K=13
+Time BFS: 0.057825088501
+
+****** alignment ******
+
+Time Random: 0.0579080581665
+
+****** alignment ******
+
+Time Sequential: 0.0582060813904
+
+****** alignment ******
+
+Time Full: 0.0575709342957
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output que
+****** Generating subqueries ******
+
+Big K query k = 9 K = 14
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00123906135559
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 14
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126814842224
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 14
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00128412246704
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 14
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.0012948513031
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 15
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124502182007
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 15
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124716758728
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 15
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00123977661133
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 15
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126504898071
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 16
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126600265503
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 16
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126814842224
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 16
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126099586487
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 16
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00125312805176
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 17
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124502182007
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 17
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.0012469291687
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 17
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124311447144
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 17
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124597549438
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 18
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124597549438
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 18
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00129914283752
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 18
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00124502182007
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 18
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00123596191406
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 19
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126504898071
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 19
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00123691558838
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 19
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00126099586487
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 19
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00127100944519
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 20
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.0012629032135
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 20
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00125217437744
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 20
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.00123810768127
+
+****** Generating subqueries ******
+
+Big K query k = 9 K = 20
+valid optimization(reduces sub queries):
+overall optimization
+###### query time = 0.0012481212616
+ry file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery14
+
+****** do box query k=9 K=14
+Time BFS: 0.0578300952911
+
+****** alignment ******
+
+Time Random: 0.0584330558777
+
+****** alignment ******
+
+Time Sequential: 0.0587570667267
+
+****** alignment ******
+
+Time Full: 0.0585079193115
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery15
+
+****** do box query k=9 K=15
+Time BFS: 0.0577330589294
+
+****** alignment ******
+
+Time Random: 0.0567510128021
+
+****** alignment ******
+
+Time Sequential: 0.0577068328857
+
+****** alignment ******
+
+Time Full: 0.0579550266266
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery16
+
+****** do box query k=9 K=16
+Time BFS: 0.057904958725
+
+****** alignment ******
+
+Time Random: 0.0579149723053
+
+****** alignment ******
+
+Time Sequential: 0.057877779007
+
+****** alignment ******
+
+Time Full: 0.0580201148987
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery17
+
+****** do box query k=9 K=17
+Time BFS: 0.0575499534607
+
+****** alignment ******
+
+Time Random: 0.0577600002289
+
+****** alignment ******
+
+Time Sequential: 0.0578980445862
+
+****** alignment ******
+
+Time Full: 0.0577850341797
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery18
+
+****** do box query k=9 K=18
+Time BFS: 0.0583128929138
+
+****** alignment ******
+
+Time Random: 0.0586969852448
+
+****** alignment ******
+
+Time Sequential: 0.0576720237732
+
+****** alignment ******
+
+Time Full: 0.057708978653
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery19
+
+****** do box query k=9 K=19
+Time BFS: 0.057559967041
+
+****** alignment ******
+
+Time Random: 0.0580019950867
+
+****** alignment ******
+
+Time Sequential: 0.0576469898224
+
+****** alignment ******
+
+Time Full: 0.0578169822693
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+
+******generate random box query******
+
+output query file: 
+/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/bin/fast_multipleK/../../data/multipleK/boxquery20
+
+****** do box query k=9 K=20
+Time BFS: 0.0575799942017
+
+****** alignment ******
+
+Time Random: 0.0578110218048
+
+****** alignment ******
+
+Time Sequential: 0.0575358867645
+
+****** alignment ******
+
+Time Full: 0.057708978653
+
+****** alignment ******
+
+
+
+
+***** Done ******
+
+
+
+***** running time *****
+
+0.0853891372681
