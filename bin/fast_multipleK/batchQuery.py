@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-klength = 7
-startk = 8
-endk = 8
+klength = 12
+startk = 7
+endk = 11
 querynum = 1000
 theta = -1
-patternId = '2'
+patternId = '0'
 
 import os
 import sys
@@ -16,10 +16,10 @@ from optparse import OptionParser
 WORKING_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)),"../../")
 #read_file = WORKING_DIR + 'data/multipleK/homo_read.fastq'
 #read_file = WORKING_DIR + 'data/multipleK/random_read.fastq'
-#read_file = WORKING_DIR + 'data/multipleK/read_CP65671.fasta'
+read_file = WORKING_DIR + 'data/multipleK/read_CP65671.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/read_CP65671_200.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/read_NC32798.fasta '
-read_file = WORKING_DIR + 'data/multipleK/read_NZ_CP007569.fasta'
+#read_file = WORKING_DIR + 'data/multipleK/read_NZ_CP007569.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/reads_ecoli.fasta'
 
 query_file = WORKING_DIR + 'data/multipleK/boxquery'

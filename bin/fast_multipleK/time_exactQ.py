@@ -5,14 +5,14 @@ import time
 import timeit
 from optparse import OptionParser
 
-#readFilename = "read_CP65671.fasta"
-readFilename = "read_NC32798.fasta"
+readFilename = "read_CP65671.fasta"
+#readFilename = "read_NC32798.fasta"
 #readFilename = "homo_read.fastq"
 #readFilename = "random_read.fastq"
 #readFilename = "reads_ecoli.fasta"
-klength = 12
+klength = 10
 startk = 6
-endk = 12
+endk = 6
 querynum = 1000
 
 patternId = '0'

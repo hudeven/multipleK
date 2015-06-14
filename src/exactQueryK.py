@@ -34,8 +34,11 @@ def exactSmallQuery(rset, theta = -1):
         output, err = p.communicate() 
         p_status = p.wait()
         if ('No' in output):
-   	    resultSet = []
-	    break
+            continue;
+#            print output + "\nsubquery= " + subquery
+#   	    resultSet = []
+#	    break
+            
         else:
             lines = output.split()
 	    readset = lines[-1].split(',')
@@ -173,6 +176,9 @@ for record in SeqIO.parse(boxqueryFilename, "fasta"):
         validTotalQ += len(rset)
         outputStr = ">" + str(record.id) + "\n" + ",".join(resultSet) + "\n"
         result_file.write(outputStr)
+    #else:
+        #print resultSet
+        #print "subq= " +str(subq)
     
 
 print "valid optimization(reduces sub queries):"
