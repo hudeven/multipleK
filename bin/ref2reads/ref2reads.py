@@ -23,17 +23,25 @@ error = int(options.error)
 
 #There should be one and only one record, the entire genome:
 record = SeqIO.read(open(refFilename), "fasta")
+output_handle = open(outFilename, "w")
 seqNoN = str(record.seq).replace('N','')
 frags=[]
 limit=len(seqNoN)
 readnum = coverage * limit / readlength
+BUFFER_SIZE = 10000
+count = 0
 for i in range(0, readnum) :
+    count += 1
+    if count > BUFFER_SIZE:
+        count = 0
+        SeqIO.write(frags, output_handle, "fasta")
+        frags = []
+
     start=random.randint(0,limit-readlength)
     end=start+readlength
     frag=seqNoN[start:end]
     readitem=SeqIO.SeqRecord(Seq(frag),id= str(i+1000),name=record.name, description=record.description)
     frags.append(readitem)
  
-output_handle = open(outFilename, "w")
 SeqIO.write(frags, output_handle, "fasta")
 output_handle.close()
