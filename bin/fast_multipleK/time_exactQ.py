@@ -10,9 +10,9 @@ readFilename = "read_CP65671.fasta"
 #readFilename = "homo_read.fastq"
 #readFilename = "random_read.fastq"
 #readFilename = "reads_ecoli.fasta"
-klength = 10
-startk = 6
-endk = 6
+klength = 12
+startk = 7
+endk = 11
 querynum = 1000
 
 patternId = '0'
