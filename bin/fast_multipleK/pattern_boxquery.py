@@ -13,15 +13,16 @@ WORKING_DIR = "/home/stevenliu/big_disk/multipleK_paper_runing_human/multipleK/"
 #read_file = WORKING_DIR + 'data/multipleK/reads_ecoli.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/read_CP65671.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/read_NC32798.fasta'
-read_file = WORKING_DIR + 'data/multipleK//read_NZ_CP007569.fasta'
+#read_file = WORKING_DIR + 'data/multipleK/read_NZ_CP007569.fasta'
+read_file = WORKING_DIR + 'data/multipleK/read_smallNC_000001.11.fasta'
 
 #pattern0 is pattern 4 !!!
 query_file= WORKING_DIR + 'data/multipleK/patterns/pattern0/pattern0_'
-#query_file= WORKING_DIR + 'data/multipleK/patterns/pattern1/e1/pattern1_e1_'
-#query_file = WORKING_DIR + 'data/multipleK/patterns/pattern1/e2/pattern1_e2_'
-#query_file= WORKING_DIR + 'data/multipleK/patterns/pattern2/pattern2_'
-#query_file= WORKING_DIR + 'data/multipleK/patterns/pattern3/pattern3_'
-#query_file= WORKING_DIR + 'data/multipleK/patterns/pattern5/pattern5_'
+query_file= WORKING_DIR + 'data/multipleK/patterns/pattern1/e1/pattern1_e1_'
+query_file = WORKING_DIR + 'data/multipleK/patterns/pattern1/e2/pattern1_e2_'
+query_file= WORKING_DIR + 'data/multipleK/patterns/pattern2/pattern2_'
+query_file= WORKING_DIR + 'data/multipleK/patterns/pattern3/pattern3_'
+query_file= WORKING_DIR + 'data/multipleK/patterns/pattern5/pattern5_'
 
 result_file = WORKING_DIR + 'data/multipleK/result'
 

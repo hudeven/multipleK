@@ -11,9 +11,15 @@ readFilename = "read_CP65671.fasta"
 #readFilename = "random_read.fastq"
 #readFilename = "reads_ecoli.fasta"
 klength = 12
+<<<<<<< HEAD
 startk = 7
 endk = 11
 querynum = 1000
+=======
+startk = 6
+endk = 11
+querynum = 100
+>>>>>>> 369cfeebd0116a46c7ea0939fd706786c002555d
 
 patternId = '0'
 WORKING_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)),"../../")

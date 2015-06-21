@@ -16,7 +16,12 @@ read_file = WORKING_DIR + 'data/multipleK/read_CP65671.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/random_read.fastq'
 #read_file = WORKING_DIR + 'data/multipleK/read_NZ_CP007569.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/read_NC_007131.6.fasta'
+#read_file = WORKING_DIR + 'data/multipleK/read_smallNC_000001.11.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/reads_ecoli.fasta'
+#read_file = WORKING_DIR + 'data/multipleK/read_NC_000019.10.fasta'
+#read_file = WORKING_DIR + 'data/multipleK/SRR606249_1.fastq'
+read_file = WORKING_DIR + 'data/multipleK/read_NC_005106.4.fasta'
+
 kmer_file = WORKING_DIR + 'data/multipleK/kmer.fa'
 
 prefix = "index_" + read_file[read_file.rindex('/')+1:-6] + "_"
@@ -47,6 +52,3 @@ for i in range(startk, endk+1):
         print "path is : " + indexPath
         os.makedirs(indexPath)
         os.system("mv ../data/index.bin ../data/record.typeid " + indexPath)
-
-
-
