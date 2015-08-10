@@ -1,1 +1,1 @@
-python ref2reads.py --output ../../data/multipleK/read_NC_005106.4.fasta --readlength 100 --reference ../../data/multipleK/NC_005106.4.fasta --coverage 5 --error 0
+python ref2reads.py --output ../../data/multipleK/read_test.fasta --readlength 100 --reference ../../data/multipleK/test.fasta --coverage 5 --error 0

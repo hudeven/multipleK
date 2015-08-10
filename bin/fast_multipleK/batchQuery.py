@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-klength = 6
+klength = 8
 startk = 9
-endk = 30
+endk = 25
 querynum = 1000
 theta = -1
 patternId = '0'
@@ -14,6 +14,7 @@ import timeit
 from optparse import OptionParser
 
 WORKING_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)),"../../")
+#read_file = WORKING_DIR + 'data/multipleK/read_test.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/homo_read.fastq'
 #read_file = WORKING_DIR + 'data/multipleK/random_read.fastq'
 #read_file = WORKING_DIR + 'data/multipleK/read_CP65671.fasta'
