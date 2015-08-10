@@ -14,6 +14,8 @@ import timeit
 from optparse import OptionParser
 
 WORKING_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)),"../../")
+read_file = WORKING_DIR + 'data/sample/read.fasta'
+
 #read_file = WORKING_DIR + 'data/multipleK/read_test.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/homo_read.fastq'
 #read_file = WORKING_DIR + 'data/multipleK/random_read.fastq'
@@ -22,7 +24,7 @@ WORKING_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)),"../../")
 #read_file = WORKING_DIR + 'data/multipleK/read_NC32798.fasta '
 #read_file = WORKING_DIR + 'data/multipleK/read_NZ_CP007569.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/reads_ecoli.fasta'
-read_file = WORKING_DIR + 'data/multipleK/read_NC_005106.4.fasta'
+#read_file = WORKING_DIR + 'data/multipleK/read_NC_005106.4.fasta'
 
 query_file = WORKING_DIR + 'data/multipleK/boxquery'
 result_file = WORKING_DIR + 'data/multipleK/result'
