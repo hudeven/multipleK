@@ -6,13 +6,14 @@ import timeit
 from optparse import OptionParser
 
 startk = 8
-endk = 8
+endk = 9
 
 
 WORKING_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)),"../../")
 
-read_file = WORKING_DIR + 'data/sample/read.fasta'
+#read_file = WORKING_DIR + 'data/sample/read.fasta'
 
+read_file = WORKING_DIR + 'data/multipleK/read_rattus_ch159.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/read_test.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/reads_ecoli.fasta'
 #read_file = WORKING_DIR + 'data/multipleK/read_CP65671.fasta'
